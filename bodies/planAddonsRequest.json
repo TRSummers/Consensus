@@ -1,0 +1,33 @@
+{
+  "header":{
+    "serviceProvider":"${carrier}",
+    "sessionId":"${sessionId}",
+    "clientOriginationId":"0003",
+    "clientReferenceId":"2034376"
+  },
+  "transactionType" : "NEW_ACTIVATION",
+  "addresses":[
+    {
+      "type":"STORE",
+      "postalCode":"78130"
+    }
+  ],
+  "cart":{
+    "plans":[
+      {
+        "code":"${planCode}",
+        "connections":[
+          {
+            "device":{
+              "serialNumber":"${device}",
+              "paymentPlan":{
+                "type":"LOAN"
+              }
+            }
+          }
+        ],
+        "serviceContractType":"MONTH_TO_MONTH"
+      }
+    ]
+  }
+}
