@@ -1,0 +1,1 @@
+{"currentLocation":"frame.scan","flowSelection":"1","sessionInfo":{"sessionId":"${p_sessionid}","POAsid":"${p_sessionid}","sortRule":"","category":"","filterList":[],"options":[],"paymentPricingOption":"","enableCart":"true","serialNumber":"${imei}","cartCount":0,"currentLocation":"frame.scan"}}
