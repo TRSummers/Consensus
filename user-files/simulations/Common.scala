@@ -298,7 +298,6 @@ object Common{
 			.headers(headers_14))
 		
 	}
-	val CommonPause=pause(5,10)
 
   val RetailToChoosePathModule=group("RetailToChoosePathModule"){
     exec(http("Retail_0")
