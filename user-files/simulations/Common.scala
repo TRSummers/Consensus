@@ -28,6 +28,59 @@ object Common{
 		"Accept" -> "application/json, text/javascript, */*; q=0.01",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/login.htm",
 		"X-Requested-With" -> "XMLHttpRequest")
+
+  val headers_0 = Map(
+    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "max-age=0",
+    "Connection" -> "keep-alive",
+    "Origin" -> "https://poa-perf-scale.consensuscorpdev.com",
+    "Upgrade-Insecure-Requests" -> "1",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val ui_headers_1 = Map("User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val ui_headers_5 = Map(
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val ui_headers_6 = Map(
+    "Accept" -> "*/*",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+    "X-Requested-With" -> "XMLHttpRequest")
+
+  val ui_headers_22 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val dsom_headers_7 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Access-Control-Request-Headers" -> "content-type",
+    "Access-Control-Request-Method" -> "POST",
+    "Connection" -> "keep-alive",
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val dsom_headers_9 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val poa_headers_11 = Map(
+    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Upgrade-Insecure-Requests" -> "1",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
 	val headers_1 = Map(
 		"Accept" -> "text/css,*/*;q=0.1",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/login.htm?brandId=731&metaCode=newSession")
@@ -106,7 +159,7 @@ object Common{
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/",
 		"cartId" -> "${p_sessionid}")
 
-			val headers_100 = Map(
+	val headers_100 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Access-Control-Request-Headers" -> "content-type",
 		"Access-Control-Request-Method" -> "POST",
@@ -167,6 +220,11 @@ object Common{
     val uri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
     val uri2 = "https://perf-scale-dsom.consensuscorpdev.com:443"
 
+    val uri_ui       = "https://perf-scale-ui.consensuscorpdev.com/shopping"
+    val uri_dsom_v1  = "https://perf-scale-dsom.consensuscorpdev.com/dsom-app/v1"
+    val uri_poa      = "https://poa-perf-scale.consensuscorpdev.com:443"
+    val uri4_gstatic = "https://fonts.gstatic.com/s/lato/v13"
+    val uri5_google  = "https://fonts.googleapis.com/css"
 //	val scn = scenario("Common")
 		// Login
 // val FOO=group("FOO"){
@@ -262,26 +320,104 @@ object Common{
 //			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013206068")
 //			.headers(headers_20))
 //	}
-		val SA=group("RetailToChoosePathModule"){
-			// SA
-			exec(http("SalesandActivations16")
-				.get("/retail/orderassembly/pickyourpath.htm")
-				.check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
-				.headers(headers_16))
-			.exec(http("SalesandActivations17")
-				.get("/retail/public/styles/normalize.php")
-				.headers(headers_17))
-			.exec(http("SalesandActivations18")
-				.get("/jslibs/modernizr.php")
-				.headers(headers_18))
-			.exec(http("SalesandActivations19")
-				.get("/js/retail/topnav.php")
-				.headers(headers_18))
-			.pause(120 milliseconds)
-			.exec(http("SalesandActivations20")
-				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013206068")
-				.headers(headers_20))
-		}
+		val RetailToChoosePathModule=group("RetailToChoosePathModule"){
+			exec(http("Retail_0")
+        .post("/retail/")
+        .headers(headers_0)
+        //.formParam("redirectUrl", "https%3A%2F%2Fperf-scale-ui.consensuscorpdev.com%2Fshopping%2F")
+        .formParam("userAction", "shopping")
+        .resources(http("request_1")
+            .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js")
+            .headers(ui_headers_1),
+        http("request_2")
+            .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js")
+            .headers(ui_headers_1),
+        http("ui_request_3_fonts")
+            .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin")
+            .headers(ui_headers_1),
+        http("ui_request_4_gif")
+            .get(uri_ui + "/assets/img/cloader.gif")
+            .headers(ui_headers_1),
+        http("request_5")
+            .get(uri4_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2")
+            .headers(ui_headers_5),
+        http("request_6")
+            .get(uri_ui + "/config.json")
+            .headers(ui_headers_6),
+        http("dsom_request_7_options")
+            .options(uri_dsom_v1 + "/getContentForAisle")
+            .headers(dsom_headers_7),
+        http("dsom_request_8_options")
+            .options(uri_dsom_v1 + "/getNextState")
+            .headers(dsom_headers_7),
+        http("dsom_request_9")
+            .post(uri_dsom_v1 + "/getNextState")
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/choosepath/dsom_start_options_request.json")),
+        http("dsom_request_10")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/choosepath/dsom_start_post_request.json")),
+        http("poa_request_11_process_php")
+            .get(uri_poa + "/retail/orderassembly/controller/process.php")
+            .headers(poa_headers_11),
+        http("dsom_request_12")
+            .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js"),
+        http("dsom_request_13")
+            .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js"),
+        http("ui_request_14_google_api")
+            .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin"),
+        http("ui_request_15_fonts")
+            .get(uri4_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2"),
+        http("ui_request_16_gif")
+            .get(uri_ui + "/assets/img/cloader.gif"),
+        http("ui_request_17_config")
+            .get(uri_ui + "/config.json")
+            .headers(ui_headers_6),
+        http("dsom_request_18")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request.json")),
+        http("dsom_request_19")
+            .post(uri_dsom_v1 + "/getNextState")
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request.json")),
+        http("dsom_request_20_path_content")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .check(regex("Purchase unactivated device at full price").find.exists)
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request.json")),
+        http("dsom_request_21")
+            .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")
+            .headers(ui_headers_1),
+        http("dsom_request_22")
+            .get(uri_ui + "/app/pages/frame/header/header.html")
+            .headers(ui_headers_22),
+        http("ui_request_23")
+            .get(uri_ui + "/app/pages/frame/footer/footer.html")
+            .headers(ui_headers_22),
+        http("ui_request_24_choosepath")
+            .get(uri_ui + "/app/pages/choosepath/choosepath.html")
+            .headers(ui_headers_22),
+        http("ui_request_25_optionscolumn")
+            .get(uri_ui + "/app/pages/choosepath/partials/optionscolumn.html")
+            .headers(ui_headers_22),
+        http("ui_request_26")
+            .get(uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
+            .headers(ui_headers_5),
+        http("ui_request_27_fonts")
+            .get(uri4_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2")
+            .headers(ui_headers_5),
+        http("ui_request_28_svg")
+            .get(uri_ui + "/assets/img/bullseye.svg")
+            .headers(ui_headers_1),
+        http("poa_request_29")
+            .get(uri_poa + "/img/brands/target/retail/sign_up_new_red.svg")
+            .headers(ui_headers_1),
+        http("poa_request_30")
+            .get(uri_poa + "/img/brands/target/retail/upgrade_new_red.svg")
+            .headers(ui_headers_1)))
+}
 
 
 	//pause(5, 10)
