@@ -170,7 +170,7 @@ object Common{
 //	val scn = scenario("Common")
 		// Login
 // val FOO=group("FOO"){
-	val Login=group("Login"){
+	val LoginToRetail=group("LoginToRetail"){
 		exec(http("Login")
 			.get("/retail/login.htm?brandId=731&metaCode=newSession"))
 		.pause(155 milliseconds)
@@ -188,23 +188,23 @@ object Common{
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013173473")
 			.headers(headers_4))
 		//.pause(12)
-		.exec(http("Login_5")
+		.exec(http("Login_5_findstores")
 			.get("/ajax/retail/findstores.php?storeId=")
 			.headers(headers_4))
 		.pause(774 milliseconds)
-		.exec(http("Login_6")
+		.exec(http("Login_6_findstores")
 			.get("/ajax/retail/findstores.php?storeId=0")
 			.headers(headers_4))
 		.pause(959 milliseconds)
-		.exec(http("Login_7")
+		.exec(http("Login_7_findstores")
 			.get("/ajax/retail/findstores.php?storeId=00")
 			.headers(headers_4))
 		.pause(960 milliseconds)
-		.exec(http("Login_8")
+		.exec(http("Login_8_findstores")
 			.get("/ajax/retail/findstores.php?storeId=000")
 			.headers(headers_4))
 		.pause(802 milliseconds)
-		.exec(http("Login_9")
+		.exec(http("Login_9_findstores")
 			.get("/ajax/retail/findstores.php?storeId=0003")
 			.headers(headers_4))
 		.pause(3)
@@ -215,9 +215,16 @@ object Common{
 			.formParam("userPassword", "target1234")
 			.formParam("newStoreId", "0003")
 			.formParam("storeId", "0003"))
-		.exec(http("Login_11")
+		.exec(http("Login_11_0_newcustomer")
+			.get("/retail/orderassembly/controller/newcustomer.php")
+			.headers(headers_10))
+    .exec(http("Login_11_1_retail")
+        .get("/retail/")
+        .check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
+        .headers(headers_10))
+		.exec(http("Login_11_2")
 			.get("/jslibs/modernizr.php")
-			.headers(headers_11))
+      .headers(headers_11))
 		.exec(http("Login_12")
 			.get("/retail/public/styles/normalize.php")
 			.headers(headers_12))
@@ -234,27 +241,49 @@ object Common{
 		
 	}
 //	val CommonPause=pause(5,10)
-	
-	val SA=group("SA"){
-		// SA
-		exec(http("SalesandActivations16")
-			.get("/retail/orderassembly/pickyourpath.htm")
-			.check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
-			.headers(headers_16))
-		.exec(http("SalesandActivations17")
-			.get("/retail/public/styles/normalize.php")
-			.headers(headers_17))
-		.exec(http("SalesandActivations18")
-			.get("/jslibs/modernizr.php")
-			.headers(headers_18))
-		.exec(http("SalesandActivations19")
-			.get("/js/retail/topnav.php")
-			.headers(headers_18))
-		.pause(120 milliseconds)
-		.exec(http("SalesandActivations20")
-			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013206068")
-			.headers(headers_20))
-	}
+//
+//	val SA=group("SA"){
+//		// SA
+//		exec(http("SalesandActivations16")
+//			.get("/retail/orderassembly/pickyourpath.htm")
+//			.check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
+//			.headers(headers_16))
+//		.exec(http("SalesandActivations17")
+//			.get("/retail/public/styles/normalize.php")
+//			.headers(headers_17))
+//		.exec(http("SalesandActivations18")
+//			.get("/jslibs/modernizr.php")
+//			.headers(headers_18))
+//		.exec(http("SalesandActivations19")
+//			.get("/js/retail/topnav.php")
+//			.headers(headers_18))
+//		.pause(120 milliseconds)
+//		.exec(http("SalesandActivations20")
+//			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013206068")
+//			.headers(headers_20))
+//	}
+		val SA=group("RetailToChoosePathModule"){
+			// SA
+			exec(http("SalesandActivations16")
+				.get("/retail/orderassembly/pickyourpath.htm")
+				.check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
+				.headers(headers_16))
+			.exec(http("SalesandActivations17")
+				.get("/retail/public/styles/normalize.php")
+				.headers(headers_17))
+			.exec(http("SalesandActivations18")
+				.get("/jslibs/modernizr.php")
+				.headers(headers_18))
+			.exec(http("SalesandActivations19")
+				.get("/js/retail/topnav.php")
+				.headers(headers_18))
+			.pause(120 milliseconds)
+			.exec(http("SalesandActivations20")
+				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013206068")
+				.headers(headers_20))
+		}
+
+
 	//pause(5, 10)
 		// NA
 	val NA=group("NA"){
@@ -302,7 +331,8 @@ object Common{
 		.exec(http("request_1")
 			.post(uri2 + "/dsom-app/v1/getNextState")
 			.headers(headers_101)
-			.body(ElFileBody("VZWPO2Activation_0001_request.txt")))
+			//.body(ElFileBody("VZWPO2Activation_0001_request.txt")))
+			.body(ElFileBody("LoginToPlans/VZWPO2Activation_0001_request.txt")))
 		.exec(http("request_102")
 			.options(uri2 + "/dsom-app/v1/getContentForAisle")
 			.headers(headers_100))
@@ -310,7 +340,8 @@ object Common{
 			.post(uri2 + "/dsom-app/v1/getContentForAisle")
 			.check(substring("download the Cartwheel App"))
 			.headers(headers_101)
-			.body(ElFileBody("VZWPO2Activation_0003_request.txt")))
+			//.body(ElFileBody("VZWPO2Activation_0003_request.txt")))
+			.body(ElFileBody("LoginToPlans/VZWPO2Activation_0003_request.txt")))
 		//.pause(5, 17)
 	}
 		

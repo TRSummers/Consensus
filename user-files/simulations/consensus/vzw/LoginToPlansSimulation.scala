@@ -6,7 +6,6 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 
-import Common
 
 class LoginToPlansSimulation extends Simulation {
 
@@ -198,7 +197,8 @@ class LoginToPlansSimulation extends Simulation {
 
 
 	val scn = scenario("LoginToPlansSimulation")
-		.exec(http("request_0")
+
+		.exec(http("request_0_Login")
 			.post(uri3 + "/retail/login.htm")
 			//.check(regex("blank'>(.+?)<").saveAs("p_sessionId"))
 			.headers(headers_0)
@@ -295,6 +295,8 @@ class LoginToPlansSimulation extends Simulation {
 			.get(uri3 + "/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1497991137650&storeId=0003")
 			.headers(headers_31)))
 		.pause(2)
+
+
 		.exec(http("request_33")
 			.post(uri3 + "/retail/")
 			.headers(headers_0)
@@ -413,7 +415,7 @@ class LoginToPlansSimulation extends Simulation {
             http("request_72")
 			.post("/dsom-app/v1/getNextState")
 			.headers(headers_44)
-			.body(RawFileBody("LoginToPlans/LoginToPlansSimulation_0072_request.txt"))))
+		.body(RawFileBody("LoginToPlans/LoginToPlansSimulation_0072_request.txt"))))
 		.pause(1)
 		.exec(http("request_73")
 			.options("/dsom-app/v1/getContentForAisle")
