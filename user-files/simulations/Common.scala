@@ -73,6 +73,13 @@ object Common{
     "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
     "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
 
+  val dsom_headers_10 = Map(
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
+
   val poa_headers_11 = Map(
     "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Encoding" -> "gzip, deflate, sdch, br",
@@ -323,26 +330,26 @@ object Common{
         http("request_6")
           .get(uri_ui + "/config.json")
           .headers(ui_headers_6),
-        http("dsom_request_7_options")
+        http("dsom_start_req_7_options")
           .options(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_7),
-        http("dsom_request_8_options")
+        http("dsom_start_req_8_options")
           .options(uri_dsom_v1 + "/getNextState")
           .headers(dsom_headers_7),
-        http("dsom_request_9")
+        http("dsom_start_req_9")
           .post(uri_dsom_v1 + "/getNextState")
           .headers(dsom_headers_9)
           .body(ElFileBody("dsom/choosepath/dsom_start_options_request.json")),
-        http("dsom_request_10")
+        http("dsom_start_req_10")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_9)
           .body(ElFileBody("dsom/choosepath/dsom_start_post_request.json")),
-        http("poa_request_11_process_php")
+        http("poa_path_req_11_process_php")
           .get(uri_poa + "/retail/orderassembly/controller/process.php")
           .headers(poa_headers_11),
-        http("dsom_request_12")
+        http("dsom_start_req_12")
           .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js"),
-        http("dsom_request_13")
+        http("dsom_start_req_13")
           .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js"),
         http("ui_request_14_google_api")
           .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin"),
@@ -353,23 +360,23 @@ object Common{
         http("ui_request_17_config")
           .get(uri_ui + "/config.json")
           .headers(ui_headers_6),
-        http("dsom_request_18")
+        http("dsom_start_req_18")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_9)
           .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request.json")),
-        http("dsom_request_19")
+        http("dsom_start_req_19")
           .post(uri_dsom_v1 + "/getNextState")
           .headers(dsom_headers_9)
           .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request.json")),
-        http("dsom_request_20_path_content")
+        http("dsom_start_req_20_path_content")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .check(regex("Purchase unactivated device at full price").find.exists)
           .headers(dsom_headers_9)
           .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request.json")),
-        http("dsom_request_21")
+        http("dsom_start_req_21")
           .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")
           .headers(ui_headers_1),
-        http("dsom_request_22")
+        http("dsom_start_req_22")
           .get(uri_ui + "/app/pages/frame/header/header.html")
           .headers(ui_headers_22),
         http("ui_request_23")
@@ -381,7 +388,7 @@ object Common{
         http("ui_request_25_optionscolumn")
           .get(uri_ui + "/app/pages/choosepath/partials/optionscolumn.html")
           .headers(ui_headers_22),
-        http("ui_request_26")
+        http("ui_request_26_fonts")
           .get(uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
           .headers(ui_headers_5),
         http("ui_request_27_fonts")
@@ -390,54 +397,35 @@ object Common{
         http("ui_request_28_svg")
           .get(uri_ui + "/assets/img/bullseye.svg")
           .headers(ui_headers_1),
-        http("poa_request_29")
+        http("poa_request_29_svg")
           .get(uri_poa + "/img/brands/target/retail/sign_up_new_red.svg")
           .headers(ui_headers_1),
-        http("poa_request_30")
+        http("poa_request_30_svg")
           .get(uri_poa + "/img/brands/target/retail/upgrade_new_red.svg")
           .headers(ui_headers_1)))
   }
 
+  	val ChoosePathToScan=group("ChoosePathToScan"){
+      exec(http("dsom_scan_request_0")
+        .options(uri_dsom_v1 + "/getNextState")
+        .headers(dsom_headers_7)
+        .resources(http("dsom_scan_request_1")
+          .post(uri_dsom_v1 + "/getNextState")
+          .headers(dsom_headers_10)
+          .body(ElFileBody("dsom/scan/dsom_Scan_0001_request.json"))))
+      .pause(1)
+      .exec(http("dsom_scan_request_2")
+          .options(uri_dsom_v1 + "/getContentForAisle")
+          .headers(dsom_headers_7)
+          .resources(http("dsom_scan_request_3")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .check(regex("Scan or enter a device's IMEI").find.exists)
+            .headers(dsom_headers_10)
+            .body(ElFileBody("dsom/scan/dsom_Scan_0003_request.json")),
+            http("dsom_scan_request_4")
+              .get(uri_ui + "/app/pages/scan/scan.html")))
+    }
 
-	//pause(5, 10)
-		// NA
-	val NA=group("NA"){
-		exec(http("SalesandActivations21")
-			.post("/retail/orderassembly/pickyourpath.htm")
-			.headers(headers_21)
-			.formParam("buyPath", "newCust"))
-		.exec(http("NewActivation_22")
-			.options(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_22))
-		.exec(http("NewActivation_23")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0023_request.txt")))
-		.exec(http("NewActivation_24")
-			.post(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0024_request.txt")))
-		.exec(http("NewActivation_25")
-			.get("/retail/orderassembly/controller/process.php")
-			.headers(headers_25))
-		.exec(http("NewActivation_26")
-			.post(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0026_request.txt")))
-		.exec(http("NewActivation_27")
-			.options(uri2 + "/dsom-app/v1/getJSONAisles")
-			.headers(headers_22))
-		.exec(http("NewActivation_28")
-			.post(uri2 + "/dsom-app/v1/getJSONAisles")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0028_request.txt")))
-		.exec(http("NewActivation_29")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
-			.check(substring("Scan or enter a device's IMEI"))
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0029_request.txt")))
-		//.pause(5, 15)
-	}
 	//}//End of Foo
 		val PO=group("${carrier}_PaymentOptions"){	
 			exec(http("request_0")
