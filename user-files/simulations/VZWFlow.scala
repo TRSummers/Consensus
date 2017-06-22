@@ -244,12 +244,9 @@ object VZWFlow{
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Cache-Control" -> "no-cache",
 		"Pragma" -> "no-cache")
-val headers_222 = Map(
-		"Access-Control-Request-Headers" -> "content-type",
-		"Access-Control-Request-Method" -> "POST",
-		"Cache-Control" -> "no-cache",
-		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
-		"Pragma" -> "no-cache")
+
+
+	val ui_headers_6 = Map("Accept" -> "application/json, text/plain, */*")
 
 	val headers_223 = Map(
 		"Accept" -> "application/json, text/plain, */*",
@@ -258,22 +255,40 @@ val headers_222 = Map(
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/")
-	val headers_230 = Map(
+
+	val dsom_headers_230 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
 		"Access-Control-Request-Headers" -> "cartid,content-type",
 		"Access-Control-Request-Method" -> "POST",
 		"Cache-Control" -> "no-cache",
+		"Connection" -> "keep-alive",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache")
 
-	val headers_231 = Map(
+	val dsom_headers_231 = Map(
 		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
 		"Cache-Control" -> "no-cache",
 		"Content-Type" -> "application/json;charset=utf-8",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/",
 		"cartId" -> "${p_sessionid}")
-		
+
+
+	val dsom_headers_222 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Access-Control-Request-Headers" -> "content-type",
+		"Access-Control-Request-Method" -> "POST",
+		"Connection" -> "keep-alive",
+		"Cache-Control" -> "no-cache",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+		"Pragma" -> "no-cache")
+
 			val VZWFlowheaders_1000 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Access-Control-Request-Headers" -> "content-type",
@@ -434,41 +449,47 @@ val headers_222 = Map(
     val VZWFlowuri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
     val VZWFlowuri2 = "https://perf-scale-dsom.consensuscorpdev.com:443"
 
-		
-    val uri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
-    val uri2 = "https://perf-scale-dsom.consensuscorpdev.com:443"
 
-    	val VZWScan=group("${carrier}_Scan"){
-		exec(http("Scan_30")
-			.options(uri2 + "/session/dsom/v1/cart/item")
-			.headers(headers_230))
-		.exec(http("Scan_31")
-			.post(uri2 + "/session/dsom/v1/cart/item")
-			.headers(headers_231)
-			.body(ElFileBody("VZW_0031_request.txt")))
-		.exec(http("Scan_32")
-			.options(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_222))
-		.exec(http("Scan_33")
-			.post(uri2 + "/dsom-app/v1/getNextState")
+    val uri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
+    val uri_dsom = "https://perf-scale-dsom.consensuscorpdev.com:443"
+	  val uri_ui   = "https://perf-scale-ui.consensuscorpdev.com/shopping"
+
+	val VZWScanToPaymentOptions = group("${carrier}_Scan"){
+		exec(http("dsom_Scan_30")
+			.options(uri_dsom + "/session/dsom/v1/cart/item")
+			.headers(dsom_headers_230))
+		.exec(http("dsom_Scan_31")
+			.post(uri_dsom + "/session/dsom/v1/cart/item")
+			.headers(dsom_headers_231)
+			.body(ElFileBody("dsom/scan/VZW_0031_request.json")))
+		.exec(http("dsom_Scan_32")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_222))
+		.exec(http("dsom_Scan_33")
+			.post(uri_dsom + "/dsom-app/v1/getNextState")
+			.check(regex("\"cartCount\":1").find.exists)
 			.headers(headers_223)
-			.body(ElFileBody("VZW_0033_request.txt")))
-		.exec(http("Scan_34")
-			.options(uri2 + "/dsom-app/v1/getContentForAisle")
-			.headers(headers_222))
-		.exec(http("Scan_35")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
+			.body(ElFileBody("dsom/scan/VZW_0033_request.json")))
+		.pause(1)
+		.exec(http("dsom_Scan_34")
+			.options(uri_dsom + "/dsom-app/v1/getContentForAisle")
+			.headers(dsom_headers_222))
+		.exec(http("dsom_Scan_35")
+			.post(uri_dsom + "/dsom-app/v1/getContentForAisle")
 			.headers(headers_223)
-			.body(ElFileBody("VZW_0035_request.txt")))
-		.exec(http("Scan_36")
-			.options(uri2 + "/dsom-app/v1/getPaymentDetails")
-			.headers(headers_222))
-		.exec(http("Scan_37")
-			.post(uri2 + "/dsom-app/v1/getPaymentDetails")
+			.body(ElFileBody("dsom/scan/VZW_0035_request.json")))
+		.exec(http("dsom_Scan_36_payment_options_html")
+			.get(uri_ui + "/app/pages/paymentoptions/paymentoptions.html")
+			.headers(ui_headers_6))
+		.exec(http("dsom_Scan_36")
+			.options(uri_dsom + "/dsom-app/v1/getPaymentDetails")
+			.headers(dsom_headers_222))
+		.exec(http("dsom_Scan_37")
+			.post(uri_dsom + "/dsom-app/v1/getPaymentDetails")
+			.check(regex("paymentOptions").find.exists)
 			.check(substring("Get more savings with Device Payment on The Verizon Plan"))
 			.headers(headers_223)
-			.body(ElFileBody("VZW_0037_request.txt")))
-		//.pause(5, 14)
+			.body(ElFileBody("dsom/scan/VZW_0037_request.json")))
 	}
 		    
 	      val CC=group("CreditCheck"){

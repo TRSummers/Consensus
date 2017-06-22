@@ -42,7 +42,7 @@ class End_to_End_Scenario extends Simulation {
         Common.LoginToRetail,     Common.CommonPause,
         Common.RetailToChoosePathModule,        Common.CommonPause,
         Common.ChoosePathToScan,        Common.CommonPause,
-//        VZWFlow.VZWScan,  Common.CommonPause,
+        VZWFlow.VZWScanToPaymentOptions,  Common.CommonPause,
 //        Common.PO,        Common.CommonPause,
 //        Common.Cartwheel, Common.CommonPause,
 //        VZWFlow.CC,       Common.CommonPause,
