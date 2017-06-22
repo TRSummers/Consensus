@@ -166,21 +166,28 @@ object Common{
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/",
 		"cartId" -> "${p_sessionid}")
 
-	val headers_100 = Map(
-		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+	val dsom_headers_100 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
 		"Access-Control-Request-Headers" -> "content-type",
 		"Access-Control-Request-Method" -> "POST",
 		"Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache")
 
-	val headers_101 = Map(
+	val dsom_headers_101 = Map(
 		"Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
 		"Cache-Control" -> "no-cache",
 		"Content-Type" -> "application/json;charset=utf-8",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/")
+
 	val headers_106 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/")
@@ -224,17 +231,16 @@ object Common{
 		"X-Requested-With" -> "XMLHttpRequest")
 
 
-    val uri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
-    val uri2 = "https://perf-scale-dsom.consensuscorpdev.com:443"
+    val uri_poa = "https://poa-perf-scale.consensuscorpdev.com:443"
+    val uri_dsom = "https://perf-scale-dsom.consensuscorpdev.com:443"
 
     val uri_ui       = "https://perf-scale-ui.consensuscorpdev.com/shopping"
     val uri_dsom_v1  = "https://perf-scale-dsom.consensuscorpdev.com/dsom-app/v1"
-    val uri_poa      = "https://poa-perf-scale.consensuscorpdev.com:443"
     val uri4_gstatic = "https://fonts.gstatic.com/s/lato/v13"
     val uri5_google  = "https://fonts.googleapis.com/css"
-//	val scn = scenario("Common")
-		// Login
-// val FOO=group("FOO"){
+
+
+
 	val LoginToRetail=group("LoginToRetail"){
 		exec(http("Login")
 			.get("/retail/login.htm?brandId=731&metaCode=newSession"))
@@ -303,7 +309,7 @@ object Common{
 		.exec(http("Login_15")
 			.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1489013197573&storeId=0003")
 			.headers(headers_14))
-		
+
 	}
 
   val RetailToChoosePathModule=group("RetailToChoosePathModule"){
@@ -405,7 +411,7 @@ object Common{
           .headers(ui_headers_1)))
   }
 
-  	val ChoosePathToScan=group("ChoosePathToScan"){
+  val ChoosePathToScan=group("ChoosePathToScan"){
       exec(http("dsom_scan_request_0")
         .options(uri_dsom_v1 + "/getNextState")
         .headers(dsom_headers_7)
@@ -426,36 +432,38 @@ object Common{
               .get(uri_ui + "/app/pages/scan/scan.html")))
     }
 
-	//}//End of Foo
-		val PO=group("${carrier}_PaymentOptions"){	
-			exec(http("request_0")
-			.options(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_100))
-		.exec(http("request_1")
-			.post(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_101)
-			//.body(ElFileBody("VZWPO2Activation_0001_request.txt")))
-			.body(ElFileBody("LoginToPlans/VZWPO2Activation_0001_request.txt")))
-		.exec(http("request_102")
-			.options(uri2 + "/dsom-app/v1/getContentForAisle")
-			.headers(headers_100))
-		.exec(http("request_3")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
+	val PaymentOptionsToCartWheel = group("${carrier}_PaymentOptions"){
+			exec(http("dsom_po_request_0")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_100))
+		.exec(http("dsom_po_request_1")
+			.post(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_101)
+			.body(ElFileBody("dsom/cartwheel/VZWPO2Activation_0001_request.json")))
+		.exec(http("dsom_po_request_102")
+			.options(uri_dsom + "/dsom-app/v1/getContentForAisle")
+			.headers(dsom_headers_100))
+		.exec(http("dsom_po_request_3")
+			.post(uri_dsom + "/dsom-app/v1/getContentForAisle")
 			.check(substring("download the Cartwheel App"))
-			.headers(headers_101)
-			//.body(ElFileBody("VZWPO2Activation_0003_request.txt")))
-			.body(ElFileBody("LoginToPlans/VZWPO2Activation_0003_request.txt")))
-		//.pause(5, 17)
+			.headers(dsom_headers_101)
+			.body(ElFileBody("dsom/cartwheel/VZWPO2Activation_0003_request.json")))
+    .exec(http("dsom_po_cartwheel_content")
+      .get(uri_ui + "/app/pages/cartwheel/cartwheel.html")
+      .headers(ui_headers_22))
+    .exec(http("poa_cartwheel_logo")
+      .get(uri_poa + "/img/retail/cartwheel/cartwheel_logo.png")
+      .headers(poa_headers_11))
 	}
-		
+
 		val Cartwheel=group("${carrier}_Cartwheel"){
 		  val uriX = "https://perf-scale-dsom.consensuscorpdev.com:443"
 		  exec(http("Cartwheel_4")
 			.options(uriX + "/dsom-app/v1/getNextState")
-			.headers(headers_100))
+			.headers(dsom_headers_100))
 		.exec(http("Cartwheel_5")
 			.post(uriX + "/dsom-app/v1/getNextState")
-			.headers(headers_101)
+			.headers(dsom_headers_101)
 			.body(ElFileBody("CW005.txt")))
 			//.body(ElFileBody("VZWPO2Activation_0005_request.txt")))
 		.exec(http("Cartwheel_6")
@@ -482,10 +490,10 @@ object Common{
 	// NewGuest
 	val NewGuest=group("NewGuest"){
 		exec(http("NewGuest_38")
-			.options(uri2 + "/dsom-app/v1/getNextState")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
 			.headers(headers_22))
 		.exec(http("NewGuest_39")
-			.post(uri2 + "/dsom-app/v1/getNextState")
+			.post(uri_dsom + "/dsom-app/v1/getNextState")
 			.headers(headers_23)
 			.body(ElFileBody("Sprint_0039_request.txt")))
 		.exec(http("NewGuest_40")
