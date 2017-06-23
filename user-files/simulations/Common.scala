@@ -29,7 +29,7 @@ object Common{
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/login.htm",
 		"X-Requested-With" -> "XMLHttpRequest")
 
-  val headers_0 = Map(
+  val poa_headers_0 = Map(
     "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Encoding" -> "gzip, deflate, br",
     "Accept-Language" -> "en-US,en;q=0.8",
@@ -337,10 +337,11 @@ object Common{
 
   val RetailToChoosePathModule=group("RetailToChoosePathModule"){
     exec(http("Retail_0")
-      .post("/retail/")
-      .headers(headers_0)
+      .post(uri_poa + "/retail/")
+      .headers(poa_headers_0)
+      .body(ElFileBody("poa/retail/shopping.txt"))
       //.formParam("redirectUrl", "https%3A%2F%2Fperf-scale-ui.consensuscorpdev.com%2Fshopping%2F")
-      .formParam("userAction", "shopping")
+      //.formParam("userAction", "shopping")
       .resources(http("request_1")
         .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js")
         .headers(ui_headers_1),
@@ -366,16 +367,21 @@ object Common{
           .options(uri_dsom_v1 + "/getNextState")
           .headers(dsom_headers_7),
         http("dsom_start_req_9")
-          .post(uri_dsom_v1 + "/getNextState")
-          .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_options_request.json")),
-        http("dsom_start_req_10")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_post_request.json")),
-        http("poa_path_req_11_process_php")
+          .body(ElFileBody("dsom/choosepath/dsom_start_post_request_001.json")),
+        http("dsom_start_req_10")
+          .post(uri_dsom_v1 + "/getNextState")
+          .check(regex("Error retrieving the next state for").find.notExists)
+          .headers(dsom_headers_9)
+          .body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_002.json")),
+
+      http("poa_path_req_11_process_php")
           .get(uri_poa + "/retail/orderassembly/controller/process.php")
           .headers(poa_headers_11),
+        http("ui_req_11_shopping")
+          .get(uri_ui + "/")
+          .headers(ui_headers_1),
         http("dsom_start_req_12")
           .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js"),
         http("dsom_start_req_13")
@@ -392,16 +398,17 @@ object Common{
         http("dsom_start_req_18")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request.json")),
+          .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request_003.json")),
         http("dsom_start_req_19")
           .post(uri_dsom_v1 + "/getNextState")
+          .check(regex("Error retrieving the next state for").find.notExists)
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request.json")),
+          .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request_004.json")),
         http("dsom_start_req_20_path_content")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .check(regex("Purchase unactivated device at full price").find.exists)
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request.json")),
+          .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request_005.json")),
         http("dsom_start_req_21")
           .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")
           .headers(ui_headers_1),
@@ -529,9 +536,6 @@ object Common{
           http("dsom_request_6")
             .options(uri_dsom_v1 + "/getContentForAisle")
             .headers(dsom_headers_7),
-//          http("dsom_request_7")
-//            .options(uri_dsom_v1 + "/getNextState")
-//            .headers(dsom_headers_7),
           http("dsom_creditcheck_request_9")
             .post(uri_dsom_v1 + "/getNextState")
             .headers(dsom_headers_9)
