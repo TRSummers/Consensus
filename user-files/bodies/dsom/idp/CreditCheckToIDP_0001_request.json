@@ -1,0 +1,56 @@
+{
+  "currentLocation": "creditcheck",
+  "flowSelection": "continue",
+  "sessionInfo": {
+    "sessionId": "${p_sessionid}",
+    "POAsid": "${p_sessionid}",
+    "sortRule": "",
+    "category": "",
+    "filterList": [],
+    "options": [
+      {
+        "customer": {
+          "emails": [
+            {
+              "address": "verizontest@gmail.com"
+            }
+          ],
+          "addresses": [
+            {
+              "countryCode": "US",
+              "postalCode": "94117",
+              "locality": "san francisco",
+              "administrativeArea": "CA",
+              "line1": "441 mountain st"
+            }
+          ],
+          "nationalId": "345345511",
+          "name": {
+            "firstName": "Floyd123",
+            "lastName": "new activation",
+            "middleName": "t"
+          },
+          "phones": [
+            {
+              "number": "(543) 456-5432"
+            }
+          ],
+          "dateOfBirth": "January 1 1998",
+          "identifications": [
+            {
+              "issuingAuthority": "CA",
+              "type": "Driver's License",
+              "value": "4323456543",
+              "expirationDate": "January 2019"
+            }
+          ]
+        }
+      }
+    ],
+    "paymentPricingOption": "",
+    "enableCart": "true",
+    "serialNumber": 0,
+    "cartCount": 1,
+    "currentLocation": "creditcheck"
+  }
+}

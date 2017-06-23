@@ -245,8 +245,24 @@ object VZWFlow{
 		"Cache-Control" -> "no-cache",
 		"Pragma" -> "no-cache")
 
+	val poa_headers_2 = Map(
+		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"Upgrade-Insecure-Requests" -> "1")
 
 	val ui_headers_6 = Map("Accept" -> "application/json, text/plain, */*")
+
+	val ui_headers_8 = Map("Accept" -> "*/*", "X-Requested-With" -> "XMLHttpRequest")
+
+	val ui_headers_16 = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"If-Modified-Since" -> "Thu, 08 Jun 2017 19:42:13 GMT",
+		"If-None-Match" -> "65a5c-640-551780c9b8f40")
 
 	val headers_223 = Map(
 		"Accept" -> "application/json, text/plain, */*",
@@ -255,6 +271,34 @@ object VZWFlow{
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/")
+
+
+
+	val dsom_headers_1 = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"Content-Type" -> "application/json;charset=UTF-8",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
+
+	val dsom_headers_19 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Access-Control-Request-Headers" -> "content-type,sessionid",
+		"Access-Control-Request-Method" -> "GET",
+		"Connection" -> "keep-alive",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
+
+	val dsom_headers_20 = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"Content-Type" -> "application/json",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+		"sessionId" -> "${p_sessionid}")
 
 	val dsom_headers_230 = Map(
 		"Accept" -> "*/*",
@@ -452,7 +496,9 @@ object VZWFlow{
 
     val uri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
     val uri_dsom = "https://perf-scale-dsom.consensuscorpdev.com:443"
+  	val uri_dsom_v1 = "https://perf-scale-dsom.consensuscorpdev.com:443/dsom-app/v1"
 	  val uri_ui   = "https://perf-scale-ui.consensuscorpdev.com/shopping"
+    val uri_poa  = "https://poa-perf-scale.consensuscorpdev.com"
 
 	val VZWScanToPaymentOptions = group("${carrier}_Scan"){
 		exec(http("dsom_Scan_30")
@@ -576,6 +622,69 @@ object VZWFlow{
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490215057302")
 			.headers(VZW_CC_Headers_14))
 }
+
+
+	val CreditCheck=group("CreditCheck"){
+		exec(http("dsom_CreditCheck_0")
+			.options(uri_dsom_v1 + "/getNextState")
+			.headers(dsom_headers_222)
+			.resources(http("dsom_CreditCheck_1")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(dsom_headers_1)
+				.body(ElFileBody("dsom/idp/CreditCheckToIDP_0001_request.json"))))
+		.pause(5)
+		.exec(http("dsom_CreditCheck_2")
+				.get(uri_poa + "/retail/orderassembly/controller/process.php")
+				.headers(poa_headers_2)
+				.resources(http("dsom_CreditCheck_3")
+					.get(uri_ui + "/shopping/assets/img/cloader.gif"),
+					http("ui_cc_request_8")
+					.get("/shopping/config.json")
+					.headers(ui_headers_8),
+					http("dsom_CreditCheck_9")
+						.options(uri_dsom_v1 + "/getContentForAisle")
+						.headers(dsom_headers_230),
+					http("dsom_CreditCheck_10")
+						.post(uri_dsom_v1 + "/getNextState")
+						.headers(dsom_headers_231)
+						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0010_request.json")),
+					http("dsom_CreditCheck_11")
+						.post(uri_dsom_v1 + "/getContentForAisle")
+						.headers(dsom_headers_231)
+						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0011_request.json")),
+					http("dsom_CreditCheck_12")
+						.post(uri_dsom_v1 + "/getContentForAisle")
+						.headers(dsom_headers_231)
+						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0012_request.json")),
+					http("ui_cc_request_13")
+						.get(uri_ui + "/shopping/build/ch_9afac72ed1aa9ce2cabc_min.js"),
+					http("ui_cc_request_14")
+						.get(uri_ui + "/shopping/app/pages/frame/header/header.html")
+						.headers(ui_headers_6),
+					http("ui_cc_request_15")
+						.get(uri_ui + "/shopping/app/pages/frame/footer/footer.html")
+						.headers(ui_headers_6),
+					http("ui_cc_request_16")
+						.get(uri_ui + "/shopping/app/pages/installmentdetails/installmentdetails.html")
+						.headers(ui_headers_16)))
+		.pause(74)
+		.exec(http("ui_cc_request_17")
+				.get(uri_ui + "/shopping/assets/img/bullseye.svg")
+				.resources(http("uri_request_18")
+					.get(uri_ui + "/shopping/app/components/channel/channel.html")
+					.headers(ui_headers_16),
+					http("dsom_creditcheck_19")
+						.options(uri_dsom_v1 + "/paymentPlans")
+						.headers(dsom_headers_19),
+					http("dsom_creditcheck_20")
+						.get(uri_dsom_v1 + "/paymentPlans")
+						.headers(dsom_headers_20),
+					http("dsom_creditcheck_21")
+						.get(uri_poa + "/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
+						.headers(poa_headers_2)))
+
+	}
+
 		//.pause(5, 16)}
 		// CC2IDP
     val CC2IDP=group("${carrier}_CreditCheck_IDP"){
@@ -596,7 +705,7 @@ object VZWFlow{
 			.options(VZWFlowuri2 + "/dsom-app/v1/getNextState")
 			.headers(VZWFlowheaders_1000))
 		.exec(http("CreditCheck_IDP_30")
-			.post(VZWFlowuri2 + "/dsom-app/v1/getNe                                         xtState")
+			.post(VZWFlowuri2 + "/dsom-app/v1/getNextState")
 			.headers(VZWFlowheaders_101)
 			.body(ElFileBody("VZWPO2Activation_0030_request.txt")))
 		.exec(http("CreditCheck_IDP_31")
