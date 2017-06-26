@@ -343,11 +343,11 @@ object Common{
       //.formParam("redirectUrl", "https%3A%2F%2Fperf-scale-ui.consensuscorpdev.com%2Fshopping%2F")
       //.formParam("userAction", "shopping")
       .resources(http("request_1")
-        .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js")
+        .get(uri_ui + "/")
         .headers(ui_headers_1),
-        http("request_2")
-          .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js")
-          .headers(ui_headers_1),
+//        http("request_2")
+//          .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js")
+//          .headers(ui_headers_1),
         http("ui_request_3_fonts")
           .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin")
           .headers(ui_headers_1),
@@ -369,24 +369,24 @@ object Common{
         http("dsom_start_req_9")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_post_request_001.json")),
-        http("dsom_start_req_10")
+          .body(ElFileBody("dsom/choosepath/dsom_start_post_request_001.json"))))
+    .exec(http("dsom_start_req_10")
           .post(uri_dsom_v1 + "/getNextState")
           .check(regex("Error retrieving the next state for").find.notExists)
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_002.json")),
-
-      http("poa_path_req_11_process_php")
+          .body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_002.json")))
+    .exec(http("poa_path_req_11_process_php")
           .get(uri_poa + "/retail/orderassembly/controller/process.php")
-          .headers(poa_headers_11),
-        http("ui_req_11_shopping")
+          .headers(poa_headers_11))
+    .pause(40)
+    .exec(http("ui_req_11_shopping")
           .get(uri_ui + "/")
-          .headers(ui_headers_1),
-        http("dsom_start_req_12")
-          .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js"),
-        http("dsom_start_req_13")
-          .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js"),
-        http("ui_request_14_google_api")
+          .headers(ui_headers_1)
+//        http("dsom_start_req_12")
+//          .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js"),
+//        http("dsom_start_req_13")
+//          .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js"),
+        .resources(http("ui_request_14_google_api")
           .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin"),
         http("ui_request_15_fonts")
           .get(uri4_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2"),
@@ -394,24 +394,25 @@ object Common{
           .get(uri_ui + "/assets/img/cloader.gif"),
         http("ui_request_17_config")
           .get(uri_ui + "/config.json")
-          .headers(ui_headers_6),
-        http("dsom_start_req_18")
+          .headers(ui_headers_6)))
+    .exec(http("dsom_start_req_18")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request_003.json")),
-        http("dsom_start_req_19")
+          .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request_003.json")))
+    .exec(http("dsom_start_req_19")
           .post(uri_dsom_v1 + "/getNextState")
           .check(regex("Error retrieving the next state for").find.notExists)
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request_004.json")),
-        http("dsom_start_req_20_path_content")
+          .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request_004.json")))
+    .exec(http("dsom_start_req_20_path_content")
           .post(uri_dsom_v1 + "/getContentForAisle")
           .check(regex("Purchase unactivated device at full price").find.exists)
           .headers(dsom_headers_9)
-          .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request_005.json")),
-        http("dsom_start_req_21")
-          .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")
-          .headers(ui_headers_1),
+          .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request_005.json"))
+       .resources(
+//         http("dsom_start_req_21")
+//          .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")
+//          .headers(ui_headers_1),
         http("dsom_start_req_22")
           .get(uri_ui + "/app/pages/frame/header/header.html")
           .headers(ui_headers_22),
@@ -439,6 +440,7 @@ object Common{
         http("poa_request_30_svg")
           .get(uri_poa + "/img/brands/target/retail/upgrade_new_red.svg")
           .headers(ui_headers_1)))
+
   }
 
   val ChoosePathToScan=group("ChoosePathToScan"){
@@ -532,44 +534,46 @@ object Common{
           .headers(ui_headers_4),
           http("ui_request_config")
             .get(uri_ui + "/config.json")
-            .headers(ui_headers_6),
-          http("dsom_request_6")
+            .headers(ui_headers_6)))
+      .pause(40)
+      .exec(http("dsom_request_6")
             .options(uri_dsom_v1 + "/getContentForAisle")
-            .headers(dsom_headers_7),
-          http("dsom_creditcheck_request_9")
+            .headers(dsom_headers_7))
+      .exec(http("dsom_creditcheck_request_9")
             .post(uri_dsom_v1 + "/getNextState")
             .headers(dsom_headers_9)
-            .body(ElFileBody("dsom/creditcheck/dsom_cartwheel_to_creditcheck_nextState_request_002.json")),
-          http("dsom_creditcheck_request_10")
+            .body(ElFileBody("dsom/creditcheck/dsom_cartwheel_to_creditcheck_nextState_request_002.json")))
+      .pause(40)
+      .exec(http("dsom_creditcheck_request_10")
             .post(uri_dsom_v1 + "/getContentForAisle")
             .headers(dsom_headers_9)
-            .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_003.json")),
-          http("dsom_creditcheck_request_11")
+            .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_003.json")))
+      .pause(40)
+      .exec(http("dsom_creditcheck_request_11")
             .post(uri_dsom_v1 + "/getContentForAisle")
             .check(substring("Your personal information"))
             .headers(dsom_headers_9)
-            .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_004.json")),
-          http("ui_cc_request_12")
-            .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")))
-      .pause(1)
-      .exec((http("ui_cc_request_13"))
-        .get(uri_ui + "/app/pages/frame/header/header.html")
-        .headers(ui_headers_14)
-        .resources(http("ui_cc_request_14")
-          .get(uri_ui + "/app/pages/frame/footer/footer.html")
-          .headers(ui_headers_14),
-          http("ui_cc_request_15")
-            .get(uri_ui + "/app/pages/creditcheck/creditcheck.html")
-            .headers(ui_headers_22)))
-      .pause(72)
-      .exec(http("gstatic_request_16")
-        .get(uri4_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2")
-        .headers(ui_headers_5)
-        .resources(http("ui_request_17")
-          .get(uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
-          .headers(ui_headers_5),
-          http("ui_request_18")
-            .get(uri_ui + "/assets/img/bullseye.svg")))
+            .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_004.json"))
+          .resources(
+             http("ui_cc_request_12")
+               .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js"),
+             http("ui_cc_request_13")
+                .get(uri_ui + "/app/pages/frame/header/header.html")
+                .headers(ui_headers_14),
+              http("ui_cc_request_14")
+                .get(uri_ui + "/app/pages/frame/footer/footer.html")
+                .headers(ui_headers_14),
+              http("ui_cc_request_15")
+                .get(uri_ui + "/app/pages/creditcheck/creditcheck.html")
+                .headers(ui_headers_22),
+              http("gstatic_request_16")
+                .get(uri4_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2")
+                .headers(ui_headers_5),
+              http("ui_request_17")
+                .get(uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
+                .headers(ui_headers_5),
+              http("ui_request_18")
+                .get(uri_ui + "/assets/img/bullseye.svg")))
   }
 
 	// NewGuest
