@@ -555,8 +555,6 @@ object Common{
             .headers(dsom_headers_9)
             .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_004.json"))
           .resources(
-             http("ui_cc_request_12")
-               .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js"),
              http("ui_cc_request_13")
                 .get(uri_ui + "/app/pages/frame/header/header.html")
                 .headers(ui_headers_14),
