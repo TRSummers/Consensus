@@ -630,6 +630,8 @@ object VZWFlow{
 			.headers(dsom_headers_222)
 			.resources(http("dsom_CreditCheck_1")
 				.post(uri_dsom_v1 + "/getNextState")
+				.check(regex("Error retrieving the next state for").find.notExists)
+				.check(regex("\"errorCodes\":null").find.exists)
 				.headers(dsom_headers_1)
 				.body(ElFileBody("dsom/idp/CreditCheckToIDP_0001_request.json"))))
 		.pause(5)
@@ -637,51 +639,59 @@ object VZWFlow{
 				.get(uri_poa + "/retail/orderassembly/controller/process.php")
 				.headers(poa_headers_2)
 				.resources(http("dsom_CreditCheck_3")
-					.get(uri_ui + "/shopping/assets/img/cloader.gif"),
+					.get(uri_ui + "/assets/img/cloader.gif"),
 					http("ui_cc_request_8")
-					.get("/shopping/config.json")
-					.headers(ui_headers_8),
-					http("dsom_CreditCheck_9")
+					.get(uri_ui + "/config.json")
+					.headers(ui_headers_8)))
+		.pause(5)
+		.exec(http("dsom_CreditCheck_9")
 						.options(uri_dsom_v1 + "/getContentForAisle")
-						.headers(dsom_headers_230),
-					http("dsom_CreditCheck_10")
+						.headers(dsom_headers_230))
+		.pause(5)
+		.exec(http("dsom_CreditCheck_10")
 						.post(uri_dsom_v1 + "/getNextState")
+			      .check(regex("Error retrieving the next state for").find.notExists)
 						.headers(dsom_headers_231)
-						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0010_request.json")),
-					http("dsom_CreditCheck_11")
+						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0010_request.json")))
+		.pause(5)
+		.exec(http("dsom_CreditCheck_11")
 						.post(uri_dsom_v1 + "/getContentForAisle")
 						.headers(dsom_headers_231)
-						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0011_request.json")),
-					http("dsom_CreditCheck_12")
+						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0011_request.json")))
+		.pause(5)
+		.exec(http("dsom_CreditCheck_12")
 						.post(uri_dsom_v1 + "/getContentForAisle")
+			      .check(regex("Installment Details").find.exists)
 						.headers(dsom_headers_231)
-						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0012_request.json")),
-					http("ui_cc_request_13")
-						.get(uri_ui + "/shopping/build/ch_9afac72ed1aa9ce2cabc_min.js"),
+						.body(ElFileBody("dsom/idp/CreditCheckToIDP_0012_request.json"))
+		   .resources(
+			    //http("ui_cc_request_13")
+					//	.get(uri_ui + "/shopping/build/ch_9afac72ed1aa9ce2cabc_min.js")
 					http("ui_cc_request_14")
-						.get(uri_ui + "/shopping/app/pages/frame/header/header.html")
+						.get(uri_ui + "/app/pages/frame/header/header.html")
 						.headers(ui_headers_6),
 					http("ui_cc_request_15")
-						.get(uri_ui + "/shopping/app/pages/frame/footer/footer.html")
+						.get(uri_ui + "/app/pages/frame/footer/footer.html")
 						.headers(ui_headers_6),
 					http("ui_cc_request_16")
-						.get(uri_ui + "/shopping/app/pages/installmentdetails/installmentdetails.html")
+						.get(uri_ui + "/app/pages/installmentdetails/installmentdetails.html")
 						.headers(ui_headers_16)))
 		.pause(74)
 		.exec(http("ui_cc_request_17")
-				.get(uri_ui + "/shopping/assets/img/bullseye.svg")
+				.get(uri_ui + "/assets/img/bullseye.svg")
 				.resources(http("uri_request_18")
-					.get(uri_ui + "/shopping/app/components/channel/channel.html")
-					.headers(ui_headers_16),
-					http("dsom_creditcheck_19")
+					.get(uri_ui + "/app/components/channel/channel.html")
+					.headers(ui_headers_16)))
+		.pause(4)
+		.exec(http("dsom_creditcheck_19")
 						.options(uri_dsom_v1 + "/paymentPlans")
-						.headers(dsom_headers_19),
-					http("dsom_creditcheck_20")
+						.headers(dsom_headers_19))
+		.exec(http("dsom_creditcheck_20")
 						.get(uri_dsom_v1 + "/paymentPlans")
-						.headers(dsom_headers_20),
-					http("dsom_creditcheck_21")
+						.headers(dsom_headers_20))
+		.exec(http("dsom_creditcheck_21")
 						.get(uri_poa + "/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
-						.headers(poa_headers_2)))
+						.headers(poa_headers_2))
 
 	}
 
