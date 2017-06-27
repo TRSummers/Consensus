@@ -686,6 +686,7 @@ object VZWFlow{
 		.exec(http("dsom_creditcheck_19")
 						.options(uri_dsom_v1 + "/paymentPlans")
 						.headers(dsom_headers_19))
+		.pause(4)
 		.exec(http("dsom_creditcheck_20")
 						.get(uri_dsom_v1 + "/paymentPlans")
 						.headers(dsom_headers_20))
