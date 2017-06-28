@@ -26,7 +26,7 @@ class End_to_End_Scenario extends Simulation {
        val SSN4 = csv("SSN4.csv").random
       		
        
-       val VZWNA= scenario("VZWNA").repeat(10){ 
+       val VZWNA= scenario("VZWNA").repeat(1){
 	  
 	  	 val Carrier =Iterator.continually(
            Map( "imei" -> "99000088304056",
@@ -39,13 +39,13 @@ class End_to_End_Scenario extends Simulation {
   	    feed(Carrier),
   	    feed(Lname),
   	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
-        Common.Login,     Common.CommonPause,
-        Common.SA,        Common.CommonPause,
-        Common.NA,        Common.CommonPause,
-        VZWFlow.VZWScan,  Common.CommonPause,
-        Common.PO,        Common.CommonPause,
-        Common.Cartwheel, Common.CommonPause,
-        VZWFlow.CC,       Common.CommonPause,
+        Common.LoginToRetail,     Common.CommonPause,
+        Common.RetailToChoosePathModule,        Common.CommonPause,
+        Common.ChoosePathToScan,        Common.CommonPause,
+        VZWFlow.VZWScanToPaymentOptions,  Common.CommonPause,
+        Common.PaymentOptionsToCartWheel,        Common.CommonPause,
+        Common.CartwheelToCreditCheck, Common.CommonPause,
+        VZWFlow.CreditCheck,       Common.CommonPause,
         VZWFlow.CC2IDP,     Common.CommonPause,
         VZWFlow.IDP2Plan,   Common.CommonPause,
         VZWFlow.SelectPlan, Common.CommonPause,
@@ -76,9 +76,9 @@ class End_to_End_Scenario extends Simulation {
   	    feed(Lname),
   	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
   	    feed(Carrier),
-        Common.Login,    Common.CommonPause,       
-        Common.SA,       Common.CommonPause,
-        Common.NA,       Common.CommonPause,
+        Common.LoginToRetail,    Common.CommonPause,
+        Common.RetailToChoosePathModule,       Common.CommonPause,
+        Common.ChoosePathToScan,       Common.CommonPause,
         SprintFlow.Scan, Common.CommonPause,
         SprintFlow.PO,   Common.CommonPause,
         SprintFlow.CW,   Common.CommonPause,

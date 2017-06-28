@@ -1,0 +1,1 @@
+{"currentLocation":"scan","flowSelection":"1","sessionInfo":{"sessionId":"${p_sessionId}","POAsid":"${p_sessionId}","sortRule":"","category":"","filterList":[],"paymentPricingOption":"","enableCart":"true","serialNumber":"99000088304056","cartCount":0,"currentLocation":"scan"}}

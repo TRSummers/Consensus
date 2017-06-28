@@ -28,6 +28,82 @@ object Common{
 		"Accept" -> "application/json, text/javascript, */*; q=0.01",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/login.htm",
 		"X-Requested-With" -> "XMLHttpRequest")
+
+  val poa_headers_0 = Map(
+    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "max-age=0",
+    "Connection" -> "keep-alive",
+    "Origin" -> "https://poa-perf-scale.consensuscorpdev.com",
+    "Upgrade-Insecure-Requests" -> "1",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val ui_headers_1 = Map("User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val ui_headers_4 = Map(
+    "Accept" -> "image/webp,image/*,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "If-Modified-Since" -> "Wed, 31 May 2017 19:28:06 GMT",
+    "If-None-Match" -> "659ff-b4f-550d6eb645d80")
+
+  val ui_headers_5 = Map(
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val ui_headers_6 = Map(
+    "Accept" -> "*/*",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+    "X-Requested-With" -> "XMLHttpRequest")
+
+  val ui_headers_14 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "If-Modified-Since" -> "Wed, 31 May 2017 19:28:06 GMT",
+    "If-None-Match" -> "65a69-773-550d6eb645d80")
+
+  val ui_headers_22 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val dsom_headers_7 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Access-Control-Request-Headers" -> "content-type",
+    "Access-Control-Request-Method" -> "POST",
+    "Connection" -> "keep-alive",
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val dsom_headers_9 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
+  val dsom_headers_10 = Map(
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
+
+  val poa_headers_11 = Map(
+    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Upgrade-Insecure-Requests" -> "1",
+    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
+
 	val headers_1 = Map(
 		"Accept" -> "text/css,*/*;q=0.1",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/login.htm?brandId=731&metaCode=newSession")
@@ -106,24 +182,38 @@ object Common{
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/",
 		"cartId" -> "${p_sessionid}")
 
-			val headers_100 = Map(
-		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+	val dsom_headers_100 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
 		"Access-Control-Request-Headers" -> "content-type",
 		"Access-Control-Request-Method" -> "POST",
 		"Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache")
 
-	val headers_101 = Map(
+	val dsom_headers_101 = Map(
 		"Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
 		"Cache-Control" -> "no-cache",
 		"Content-Type" -> "application/json;charset=utf-8",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/")
+
 	val headers_106 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Referer" -> "https://perf-scale-ui.consensuscorpdev.com/shopping/")
+
+  val poa_headers_2 = Map(
+    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Connection" -> "keep-alive",
+    "Upgrade-Insecure-Requests" -> "1")
 
 	val headers_107 = Map(
 		"Accept" -> "text/css,*/*;q=0.1",
@@ -164,13 +254,17 @@ object Common{
 		"X-Requested-With" -> "XMLHttpRequest")
 
 
-    val uri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
-    val uri2 = "https://perf-scale-dsom.consensuscorpdev.com:443"
+    val uri_poa = "https://poa-perf-scale.consensuscorpdev.com:443"
+    val uri_dsom = "https://perf-scale-dsom.consensuscorpdev.com:443"
 
-//	val scn = scenario("Common")
-		// Login
-// val FOO=group("FOO"){
-	val Login=group("Login"){
+    val uri_ui       = "https://perf-scale-ui.consensuscorpdev.com/shopping"
+    val uri_dsom_v1  = "https://perf-scale-dsom.consensuscorpdev.com/dsom-app/v1"
+    val uri4_gstatic = "https://fonts.gstatic.com/s/lato/v13"
+    val uri5_google  = "https://fonts.googleapis.com/css"
+
+
+
+	val LoginToRetail=group("LoginToRetail"){
 		exec(http("Login")
 			.get("/retail/login.htm?brandId=731&metaCode=newSession"))
 		.pause(155 milliseconds)
@@ -188,23 +282,23 @@ object Common{
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013173473")
 			.headers(headers_4))
 		//.pause(12)
-		.exec(http("Login_5")
+		.exec(http("Login_5_findstores")
 			.get("/ajax/retail/findstores.php?storeId=")
 			.headers(headers_4))
 		.pause(774 milliseconds)
-		.exec(http("Login_6")
+		.exec(http("Login_6_findstores")
 			.get("/ajax/retail/findstores.php?storeId=0")
 			.headers(headers_4))
 		.pause(959 milliseconds)
-		.exec(http("Login_7")
+		.exec(http("Login_7_findstores")
 			.get("/ajax/retail/findstores.php?storeId=00")
 			.headers(headers_4))
 		.pause(960 milliseconds)
-		.exec(http("Login_8")
+		.exec(http("Login_8_findstores")
 			.get("/ajax/retail/findstores.php?storeId=000")
 			.headers(headers_4))
 		.pause(802 milliseconds)
-		.exec(http("Login_9")
+		.exec(http("Login_9_findstores")
 			.get("/ajax/retail/findstores.php?storeId=0003")
 			.headers(headers_4))
 		.pause(3)
@@ -215,9 +309,16 @@ object Common{
 			.formParam("userPassword", "target1234")
 			.formParam("newStoreId", "0003")
 			.formParam("storeId", "0003"))
-		.exec(http("Login_11")
+		.exec(http("Login_11_0_newcustomer")
+			.get("/retail/orderassembly/controller/newcustomer.php")
+			.headers(headers_10))
+    .exec(http("Login_11_1_retail")
+        .get("/retail/")
+        .check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
+        .headers(headers_10))
+		.exec(http("Login_11_2")
 			.get("/jslibs/modernizr.php")
-			.headers(headers_11))
+      .headers(headers_11))
 		.exec(http("Login_12")
 			.get("/retail/public/styles/normalize.php")
 			.headers(headers_12))
@@ -231,127 +332,255 @@ object Common{
 		.exec(http("Login_15")
 			.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1489013197573&storeId=0003")
 			.headers(headers_14))
-		
+
 	}
-//	val CommonPause=pause(5,10)
-	
-	val SA=group("SA"){
-		// SA
-		exec(http("SalesandActivations16")
-			.get("/retail/orderassembly/pickyourpath.htm")
-			.check(regex("blank'>(.+?)<").saveAs("p_sessionid"))
-			.headers(headers_16))
-		.exec(http("SalesandActivations17")
-			.get("/retail/public/styles/normalize.php")
-			.headers(headers_17))
-		.exec(http("SalesandActivations18")
-			.get("/jslibs/modernizr.php")
-			.headers(headers_18))
-		.exec(http("SalesandActivations19")
-			.get("/js/retail/topnav.php")
-			.headers(headers_18))
-		.pause(120 milliseconds)
-		.exec(http("SalesandActivations20")
-			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489013206068")
-			.headers(headers_20))
-	}
-	//pause(5, 10)
-		// NA
-	val NA=group("NA"){
-		exec(http("SalesandActivations21")
-			.post("/retail/orderassembly/pickyourpath.htm")
-			.headers(headers_21)
-			.formParam("buyPath", "newCust"))
-		.exec(http("NewActivation_22")
-			.options(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_22))
-		.exec(http("NewActivation_23")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0023_request.txt")))
-		.exec(http("NewActivation_24")
-			.post(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0024_request.txt")))
-		.exec(http("NewActivation_25")
-			.get("/retail/orderassembly/controller/process.php")
-			.headers(headers_25))
-		.exec(http("NewActivation_26")
-			.post(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0026_request.txt")))
-		.exec(http("NewActivation_27")
-			.options(uri2 + "/dsom-app/v1/getJSONAisles")
-			.headers(headers_22))
-		.exec(http("NewActivation_28")
-			.post(uri2 + "/dsom-app/v1/getJSONAisles")
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0028_request.txt")))
-		.exec(http("NewActivation_29")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
-			.check(substring("Scan or enter a device's IMEI"))
-			.headers(headers_23)
-			.body(ElFileBody("Sprint_0029_request.txt")))
-		//.pause(5, 15)
-	}
-	//}//End of Foo
-		val PO=group("${carrier}_PaymentOptions"){	
-			exec(http("request_0")
-			.options(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_100))
-		.exec(http("request_1")
-			.post(uri2 + "/dsom-app/v1/getNextState")
-			.headers(headers_101)
-			.body(ElFileBody("VZWPO2Activation_0001_request.txt")))
-		.exec(http("request_102")
-			.options(uri2 + "/dsom-app/v1/getContentForAisle")
-			.headers(headers_100))
-		.exec(http("request_3")
-			.post(uri2 + "/dsom-app/v1/getContentForAisle")
+
+  val RetailToChoosePathModule=group("RetailToChoosePathModule"){
+    exec(http("Retail_0")
+      .post(uri_poa + "/retail/")
+      .headers(poa_headers_0)
+      .body(ElFileBody("poa/retail/shopping.txt"))
+      //.formParam("redirectUrl", "https%3A%2F%2Fperf-scale-ui.consensuscorpdev.com%2Fshopping%2F")
+      //.formParam("userAction", "shopping")
+      .resources(http("request_1")
+        .get(uri_ui + "/")
+        .headers(ui_headers_1),
+//        http("request_2")
+//          .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js")
+//          .headers(ui_headers_1),
+        http("ui_request_3_fonts")
+          .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin")
+          .headers(ui_headers_1),
+        http("ui_request_4_gif")
+          .get(uri_ui + "/assets/img/cloader.gif")
+          .headers(ui_headers_1),
+        http("request_5")
+          .get(uri4_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2")
+          .headers(ui_headers_5),
+        http("request_6")
+          .get(uri_ui + "/config.json")
+          .headers(ui_headers_6),
+        http("dsom_start_req_7_options")
+          .options(uri_dsom_v1 + "/getContentForAisle")
+          .headers(dsom_headers_7),
+        http("dsom_start_req_8_options")
+          .options(uri_dsom_v1 + "/getNextState")
+          .headers(dsom_headers_7),
+        http("dsom_start_req_9")
+          .post(uri_dsom_v1 + "/getContentForAisle")
+          .headers(dsom_headers_9)
+          .body(ElFileBody("dsom/choosepath/dsom_start_post_request_001.json"))))
+    .exec(http("dsom_start_req_10")
+          .post(uri_dsom_v1 + "/getNextState")
+          .check(regex("Error retrieving the next state for").find.notExists)
+          .headers(dsom_headers_9)
+          .body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_002.json")))
+    .exec(http("poa_path_req_11_process_php")
+          .get(uri_poa + "/retail/orderassembly/controller/process.php")
+          .headers(poa_headers_11))
+    .pause(40)
+    .exec(http("ui_req_11_shopping")
+          .get(uri_ui + "/")
+          .headers(ui_headers_1)
+//        http("dsom_start_req_12")
+//          .get(uri_ui + "/build/css_d4c30075bc2eb1a8b7a8_min.js"),
+//        http("dsom_start_req_13")
+//          .get(uri_ui + "/build/bundle_d4c30075bc2eb1a8b7a8_min.js"),
+        .resources(http("ui_request_14_google_api")
+          .get(uri5_google + "?family=Lato:400,700,400italic,700italic&subset=latin"),
+        http("ui_request_15_fonts")
+          .get(uri4_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2"),
+        http("ui_request_16_gif")
+          .get(uri_ui + "/assets/img/cloader.gif"),
+        http("ui_request_17_config")
+          .get(uri_ui + "/config.json")
+          .headers(ui_headers_6)))
+    .exec(http("dsom_start_req_18")
+          .post(uri_dsom_v1 + "/getContentForAisle")
+          .headers(dsom_headers_9)
+          .body(ElFileBody("dsom/choosepath/dsom_start_content_post_request_003.json")))
+    .exec(http("dsom_start_req_19")
+          .post(uri_dsom_v1 + "/getNextState")
+          .check(regex("Error retrieving the next state for").find.notExists)
+          .headers(dsom_headers_9)
+          .body(ElFileBody("dsom/choosepath/dsom_start_getNextState_post_request_004.json")))
+    .exec(http("dsom_start_req_20_path_content")
+          .post(uri_dsom_v1 + "/getContentForAisle")
+          .check(regex("Purchase unactivated device at full price").find.exists)
+          .headers(dsom_headers_9)
+          .body(ElFileBody("dsom/choosepath/dsom_start_content_frame_post_request_005.json"))
+       .resources(
+//         http("dsom_start_req_21")
+//          .get(uri_ui + "/build/ch_9afac72ed1aa9ce2cabc_min.js")
+//          .headers(ui_headers_1),
+        http("dsom_start_req_22")
+          .get(uri_ui + "/app/pages/frame/header/header.html")
+          .headers(ui_headers_22),
+        http("ui_request_23")
+          .get(uri_ui + "/app/pages/frame/footer/footer.html")
+          .headers(ui_headers_22),
+        http("ui_request_24_choosepath")
+          .get(uri_ui + "/app/pages/choosepath/choosepath.html")
+          .headers(ui_headers_22),
+        http("ui_request_25_optionscolumn")
+          .get(uri_ui + "/app/pages/choosepath/partials/optionscolumn.html")
+          .headers(ui_headers_22),
+        http("ui_request_26_fonts")
+          .get(uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
+          .headers(ui_headers_5),
+        http("ui_request_27_fonts")
+          .get(uri4_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2")
+          .headers(ui_headers_5),
+        http("ui_request_28_svg")
+          .get(uri_ui + "/assets/img/bullseye.svg")
+          .headers(ui_headers_1),
+        http("poa_request_29_svg")
+          .get(uri_poa + "/img/brands/target/retail/sign_up_new_red.svg")
+          .headers(ui_headers_1),
+        http("poa_request_30_svg")
+          .get(uri_poa + "/img/brands/target/retail/upgrade_new_red.svg")
+          .headers(ui_headers_1)))
+
+  }
+
+  val ChoosePathToScan=group("ChoosePathToScan"){
+      exec(http("dsom_scan_request_0")
+        .options(uri_dsom_v1 + "/getNextState")
+        .headers(dsom_headers_7)
+        .resources(http("dsom_scan_request_1")
+          .post(uri_dsom_v1 + "/getNextState")
+          .headers(dsom_headers_10)
+          .body(ElFileBody("dsom/scan/dsom_Scan_0001_request.json"))))
+      .pause(1)
+      .exec(http("dsom_scan_request_2")
+          .options(uri_dsom_v1 + "/getContentForAisle")
+          .headers(dsom_headers_7)
+          .resources(http("dsom_scan_request_3")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .check(regex("Scan or enter a device's IMEI").find.exists)
+            .headers(dsom_headers_10)
+            .body(ElFileBody("dsom/scan/dsom_Scan_0003_request.json")),
+            http("dsom_scan_request_4")
+              .get(uri_ui + "/app/pages/scan/scan.html")))
+    }
+
+	val PaymentOptionsToCartWheel = group("${carrier}_PaymentOptions"){
+			exec(http("dsom_po_request_0")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_100))
+		.exec(http("dsom_po_request_1")
+			.post(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_101)
+			.body(ElFileBody("dsom/cartwheel/VZWPO2Activation_0001_request.json")))
+		.exec(http("dsom_po_request_102")
+			.options(uri_dsom + "/dsom-app/v1/getContentForAisle")
+			.headers(dsom_headers_100))
+		.exec(http("dsom_po_request_3")
+			.post(uri_dsom + "/dsom-app/v1/getContentForAisle")
 			.check(substring("download the Cartwheel App"))
-			.headers(headers_101)
-			.body(ElFileBody("VZWPO2Activation_0003_request.txt")))
-		//.pause(5, 17)
+			.headers(dsom_headers_101)
+			.body(ElFileBody("dsom/cartwheel/VZWPO2Activation_0003_request.json")))
+    .exec(http("dsom_po_cartwheel_content")
+      .get(uri_ui + "/app/pages/cartwheel/cartwheel.html")
+      .headers(ui_headers_22))
+    .exec(http("poa_cartwheel_logo")
+      .get(uri_poa + "/img/retail/cartwheel/cartwheel_logo.png")
+      .headers(poa_headers_11))
 	}
-		
-		val Cartwheel=group("${carrier}_Cartwheel"){
-		  val uriX = "https://perf-scale-dsom.consensuscorpdev.com:443"
-		  exec(http("Cartwheel_4")
-			.options(uriX + "/dsom-app/v1/getNextState")
-			.headers(headers_100))
-		.exec(http("Cartwheel_5")
-			.post(uriX + "/dsom-app/v1/getNextState")
-			.headers(headers_101)
-			.body(ElFileBody("CW005.txt")))
-			//.body(ElFileBody("VZWPO2Activation_0005_request.txt")))
-		.exec(http("Cartwheel_6")
-			.get("/retail/orderassembly/controller/process.php")
+
+	val CartwheelToLegacyCreditCheck = group("${carrier}_Cartwheel"){
+		  exec(http("dsom_Cartwheel_4")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_100))
+		.exec(http("dsom_Cartwheel_4")
+			.post(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(dsom_headers_101)
+			.body(ElFileBody("dsom/creditcheck/dsom_cartwheel_getNextState_request_001.json"))) //todo: test
+		.exec(http("poa_Cartwheel_4")
+			.get(uri_poa + "/retail/orderassembly/controller/process.php")
 			.check(substring("Your personal information"))
-			.headers(headers_106))
-		.exec(http("Cartwheel_7")
-			.get("/retail/public/styles/normalize.php")
+			.headers(poa_headers_2))
+		.exec(http("poa_Cartwheel_6")
+			.get(uri_poa + "/retail/public/styles/normalize.php")
 			.headers(headers_107))
 		.exec(http("Cartwheel_8")
-			.get("/jslibs/modernizr.php")
+			.get(uri_poa + "/jslibs/modernizr.php")
 			.headers(headers_108))
 		.exec(http("Cartwheel_9")
-			.get("/js/retail/topnav.php")
+			.get(uri_poa + "/js/retail/topnav.php")
 			.headers(headers_108))
 		.exec(http("Cartwheel_10")
-			.get("/js/retail/numport.php?devices=")
+			.get(uri_poa + "/js/retail/numport.php?devices=")
 			.headers(headers_108))
 		.exec(http("Cartwheel_11")
-			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019067082")
+			.get(uri_poa + "/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019067082")
 			.headers(headers_1011))
 		//.pause(5, 15)
 		}
+
+  val CartwheelToCreditCheck = group("${carrier}_Cartwheel"){
+    exec(http("dsom_Cartwheel_4")
+      .options(uri_dsom_v1 + "/getNextState")
+      .headers(dsom_headers_100))
+      .exec(http("dsom_Cartwheel_4")
+        .post(uri_dsom_v1 + "/getNextState")
+        .headers(dsom_headers_101)
+        .body(ElFileBody("dsom/creditcheck/dsom_cartwheel_getNextState_request_001.json")))
+      .exec(http("poa_Cartwheel_4")
+        .get(uri_poa + "/retail/orderassembly/controller/process.php")
+        .headers(headers_106)
+        .resources(http("dsom_creditCheck_request_0")
+          .get(uri_ui + "/assets/img/cloader.gif")
+          .headers(ui_headers_4),
+          http("ui_request_config")
+            .get(uri_ui + "/config.json")
+            .headers(ui_headers_6)))
+      .pause(40)
+      .exec(http("dsom_request_6")
+            .options(uri_dsom_v1 + "/getContentForAisle")
+            .headers(dsom_headers_7))
+      .exec(http("dsom_creditcheck_request_9")
+            .post(uri_dsom_v1 + "/getNextState")
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/creditcheck/dsom_cartwheel_to_creditcheck_nextState_request_002.json")))
+      .pause(40)
+      .exec(http("dsom_creditcheck_request_10")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_003.json")))
+      .pause(40)
+      .exec(http("dsom_creditcheck_request_11")
+            .post(uri_dsom_v1 + "/getContentForAisle")
+            .check(substring("Your personal information"))
+            .headers(dsom_headers_9)
+            .body(ElFileBody("dsom/creditcheck/dsom_creditcheck_getContent_request_004.json"))
+          .resources(
+             http("ui_cc_request_13")
+                .get(uri_ui + "/app/pages/frame/header/header.html")
+                .headers(ui_headers_14),
+              http("ui_cc_request_14")
+                .get(uri_ui + "/app/pages/frame/footer/footer.html")
+                .headers(ui_headers_14),
+              http("ui_cc_request_15")
+                .get(uri_ui + "/app/pages/creditcheck/creditcheck.html")
+                .headers(ui_headers_22),
+              http("gstatic_request_16")
+                .get(uri4_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2")
+                .headers(ui_headers_5),
+              http("ui_request_17")
+                .get(uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
+                .headers(ui_headers_5),
+              http("ui_request_18")
+                .get(uri_ui + "/assets/img/bullseye.svg")))
+  }
+
 	// NewGuest
 	val NewGuest=group("NewGuest"){
 		exec(http("NewGuest_38")
-			.options(uri2 + "/dsom-app/v1/getNextState")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
 			.headers(headers_22))
 		.exec(http("NewGuest_39")
-			.post(uri2 + "/dsom-app/v1/getNextState")
+			.post(uri_dsom + "/dsom-app/v1/getNextState")
 			.headers(headers_23)
 			.body(ElFileBody("Sprint_0039_request.txt")))
 		.exec(http("NewGuest_40")

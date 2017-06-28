@@ -1,0 +1,16 @@
+{
+  "currentLocation": "start",
+  "debug": true,
+  "sessionInfo": {
+    "sessionId": "${p_sessionid}",
+    "POAsid": "${p_sessionid}",
+    "sortRule": "",
+    "category": "",
+    "filterList": [],
+    "paymentPricingOption": "",
+    "enableCart": "",
+    "serialNumber": 0,
+    "cartCount": 0,
+    "currentLocation": "start"
+  }
+}

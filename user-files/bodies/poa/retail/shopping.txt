@@ -1,0 +1,1 @@
+redirectUrl=https%3A%2F%2Fperf-scale-ui.consensuscorpdev.com%2Fshopping%2F&userAction=shopping
