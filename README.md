@@ -14,6 +14,7 @@ The project is modeled after the Gatling user-files directory setup, which conta
   - bodies/, contains payload files being sent with HTTP requests
   - data/, contains test data files for driving simulations with specific test data
   - simulations/, contains Gatling simulations 
+- HAR, this directory contains the raw HAR files that were used to build the Gatling scripts 
   
 ###Starting a sample test run
 A good sample script to use for a simulation run would be [the modularized scenario for testing VZW new activations end to end](user-files/simulations/ModularizedScenario.scala). One can kick this off through the gatling.sh function from a standard Gatling installation using the gatling.sh script.
