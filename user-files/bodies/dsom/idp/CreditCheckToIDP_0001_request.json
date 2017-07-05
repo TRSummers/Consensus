@@ -12,7 +12,7 @@
         "customer": {
           "emails": [
             {
-              "address": "verizontest@gmail.com"
+              "address": "${p_sessionid}-verizontest@gmail.com"
             }
           ],
           "addresses": [
