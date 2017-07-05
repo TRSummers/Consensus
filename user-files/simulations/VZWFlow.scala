@@ -628,7 +628,7 @@ object VZWFlow{
 		exec(http("dsom_CreditCheck_0")
 			.options(uri_dsom_v1 + "/getNextState")
 			.headers(dsom_headers_222))
-		.pause(1000)
+		.pause(60)
 		.exec(http("dsom_CreditCheck_1")
 				.post(uri_dsom_v1 + "/getNextState")
 				.check(regex("Error retrieving the next state for").find.notExists)
