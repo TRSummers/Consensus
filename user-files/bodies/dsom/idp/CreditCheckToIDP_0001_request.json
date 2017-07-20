@@ -12,7 +12,7 @@
         "customer": {
           "emails": [
             {
-              "address": "${p_sessionid}-verizontest@gmail.com"
+              "address": "verizontest-${nationalId}@gmail.com"
             }
           ],
           "addresses": [
@@ -24,15 +24,15 @@
               "line1": "441 mountain st"
             }
           ],
-          "nationalId": "345345511",
+          "nationalId": "${nationalId}",
           "name": {
-            "firstName": "Floyd123",
-            "lastName": "new activation",
+            "firstName": "${firstName}${nationalId}",
+            "lastName": "${lastName}",
             "middleName": "t"
           },
           "phones": [
             {
-              "number": "(543) 456-5432"
+              "number": "4${nationalId}"
             }
           ],
           "dateOfBirth": "January 1 1998",
@@ -40,7 +40,7 @@
             {
               "issuingAuthority": "CA",
               "type": "Driver's License",
-              "value": "4323456543",
+              "value": "7${nationalId}",
               "expirationDate": "January 2019"
             }
           ]

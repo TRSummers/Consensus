@@ -19,26 +19,25 @@ class End_to_End_Scenario extends Simulation {
 		.acceptLanguageHeader("en-US,en;q=0.5")
 		.userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
 
-       val Lname = csv("Lname.csv").random
-       val SSN1 = csv("SSN1.csv").random
-       val SSN2 = csv("SSN2.csv").random
-       val SSN3 = csv("SSN3.csv").random
-       val SSN4 = csv("SSN4.csv").random
-      		
-       
-       val VZWNA= scenario("VZWNA").repeat(1){
-	  
-	  	 val Carrier =Iterator.continually(
-           Map( "imei" -> "99000088304056",
-                "carrier" -> "VerizonNA"))
-//	  	   val Carrier = (Map( "imei" -> "99000088304056",
-//          "carrier" -> "VerizonNA"))
-	  	       
-        group("VZW_NA_FULL"){
-        exec(
-  	    feed(Carrier),
-  	    feed(Lname),
-  	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+  val Lname = csv("Lname.csv").random
+  val SSN1 = csv("SSN1.csv").random
+  val SSN2 = csv("SSN2.csv").random
+  val SSN3 = csv("SSN3.csv").random
+  val SSN4 = csv("SSN4.csv").random
+
+  val VZWCarrierTestData =Iterator.continually(
+    Map( "imei" -> "99000088304056",
+         "firstName" -> Random.shuffle(Array("James", "John", "Abraham", "George").toList).head,
+         "lastName" -> Random.shuffle(Array("Madison", "Adams", "Lincoln", "Washington").toList).head,
+         "nationalId" -> (110000000 + Random.nextInt(1000000)).toString,
+         "carrier" -> "VerizonNA"))
+
+
+  val VZWNA= scenario("VZWNA").repeat(100){
+
+    group("VZW_NA_FULL"){
+      exec(
+        feed(VZWCarrierTestData),
         Common.LoginToRetail,     Common.CommonPause,
         Common.RetailToChoosePathModule,        Common.CommonPause,
         Common.ChoosePathToScan,        Common.CommonPause,
@@ -61,8 +60,9 @@ class End_to_End_Scenario extends Simulation {
         VZWFlow.WirelessCustomerAgreement,  Common.CommonPause,
         VZWFlow.DeviceFinancingInstallmentContract,   Common.CommonPause,
         Common.NewGuest,    Common.CommonPause,
-        Common.Logout,      Common.CommonPause)
-	}}
+        Common.Logout, Common.CommonPause)
+    }
+  }
 	
 
       val SprintNA= scenario("SPRNA").repeat(1){
@@ -119,7 +119,7 @@ class End_to_End_Scenario extends Simulation {
     //  rampUsers(10) over(10 seconds)).protocols(httpProtocol))
 //)
   
-	   setUp(VZWNA.inject(rampUsers(1) over (100 seconds)).protocols(httpProtocol))
+	   setUp(VZWNA.inject(rampUsers(40) over (100 seconds)).protocols(httpProtocol))
 	       //  SprintNA.inject(rampUsers(25) over (200 seconds)).protocols(httpProtocol))
 
 	}
