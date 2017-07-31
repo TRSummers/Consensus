@@ -1,3 +1,25 @@
+/**********************************************************
+ * 
+ * This is a library of common functions that work for all carrier types and are not dependent on carrier-specific 
+ * data.  These functions are to be used when creating a modularized scenario with the ModularizedScenario simulation.
+ * 
+ * NB: The functions in this list will need to be used in conjunction with the particular scenario being used. They are no
+ * a stand-alone end-to-end test
+ * 
+ * 			Function											Navigation
+ *  		========											===========
+ *  1. 	LoginToRetail									Log into POA
+ *  2.  RetailToChoosePathModule			Selects Sales and Activations
+ *  3.  ChoosePathToScan							Selects New Activation
+ *  4.  PaymentOptionsToCartWheel			Payment Options screen to Cartwheel screen
+ *  5.  CartwheelToLegacyCreditCheck	Cartwheel to Credit Check (Legacy)
+ *  6.	CartwheelToCreditCheck				Cartwheel to Credit Check (CC) <- needs to be verified
+ *  		CreditCheck										Legacy Credit Check - New Activations
+ *  7.  CommonPause										Used to insert a random pause between 5 and 10 seconds
+ *  8. 	New Guest											New Guest Button
+ *  9.  Logout												Log out
+ *  
+ ***********************************************************/
 
 import scala.concurrent.duration._
 
@@ -5,7 +27,6 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 
-//class Common extends Simulation {
 object Common{
 	val httpProtocol = http
 		.baseURL("https://poa-perf-scale.consensuscorpdev.com")
@@ -14,6 +35,7 @@ object Common{
 		.acceptEncodingHeader("gzip, deflate")
 		.acceptLanguageHeader("en-US,en;q=0.5")
 		.userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
+		
 	val Logoutheaders_0 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/")
@@ -253,6 +275,61 @@ object Common{
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/creditcheck/result.htm",
 		"X-Requested-With" -> "XMLHttpRequest")
 
+		/*** AddaLine Headers ***/
+  val AddaLine_headers_0 = Map(
+		"Accept" -> "application/json, text/javascript, */*; q=0.01",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
+		"X-Requested-With" -> "XMLHttpRequest")
+ 
+		val AddaLine_headers_2 = Map("User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+
+  val AddaLine_headers_4 = Map(
+		"Accept" -> "text/css,*/*;q=0.1",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+
+	val AddaLine_headers_6 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+
+	val AddaLine_headers_43 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Access-Control-Request-Headers" -> "content-type",
+		"Access-Control-Request-Method" -> "POST",
+		"Connection" -> "keep-alive",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+
+	val AddaLine_headers_45 = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"Content-Type" -> "application/json;charset=UTF-8",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+
+	val AddaLine_headers_47 = Map(
+		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+		"Accept-Encoding" -> "gzip, deflate, sdch, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"Upgrade-Insecure-Requests" -> "1",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
+
+/* End of AddaLine Headers
+**************************/
+
 
     val uri_poa = "https://poa-perf-scale.consensuscorpdev.com:443"
     val uri_dsom = "https://perf-scale-dsom.consensuscorpdev.com:443"
@@ -261,7 +338,6 @@ object Common{
     val uri_dsom_v1  = "https://perf-scale-dsom.consensuscorpdev.com/dsom-app/v1"
     val uri4_gstatic = "https://fonts.gstatic.com/s/lato/v13"
     val uri5_google  = "https://fonts.googleapis.com/css"
-
 
 
 	val LoginToRetail=group("LoginToRetail"){
@@ -378,7 +454,7 @@ object Common{
     .exec(http("poa_path_req_11_process_php")
           .get(uri_poa + "/retail/orderassembly/controller/process.php")
           .headers(poa_headers_11))
-    .pause(40)
+//    .pause(40)
     .exec(http("ui_req_11_shopping")
           .get(uri_ui + "/")
           .headers(ui_headers_1)
@@ -605,11 +681,11 @@ object Common{
 	}
 	val CommonPause=pause(5,10)
 	val CreditCheck=group("${carrier}_CreditCheck"){
-	  	exec(http("CreditCheck_${SSN}")
+	  	exec(http("CreditCheck_${SSN1}")
 			.post("/retail/creditcheck/creditcheck.htm")
 			.headers(headers_1012)
-			.formParam("creditCheckToolArray[1008][newOrExisting]", "new")
-			.formParam("creditCheckToolArray[1008][addLineType]", "addNewPlan")
+			.formParam("creditCheckToolArray[1008][newOrExisting]", "new")  //new
+			.formParam("creditCheckToolArray[1008][addLineType]", "addNewPlan") //addNewPlan
 			.formParam("currentPageCOPId", "439")
 			.formParam("secretSubmit", "")
 			.formParam("creditCheckTool", "1")
@@ -715,12 +791,12 @@ object Common{
 		"X-Requested-With" -> "XMLHttpRequest")
 
 		// sprcc
-    val SPRCC=group("${carrier}_${imei}"){
+ /***   val SPRCC=group("${carrier}_${imei}"){
 		   exec(http("request_0")
 			.post("/retail/creditcheck/creditcheck.htm")
 			.headers(SprintHeaders_0)
-			.formParam("creditCheckToolArray[1034][newOrExisting]", "new")
-			.formParam("creditCheckToolArray[1034][addLineType]", "addNewPlan")
+			.formParam("creditCheckToolArray[1034][newOrExisting]", "existing")   //new
+			.formParam("creditCheckToolArray[1034][addLineType]", "addExistingPlan") //addNewPlan
 			.formParam("currentPageCOPId", "439")
 			.formParam("secretSubmit", "")
 			.formParam("creditCheckTool", "1")
@@ -795,6 +871,109 @@ object Common{
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489112682988")
 			.headers(SprintHeaders_14))
 	}
+	* ***/
+	val AddALinetoExistingAccount = group("AddALinetoExistingAccount") {
+		exec(http("AddaLine_67")
+			.options(uri_dsom + "/dsom-app/v1/getNextState")
+			.headers(AddaLine_headers_43)
+			.resources(http("AddaLine_68")
+				.post(uri_dsom + "/dsom-app/v1/getNextState")
+				.headers(AddaLine_headers_45)
+				.body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_003.json")),
+				http("AddaLine_69")
+					.get("/retail/orderassembly/controller/process.php?planType=addLine&action=buyTypeChosen")
+					.check(substring("Check Your Upgrade Eligibility"))
+					.headers(AddaLine_headers_47),
+				http("AddaLine_70")
+					.get("/retail/public/styles/normalize.php")
+					.headers(AddaLine_headers_4),
+				http("AddaLine_71")
+					.get("/jslibs/jquery.php?ver=1.8.2")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_72")
+					.get("/jslibs/modernizr.php")
+					.headers(AddaLine_headers_6),
+				http("AddaLine_73")
+					.get("/jslibs/jquerymobile.php")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_74")
+					.get("/template/public/styles/new.main.css")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_75")
+					.get("/template/css/semantic.jqmsafe.min.css")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_76")
+					.get("/retail/public/styles/main.css")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_77")
+					.get("/js/retail/topnav.php")
+					.headers(AddaLine_headers_6),
+				http("AddaLine_78")
+					.get("/retail/public/styles/jquery.mobile-1.2.0.css")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_79")
+					.get("/brands/target/retail/public/styles/jquery.mobile-1.2.0.css")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_80")
+					.get("/brands/target/retail/public/styles/main.css")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_81")
+					.get("/js/retail/eligibility.js")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_82")
+					.get("/img/retail/notification-img.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_83")
+					.get("/img/retail/corps/plLgs596.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_84")
+					.get("/img/retail/corps/plLgs545.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_85")
+					.get("/img/retail/corps/plLgs660.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_86")
+					.get("/img/retail/ajax-loader.gif"),
+				http("AddaLine_87")
+					.get("/img/brands/target/retail/logo-mini.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_88")
+					.get("/retail/public/img/alertsprite.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_89")
+					.get("/retail/public/img/reservesprite.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_90")
+					.get("/img/retail/cart.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_91")
+					.get("/img/retail/icons-18-white.png"),
+				http("AddaLine_92")
+					.get("/img/retail/setting.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_93")
+					.get("/img/retail/home.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_94")
+					.get("/img/retail/inventory-management.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_95")
+					.get("/img/retail/customer-lookup.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_96")
+					.get("/img/retail/save.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_97")
+					.get("/img/retail/lock.png")
+					.headers(AddaLine_headers_2),
+				http("AddaLine_98")
+					.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1499285243318")
+					.headers(AddaLine_headers_0),
+				http("AddaLine_99")
+					.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1499285243749&storeId=0003")
+					.headers(AddaLine_headers_0)))
+	}
+
 	val Logout=group("Logout"){
 	 exec(http("Logout_0")
 			.get("/retail/orderassembly/controller/newcustomer.php?logout=1")
