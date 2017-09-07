@@ -658,7 +658,7 @@ object VZWFlow{
 				.headers(dsom_headers_1)
 				.body(ElFileBody("dsom/idp/CreditCheckToIDP_0001_request.json")))
 		.pause(40)
-			.exec(http("dsom_CreditCheck_2_process_php")
+		.exec(http("dsom_CreditCheck_2_process_php")
 				.get(uri_poa + "/retail/orderassembly/controller/process.php")
 				.headers(poa_headers_2)
 				.resources(http("dsom_CreditCheck_3")

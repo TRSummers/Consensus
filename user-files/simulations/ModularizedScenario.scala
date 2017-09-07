@@ -19,6 +19,7 @@ class End_to_End_Scenario extends Simulation {
 		.acceptLanguageHeader("en-US,en;q=0.5")
 		.userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
 
+<<<<<<< HEAD
   val Lname = csv("Lname.csv").random
   val SSN1 = csv("SSN1.csv").random
   val SSN2 = csv("SSN2.csv").random
@@ -46,13 +47,11 @@ class End_to_End_Scenario extends Simulation {
         Common.PaymentOptionsToCartWheel,        Common.CommonPause,
         Common.CartwheelToCreditCheck, Common.CommonPause,
         VZWFlow.CreditCheck,       Common.CommonPause,
-//        VZWFlow.CC,       Common.CommonPause,
         VZWFlow.CC2IDP,       Common.CommonPause,
         VZWFlow.IDP2Plan,   Common.CommonPause,
         VZWFlow.SelectPlan, Common.CommonPause,
         VZWFlow.YourCart,   Common.CommonPause,
         VZWFlow.SelectPlanFeatures,     Common.CommonPause,
-//        VZWFlow.SelectProtectionPlan,   Common.CommonPause,
         VZWFlow.SelectProtectionPlanInCC,   Common.CommonPause,
         VZWFlow.NumberPort,             Common.CommonPause,
         VZWFlow.OrderReviewandConfirm,  Common.CommonPause,
@@ -67,12 +66,40 @@ class End_to_End_Scenario extends Simulation {
         Common.Logout, Common.CommonPause)
     }
   }
-	
+      		
+       
+//       val VZWAAL= scenario("VZWAAL").repeat(1){
+	  
+//	  	 val Carrier =Iterator.continually(
+//          Map( "imei" -> "99000088304056",
+//                "carrier" -> "Verizon"))
+	  	       
+//       group("VZWAAL"){
+//        exec(
+//  	    feed(Carrier),
+//  	    feed(Lname),
+//  	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+//        Common.LoginToRetail,    Common.CommonPause,
+//        Common.RetailToChoosePathModule,       Common.CommonPause,
+//        Common.AddALinetoExistingAccount,  Common.CommonPause,
+//       Common.ChoosePathToScan,       Common.CommonPause,
+//       VZWFlow.VZWScanToPaymentOptions,  Common.CommonPause,
+//       Common.PaymentOptionsToCartWheel,    //    Common.CommonPause,
+//        VZWAALIDP17009.SelectVZW, Common.CommonPause,
+//        VZWAALIDP17009.VZWAcctLookuptoSelectOption, Common.CommonPause,
+//        VZWAALIDP17009.SelectOption, Common.CommonPause,
+//        VZWAALIDP17009.ScantoPO, Common.CommonPause,
+//        VZWAALIDP17009.POtoCC, Common.CommonPause,
+//        VZWAALIDP17009.CartwheeltoCreditcheck, Common.CommonPause, //Common.CommonPause)  }}
+//        VZWAALIDP17009.CreditCheck, Common.CommonPause,
+//        VZWAALIDP17009.CCtoIDP, Common.CommonPause,
+//        VZWAALIDP17009.IDPtoYourCart)}}
+	/*    VZWFlow.CreditCheck,       Common.CommonPause, */
 
-      val SprintNA= scenario("SPRNA").repeat(1){
+      val SprAAL= scenario("SprAAL").repeat(1){
       val Carrier = Iterator.continually(
-      Map( "imei" -> "foruday1",
-           "carrier" -> "SprintNA"))
+      Map( "imei" -> "YYZHOPEIMUNIQUE",
+           "carrier" -> "Sprint"))
         group("SPR_NA_FULL"){
   	    exec(
   	    feed(Carrier),
@@ -80,28 +107,23 @@ class End_to_End_Scenario extends Simulation {
   	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
   	    feed(Carrier),
         Common.LoginToRetail,    Common.CommonPause,
-        Common.RetailToChoosePathModule,       Common.CommonPause,
-        Common.ChoosePathToScan,       Common.CommonPause,
-        SprintFlow.Scan, Common.CommonPause,
-        SprintFlow.PO,   Common.CommonPause,
-        SprintFlow.CW,   Common.CommonPause,
-        SprintFlow.CC,   Common.CommonPause,
-        SprintFlow.CC2IDP,     Common.CommonPause,
-        SprintFlow.IDP2Plan,   Common.CommonPause,
-        SprintFlow.SelectPlan, Common.CommonPause,
-        SprintFlow.YourCart,   Common.CommonPause,
-        SprintFlow.SelectPlanFeatures,    Common.CommonPause,
-        SprintFlow.SelectProtectionPlan,  Common.CommonPause,
-        SprintFlow.NumberPort,            Common.CommonPause,
-        SprintFlow.SecurityQuestion,      Common.CommonPause,
-        SprintFlow.OrderReviewandConfirm, Common.CommonPause,
-        SprintFlow.TermsandConditions,    Common.CommonPause,
-        SprintFlow.SwipeCard,             Common.CommonPause,
-        SprintFlow.PrintMobileScanSheet,  Common.CommonPause,
-        SprintFlow.ScanReceipt,           Common.CommonPause,
-        SprintFlow.EnterIMEIandSIM,       Common.CommonPause,
-        Common.NewGuest,                  Common.CommonPause,
-        Common.Logout)}
+        Common.RetailToChoosePathModule,      Common.CommonPause,
+        Common.AddALinetoExistingAccount,  Common.CommonPause,
+        SprAALIDP.AccountLookup_Sprint,       Common.CommonPause,
+        SprAALIDP.AddALinetoScan,  Common.CommonPause,
+        SprAALIDP.Scan,  Common.CommonPause,
+        SprAALIDP.PaymentOptions,  Common.CommonPause,
+        SprAALIDP.CreditCheck,  Common.CommonPause,
+        SprAALIDP.CreditChecktoIDP,  Common.CommonPause,
+        SprAALIDP.IDPtoYourCart,  Common.CommonPause)}
+//      SprAALIDP_toActivation.YourCarttoSelectPlanandAccessFees,
+//      SprAALIDP_toActivation.SelectPlanFeaturesandAccessFees)}
+//      SprAALIDP.IDPtoPlan)}
+//      SPRIDP.AddALinetoExistingAccount)}
+//      SPRIDP.Scan,
+//      SPRIDP.PaymentOptions)}
+//       Common.NewGuest,                  Common.CommonPause,
+//       Common.Logout)}
     }
 	
 // setUp(
@@ -126,12 +148,39 @@ class End_to_End_Scenario extends Simulation {
 	   setUp(VZWNA.inject(rampUsers(1) over (160 seconds)).protocols(httpProtocol))
 	       //  SprintNA.inject(rampUsers(25) over (200 seconds)).protocols(httpProtocol))
 
+
+//  Verizon Scenario       
+//	   setUp(VZWAAL.inject(rampUsers(1) over (200 seconds)).protocols(httpProtocol))
+	   
+//  Sprint Scenario	   
+//  setUp(SprintNA.inject(rampUsers(25) over (200 seconds)).protocols(httpProtocol))
+
 	}
 
    
-
+// Examples of controlling workload
+// This example ramps up both VZW and Spr New Activaitons      
+// =================================
+// setUp(
+// VZWNA.inject(
+//    atOnceUsers(10), 
+//    rampUsers(1) over(10 seconds) // 3
+//    constantUsersPerSec(20) during(15 seconds), // 4
+//    constantUsersPerSec(20) during(15 seconds) randomized, // 5
+//     nothingFor(2 minutes),
+//     rampUsers(10) over(10 seconds), // 6
+//    nothingFor(100 minutes)
+//    rampUsersPerSec(10) to 20 during(10 minutes) randomized, // 7
+//    splitUsers(1000) into(rampUsers(10) over(10 seconds)) separatedBy(10 seconds), // 8
+//    splitUsers(1000) into(rampUsers(10) over(10 seconds)) separatedBy atOnceUsers(30), // 9
+//    heavisideUsers(1000) over(20 seconds) // 10
+//   ).protocols(httpProtocol)
+      
+// (SprintNA.inject(rampUsers(10) over (10 seconds),
+//   nothingFor(5 minutes),
+//  rampUsers(10) over(10 seconds)).protocols(httpProtocol))
+//)
 //  Run multiple scenarios modularly
 //    setUp(Landing.scn.inject(rampUsers(3) over (10 seconds)).protocols(httpProtocol),
 //      Login.Login.inject(rampUsers(3) over (10 seconds)).protocols(httpProtocol),
 //      SNA.SNA.inject(rampUsers(3) over (10 seconds)).protocols(httpProtocol))
-
