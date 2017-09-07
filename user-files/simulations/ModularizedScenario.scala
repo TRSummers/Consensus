@@ -18,8 +18,7 @@ class End_to_End_Scenario extends Simulation {
 		.acceptEncodingHeader("gzip, deflate")
 		.acceptLanguageHeader("en-US,en;q=0.5")
 		.userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
-
-<<<<<<< HEAD
+  
   val Lname = csv("Lname.csv").random
   val SSN1 = csv("SSN1.csv").random
   val SSN2 = csv("SSN2.csv").random
