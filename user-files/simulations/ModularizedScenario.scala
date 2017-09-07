@@ -33,11 +33,12 @@ class End_to_End_Scenario extends Simulation {
          "carrier" -> "VerizonNA"))
 
 
-  val VZWNA= scenario("VZWNA").repeat(100){
+  val VZWNA= scenario("VZWNA").repeat(1){
 
     group("VZW_NA_FULL"){
       exec(
         feed(VZWCarrierTestData),
+        feed(Lname), feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
         Common.LoginToRetail,     Common.CommonPause,
         Common.RetailToChoosePathModule,        Common.CommonPause,
         Common.ChoosePathToScan,        Common.CommonPause,
@@ -45,11 +46,14 @@ class End_to_End_Scenario extends Simulation {
         Common.PaymentOptionsToCartWheel,        Common.CommonPause,
         Common.CartwheelToCreditCheck, Common.CommonPause,
         VZWFlow.CreditCheck,       Common.CommonPause,
+//        VZWFlow.CC,       Common.CommonPause,
+        VZWFlow.CC2IDP,       Common.CommonPause,
         VZWFlow.IDP2Plan,   Common.CommonPause,
         VZWFlow.SelectPlan, Common.CommonPause,
         VZWFlow.YourCart,   Common.CommonPause,
         VZWFlow.SelectPlanFeatures,     Common.CommonPause,
-        VZWFlow.SelectProtectionPlan,   Common.CommonPause,
+//        VZWFlow.SelectProtectionPlan,   Common.CommonPause,
+        VZWFlow.SelectProtectionPlanInCC,   Common.CommonPause,
         VZWFlow.NumberPort,             Common.CommonPause,
         VZWFlow.OrderReviewandConfirm,  Common.CommonPause,
         VZWFlow.TermsandConditions,     Common.CommonPause,
@@ -119,7 +123,7 @@ class End_to_End_Scenario extends Simulation {
     //  rampUsers(10) over(10 seconds)).protocols(httpProtocol))
 //)
   
-	   setUp(VZWNA.inject(rampUsers(40) over (100 seconds)).protocols(httpProtocol))
+	   setUp(VZWNA.inject(rampUsers(1) over (160 seconds)).protocols(httpProtocol))
 	       //  SprintNA.inject(rampUsers(25) over (200 seconds)).protocols(httpProtocol))
 
 	}
