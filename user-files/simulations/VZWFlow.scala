@@ -19,6 +19,12 @@ object VZWFlow{
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/orderassembly/plans.htm")
 
+	val VZWFlowheaders_01 = Map(
+		"Accept" -> "text/css,*/*;q=0.1",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive")
+
 	val VZWFlowheaders_1 = Map(
 		"Accept" -> "text/css,*/*;q=0.1",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/orderassembly/cart.htm")
@@ -263,6 +269,23 @@ object VZWFlow{
 		"Connection" -> "keep-alive",
 		"If-Modified-Since" -> "Thu, 08 Jun 2017 19:42:13 GMT",
 		"If-None-Match" -> "65a5c-640-551780c9b8f40")
+
+	val ui_headers_70 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Access-Control-Request-Headers" -> "content-type",
+		"Access-Control-Request-Method" -> "POST",
+		"Connection" -> "keep-alive",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
+
+	val ui_headers_72 = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"Content-Type" -> "application/json;charset=UTF-8",
+		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
 
 	val headers_223 = Map(
 		"Accept" -> "application/json, text/plain, */*",
@@ -821,7 +844,6 @@ object VZWFlow{
     val SelectPlanFeatures=group("${carrier}_SelectPlanFeatures"){
 		 exec(http("SelectPlanFeatures_10")
 			.post("/retail/orderassembly/features.htm")
-			.check(substring("Select a Protection Plan"))
 			.headers(VZWFlowheaders_10)
 			.formParam("posted", "1")
 			.formParam("addPurchaseOptionsArr[1][42340][185]", "1")
@@ -844,8 +866,188 @@ object VZWFlow{
 			.headers(VZWFlowheaders_15))
 		//.pause(5, 15)
 	}
+
+
+	// SelectProtectionPlansInCC
+	val SelectProtectionPlanInCC=group("${carrier}_SelectProtectionPlanCC"){
+		exec(http("SelectProtectionPlan16")
+			.get(uri_ui + "/config.json")
+			.headers(ui_headers_8))
+		.exec(http("request_70")
+				.options(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_70))
+		.exec(http("request_71")
+				.options(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_70))
+		.exec(http("request_72")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/insurance/miniCart_002_request.json")))
+		.exec(http("request_73")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/insurance/miniCart_003_request.json")))
+		.pause(1)
+		.exec(http("dsom_post_insurance_74")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/insurance/miniCart_004_request.json")))
+		.exec(http("request_75")
+					.get(uri_ui + "/build/ch_50c2e88226bc327342d8_min.js")
+					.headers(ui_headers_8)
+		.resources(http("request_76")
+						.get(uri_ui + "/app/pages/frame/header/header.html")
+						.headers(ui_headers_16),
+					http("request_77")
+						.get(uri_ui + "/app/pages/frame/footer/footer.html")
+						.headers(ui_headers_16),
+					http("request_78")
+						.get(uri_ui + "/app/pages/addons/device.html")
+						.headers(ui_headers_16),
+					http("request_79")
+						.get(uri_ui + "/assets/img/bullseye.svg"),
+					http("request_80")
+						.get(uri_ui + "/app/components/showhide/showhide.html")
+						.headers(ui_headers_16),
+					http("request_81")
+						.get(uri_ui + "/app/components/productoptions/partials/productchoices.html")
+						.headers(ui_headers_16),
+					http("request_82")
+						.options(uri_dsom_v1 + "/getAddOnOptions")
+						.headers(ui_headers_70),
+					http("request_83")
+						.get(uri_ui + "/app/components/contempiler/config.json")
+						.headers(ui_headers_16),
+					http("request_84")
+						.get(uri_ui + "/app/components/contempiler/contempiler.html")
+						.headers(ui_headers_16),
+					http("request_85")
+						.post(uri_dsom_v1 + "/getAddOnOptions")
+						.headers(ui_headers_72)
+						.body(RawFileBody("dsom/insurance/miniCart_005_request.json")),
+					http("request_86")
+						.get(uri_ui + "/app/components/contempiler/contemloader.html")
+						.headers(ui_headers_16),
+					http("request_87")
+						.get(uri_ui + "/app/components/selectioninputs/partials/choices.html")
+						.headers(ui_headers_16),
+					http("request_88")
+						.get(uri_ui + "/app/components/contempiler/sets/blurb/squaretrade.json")
+						.headers(ui_headers_16),
+					http("request_89")
+						.get(uri_ui + "/app/components/contempiler/sets/blurb/default.html")
+						.headers(ui_headers_16),
+					http("request_90")
+						.get("/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
+						.headers(ui_headers_16),
+					http("request_91")
+						.get(uri_ui + "/assets/img/squaretrade_logo_325x160.png")
+						.headers(ui_headers_16)))
+			.pause(4)
+
+			//part 2 of selection protection plan - transition from DSOM to legacy number port
+			.exec(http("dsom_switch_to_legacy_numberport_92")
+			.options(uri_dsom + "/session/dsom/v1/cart/item")
+			.headers(ui_headers_70))
+			.exec(http("request_93")
+				.post(uri_dsom + "/session/dsom/v1/cart/item")
+				.headers(dsom_headers_231)
+				.body(RawFileBody("dsom/insurance/CartItem_patch_003_request.json")))
+			.exec(http("request_94")
+					.post(uri_dsom_v1 + "/getNextState")
+					.headers(dsom_headers_1)
+					.body(RawFileBody("dsom/insurance/CartItem_patch_004_request.json")))
+			.pause(1)
+			.exec(http("request_95")
+				.get("/retail/orderassembly/controller/process.php")
+				.headers(poa_headers_2))
+			.pause(1)
+			.exec(http("request_96")
+				.get("/retail/public/styles/normalize.php")
+				.headers(VZWFlowheaders_01)
+				.resources(http("request_97")
+					.get("/jslibs/jquery.php?ver=1.8.2"),
+					http("request_98")
+						.get("/jslibs/modernizr.php")
+						.headers(VZWFlowheaders_01),
+					http("request_99")
+						.get("/jslibs/jquerymobile.php")
+						.headers(VZWFlowheaders_01),
+					http("request_100")
+						.get("/template/public/styles/new.main.css")
+						.headers(VZWFlowheaders_01),
+					http("request_101")
+						.get("/template/css/semantic.jqmsafe.min.css")
+						.headers(VZWFlowheaders_01),
+					http("request_102")
+						.get("/retail/public/styles/main.css")
+						.headers(VZWFlowheaders_01),
+					http("request_103")
+						.get("/js/retail/topnav.php")
+						.headers(VZWFlowheaders_01),
+					http("request_104")
+						.get("/retail/public/styles/jquery.mobile-1.2.0.css")
+						.headers(VZWFlowheaders_01),
+					http("request_105")
+						.get("/brands/target/retail/public/styles/jquery.mobile-1.2.0.css")
+						.headers(VZWFlowheaders_01),
+					http("request_106")
+						.get("/brands/target/retail/public/styles/main.css")
+						.headers(VZWFlowheaders_01),
+					http("request_107")
+						.get("/js/retail/checkoutinit.js")
+						.headers(ui_headers_16),
+					http("request_108")
+						.get("/js/datechange.js")
+						.headers(ui_headers_16),
+					http("request_109")
+						.get("/js/retail/numport.php?devices=%7B%221%22%3A%7B%22device%22%3A%7B%2242252%22%3A42252%7D%2C%22service%22%3A%7B%2242340%22%3A42340%7D%7D%7D")
+						.headers(VZWFlowheaders_01),
+					http("request_110")
+						.get("/img/retail/ajax-loader.gif")
+						.headers(VZWFlowheaders_01),
+					http("request_111")
+						.get("/img/brands/target/retail/logo-mini.png")
+						.headers(VZWFlowheaders_01),
+					http("request_112")
+						.get("/retail/public/img/alertsprite.png")
+						.headers(VZWFlowheaders_01),
+					http("request_113")
+						.get("/retail/public/img/reservesprite.png")
+						.headers(VZWFlowheaders_01),
+					http("request_114")
+						.get("/img/retail/cart.png")
+						.headers(VZWFlowheaders_01),
+					http("request_115")
+						.get("/img/retail/setting.png")
+						.headers(VZWFlowheaders_01),
+					http("request_116")
+						.get("/img/retail/icons-18-white.png")
+						.headers(VZWFlowheaders_01),
+					http("request_117")
+						.get("/img/retail/home.png")
+						.headers(VZWFlowheaders_01),
+					http("request_118")
+						.get("/img/retail/inventory-management.png")
+						.headers(VZWFlowheaders_01),
+					http("request_119")
+						.get("/img/retail/customer-lookup.png")
+						.headers(VZWFlowheaders_01),
+					http("request_120")
+						.get("/img/retail/save.png")
+						.headers(VZWFlowheaders_01),
+					http("request_121")
+						.get("/img/retail/lock.png")
+						.headers(VZWFlowheaders_01),
+					http("request_122")
+						.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1504646577165")
+						.headers(VZWFlowheaders_4)))
+		//.pause(5, 15)
+	}
+
+
 		// SelectProtectionPlan
-	val SelectProtectionPlan=group("${carrier}_SelectProtetionPlan"){
+	val SelectProtectionPlan=group("${carrier}_SelectProtectionPlan"){
 		exec(http("SelectProtectionPlan16")
 			.get("/minicart/minicart.php?type=popt&isNoResponse=1&noCache=0.5845231551502829&action=update&dataArray%5Badd%5D%5BaddPoptId%5D=99485&dataArray%5Badd%5D%5BaddPoptIdIndex%5D=1")
 			.headers(VZWFlowheaders_16))
