@@ -1,0 +1,20 @@
+{
+  "cartItemInfo": [
+    {
+      "name": "financeInfo",
+      "financeInfo": {
+        "financePlanId": "8",
+        "financingPartnerRequiredDownPaymentAmount": "0",
+        "customerPaidDownPaymentAmount": "0",
+        "totalAmountFinanced": "612.8",
+        "monthlyInstallmentAmount": "31.24",
+        "firstMonthInstallmentAmount": "31.47",
+        "initialTotalAmountFinanced": "792",
+        "initialFirstInstallmentAmount": "31.47",
+        "promotionAmount": "179.2",
+        "initialMonthlyInstallmentAmount": "31.24"
+      },
+      "action": "UPDATE"
+    }
+  ]
+}
