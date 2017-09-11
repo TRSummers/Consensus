@@ -356,7 +356,7 @@ object VZWFlow{
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache")
 
-			val VZWFlowheaders_1000 = Map(
+	val VZWFlowheaders_1000 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Access-Control-Request-Headers" -> "content-type",
 		"Access-Control-Request-Method" -> "POST",
@@ -802,11 +802,11 @@ object VZWFlow{
 				.body(RawFileBody("dsom/plans/IDPToPlans_016_request.json")))
 		.exec(http("request_27")
 				.options(uri_dsom_v1 + "/getNextState")
-				.headers(headers_2))
+				.headers(dsom_headers_222))
 		.exec(http("request_28")
 					.post(uri_dsom_v1 + "/getNextState")
-					.headers(headers_3)
-					.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0028_request.json")))
+					.headers(dsom_headers_1)
+					.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0028_request.json"))
 		.resources(http("IDP_Planrequest_17")
 				.get(uri_ui + "/build/ch_50c2e88226bc327342d8_min.js")
 				.headers(dsom_headers_1),
@@ -823,12 +823,11 @@ object VZWFlow{
 				http("IDP_Planrequest_23")
 					.get(uri_ui + "/app/components/contempiler/contempiler.html"),
 				http("IDP_Planrequest_24")
-					.get("/img/retail/corps/plLgs660.png")
-					.headers(headers_17),
+					.get("/img/retail/corps/plLgs660.png"),
 				http("IDP_Planrequest_25")
 					.get(uri_ui + "/app/components/contempiler/contemloader.html"),
 				http("IDP_Planrequest_26")
-					.get(uri_ui + "/app/components/contempiler/sets/carrierinfo/verizon_hide.html"))
+					.get(uri_ui + "/app/components/contempiler/sets/carrierinfo/verizon_hide.html")))
 	}
 
 
@@ -914,71 +913,61 @@ object VZWFlow{
 	// SelectPlanFeaturesInCC
 	val SelectPlanFeaturesInCC=group("${carrier}_SelectPlanFeatures"){
 		exec(http("SelectPlanFeatures_10")
-			.get(uri2 + "/assets/img/cloader.gif"),
-			http("request_64")
-				.get(uri2 + "/config.json")
-				.headers(headers_12),
-			http("request_65")
-				.options("/dsom-app/v1/getContentForAisle")
-				.headers(headers_2),
-			http("request_66")
-				.options("/dsom-app/v1/getNextState")
-				.headers(headers_2),
-			http("request_67")
-				.post("/dsom-app/v1/getContentForAisle")
-				.headers(headers_3)
-				.body(RawFileBody("IDPToNumberPort_0067_request.txt")),
-			http("request_68")
-				.post("/dsom-app/v1/getNextState")
-				.headers(headers_3)
-				.body(RawFileBody("IDPToNumberPort_0068_request.txt"))))
+			.get(uri_ui + "/assets/img/cloader.gif"))
+		.exec(http("featuresrequest_64")
+				.get(uri_ui + "/config.json")
+				.headers(VZWFlowheaders_4))
+		.exec(http("featuresrequest_65")
+				.options(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_70))
+		.exec(http("featuresrequest_66")
+				.options(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_70))
+		.exec(http("featuresrequest_67")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0067_request.json")))
+		.exec(http("featuresrequest_68")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0068_request.json")))
 		.pause(1)
-			.exec(http("request_69")
-				.post("/dsom-app/v1/getContentForAisle")
-				.headers(headers_3)
-				.body(RawFileBody("IDPToNumberPort_0069_request.txt"))
-				.resources(http("request_70")
-					.get(uri2 + "/build/ch_f8d3a9468fab88ce639a_min.js")
-					.headers(headers_17)))
-			.pause(1)
-			.exec(http("request_71")
-				.get(uri2 + "/app/pages/frame/header/header.html")
-				.headers(headers_18)
-				.resources(http("request_72")
-					.get(uri2 + "/app/pages/frame/footer/footer.html")
-					.headers(headers_18),
-					http("request_73")
-						.get(uri2 + "/app/pages/addons/serviceaddon.html")
-						.headers(headers_18),
-					http("request_74")
-						.get(uri2 + "/assets/img/bullseye.svg"),
-					http("request_75")
-						.get(uri3 + "/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
-						.headers(headers_17)))
+		.exec(http("featuresrequest_69")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0069_request.json"))
+		    .resources(http("featuresrequest_70")
+					.get(uri_ui + "/build/ch_f8d3a9468fab88ce639a_min.js")
+					.headers(ui_headers_72),
+			  http("featuresrequest_71")
+				  .get(uri_ui + "/app/pages/frame/header/header.html")
+				  .headers(ui_headers_72),
+				http("featuresrequest_72")
+					.get(uri_ui + "/app/pages/frame/footer/footer.html")
+					.headers(ui_headers_72),
+				http("featuresrequest_73")
+						.get(uri_ui + "/app/pages/addons/serviceaddon.html")
+						.headers(ui_headers_72),
+				http("featuresrequest_74")
+						.get(uri_ui + "/assets/img/bullseye.svg"),
+				http("featuresrequest_75")
+						.get("/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
+						.headers(ui_headers_72)))
 			.pause(3)
-			.exec(http("request_76")
-				.post("/dsom-app/v1/getNextState")
-				.headers(headers_3)
-				.body(RawFileBody("IDPToNumberPort_0076_request.txt")))
+			.exec(http("featuresrequest_76")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0076_request.json")))
 			.pause(1)
-			.exec(http("request_77")
-				.get(uri3 + "/retail/orderassembly/controller/process.php")
-				.headers(headers_4)
-				.resources(http("request_78")
-					.get(uri2 + "/build/css_17b781d9571d1352024a_min.js"),
-					http("request_79")
-						.get(uri2 + "/build/bundle_17b781d9571d1352024a_min.js"),
-					http("request_80")
-						.get(uri5 + "?family=Lato:400,700,400italic,700italic&subset=latin"),
-					http("request_81")
-						.get(uri2 + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2"),
-					http("request_82")
-						.get(uri4 + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2"),
-					http("request_83")
-						.get(uri4 + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2"),
-					http("request_84")
-						.get(uri2 + "/assets/img/cloader.gif"),
-		//.pause(5, 15)
+			.exec(http("featuresrequest_77")
+				.get("/retail/orderassembly/controller/process.php")
+				.headers(poa_headers_2)
+			.resources(http("featuresrequest_78")
+					.get(uri_ui + "/build/css_17b781d9571d1352024a_min.js"),
+					http("featuresrequest_79")
+						.get(uri_ui + "/build/bundle_17b781d9571d1352024a_min.js"),
+					http("featuresrequest_84")
+						.get(uri_ui + "/assets/img/cloader.gif")))
 	}
 
 		// SelectPlanFeatures
