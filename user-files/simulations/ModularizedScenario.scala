@@ -18,7 +18,7 @@ class End_to_End_Scenario extends Simulation {
 		.acceptEncodingHeader("gzip, deflate")
 		.acceptLanguageHeader("en-US,en;q=0.5")
 		.userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
-  
+
   val Lname = csv("Lname.csv").random
   val SSN1 = csv("SSN1.csv").random
   val SSN2 = csv("SSN2.csv").random
@@ -47,10 +47,10 @@ class End_to_End_Scenario extends Simulation {
         Common.CartwheelToCreditCheck, Common.CommonPause,
         VZWFlow.CreditCheck,       Common.CommonPause,
         VZWFlow.CC2IDP,       Common.CommonPause,
-        VZWFlow.IDP2Plan,   Common.CommonPause,
+        VZWFlow.IDP2PlanInCC,   Common.CommonPause,
         VZWFlow.SelectPlan, Common.CommonPause,
         VZWFlow.YourCart,   Common.CommonPause,
-        VZWFlow.SelectPlanFeatures,     Common.CommonPause,
+        VZWFlow.SelectPlanFeaturesInCC,     Common.CommonPause,
         VZWFlow.SelectProtectionPlanInCC,   Common.CommonPause,
         VZWFlow.NumberPort,             Common.CommonPause,
         VZWFlow.OrderReviewandConfirm,  Common.CommonPause,

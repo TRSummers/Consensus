@@ -1,9 +1,14 @@
+
+
+
 import scala.concurrent.duration._
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
+
+
 
 class E2E extends Simulation {
 
@@ -26,19 +31,15 @@ class E2E extends Simulation {
        val SAL = System.getenv("SALUSERS").toInt
        val TAL = System.getenv("TALUSERS").toInt
 	  	
-    	  setUp(buildDEV.DEVVZWAAL.inject(rampUsers(VAL) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVSPRAAL.inject(rampUsers(SAL) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVATTAAL.inject(rampUsers(TAL) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVVZWNA.inject(rampUsers(VNA) over (rampup seconds)).protocols(httpProtocol),
-    	       // buildDEV.DEVVZWNA.inject(splitUsers(VNA) into(rampUsers(5) over(10 seconds)) separatedBy(3 seconds)).protocols(httpProtocol),
-    	      //                        splitUsers(1000) into(rampUsers(10) over(10 seconds)) separatedBy(10 seconds),
-    	        // Testing ramp up
-              //buildDEV.DEVVZWNA.inject(rampUsersPerSec(1) to 5 during(rampup seconds) randomized).protocols(httpProtocol),
-    	        buildDEV.DEVSPRNA.inject(rampUsers(SNA) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVATTNA.inject(rampUsers(TNA) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVVZWUG.inject(rampUsers(VUG) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVSPRUG.inject(rampUsers(SUG) over (rampup seconds)).protocols(httpProtocol),
-    	        buildDEV.DEVATTUG.inject(rampUsers(TUG) over (rampup seconds)).protocols(httpProtocol))
+    	  setUp(build.VZWAAL.inject(rampUsers(VAL) over (rampup seconds)).protocols(httpProtocol),
+    	        build.SPRAAL.inject(rampUsers(SAL) over (rampup seconds)).protocols(httpProtocol),
+    	        build.ATTAAL.inject(rampUsers(TAL) over (rampup seconds)).protocols(httpProtocol),
+    	        build.VZWNA.inject(rampUsers(VNA) over (rampup seconds)).protocols(httpProtocol),
+    	        build.SPRNA.inject(rampUsers(SNA) over (rampup seconds)).protocols(httpProtocol))
+//    	        build.ATTNA.inject(rampUsers(TNA) over (rampup seconds)).protocols(httpProtocol),
+//					    build.VZWUG.inject(rampUsers(VUG) over (rampup seconds)).protocols(httpProtocol),
+//					    build.SPRUG.inject(rampUsers(SUG) over (rampup seconds)).protocols(httpProtocol))
+//					    build.ATTUG.inject(rampUsers(TUG) over (rampup seconds)).protocols(httpProtocol)
 	  	
 
 }

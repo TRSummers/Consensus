@@ -356,7 +356,7 @@ object VZWFlow{
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache")
 
-			val VZWFlowheaders_1000 = Map(
+	val VZWFlowheaders_1000 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Access-Control-Request-Headers" -> "content-type",
 		"Access-Control-Request-Method" -> "POST",
@@ -719,6 +719,8 @@ object VZWFlow{
 
 	}
 
+
+
 		//.pause(5, 16)}
 		// CC2IDP
     val CC2IDP=group("${carrier}_CreditCheck_IDP"){
@@ -732,37 +734,104 @@ object VZWFlow{
 			.formParam("numofline_to_activate", "1")
 			.formParam("checkbox-1", "on"))
 		.exec(http("CreditCheck_IDP_28")
-			.post(VZWFlowuri2 + "/dsom-app/v1/getContentForAisle")
+			.post(uri_dsom_v1 + "/getContentForAisle")
 			.headers(VZWFlowheaders_101)                                                                                                          
 			.body(ElFileBody("VZWPO2Activation_0028_request.txt")))
 		.exec(http("CreditCheck_IDP_29")
-			.options(VZWFlowuri2 + "/dsom-app/v1/getNextState")
+			.options(uri_dsom_v1 + "/getNextState")
 			.headers(VZWFlowheaders_1000))
 		.exec(http("CreditCheck_IDP_30")
-			.post(VZWFlowuri2 + "/dsom-app/v1/getNextState")
+			.post(uri_dsom_v1 + "/getNextState")
 			.headers(VZWFlowheaders_101)
 			.body(ElFileBody("VZWPO2Activation_0030_request.txt")))
 		.exec(http("CreditCheck_IDP_31")
-			.options(VZWFlowuri2 + "/dsom-app/v1/getJSONAisles")
+			.options(uri_dsom_v1 + "/getJSONAisles")
 			.headers(VZWFlowheaders_1000))
 		.exec(http("CreditCheck_IDP_32")
-			.post(VZWFlowuri2 + "/dsom-app/v1/getJSONAisles")
+			.post(uri_dsom_v1 + "/getJSONAisles")
 			.headers(VZWFlowheaders_101)
 			.body(ElFileBody("VZWPO2Activation_0032_request.txt")))
 		.exec(http("CreditCheck_IDP_33")
-			.post(VZWFlowuri2 + "/dsom-app/v1/getContentForAisle")
+			.post(uri_dsom_v1 + "/getContentForAisle")
 			.check(substring("Sales tax based on full"))
 			.headers(VZWFlowheaders_101)
 			.body(ElFileBody("VZWPO2Activation_0033_request.txt")))
 		.pause(144 milliseconds)
 		.exec(http("CreditCheck_IDP_34")
-			.options(VZWFlowuri2 + "/dsom-app/v1/paymentPlans")
+			.options(uri_dsom_v1 + "/paymentPlans")
 			.headers(VZWFlowheaders_1034))
 		.exec(http("CreditCheck_IDP_35")
-			.get(VZWFlowuri2 + "/dsom-app/v1/paymentPlans")
+			.get(uri_dsom_v1 + "/paymentPlans")
 			.headers(VZWFlowheaders_1035))
 		//.pause(5, 15)
 	}
+
+
+	val IDP2PlanInCC=group("${carrier}_IDP_Plan"){
+		exec(http("IDP_Plan36")
+			.options(uri_dsom + "/session/dsom/v1/cart/item/1")
+			.headers(VZWFlowheaders_1036))
+		.exec(http("IDP_Plan37")
+				.patch(uri_dsom + "/session/dsom/v1/cart/item/1")
+				.headers(VZWFlowheaders_1037)
+				.body(ElFileBody("dsom/plans/VZWPO2Activation_0037_request.json")))
+		.exec(http("IDP_Plan38")
+				.options(uri_dsom + "/dsom-app/v1/getNextState")
+				.headers(VZWFlowheaders_1000))
+		.exec(http("IDP_Plan39")
+				.post(uri_dsom + "/dsom-app/v1/getNextState")
+				.headers(VZWFlowheaders_101)
+				.body(ElFileBody("dsom/plans/VZWPO2Activation_003_request.json")))
+		.exec(http("IDP_Plan40")
+				.get("/retail/orderassembly/controller/process.php")
+				.headers(VZWFlowheaders_106))
+		.exec(http("IDP_Plan41")
+				.get(uri_ui + "/build/css_17b781d9571d1352024a_min.js"))
+		.exec(http("IDP_Plan42")
+				.get(uri_ui + "/build/bundle_17b781d9571d1352024a_min.js"))
+		.exec(http("IDP_Plan43")
+			.options(uri_dsom_v1 + "/getContentForAisle")
+			.headers(dsom_headers_222))
+		.exec(http("IDP_Plan44")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(dsom_headers_231)
+			  .body(RawFileBody("dsom/plans/IDPToPlans_015_request.json")))
+		.exec(http("IDP_Plan45")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(dsom_headers_1)
+				.body(RawFileBody("dsom/plans/IDPToPlans_016_request.json")))
+		.exec(http("request_27")
+				.options(uri_dsom_v1 + "/getNextState")
+				.headers(dsom_headers_222))
+		.exec(http("request_28")
+					.post(uri_dsom_v1 + "/getNextState")
+					.headers(dsom_headers_1)
+					.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0028_request.json"))
+		.resources(http("IDP_Planrequest_17")
+				.get(uri_ui + "/build/ch_50c2e88226bc327342d8_min.js")
+				.headers(dsom_headers_1),
+				http("IDP_Planrequest_18")
+					.get(uri_ui + "/app/pages/frame/header/header.html"),
+				http("IDP_Planrequest_19")
+					.get(uri_ui + "/app/pages/frame/footer/footer.html"),
+				http("IDP_Planrequest_20")
+					.get(uri_ui + "/app/pages/selectproduct/selectservice.html"),
+				http("IDP_Planrequest_21")
+					.get(uri_ui + "/assets/img/bullseye.svg"),
+				http("IDP_Planrequest_22")
+					.get(uri_ui + "/app/components/contempiler/config.json"),
+				http("IDP_Planrequest_23")
+					.get(uri_ui + "/app/components/contempiler/contempiler.html"),
+				http("IDP_Planrequest_24")
+					.get("/img/retail/corps/plLgs660.png"),
+				http("IDP_Planrequest_25")
+					.get(uri_ui + "/app/components/contempiler/contemloader.html"),
+				http("IDP_Planrequest_26")
+					.get(uri_ui + "/app/components/contempiler/sets/carrierinfo/verizon_hide.html")))
+	}
+
+
+
 		// IDP2Plan
 	val IDP2Plan=group("${carrier}_IDP_Plan"){
 		exec(http("IDP_Plan36")
@@ -771,14 +840,14 @@ object VZWFlow{
 		.exec(http("IDP_Plan37")
 			.patch(VZWFlowuri2 + "/session/dsom/v1/cart/item/1")
 			.headers(VZWFlowheaders_1037)
-			.body(ElFileBody("VZWPO2Activation_0037_request.txt")))
+			.body(ElFileBody("dsom/plans/VZWPO2Activation_0037_request.json")))
 		.exec(http("IDP_Plan38")
 			.options(VZWFlowuri2 + "/dsom-app/v1/getNextState")
 			.headers(VZWFlowheaders_1000))
 		.exec(http("IDP_Plan39")
 			.post(VZWFlowuri2 + "/dsom-app/v1/getNextState")
 			.headers(VZWFlowheaders_101)
-			.body(ElFileBody("VZWPO2Activation_0039_request.txt")))
+			.body(ElFileBody("dsom/plans/VZWPO2Activation_0039_request.json")))
 		.exec(http("IDP_Plan40")
 			.get("/retail/orderassembly/controller/process.php")
 			.check(substring("Pick the perfect plan to stay connected wherever you"))
@@ -820,7 +889,6 @@ object VZWFlow{
 		val YourCart=group("YourCart"){
 		exec(http("YourCart_50")
 			.post("/retail/orderassembly/cart.htm")
-			.check(substring("Select Plan Features and Access Fees"))
 			.headers(VZWFlowheaders_1050)
 			.formParam("action", "continue")
 			.formParam("continueOnConfirm", ""))
@@ -840,6 +908,67 @@ object VZWFlow{
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019212493")
 			.headers(VZWFlowheaders_1055))
 	}
+
+	// SelectPlanFeaturesInCC
+	val SelectPlanFeaturesInCC=group("${carrier}_SelectPlanFeatures"){
+		exec(http("SelectPlanFeatures_10")
+			.get(uri_ui + "/assets/img/cloader.gif"))
+		.exec(http("featuresrequest_64")
+				.get(uri_ui + "/config.json")
+				.headers(VZWFlowheaders_4))
+		.exec(http("featuresrequest_65")
+				.options(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_70))
+		.exec(http("featuresrequest_66")
+				.options(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_70))
+		.exec(http("featuresrequest_67")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0067_request.json")))
+		.exec(http("featuresrequest_68")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0068_request.json")))
+		.pause(1)
+		.exec(http("featuresrequest_69")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0069_request.json"))
+		    .resources(http("featuresrequest_70")
+					.get(uri_ui + "/build/ch_f8d3a9468fab88ce639a_min.js")
+					.headers(ui_headers_72),
+			  http("featuresrequest_71")
+				  .get(uri_ui + "/app/pages/frame/header/header.html")
+				  .headers(ui_headers_72),
+				http("featuresrequest_72")
+					.get(uri_ui + "/app/pages/frame/footer/footer.html")
+					.headers(ui_headers_72),
+				http("featuresrequest_73")
+						.get(uri_ui + "/app/pages/addons/serviceaddon.html")
+						.headers(ui_headers_72),
+				http("featuresrequest_74")
+						.get(uri_ui + "/assets/img/bullseye.svg"),
+				http("featuresrequest_75")
+						.get("/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
+						.headers(ui_headers_72)))
+			.pause(3)
+			.exec(http("featuresrequest_76")
+				.post(uri_dsom_v1 + "/getNextState")
+				.headers(ui_headers_72)
+				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0076_request.json")))
+			.pause(1)
+			.exec(http("featuresrequest_77")
+				.get("/retail/orderassembly/controller/process.php")
+				.headers(poa_headers_2)
+			.resources(http("featuresrequest_78")
+					.get(uri_ui + "/build/css_17b781d9571d1352024a_min.js"),
+					http("featuresrequest_79")
+						.get(uri_ui + "/build/bundle_17b781d9571d1352024a_min.js"),
+					http("featuresrequest_84")
+						.get(uri_ui + "/assets/img/cloader.gif")))
+	}
+
 		// SelectPlanFeatures
     val SelectPlanFeatures=group("${carrier}_SelectPlanFeatures"){
 		 exec(http("SelectPlanFeatures_10")
