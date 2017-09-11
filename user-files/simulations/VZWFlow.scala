@@ -889,7 +889,6 @@ object VZWFlow{
 		val YourCart=group("YourCart"){
 		exec(http("YourCart_50")
 			.post("/retail/orderassembly/cart.htm")
-			.check(substring("Select Plan Features and Access Fees"))
 			.headers(VZWFlowheaders_1050)
 			.formParam("action", "continue")
 			.formParam("continueOnConfirm", ""))
