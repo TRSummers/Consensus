@@ -785,10 +785,10 @@ object VZWFlow{
 		.exec(http("IDP_Plan40")
 				.get("/retail/orderassembly/controller/process.php")
 				.headers(VZWFlowheaders_106))
-		.exec(http("IDP_Plan41")
-				.get(uri_ui + "/build/css_17b781d9571d1352024a_min.js"))
-		.exec(http("IDP_Plan42")
-				.get(uri_ui + "/build/bundle_17b781d9571d1352024a_min.js"))
+		//.exec(http("IDP_Plan41")
+		//		.get(uri_ui + "/build/css_17b781d9571d1352024a_min.js"))
+		//.exec(http("IDP_Plan42")
+		//		.get(uri_ui + "/build/bundle_17b781d9571d1352024a_min.js"))
 		.exec(http("IDP_Plan43")
 			.options(uri_dsom_v1 + "/getContentForAisle")
 			.headers(dsom_headers_222))
@@ -807,9 +807,7 @@ object VZWFlow{
 					.post(uri_dsom_v1 + "/getNextState")
 					.headers(dsom_headers_1)
 					.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0028_request.json"))
-		.resources(http("IDP_Planrequest_17")
-				.get(uri_ui + "/build/ch_50c2e88226bc327342d8_min.js")
-				.headers(dsom_headers_1),
+		.resources(
 				http("IDP_Planrequest_18")
 					.get(uri_ui + "/app/pages/frame/header/header.html"),
 				http("IDP_Planrequest_19")
@@ -935,10 +933,7 @@ object VZWFlow{
 				.post(uri_dsom_v1 + "/getContentForAisle")
 				.headers(ui_headers_72)
 				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0069_request.json"))
-		    .resources(http("featuresrequest_70")
-					.get(uri_ui + "/build/ch_f8d3a9468fab88ce639a_min.js")
-					.headers(ui_headers_72),
-			  http("featuresrequest_71")
+		    .resources(http("featuresrequest_71")
 				  .get(uri_ui + "/app/pages/frame/header/header.html")
 				  .headers(ui_headers_72),
 				http("featuresrequest_72")
@@ -961,10 +956,7 @@ object VZWFlow{
 			.exec(http("featuresrequest_77")
 				.get("/retail/orderassembly/controller/process.php")
 				.headers(poa_headers_2)
-			.resources(http("featuresrequest_78")
-					.get(uri_ui + "/build/css_17b781d9571d1352024a_min.js"),
-					http("featuresrequest_79")
-						.get(uri_ui + "/build/bundle_17b781d9571d1352024a_min.js"),
+			.resources(
 					http("featuresrequest_84")
 						.get(uri_ui + "/assets/img/cloader.gif")))
 	}
@@ -1022,16 +1014,13 @@ object VZWFlow{
 				.headers(ui_headers_72)
 				.body(RawFileBody("dsom/insurance/miniCart_004_request.json")))
 		.exec(http("request_75")
-					.get(uri_ui + "/build/ch_50c2e88226bc327342d8_min.js")
-					.headers(ui_headers_8)
+					.get(uri_ui + "/app/pages/addons/device.html")
+					.headers(ui_headers_16)
 		.resources(http("request_76")
 						.get(uri_ui + "/app/pages/frame/header/header.html")
 						.headers(ui_headers_16),
 					http("request_77")
 						.get(uri_ui + "/app/pages/frame/footer/footer.html")
-						.headers(ui_headers_16),
-					http("request_78")
-						.get(uri_ui + "/app/pages/addons/device.html")
 						.headers(ui_headers_16),
 					http("request_79")
 						.get(uri_ui + "/assets/img/bullseye.svg"),
