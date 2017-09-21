@@ -1,0 +1,28 @@
+{
+  "order":{
+    "plans":[
+      {
+        "code":"",
+        "serviceProviderContract":[
+          "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=wca&page=1",
+          "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=wca&page=2",
+          "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=wca&page=3"
+        ],
+        "connections":[
+          {
+            "device":{
+              "serialNumber":"35543807179549",
+              "financeContract":[
+                "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=finance&page=1&ordiIndex=1",
+                "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=finance&page=2&ordiIndex=1",
+                "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=finance&page=3&ordiIndex=1",
+                "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=finance&page=4&ordiIndex=1",
+                "https:\/\/poa-uat3target.consensuscorp.com\/webservices\/external\/poa_rest\/poa_rest_stream.php?ordId=bc28ae4f841e78e0&code=finance&page=5&ordiIndex=1"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

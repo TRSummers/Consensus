@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><val1:validateAccountInfoResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:val="http://integration.sprint.com/interfaces/validateAccountInfoBt/validateAccountInfoBt.xsd" xmlns:val1="http://integration.sprint.com/interfaces/validateAccountInfo/v1/validateAccountInfo.xsd">
+    <val1:accountStatus>ACTIVE</val1:accountStatus>
+    <val1:ban>262595585</val1:ban>
+    <val1:numberOfHandsetsApproved>3</val1:numberOfHandsetsApproved>
+    <val1:accountSubscribertInfo>
+        <val1:currentNumberOfSubscribers>2</val1:currentNumberOfSubscribers>
+        <val1:subscriberList>
+            <val1:subscriberInfo>
+                <val1:subscriberId>14345386121</val1:subscriberId>
+                <val1:pricePlanCode>LPDSA0501</val1:pricePlanCode>
+                <val1:pricePlanName>Unlimited Freedom with AutoPay</val1:pricePlanName>
+                <val1:pricePlanPrice>65.0</val1:pricePlanPrice>
+                <val1:planType>fam</val1:planType>
+                <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                <val1:ltsRank>1</val1:ltsRank>
+                <val1:familyGroup>1</val1:familyGroup>
+                <val1:serialType>E</val1:serialType>
+                <val1:serialNumber>089254042309639440</val1:serialNumber>
+                <val1:iccId>89011201000284236211</val1:iccId>
+                <val1:itemId>IPH6S16GBGY1</val1:itemId>
+                <val1:phoneName>IPHONE 6S GRAY 16GB SGL</val1:phoneName>
+                <val1:mdn>8122061100</val1:mdn>
+                <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                <val1:initialActivationDate>2017-09-14</val1:initialActivationDate>
+                <val1:emailAddress>test@test.com</val1:emailAddress>
+                <val1:handsetActivationDate>2017-09-14</val1:handsetActivationDate>
+                <val1:upgradeInfo>
+                    <val1:eligibleInd>true</val1:eligibleInd>
+                    <val1:eligibleDate>2017-09-01</val1:eligibleDate>
+                    <val1:eligibilityCode>565038468-23</val1:eligibilityCode>
+                    <val1:currentTier>2</val1:currentTier>
+                    <val1:eligibleTierList>
+                        <val1:eligibleTierInfo>
+                            <val1:eligibleTierDate>2017-09-01</val1:eligibleTierDate>
+                            <val1:eligibleTierLevel>2</val1:eligibleTierLevel>
+                        </val1:eligibleTierInfo>
+                    </val1:eligibleTierList>
+                    <val1:currentEligibilityList>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>Buy One Get One offer w/ 2yr contract</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>Retail Lease Price</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>Standard Retail Price</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>2-yr Agreement savings on a new device</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>2-yr Agreement savings on a new phone</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>2-yr Agreement savings on a new phone</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                    </val1:currentEligibilityList>
+                </val1:upgradeInfo>
+                <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                <val1:addOnSocList>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
+                        <val1:optionCode>REQPROLHS</val1:optionCode>
+                        <val1:optionPrice>0.0</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>10GB Mobile Hotspot</val1:optionName>
+                        <val1:optionCode>PDSHS10G</val1:optionCode>
+                        <val1:optionPrice>0.0</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>HD Streaming</val1:optionName>
+                        <val1:optionCode>PREMRES03</val1:optionCode>
+                        <val1:optionPrice>0.0</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                </val1:addOnSocList>
+                <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                <val1:loanExistInd>false</val1:loanExistInd>
+                <val1:leaseExistInd>false</val1:leaseExistInd>
+                <val1:giveBackInd>false</val1:giveBackInd>
+            </val1:subscriberInfo>
+            <val1:subscriberInfo>
+                <val1:subscriberId>24345386121</val1:subscriberId>
+                <val1:pricePlanCode>LPDSA0501</val1:pricePlanCode>
+                <val1:pricePlanName>Unlimited Freedom with AutoPay</val1:pricePlanName>
+                <val1:pricePlanPrice>45.0</val1:pricePlanPrice>
+                <val1:planType>fam</val1:planType>
+                <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                <val1:ltsRank>2</val1:ltsRank>
+                <val1:familyGroup>1</val1:familyGroup>
+                <val1:serialType>E</val1:serialType>
+                <val1:serialNumber>089254042308853880</val1:serialNumber>
+                <val1:iccId>89011201000283995155</val1:iccId>
+                <val1:itemId>IPH6S16GBGY1</val1:itemId>
+                <val1:phoneName>IPHONE 6S GRAY 16GB SGL</val1:phoneName>
+                <val1:mdn>8122061109</val1:mdn>
+                <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                <val1:initialActivationDate>2017-09-14</val1:initialActivationDate>
+                <val1:emailAddress>test@test.com</val1:emailAddress>
+                <val1:handsetActivationDate>2017-09-14</val1:handsetActivationDate>
+                <val1:upgradeInfo>
+                    <val1:eligibleInd>true</val1:eligibleInd>
+                    <val1:eligibleDate>2017-09-01</val1:eligibleDate>
+                    <val1:eligibilityCode>891262157-23</val1:eligibilityCode>
+                    <val1:currentTier>2</val1:currentTier>
+                    <val1:eligibleTierList>
+                        <val1:eligibleTierInfo>
+                            <val1:eligibleTierDate>2017-09-01</val1:eligibleTierDate>
+                            <val1:eligibleTierLevel>2</val1:eligibleTierLevel>
+                        </val1:eligibleTierInfo>
+                    </val1:eligibleTierList>
+                    <val1:currentEligibilityList>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>Buy One Get One offer w/ 2yr contract</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>Retail Lease Price</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>Standard Retail Price</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>2-yr Agreement savings on a new device</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>2-yr Agreement savings on a new phone</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>2-yr Agreement savings on a new phone</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                    </val1:currentEligibilityList>
+                    <val1:subscriberDevicePricingList/>
+                </val1:upgradeInfo>
+                <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                <val1:addOnSocList>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
+                        <val1:optionCode>REQPROLHS</val1:optionCode>
+                        <val1:optionPrice>0.0</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>10GB Mobile Hotspot</val1:optionName>
+                        <val1:optionCode>PDSHS10G</val1:optionCode>
+                        <val1:optionPrice>0.0</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>HD Streaming</val1:optionName>
+                        <val1:optionCode>PREMRES03</val1:optionCode>
+                        <val1:optionPrice>0.0</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                </val1:addOnSocList>
+                <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                <val1:loanExistInd>false</val1:loanExistInd>
+                <val1:leaseExistInd>false</val1:leaseExistInd>
+                <val1:giveBackInd>false</val1:giveBackInd>
+            </val1:subscriberInfo>
+        </val1:subscriberList>
+        <val1:allowedLoanCount>15</val1:allowedLoanCount>
+        <val1:loanEligibilityInd>true</val1:loanEligibilityInd>
+    </val1:accountSubscribertInfo>
+    <val1:billingNameInfo>
+        <val1:firstName>TEST</val1:firstName>
+        <val1:lastBusinessName>BLUES</val1:lastBusinessName>
+    </val1:billingNameInfo>
+    <val1:billingAddressInfo>
+        <val1:streetAddress1>1000 LINCOLN AVE</val1:streetAddress1>
+        <val1:city>BEDFORD</val1:city>
+        <val1:stateCode>IN</val1:stateCode>
+        <val1:zipCode>47421</val1:zipCode>
+    </val1:billingAddressInfo>
+</val1:validateAccountInfoResponse>

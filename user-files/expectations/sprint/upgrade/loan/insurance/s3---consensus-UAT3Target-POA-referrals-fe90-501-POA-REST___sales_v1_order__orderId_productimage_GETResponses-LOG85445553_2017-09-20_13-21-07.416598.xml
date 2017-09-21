@@ -1,0 +1,18 @@
+{
+  "connections":[
+    {
+      "index":"1",
+      "device":{
+        "serialNumber":"35543807179549",
+        "code":"190198047953",
+        "description":"Apple iPhone 7 Plus 256GB - Black",
+        "smallImageUrl":"\/img\/prod\/cell-phones\/apple\/iphone-7-plus-black_front_thumb.png",
+        "medImageUrl":"\/img\/prod\/cell-phones\/apple\/iphone-7-plus-black_front_med.png",
+        "medLargeImageUrl":"\/img\/prod\/cell-phones\/apple\/iphone-7-plus-black_front_med.png",
+        "largeImageUrl":"",
+        "xlImageUrl":"\/img\/prod\/cell-phones\/apple\/iphone-7-plus-black_front_xl.png",
+        "specialImageUrl":""
+      }
+    }
+  ]
+}
