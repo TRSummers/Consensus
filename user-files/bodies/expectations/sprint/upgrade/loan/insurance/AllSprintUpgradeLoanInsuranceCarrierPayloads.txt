@@ -1265,7 +1265,7 @@ INFO  2017-09-25 16:10:59,243 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
     </ns1:salesChannelInfo>
     <ns1:equipmentWithDeviceInfo>
       <ns1:deviceInfo>
-        <ns1:esnMeidHex>99000578827997</ns1:esnMeidHex>
+        <ns1:esnMeidHex>YYZHOPEIMUNIQUE</ns1:esnMeidHex>
       </ns1:deviceInfo>
       <ns1:quantity>1</ns1:quantity>
       <ns1:partnerSrp>749.99</ns1:partnerSrp>
@@ -1307,7 +1307,7 @@ INFO  2017-09-25 16:10:59,273 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
     </ns1:salesChannelInfo>
     <ns1:equipmentWithDeviceInfo>
       <ns1:deviceInfo>
-        <ns1:esnMeidHex>99000578827997</ns1:esnMeidHex>
+        <ns1:esnMeidHex>YYZHOPEIMUNIQUE</ns1:esnMeidHex>
       </ns1:deviceInfo>
       <ns1:quantity>1</ns1:quantity>
       <ns1:partnerSrp>749.99</ns1:partnerSrp>
@@ -1334,7 +1334,7 @@ INFO  2017-09-25 16:10:59,285 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
     </ns1:salesChannelInfo>
     <ns1:equipmentWithDeviceInfo>
       <ns1:deviceInfo>
-        <ns1:esnMeidHex>99000578827997</ns1:esnMeidHex>
+        <ns1:esnMeidHex>YYZHOPEIMUNIQUE</ns1:esnMeidHex>
       </ns1:deviceInfo>
       <ns1:quantity>1</ns1:quantity>
       <ns1:partnerSrp>749.99</ns1:partnerSrp>
@@ -1348,14 +1348,14 @@ INFO  2017-09-25 16:10:59,285 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
   </ns1:loanModelInfo>
 </ns1:checkLoanEligibility>
 INFO  2017-09-25 16:10:59,285 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: ' ENDPOINT:  https://webservicesgatewaytest.sprint.com:444/rtb2/services/wireless/account/LoanInfoService/v1
-INFO  2017-09-25 16:11:00,740 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Response Data: <?xml version="1.0" encoding="UTF-8"?><tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>
+INFO  2017-09-25 16:11:00,740 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Response Data: <?xml version="1.0" encoding="UTF-8"?><tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>
 INFO  2017-09-25 16:11:00,741 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Response Header Set is called:
 INFO  2017-09-25 16:11:00,741 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Inbound value: null
 INFO  2017-09-25 16:11:00,741 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.transformer.simple.MessagePropertiesTransformer: Property with key 'X-PAM-RES-RSPID', not found on message using 'null'. Since the value was marked optional, nothing was set on the message for this property
 INFO  2017-09-25 16:11:00,742 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.transformer.simple.MessagePropertiesTransformer: Property with key 'X-PAM-RES-CORRELATIONID', not found on message using 'null'. Since the value was marked optional, nothing was set on the message for this property
 INFO  2017-09-25 16:11:00,759 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUpdateStatusFlow.stage1.01] org.mule.api.processor.LoggerMessageProcessor:  DB-UpdateESBAPIHistoryFlow for PamConversationId: RTB1 
 INFO  2017-09-25 16:11:00,759 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Response Header IS set ID Set: {X-PAM-RES-COMPLETION-CODE=200, http.status=200, X-PAM-RES-CONVERSATIONID=RTB1}
-INFO  2017-09-25 16:11:00,759 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Response: "<?xml version="1.0" encoding="UTF-8"?><tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>"
+INFO  2017-09-25 16:11:00,759 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Response: "<?xml version="1.0" encoding="UTF-8"?><tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>"
 WARN  2017-09-25 16:11:00,770 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUpdateStatusFlow.stage1.01] org.mule.api.processor.LoggerMessageProcessor:  API MetaData = TENANT=TARGET, PAM_APINAME=customer_device/paymentPlansRequest_POST ,PAM_APIVersion=v2,Provider_Name=SPRINT ,PAM_SessionID=8c0c5bc3-7148-4f91-b3a8-a4057074ca96,OrderID=6025526,ExternalStoreId= 0003 , PAM_CorrelationID = null, PAM_ConversationId = RTB1 POASessionID = 799334070 
 INFO  2017-09-25 16:11:00,772 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUpdateStatusFlow.stage1.01] org.mule.api.processor.LoggerMessageProcessor:  DB-UpdateESBAPIHistoryFlow inbound property: null
 INFO  2017-09-25 16:11:00,772 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUpdateStatusFlow.stage1.01] org.mule.api.processor.LoggerMessageProcessor:  Value was:RTB1
@@ -1388,7 +1388,7 @@ INFO  2017-09-25 16:11:00,772 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUp
     </ns1:salesChannelInfo>
     <ns1:equipmentWithDeviceInfo>
       <ns1:deviceInfo>
-        <ns1:esnMeidHex>99000578827997</ns1:esnMeidHex>
+        <ns1:esnMeidHex>YYZHOPEIMUNIQUE</ns1:esnMeidHex>
       </ns1:deviceInfo>
       <ns1:quantity>1</ns1:quantity>
       <ns1:partnerSrp>749.99</ns1:partnerSrp>
@@ -1444,7 +1444,7 @@ INFO  2017-09-25 16:11:00,810 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUp
     </ns1:salesChannelInfo>
     <ns1:equipmentWithDeviceInfo>
       <ns1:deviceInfo>
-        <ns1:esnMeidHex>99000578827997</ns1:esnMeidHex>
+        <ns1:esnMeidHex>YYZHOPEIMUNIQUE</ns1:esnMeidHex>
       </ns1:deviceInfo>
       <ns1:quantity>1</ns1:quantity>
       <ns1:partnerSrp>749.99</ns1:partnerSrp>
@@ -1457,7 +1457,7 @@ INFO  2017-09-25 16:11:00,810 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUp
     <ns1:partnerModelInd>true</ns1:partnerModelInd>
   </ns1:loanModelInfo>
 </ns1:checkLoanEligibility>
-INFO  2017-09-25 16:11:00,811 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUpdateStatusFlow.stage1.01] org.mule.api.processor.LoggerMessageProcessor: Response Data flowVars['responsePayLoad']: <?xml version="1.0" encoding="UTF-8"?><tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>
+INFO  2017-09-25 16:11:00,811 [[CC-ESB-PaymentDetailsSPRINT-1.2].esbAPIHistoryUpdateStatusFlow.stage1.01] org.mule.api.processor.LoggerMessageProcessor: Response Data flowVars['responsePayLoad']: <?xml version="1.0" encoding="UTF-8"?><tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>
 ERROR 2017-09-25 16:11:00,820 [[CC-ESB-PaymentDetailsSPRINT-1.2].apiHistoryFileWrite.stage1.02] org.mule.exception.CatchMessagingExceptionStrategy: 
 ********************************************************************************
 Message               : Exception while executing: 
@@ -1517,7 +1517,7 @@ INFO  2017-09-25 16:11:00,911 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
             "loanMinAmount": 24
           },
           "deviceInfo": {
-            "esnMeidHex": "99000578827997"
+            "esnMeidHex": "YYZHOPEIMUNIQUE"
           },
           "equipmentType": "D",
           "installmentAmt": 31.25,
@@ -1534,7 +1534,7 @@ INFO  2017-09-25 16:11:00,911 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         {
           "adjustedSrpAmt": 744,
           "deviceInfo": {
-            "esnMeidHex": "99000578827997"
+            "esnMeidHex": "YYZHOPEIMUNIQUE"
           },
           "equipmentType": "D",
           "estimatedSalesTax": 0,
@@ -1711,7 +1711,7 @@ INFO  2017-09-25 16:14:09,806 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -1865,7 +1865,7 @@ INFO  2017-09-25 16:14:09,854 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -2012,7 +2012,7 @@ INFO  2017-09-25 16:14:11,829 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -2163,7 +2163,7 @@ INFO  2017-09-25 16:14:11,848 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -2229,7 +2229,7 @@ INFO  2017-09-25 16:14:12,201 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2324,7 +2324,7 @@ INFO  2017-09-25 16:14:12,216 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2414,7 +2414,7 @@ INFO  2017-09-25 16:14:13,819 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2534,7 +2534,7 @@ INFO  2017-09-25 16:14:13,834 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2619,7 +2619,7 @@ INFO  2017-09-25 16:15:25,835 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2717,7 +2717,7 @@ INFO  2017-09-25 16:15:25,843 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2808,7 +2808,7 @@ INFO  2017-09-25 16:15:27,442 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -2910,7 +2910,7 @@ INFO  2017-09-25 16:15:27,455 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
         <ns0:loanDate>2017-09-25</ns0:loanDate>
         <ns0:equipmentItemList>
           <ns0:equipmentItemInfo>
-            <ns0:itemId>99000578827997</ns0:itemId>
+            <ns0:itemId>YYZHOPEIMUNIQUE</ns0:itemId>
             <ns0:quantity>1</ns0:quantity>
             <ns0:itemDescription>G950U BLK XCVR SGL SAM</ns0:itemDescription>
           </ns0:equipmentItemInfo>
@@ -3038,7 +3038,7 @@ INFO  2017-09-25 16:15:27,935 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         <ns0:deviceOrderInfo>
           <ns0:deviceSequenceNumber>1</ns0:deviceSequenceNumber>
           <ns0:deviceInfo>
-            <ns0:meid>99000578827997</ns0:meid>
+            <ns0:meid>YYZHOPEIMUNIQUE</ns0:meid>
             <ns0:iccId>89011201000218620498</ns0:iccId>
             <ns0:previouslyActivatedInd>false</ns0:previouslyActivatedInd>
           </ns0:deviceInfo>
@@ -3143,7 +3143,7 @@ INFO  2017-09-25 16:15:27,943 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
         <ns0:deviceOrderInfo>
           <ns0:deviceSequenceNumber>1</ns0:deviceSequenceNumber>
           <ns0:deviceInfo>
-            <ns0:meid>99000578827997</ns0:meid>
+            <ns0:meid>YYZHOPEIMUNIQUE</ns0:meid>
             <ns0:iccId>89011201000218620498</ns0:iccId>
             <ns0:previouslyActivatedInd>false</ns0:previouslyActivatedInd>
           </ns0:deviceInfo>
@@ -3244,7 +3244,7 @@ INFO  2017-09-25 16:16:21,334 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
         <ns0:deviceOrderInfo>
           <ns0:deviceSequenceNumber>1</ns0:deviceSequenceNumber>
           <ns0:deviceInfo>
-            <ns0:meid>99000578827997</ns0:meid>
+            <ns0:meid>YYZHOPEIMUNIQUE</ns0:meid>
             <ns0:iccId>89011201000218620498</ns0:iccId>
             <ns0:previouslyActivatedInd>false</ns0:previouslyActivatedInd>
           </ns0:deviceInfo>
@@ -3370,7 +3370,7 @@ INFO  2017-09-25 16:16:21,366 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
         <ns0:deviceOrderInfo>
           <ns0:deviceSequenceNumber>1</ns0:deviceSequenceNumber>
           <ns0:deviceInfo>
-            <ns0:meid>99000578827997</ns0:meid>
+            <ns0:meid>YYZHOPEIMUNIQUE</ns0:meid>
             <ns0:iccId>89011201000218620498</ns0:iccId>
             <ns0:previouslyActivatedInd>false</ns0:previouslyActivatedInd>
           </ns0:deviceInfo>
@@ -3511,7 +3511,7 @@ INFO  2017-09-25 16:16:21,565 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -3657,7 +3657,7 @@ INFO  2017-09-25 16:16:21,575 [[ConnectedCommerceDomainHub].HTTP_DOMAIN_Listener
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -3798,7 +3798,7 @@ INFO  2017-09-25 16:16:22,873 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>
@@ -3944,7 +3944,7 @@ INFO  2017-09-25 16:16:22,886 [[CC-ESB-SPRINT-1.0].esbAPIHistoryUpdateStatusFlow
           <ns0:mdn>7407078913</ns0:mdn>
           <ns0:deviceName>SAM G950U BLK XCVR SGL</ns0:deviceName>
           <ns0:deviceSerialType>ESN</ns0:deviceSerialType>
-          <ns0:deviceSerialNumber>99000578827997</ns0:deviceSerialNumber>
+          <ns0:deviceSerialNumber>YYZHOPEIMUNIQUE</ns0:deviceSerialNumber>
           <ns0:simId>89011201000218620498</ns0:simId>
           <ns0:subscriptionInfo>
             <ns0:primaryLineInd>true</ns0:primaryLineInd>

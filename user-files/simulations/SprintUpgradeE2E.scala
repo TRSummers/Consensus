@@ -2480,7 +2480,7 @@ class SprintUpgradeE2E extends Simulation {
 			.post("/retail/checkout/activationscan.htm")
 			.headers(headers_0)
 			.formParam("serial", "")
-			.formParam("device[99000578827997]", "Y")
+			.formParam("device[YYZHOPEIMUNIQUE]", "Y")
 			.formParam("deviceScanInfo[6025526_42588_1_1][sim]", "89011201000218620498")
 			.formParam("isRequiredSIMValidation", "1"))
 		.pause(1)
