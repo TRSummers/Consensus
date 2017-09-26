@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <SOAP-ENV:Header>
+        <m:wsMessageHeader
+                xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+            <m:trackingMessageHeader>
+                <m:applicationId>XXX</m:applicationId>
+                <m:applicationUserId>XXXXXX</m:applicationUserId>
+                <m:consumerId>XXXX</m:consumerId>
+                <m:messageId>1234</m:messageId>
+                <m:conversationId>123</m:conversationId>
+                <m:timeToLive>30</m:timeToLive>
+                <m:replyCompletionCode>0</m:replyCompletionCode>
+                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+            </m:trackingMessageHeader>
+        </m:wsMessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <quer1:queryAccountLoanDetailsResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:quer="http://integration.sprint.com/interfaces/queryAccountLoanDetailsBt/v1/queryAccountLoanDetailsBtV1.xsd" xmlns:quer1="http://integration.sprint.com/interfaces/queryAccountLoanDetails/v1/queryAccountLoanDetails.xsd">
+            <quer1:loanInfo>
+                <quer1:numberOfOpenLoans>1</quer1:numberOfOpenLoans>
+                <quer1:subscriberList>
+                    <quer1:subscriberInfo>
+                        <quer1:subscriberId>90663386121</quer1:subscriberId>
+                        <quer1:mdn>7407078918</quer1:mdn>
+                        <quer1:openLoanInd>true</quer1:openLoanInd>
+                    </quer1:subscriberInfo>
+                </quer1:subscriberList>
+            </quer1:loanInfo>
+            <quer1:loanFinancialSummaryInfo>
+                <quer1:numberOfOpenLoans>1</quer1:numberOfOpenLoans>
+                <quer1:pastDueAmount>0.0</quer1:pastDueAmount>
+                <quer1:currentBilledAmount>0.0</quer1:currentBilledAmount>
+                <quer1:totalDueAmount>0.00</quer1:totalDueAmount>
+                <quer1:originalLoanAmount>549.99</quer1:originalLoanAmount>
+                <quer1:unbilledLoanAmount>549.99</quer1:unbilledLoanAmount>
+                <quer1:loanList>
+                    <quer1:loanInfo>
+                        <quer1:subscriberId>90663386121</quer1:subscriberId>
+                        <quer1:ptn>7407078918</quer1:ptn>
+                        <quer1:loanNumber>NR-AM-357923</quer1:loanNumber>
+                        <quer1:loanStatus>O</quer1:loanStatus>
+                        <quer1:loanTransactionId>oa-tcnr-229729034</quer1:loanTransactionId>
+                        <quer1:loanAcquisitionDate>2017-09-22-05:00</quer1:loanAcquisitionDate>
+                        <quer1:loanTerm>24.0</quer1:loanTerm>
+                        <quer1:loanAmount>549.99</quer1:loanAmount>
+                        <quer1:downPaymentAmount>0.0</quer1:downPaymentAmount>
+                        <quer1:installmentAmount>22.92</quer1:installmentAmount>
+                        <quer1:loanBilledAmount>0.0</quer1:loanBilledAmount>
+                        <quer1:loanUnbilledAmount>549.99</quer1:loanUnbilledAmount>
+                        <quer1:loanPayOffAmount>549.99</quer1:loanPayOffAmount>
+                        <quer1:equipmentId>089496986400340311</quer1:equipmentId>
+                        <quer1:itemId>190198072344</quer1:itemId>
+                        <quer1:itemDescription>IPHONE 7 JET 256GB KIT</quer1:itemDescription>
+                    </quer1:loanInfo>
+                </quer1:loanList>
+            </quer1:loanFinancialSummaryInfo>
+        </quer1:queryAccountLoanDetailsResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

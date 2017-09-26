@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope
+		xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+		xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOAP-ENV:Header>
+		<m:wsMessageHeader
+				xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+			<m:trackingMessageHeader>
+				<m:applicationId>XXX</m:applicationId>
+				<m:applicationUserId>XXXXXX</m:applicationUserId>
+				<m:consumerId>XXXX</m:consumerId>
+				<m:messageId>1234</m:messageId>
+				<m:conversationId>123</m:conversationId>
+				<m:timeToLive>30</m:timeToLive>
+				<m:replyCompletionCode>0</m:replyCompletionCode>
+				<m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+			</m:trackingMessageHeader>
+		</m:wsMessageHeader>
+	</SOAP-ENV:Header>
+	<SOAP-ENV:Body>
+		<tns:submitOrderResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xalan="http://xml.apache.org/xalan" xmlns:tns="http://integration.sprint.com/interfaces/submitOrder/v1/submitOrder.xsd"><tns:activationResponseInfo><tns:callingApplicationInfo><tns:vendorCode>TC</tns:vendorCode><tns:orderId>092504106025526</tns:orderId></tns:callingApplicationInfo><tns:activationResponse><tns:orderSubLineList><tns:orderSubLineInfo><tns:orderSubLineId>1</tns:orderSubLineId><tns:deviceList><tns:deviceInfo><tns:subscriberId>80663386121</tns:subscriberId><tns:meid>256691544808550807</tns:meid><tns:iccId>89011201000218620498</tns:iccId><tns:result>SUCCESS</tns:result><tns:msid>000007407073299</tns:msid><tns:oneTimeLockCode>509353</tns:oneTimeLockCode><tns:activationFeeForHandset>30</tns:activationFeeForHandset><tns:changedSocList><tns:changedSocInfo><tns:soc>5GBHTSPTC</tns:soc><tns:socName>Sprint Mobile Hotspot 5GB</tns:socName><tns:expirationDate>2017-09-25</tns:expirationDate></tns:changedSocInfo><tns:changedSocInfo><tns:soc>5GBHTSPTL</tns:soc><tns:socName>Sprint Mobile Hotspot 5GB</tns:socName><tns:effectiveDate>2017-09-25</tns:effectiveDate></tns:changedSocInfo><tns:changedSocInfo><tns:soc>PDSL3592</tns:soc><tns:socName>My All-in with 5GB MHS</tns:socName><tns:recurringCharge>110</tns:recurringCharge><tns:effectiveDate>2017-09-25</tns:effectiveDate></tns:changedSocInfo></tns:changedSocList></tns:deviceInfo></tns:deviceList></tns:orderSubLineInfo></tns:orderSubLineList><tns:activationFee>30</tns:activationFee><tns:ban>297765584</tns:ban><tns:actualSalesTax>0.0</tns:actualSalesTax></tns:activationResponse></tns:activationResponseInfo></tns:submitOrderResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

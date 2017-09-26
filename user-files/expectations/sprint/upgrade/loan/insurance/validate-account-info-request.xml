@@ -1,0 +1,17 @@
+<ns0:validateAccountInfo xmlns:ns0="http://integration.sprint.com/interfaces/validateAccountInfo/v1/validateAccountInfo.xsd">
+  <ns0:accountInfo>
+    <ns0:mdn>7407078913</ns0:mdn>
+  </ns0:accountInfo>
+  <ns0:singleSubscriberInd>false</ns0:singleSubscriberInd>
+  <ns0:authenticationInfo>
+    <ns0:secPin>112314</ns0:secPin>
+  </ns0:authenticationInfo>
+  <ns0:returnBogxInd>false</ns0:returnBogxInd>
+  <ns0:fetchRebateInfoInd>false</ns0:fetchRebateInfoInd>
+  <ns0:checkLoanEligibilityInd>true</ns0:checkLoanEligibilityInd>
+  <ns0:fetchAdditionalInfoList>
+    <ns0:fetchAdditionalInfo>
+      <ns0:fetchAdditionalInfoKey>EARLY_UPGRADE</ns0:fetchAdditionalInfoKey>
+    </ns0:fetchAdditionalInfo>
+  </ns0:fetchAdditionalInfoList>
+</ns0:validateAccountInfo>

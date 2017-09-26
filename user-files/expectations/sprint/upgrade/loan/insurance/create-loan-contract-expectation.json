@@ -1,0 +1,30 @@
+{
+  "user": "perf",
+  "name": "VZN_EarlyEdge_PayUp_AccountLookup_retrieveCustomerDetails",
+  "request": {
+    "xpath": true,
+    "method": "POST",
+    "url": "Amazon.com",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "QA",
+    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrieveCustomerDetails'] and //*[local-name()='mobileNumber' and text()='2489779052']"
+  },
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
+  },
+  "expectation": {
+    "description": "VZN_EarlyEdge_PayUp_AccountLookup",
+    "responder": "verizon",
+    "api": "retrieveCustomerDetails",
+    "environment": "QA"
+  }
+}

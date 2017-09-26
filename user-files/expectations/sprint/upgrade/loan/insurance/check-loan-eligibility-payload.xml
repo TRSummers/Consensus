@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope
+		xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+		xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOAP-ENV:Header>
+		<m:wsMessageHeader
+				xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+			<m:trackingMessageHeader>
+				<m:applicationId>XXX</m:applicationId>
+				<m:applicationUserId>XXXXXX</m:applicationUserId>
+				<m:consumerId>XXXX</m:consumerId>
+				<m:messageId>1234</m:messageId>
+				<m:conversationId>123</m:conversationId>
+				<m:timeToLive>30</m:timeToLive>
+				<m:replyCompletionCode>0</m:replyCompletionCode>
+				<m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+			</m:trackingMessageHeader>
+		</m:wsMessageHeader>
+	</SOAP-ENV:Header>
+	<SOAP-ENV:Body>
+		<tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd"><tns:loanEligibilityInfo><tns:accountType>I</tns:accountType><tns:accountSubType>I</tns:accountSubType><tns:loanEligibilityInd>true</tns:loanEligibilityInd><tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd><tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd><tns:loanMaxLimit>15</tns:loanMaxLimit><tns:equipmentEligibilityInfoList><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31.25</tns:installmentAmt><tns:lastInstallmentAmt>31.24</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>24</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:equipmentType>D</tns:equipmentType><tns:additionalPartnerLoanInfo><tns:loanAmount>749.99</tns:loanAmount><tns:loanMinAmount>24</tns:loanMinAmount><tns:loanMaxAmount>750</tns:loanMaxAmount><tns:additionalPaymentAmount>0</tns:additionalPaymentAmount></tns:additionalPartnerLoanInfo></tns:equipmentEligibilityInfo><tns:equipmentEligibilityInfo><tns:itemId>SPHG950UBK1</tns:itemId><tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd><tns:srp>750</tns:srp><tns:installmentAmt>31</tns:installmentAmt><tns:lastInstallmentAmt>31</tns:lastInstallmentAmt><tns:loanDownPayment>0</tns:loanDownPayment><tns:loanTerm>18</tns:loanTerm><tns:loanFirstInstallmentDueDate>2017-10-03-04:00</tns:loanFirstInstallmentDueDate><tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate><tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription><tns:deviceInfo><tns:esnMeidHex>99000578827997</tns:esnMeidHex></tns:deviceInfo><tns:estimatedSalesTax>0</tns:estimatedSalesTax><tns:equipmentType>D</tns:equipmentType><tns:leaseEligibilityInd>true</tns:leaseEligibilityInd><tns:adjustedSrpAmt>744</tns:adjustedSrpAmt><tns:residualLeaseAmt>186</tns:residualLeaseAmt><tns:monthToMonthAmount>31</tns:monthToMonthAmount></tns:equipmentEligibilityInfo></tns:equipmentEligibilityInfoList><tns:accountloanInfo><tns:openLoanCount>1</tns:openLoanCount><tns:loanSubscriberList><tns:loanSubscriberInfo><tns:subscriberId>90663386121</tns:subscriberId><tns:mdn>7407078918</tns:mdn><tns:loanNumber>NR-AM-357923</tns:loanNumber><tns:loanSequenceNumber>27027048</tns:loanSequenceNumber><tns:loanModelType>A</tns:loanModelType><tns:loanItemDescription>IPHONE 7 JET 256GB KIT</tns:loanItemDescription><tns:esnMeidHex>35582808053157</tns:esnMeidHex><tns:itemId>190198072344</tns:itemId><tns:giveBackInd>false</tns:giveBackInd></tns:loanSubscriberInfo></tns:loanSubscriberList></tns:accountloanInfo><tns:accountLeaseInfo><tns:openLeaseCount>0</tns:openLeaseCount></tns:accountLeaseInfo></tns:loanEligibilityInfo></tns:checkLoanEligibilityResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

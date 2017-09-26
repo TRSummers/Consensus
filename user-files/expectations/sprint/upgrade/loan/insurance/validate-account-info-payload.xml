@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <SOAP-ENV:Header>
+        <m:wsMessageHeader
+                xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+            <m:trackingMessageHeader>
+                <m:applicationId>XXX</m:applicationId>
+                <m:applicationUserId>XXXXXX</m:applicationUserId>
+                <m:consumerId>XXXX</m:consumerId>
+                <m:messageId>1234</m:messageId>
+                <m:conversationId>123</m:conversationId>
+                <m:timeToLive>30</m:timeToLive>
+                <m:replyCompletionCode>0</m:replyCompletionCode>
+                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+            </m:trackingMessageHeader>
+        </m:wsMessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <val1:validateAccountInfoResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:val="http://integration.sprint.com/interfaces/validateAccountInfoBt/validateAccountInfoBt.xsd" xmlns:val1="http://integration.sprint.com/interfaces/validateAccountInfo/v1/validateAccountInfo.xsd">
+            <val1:accountStatus>ACTIVE</val1:accountStatus>
+            <val1:ban>297765584</val1:ban>
+            <val1:numberOfHandsetsApproved>6</val1:numberOfHandsetsApproved>
+            <val1:accountSubscribertInfo>
+                <val1:currentNumberOfSubscribers>4</val1:currentNumberOfSubscribers>
+                <val1:subscriberList>
+                    <val1:subscriberInfo>
+                        <val1:subscriberId>01663386121</val1:subscriberId>
+                        <val1:pricePlanCode>LSD134AS</val1:pricePlanCode>
+                        <val1:pricePlanName>40GB Btr Choice XXL-$5off w/AP</val1:pricePlanName>
+                        <val1:pricePlanPrice>0.0</val1:pricePlanPrice>
+                        <val1:planType>fam</val1:planType>
+                        <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                        <val1:ltsRank>2</val1:ltsRank>
+                        <val1:sharingGroupId>490632</val1:sharingGroupId>
+                        <val1:familyGroup>1</val1:familyGroup>
+                        <val1:serialType>E</val1:serialType>
+                        <val1:serialNumber>089471437502304340</val1:serialNumber>
+                        <val1:iccId>89011201002100400443</val1:iccId>
+                        <val1:itemId>IPH7P32GGLD1</val1:itemId>
+                        <val1:phoneName>IPHONE 7P GOLD 32GB SGL</val1:phoneName>
+                        <val1:mdn>7407078919</val1:mdn>
+                        <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                        <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                        <val1:initialActivationDate>2017-08-03</val1:initialActivationDate>
+                        <val1:emailAddress>test@test.com</val1:emailAddress>
+                        <val1:handsetActivationDate>2017-09-18</val1:handsetActivationDate>
+                        <val1:upgradeInfo>
+                            <val1:eligibleInd>false</val1:eligibleInd>
+                            <val1:eligibleDate>2019-09-01</val1:eligibleDate>
+                            <val1:eligibleTierList>
+                                <val1:eligibleTierInfo>
+                                    <val1:eligibleTierDate>2019-09-01</val1:eligibleTierDate>
+                                    <val1:eligibleTierLevel>2</val1:eligibleTierLevel>
+                                </val1:eligibleTierInfo>
+                            </val1:eligibleTierList>
+                        </val1:upgradeInfo>
+                        <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                        <val1:addOnSocList>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>Phone Access w/Unltd Talk/Text</val1:optionName>
+                                <val1:optionCode>LSDPHN25D</val1:optionCode>
+                                <val1:optionPrice>25.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
+                                <val1:optionCode>REQPROLHS</val1:optionCode>
+                                <val1:optionPrice>0.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>Unlimited 2G Data Speeds</val1:optionName>
+                                <val1:optionCode>LSD134ASD</val1:optionCode>
+                                <val1:optionPrice>0.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                        </val1:addOnSocList>
+                        <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                        <val1:loanExistInd>false</val1:loanExistInd>
+                        <val1:leaseExistInd>false</val1:leaseExistInd>
+                        <val1:giveBackInd>false</val1:giveBackInd>
+                    </val1:subscriberInfo>
+                    <val1:subscriberInfo>
+                        <val1:subscriberId>80663386121</val1:subscriberId>
+                        <val1:pricePlanCode>PDSC3592</val1:pricePlanCode>
+                        <val1:pricePlanName>My All-in with 5GB MHS</val1:pricePlanName>
+                        <val1:pricePlanPrice>110.0</val1:pricePlanPrice>
+                        <val1:planType>ind</val1:planType>
+                        <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                        <val1:serialType>E</val1:serialType>
+                        <val1:serialNumber>256691431004393064</val1:serialNumber>
+                        <val1:itemId>885909538065</val1:itemId>
+                        <val1:phoneName>IPHONE 4S WHITE 64GB</val1:phoneName>
+                        <val1:mdn>7407078913</val1:mdn>
+                        <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                        <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                        <val1:initialActivationDate>2017-08-03</val1:initialActivationDate>
+                        <val1:emailAddress>test@test.com</val1:emailAddress>
+                        <val1:contractStartDate>2017-08-03</val1:contractStartDate>
+                        <val1:contractEndDate>2019-08-02</val1:contractEndDate>
+                        <val1:handsetActivationDate>2017-08-03</val1:handsetActivationDate>
+                        <val1:upgradeInfo>
+                            <val1:eligibleInd>true</val1:eligibleInd>
+                            <val1:eligibleDate>2017-09-01</val1:eligibleDate>
+                            <val1:eligibilityCode>630133691-23</val1:eligibilityCode>
+                            <val1:currentTier>2</val1:currentTier>
+                            <val1:eligibleTierList>
+                                <val1:eligibleTierInfo>
+                                    <val1:eligibleTierDate>2017-09-01</val1:eligibleTierDate>
+                                    <val1:eligibleTierLevel>2</val1:eligibleTierLevel>
+                                </val1:eligibleTierInfo>
+                            </val1:eligibleTierList>
+                            <val1:currentEligibilityList>
+                                <val1:currentEligibilityInfo>
+                                    <val1:eligibilityDescription>Buy One Get One offer w/ 2yr contract</val1:eligibilityDescription>
+                                </val1:currentEligibilityInfo>
+                                <val1:currentEligibilityInfo>
+                                    <val1:eligibilityDescription>Retail Lease Price</val1:eligibilityDescription>
+                                </val1:currentEligibilityInfo>
+                                <val1:currentEligibilityInfo>
+                                    <val1:eligibilityDescription>Standard Retail Price</val1:eligibilityDescription>
+                                </val1:currentEligibilityInfo>
+                                <val1:currentEligibilityInfo>
+                                    <val1:eligibilityDescription>2-yr Agreement savings on a new device</val1:eligibilityDescription>
+                                </val1:currentEligibilityInfo>
+                                <val1:currentEligibilityInfo>
+                                    <val1:eligibilityDescription>2-yr Agreement savings on a new phone</val1:eligibilityDescription>
+                                </val1:currentEligibilityInfo>
+                                <val1:currentEligibilityInfo>
+                                    <val1:eligibilityDescription>2-yr Agreement savings on a new phone</val1:eligibilityDescription>
+                                </val1:currentEligibilityInfo>
+                            </val1:currentEligibilityList>
+                            <val1:subscriberDevicePricingList/>
+                        </val1:upgradeInfo>
+                        <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                        <val1:addOnSocList>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>Sprint Mobile Hotspot 5GB</val1:optionName>
+                                <val1:optionCode>5GBHTSPTC</val1:optionCode>
+                                <val1:optionPrice>0.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                        </val1:addOnSocList>
+                        <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                        <val1:loanExistInd>false</val1:loanExistInd>
+                        <val1:leaseExistInd>false</val1:leaseExistInd>
+                        <val1:giveBackInd>false</val1:giveBackInd>
+                    </val1:subscriberInfo>
+                    <val1:subscriberInfo>
+                        <val1:subscriberId>90663386121</val1:subscriberId>
+                        <val1:pricePlanCode>LSD134AS</val1:pricePlanCode>
+                        <val1:pricePlanName>40GB Btr Choice XXL-$5off w/AP</val1:pricePlanName>
+                        <val1:pricePlanPrice>100.0</val1:pricePlanPrice>
+                        <val1:planType>fam</val1:planType>
+                        <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                        <val1:ltsRank>1</val1:ltsRank>
+                        <val1:sharingGroupId>490632</val1:sharingGroupId>
+                        <val1:familyGroup>1</val1:familyGroup>
+                        <val1:serialType>E</val1:serialType>
+                        <val1:serialNumber>089496986400340311</val1:serialNumber>
+                        <val1:iccId>89011201000522889144</val1:iccId>
+                        <val1:itemId>IPH7256GBJB1</val1:itemId>
+                        <val1:phoneName>IPHONE 7 JET 256GB SGL</val1:phoneName>
+                        <val1:mdn>7407078918</val1:mdn>
+                        <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                        <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                        <val1:initialActivationDate>2017-08-03</val1:initialActivationDate>
+                        <val1:emailAddress>test@test.com</val1:emailAddress>
+                        <val1:handsetActivationDate>2017-09-22</val1:handsetActivationDate>
+                        <val1:upgradeInfo>
+                            <val1:eligibleInd>false</val1:eligibleInd>
+                            <val1:eligibleDate>2019-09-01</val1:eligibleDate>
+                            <val1:eligibleTierList>
+                                <val1:eligibleTierInfo>
+                                    <val1:eligibleTierDate>2019-09-01</val1:eligibleTierDate>
+                                    <val1:eligibleTierLevel>2</val1:eligibleTierLevel>
+                                </val1:eligibleTierInfo>
+                            </val1:eligibleTierList>
+                            <val1:earlyUpgradeInfo>
+                                <val1:earlyUpgradeEligibilityInfo>
+                                    <val1:earlyUpgradeEligibilityInd>true</val1:earlyUpgradeEligibilityInd>
+                                </val1:earlyUpgradeEligibilityInfo>
+                                <val1:currentDevicePurchaseInfo>
+                                    <val1:installmentsToBePaid>24</val1:installmentsToBePaid>
+                                    <val1:minimumNumberOfInstallmentsToBePaid>24</val1:minimumNumberOfInstallmentsToBePaid>
+                                    <val1:loanTerm>24</val1:loanTerm>
+                                </val1:currentDevicePurchaseInfo>
+                            </val1:earlyUpgradeInfo>
+                        </val1:upgradeInfo>
+                        <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                        <val1:addOnSocList>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>Phone Access w/Unltd Talk/Text</val1:optionName>
+                                <val1:optionCode>LSDPHN25D</val1:optionCode>
+                                <val1:optionPrice>25.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
+                                <val1:optionCode>REQPROLHS</val1:optionCode>
+                                <val1:optionPrice>0.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                            <val1:addOnSocInfo>
+                                <val1:optionName>Unlimited 2G Data Speeds</val1:optionName>
+                                <val1:optionCode>LSD134ASD</val1:optionCode>
+                                <val1:optionPrice>0.0</val1:optionPrice>
+                            </val1:addOnSocInfo>
+                        </val1:addOnSocList>
+                        <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                        <val1:loanExistInd>true</val1:loanExistInd>
+                        <val1:leaseExistInd>false</val1:leaseExistInd>
+                        <val1:loanInfo>
+                            <val1:loanModelType>A</val1:loanModelType>
+                            <val1:loanSequenceNumber>27027048</val1:loanSequenceNumber>
+                            <val1:esnMeidHex>35582808053157</val1:esnMeidHex>
+                            <val1:itemDescription>IPHONE 7 JET 256GB KIT</val1:itemDescription>
+                            <val1:loanNumber>NR-AM-357923</val1:loanNumber>
+                        </val1:loanInfo>
+                        <val1:giveBackInd>false</val1:giveBackInd>
+                    </val1:subscriberInfo>
+                </val1:subscriberList>
+                <val1:allowedLoanCount>14</val1:allowedLoanCount>
+                <val1:loanEligibilityInd>true</val1:loanEligibilityInd>
+            </val1:accountSubscribertInfo>
+            <val1:billingNameInfo>
+                <val1:firstName>TEST</val1:firstName>
+                <val1:lastBusinessName>FOSSEY</val1:lastBusinessName>
+            </val1:billingNameInfo>
+            <val1:billingAddressInfo>
+                <val1:streetAddress1>152 MILL ST</val1:streetAddress1>
+                <val1:city>ATHENS</val1:city>
+                <val1:stateCode>OH</val1:stateCode>
+                <val1:zipCode>45701</val1:zipCode>
+            </val1:billingAddressInfo>
+        </val1:validateAccountInfoResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

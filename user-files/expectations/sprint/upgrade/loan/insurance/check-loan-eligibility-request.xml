@@ -1,0 +1,25 @@
+<ns1:checkLoanEligibility xmlns:ns1="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
+  <ns1:accountInfo>
+    <ns1:mdn>7407078913</ns1:mdn>
+    <ns1:orderId>092504106025526</ns1:orderId>
+    <ns1:vendorCode>TC</ns1:vendorCode>
+  </ns1:accountInfo>
+  <ns1:orderInfo>
+    <ns1:salesChannelInfo>
+      <ns1:dealerCode>3A2TWLLX</ns1:dealerCode>
+    </ns1:salesChannelInfo>
+    <ns1:equipmentWithDeviceInfo>
+      <ns1:deviceInfo>
+        <ns1:esnMeidHex>99000578827997</ns1:esnMeidHex>
+      </ns1:deviceInfo>
+      <ns1:quantity>1</ns1:quantity>
+      <ns1:partnerSrp>749.99</ns1:partnerSrp>
+      <ns1:additionalDownPayment>0.0</ns1:additionalDownPayment>
+    </ns1:equipmentWithDeviceInfo>
+    <ns1:orderType>REPLACE</ns1:orderType>
+    <ns1:fetchLeaseInfoInd>true</ns1:fetchLeaseInfoInd>
+  </ns1:orderInfo>
+  <ns1:loanModelInfo>
+    <ns1:partnerModelInd>true</ns1:partnerModelInd>
+  </ns1:loanModelInfo>
+</ns1:checkLoanEligibility>
