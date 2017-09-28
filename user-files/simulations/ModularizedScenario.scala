@@ -29,7 +29,7 @@ class End_to_End_Scenario extends Simulation {
     Map( "imei" -> "99000088304056",
          "firstName" -> Random.shuffle(Array("James", "John", "Abraham", "George").toList).head,
          "lastName" -> Random.shuffle(Array("Madison", "Adams", "Lincoln", "Washington").toList).head,
-         "nationalId" -> (110000000 + Random.nextInt(1000000)).toString,
+         "nationalId" -> (210000000 + Random.nextInt(1000000)).toString,
          "carrier" -> "VerizonNA"))
 
 
@@ -55,7 +55,7 @@ class End_to_End_Scenario extends Simulation {
         VZWFlow.NumberPort,             Common.CommonPause,
         VZWFlow.OrderReviewandConfirm,  Common.CommonPause,
         VZWFlow.TermsandConditions,     Common.CommonPause,
-        VZWFlow.SwipeCard,              Common.CommonPause,
+//        VZWFlow.SwipeCard,              Common.CommonPause,
         VZWFlow.PrintMobileScanSheet,   Common.CommonPause,
         VZWFlow.ScanReceipt,            Common.CommonPause,
         VZWFlow.EnterIMEIandSIM,        Common.CommonPause,
