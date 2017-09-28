@@ -984,10 +984,10 @@ object Common{
 		.exec(http("Logout_2")
 			.get("/retail/public/styles/normalize.php")
 			.headers(Logoutheaders_2))
-		.exec(http("Completed Orders")
+		.exec(http("Completed_${p_orderid}")
 			.get("/js/retail/topnav.php")
 			.headers(Logoutheaders_1))
-		.exec(http("Completed_${p_orderid}")
+		.exec(http("Completed Orders")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490039628495")
 			.headers(Logoutheaders_4))
 	}
