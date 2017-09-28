@@ -1,13 +1,13 @@
 {
-  "user": "perf",
-  "name": "VZN_EarlyEdge_PayUp_AccountLookup_retrieveCustomerDetails",
+  "user": "tward",
+  "name": "SPRINT_UPG_E2E_CreateLiteESA",
   "request": {
     "xpath": true,
     "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "environment": "QA",
-    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrieveCustomerDetails'] and //*[local-name()='mobileNumber' and text()='2489779052']"
+    "url": "",
+    "path": "/rtb1/services/wireless/account/EsaManagementService/v1",
+    "environment": "PERF",
+    "pname1": "//*[local-name()='createLiteESA']"
   },
   "response": {
     "body": "${payload}",
@@ -22,9 +22,9 @@
     ]
   },
   "expectation": {
-    "description": "VZN_EarlyEdge_PayUp_AccountLookup",
-    "responder": "verizon",
-    "api": "retrieveCustomerDetails",
-    "environment": "QA"
+    "description": "SPRINT_UPG_E2E_CreateLiteESA",
+    "responder": "sprint",
+    "api": "createLiteESA",
+    "environment": "PERF"
   }
 }
