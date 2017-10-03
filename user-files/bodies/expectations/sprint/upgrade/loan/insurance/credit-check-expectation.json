@@ -1,0 +1,30 @@
+{
+  "user": "tward",
+  "name": "SPRINT_UPG_E2E_CreditCheck",
+  "request": {
+    "xpath": true,
+    "method": "POST",
+    "url": "",
+    "path": "/rtb1/services/xml/ovm/OrderValidationService/v1/",
+    "environment": "PERF",
+    "pname1": "//*[local-name()='credit-request']"
+  },
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
+  },
+  "expectation": {
+    "description": "SPRINT_UPG_E2E_CreditCheck",
+    "responder": "sprint",
+    "api": "creditCheck",
+    "environment": "PERF"
+  }
+}

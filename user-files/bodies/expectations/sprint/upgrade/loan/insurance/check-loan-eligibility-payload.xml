@@ -18,8 +18,14 @@
         </m:wsMessageHeader>
     </SOAP-ENV:Header>
     <SOAP-ENV:Body>
-        <tns:checkLoanEligibilityResponse xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                                          xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <tns:checkLoanEligibilityResponse
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
             <tns:loanEligibilityInfo>
                 <tns:accountType>I</tns:accountType>
                 <tns:accountSubType>I</tns:accountSubType>
@@ -40,7 +46,7 @@
                         <tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate>
                         <tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription>
                         <tns:deviceInfo>
-                            <tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex>
+                            <tns:esnMeidHex>99000578827997</tns:esnMeidHex>
                         </tns:deviceInfo>
                         <tns:equipmentType>D</tns:equipmentType>
                         <tns:additionalPartnerLoanInfo>
@@ -62,7 +68,7 @@
                         <tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate>
                         <tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription>
                         <tns:deviceInfo>
-                            <tns:esnMeidHex>YYZHOPEIMUNIQUE</tns:esnMeidHex>
+                            <tns:esnMeidHex>99000578827997</tns:esnMeidHex>
                         </tns:deviceInfo>
                         <tns:estimatedSalesTax>0</tns:estimatedSalesTax>
                         <tns:equipmentType>D</tns:equipmentType>

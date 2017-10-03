@@ -1,0 +1,30 @@
+{
+  "user": "tward",
+  "name": "SPRINT_UPG_E2E_AccountValidation",
+  "request": {
+    "xpath": true,
+    "method": "POST",
+    "url": "",
+    "path": "/rtb1/services/xml/ovm/OrderValidationService/v1/",
+    "environment": "PERF",
+    "pname1": "//*[local-name()='account-validation-request']"
+  },
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
+  },
+  "expectation": {
+    "description": "SPRINT_UPG_E2E_AccountValidation",
+    "responder": "sprint",
+    "api": "accountValidation",
+    "environment": "PERF"
+  }
+}

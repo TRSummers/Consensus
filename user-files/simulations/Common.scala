@@ -679,7 +679,9 @@ object Common{
 		.headers(headers_14))
 		//.pause(5, 15)
 	}
+
 	val CommonPause=pause(5,10)
+
 	val CreditCheck=group("${carrier}_CreditCheck"){
 	  	exec(http("CreditCheck_${SSN1}")
 			.post("/retail/creditcheck/creditcheck.htm")
@@ -762,7 +764,8 @@ object Common{
 			.headers(headers_1026))
 		//.pause(5, 16)
 	}
-			val SprintHeaders_0 = Map(
+
+	val SprintHeaders_0 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/creditcheck/creditcheck.htm")
 
@@ -879,99 +882,132 @@ object Common{
 			.resources(http("AddaLine_68")
 				.post(uri_dsom + "/dsom-app/v1/getNextState")
 				.headers(AddaLine_headers_45)
-				.body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_003.json")),
-				http("AddaLine_69")
+				.body(ElFileBody("dsom/choosepath/dsom_start_nextState_request_003.json")), http("AddaLine_69")
 					.get("/retail/orderassembly/controller/process.php?planType=addLine&action=buyTypeChosen")
 					.check(substring("Check Your Upgrade Eligibility"))
-					.headers(AddaLine_headers_47),
-				http("AddaLine_70")
+					.headers(AddaLine_headers_47), http("AddaLine_70")
 					.get("/retail/public/styles/normalize.php")
-					.headers(AddaLine_headers_4),
-				http("AddaLine_71")
+					.headers(AddaLine_headers_4), http("AddaLine_71")
 					.get("/jslibs/jquery.php?ver=1.8.2")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_72")
+					.headers(AddaLine_headers_2), http("AddaLine_72")
 					.get("/jslibs/modernizr.php")
-					.headers(AddaLine_headers_6),
-				http("AddaLine_73")
+					.headers(AddaLine_headers_6), http("AddaLine_73")
 					.get("/jslibs/jquerymobile.php")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_74")
+					.headers(AddaLine_headers_2), http("AddaLine_74")
 					.get("/template/public/styles/new.main.css")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_75")
+					.headers(AddaLine_headers_2), http("AddaLine_75")
 					.get("/template/css/semantic.jqmsafe.min.css")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_76")
+					.headers(AddaLine_headers_2), http("AddaLine_76")
 					.get("/retail/public/styles/main.css")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_77")
+					.headers(AddaLine_headers_2), http("AddaLine_77")
 					.get("/js/retail/topnav.php")
-					.headers(AddaLine_headers_6),
-				http("AddaLine_78")
+					.headers(AddaLine_headers_6), http("AddaLine_78")
 					.get("/retail/public/styles/jquery.mobile-1.2.0.css")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_79")
+					.headers(AddaLine_headers_2), http("AddaLine_79")
 					.get("/brands/target/retail/public/styles/jquery.mobile-1.2.0.css")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_80")
+					.headers(AddaLine_headers_2), http("AddaLine_80")
 					.get("/brands/target/retail/public/styles/main.css")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_81")
+					.headers(AddaLine_headers_2), http("AddaLine_81")
 					.get("/js/retail/eligibility.js")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_82")
+					.headers(AddaLine_headers_2), http("AddaLine_82")
 					.get("/img/retail/notification-img.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_83")
+					.headers(AddaLine_headers_2), http("AddaLine_83")
 					.get("/img/retail/corps/plLgs596.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_84")
+					.headers(AddaLine_headers_2), http("AddaLine_84")
 					.get("/img/retail/corps/plLgs545.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_85")
+					.headers(AddaLine_headers_2), http("AddaLine_85")
 					.get("/img/retail/corps/plLgs660.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_86")
-					.get("/img/retail/ajax-loader.gif"),
-				http("AddaLine_87")
+					.headers(AddaLine_headers_2), http("AddaLine_86")
+					.get("/img/retail/ajax-loader.gif"), http("AddaLine_87")
 					.get("/img/brands/target/retail/logo-mini.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_88")
+					.headers(AddaLine_headers_2), http("AddaLine_88")
 					.get("/retail/public/img/alertsprite.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_89")
+					.headers(AddaLine_headers_2), http("AddaLine_89")
 					.get("/retail/public/img/reservesprite.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_90")
+					.headers(AddaLine_headers_2), http("AddaLine_90")
 					.get("/img/retail/cart.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_91")
-					.get("/img/retail/icons-18-white.png"),
-				http("AddaLine_92")
+					.headers(AddaLine_headers_2), http("AddaLine_91")
+					.get("/img/retail/icons-18-white.png"), http("AddaLine_92")
 					.get("/img/retail/setting.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_93")
+					.headers(AddaLine_headers_2), http("AddaLine_93")
 					.get("/img/retail/home.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_94")
+					.headers(AddaLine_headers_2), http("AddaLine_94")
 					.get("/img/retail/inventory-management.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_95")
+					.headers(AddaLine_headers_2), http("AddaLine_95")
 					.get("/img/retail/customer-lookup.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_96")
+					.headers(AddaLine_headers_2), http("AddaLine_96")
 					.get("/img/retail/save.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_97")
+					.headers(AddaLine_headers_2), http("AddaLine_97")
 					.get("/img/retail/lock.png")
-					.headers(AddaLine_headers_2),
-				http("AddaLine_98")
+					.headers(AddaLine_headers_2), http("AddaLine_98")
 					.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1499285243318")
-					.headers(AddaLine_headers_0),
-				http("AddaLine_99")
+					.headers(AddaLine_headers_0), http("AddaLine_99")
 					.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1499285243749&storeId=0003")
 					.headers(AddaLine_headers_0)))
+	}
+
+	val uri1 = "https://dsom-local.consensuscorpdev.com"
+	val uri3 = "https://fonts.gstatic.com/s/lato/v13"
+	val uri4 = "https://ui-local.consensuscorpdev.com/shopping"
+	val uri5 = "https://fonts.googleapis.com/css"
+	
+	val Upgrade=group("Choose Path"){
+		exec(http("To Upgrade #34")
+			.options(uri1 + "/dsom-app/v1/getNextState")
+			.headers(SprintUpgradeE2EHeaders.headers_7)
+			.resources(http("To Upgrade #35")
+				.post(uri1 + "/dsom-app/v1/getNextState")
+				.headers(SprintUpgradeE2EHeaders.headers_35)
+				.body(RawFileBody("SprintUpgradeE2E_0035_request.txt")), http("To Upgrade #36")
+					.get("/retail/orderassembly/controller/process.php?planType=contractExt&action=buyTypeChosen")
+					.headers(SprintUpgradeE2EHeaders.headers_11), http("To Upgrade #37")
+					.get(uri4 + "/build/css_977b366a07134c693178_min.js")
+					.headers(SprintUpgradeE2EHeaders.headers_1), http("To Upgrade #38")
+					.get(uri4 + "/build/bundle_977b366a07134c693178_min.js")
+					.headers(SprintUpgradeE2EHeaders.headers_1), http("To Upgrade #39")
+					.get(uri4 + "/assets/img/cloader.gif")
+					.headers(SprintUpgradeE2EHeaders.headers_3), http("To Upgrade #40")
+					.get(uri5 + "?family=Lato:400,700,400italic,700italic&subset=latin")
+					.headers(SprintUpgradeE2EHeaders.headers_4), http("To Upgrade #41")
+					.get(uri3 + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2")
+					.headers(SprintUpgradeE2EHeaders.headers_5), http("To Upgrade #42")
+					.get(uri4 + "/config.json")
+					.headers(SprintUpgradeE2EHeaders.headers_6), http("To Upgrade #43")
+					.options(uri1 + "/dsom-app/v1/getContentForAisle")
+					.headers(SprintUpgradeE2EHeaders.headers_7), http("To Upgrade #44")
+					.options(uri1 + "/dsom-app/v1/getNextState")
+					.headers(SprintUpgradeE2EHeaders.headers_7), http("To Upgrade #45")
+					.post(uri1 + "/dsom-app/v1/getContentForAisle")
+					.headers(SprintUpgradeE2EHeaders.headers_45)
+					.body(RawFileBody("SprintUpgradeE2E_0045_request.txt")), http("To Upgrade #46")
+					.post(uri1 + "/dsom-app/v1/getNextState")
+					.headers(SprintUpgradeE2EHeaders.headers_46)
+					.body(RawFileBody("SprintUpgradeE2E_0046_request.txt")), http("To Upgrade #47")
+					.options(uri1 + "/dsom-app/v1/getContentForAisle")
+					.headers(SprintUpgradeE2EHeaders.headers_7), http("To Upgrade #48")
+					.get(uri4 + "/build/ch_523e04986e5df68da3af_min.js")
+					.headers(SprintUpgradeE2EHeaders.headers_1), http("To Upgrade #49")
+					.post(uri1 + "/dsom-app/v1/getContentForAisle")
+					.headers(SprintUpgradeE2EHeaders.headers_49)
+					.body(RawFileBody("/sprint/UpgradeE2E/SprintUpgradeE2E_0049_request.json")), http("To Upgrade #50")
+					.get(uri4 + "/app/pages/frame/header/header.html")
+					.headers(SprintUpgradeE2EHeaders.headers_50), http("To Upgrade #51")
+					.get(uri4 + "/app/pages/frame/footer/footer.html")
+					.headers(SprintUpgradeE2EHeaders.headers_51), http("To Upgrade #52")
+					.get(uri4 + "/app/pages/accountverification/accountverification.html")
+					.headers(SprintUpgradeE2EHeaders.headers_52), http("To Upgrade #53")
+					.get(uri4 + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2")
+					.headers(SprintUpgradeE2EHeaders.headers_29), http("To Upgrade #54")
+					.get(uri3 + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2")
+					.headers(SprintUpgradeE2EHeaders.headers_5), http("To Upgrade #55")
+					.get(uri4 + "/assets/img/bullseye.svg")
+					.headers(SprintUpgradeE2EHeaders.headers_3), http("To Upgrade #56")
+					.get(uri4 + "/assets/img/verizon.svg")
+					.headers(SprintUpgradeE2EHeaders.headers_3), http("To Upgrade #57")
+					.get(uri4 + "/assets/img/att.svg")
+					.headers(SprintUpgradeE2EHeaders.headers_3), http("To Upgrade #58")
+					.get(uri4 + "/assets/img/sprint.svg")
+					.headers(SprintUpgradeE2EHeaders.headers_3)))
 	}
 
 	val Logout=group("Logout"){

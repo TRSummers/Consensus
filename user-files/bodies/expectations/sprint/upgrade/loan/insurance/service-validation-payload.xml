@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+>
+    <SOAP-ENV:Header>
+        <m:wsMessageHeader
+                xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+            <m:trackingMessageHeader>
+                <m:applicationId>XXX</m:applicationId>
+                <m:applicationUserId>XXXXXX</m:applicationUserId>
+                <m:consumerId>XXXX</m:consumerId>
+                <m:messageId>1234</m:messageId>
+                <m:conversationId>123</m:conversationId>
+                <m:timeToLive>30</m:timeToLive>
+                <m:replyCompletionCode>0</m:replyCompletionCode>
+                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+            </m:trackingMessageHeader>
+        </m:wsMessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <?xml version="1.0" encoding="UTF-8"?>
+<ovm
+        xmlns="http://nextel.com/ovm"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nextel.com/ovm http://oebgrtb2.test.sprint.com:8005/ovm/xsd/ovm-response.xsd">
+    <ovm-header>
+        <message-type>SERVICE_VALIDATION_RESPONSE</message-type>
+        <timestamp>2017-09-25T19:12:14-04:00</timestamp>
+        <resend-number>1</resend-number>
+        <brand-type>SP</brand-type>
+    </ovm-header>
+    <ovm-response>
+        <service-validation-response>
+            <validation-succeeded>true</validation-succeeded>
+            <family-sub-pp-change>false</family-sub-pp-change>
+            <plan>
+                <plan-id>PDSL3592</plan-id>
+                <plan-name>My All-in with 5GB MHS</plan-name>
+                <ban-level-plan>false</ban-level-plan>
+                <auto-update>true</auto-update>
+                <cell-ind>true</cell-ind>
+                <dc-ind>false</dc-ind>
+                <pds-ind>Y</pds-ind>
+                <service-type>P</service-type>
+                <feature>
+                    <feature-id>CEHA</feature-id>
+                    <feature-code>CEHA</feature-code>
+                    <feature-name>CEHA</feature-name>
+                    <feature-desc>America - Roaming Included</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>CFW</feature-id>
+                    <feature-code>CFW</feature-code>
+                    <feature-name>CFW</feature-name>
+                    <feature-desc>Call Forwarding</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>CLIP</feature-id>
+                    <feature-code>CLIP</feature-code>
+                    <feature-name>CLIP</feature-name>
+                    <feature-desc>Caller ID</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>HLT</feature-id>
+                    <feature-code>HLT</feature-code>
+                    <feature-name>HLT</feature-name>
+                    <feature-desc>Domestic LD Rate $0</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>LTEPRO</feature-id>
+                    <feature-code>LTEPRO</feature-code>
+                    <feature-name>LTEPRO</feature-name>
+                    <feature-desc>LTE Provisioning Feature</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>PM</feature-id>
+                    <feature-code>PM</feature-code>
+                    <feature-name>PM</feature-name>
+                    <feature-desc>MMS Messaging</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>SMS</feature-id>
+                    <feature-code>SMS</feature-code>
+                    <feature-name>SMS</feature-name>
+                    <feature-desc>SMS Text Messages</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>STD</feature-id>
+                    <feature-code>STD</feature-code>
+                    <feature-name>STD</feature-name>
+                    <feature-desc>Anytime Minutes</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>STDT</feature-id>
+                    <feature-code>STDT</feature-code>
+                    <feature-name>STDT</feature-name>
+                    <feature-desc>Long Distance While Roaming</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>TV</feature-id>
+                    <feature-code>TV</feature-code>
+                    <feature-name>TV</feature-name>
+                    <feature-desc>Mobile TV</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>UNTE4L</feature-id>
+                    <feature-code>UNTE4L</feature-code>
+                    <feature-name>UNTE4L</feature-name>
+                    <feature-desc>Sprint 4G Data Services</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>UNTETE</feature-id>
+                    <feature-code>UNTETE</feature-code>
+                    <feature-name>UNTETE</feature-name>
+                    <feature-desc>Sprint eHRPD Data</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>UNTETH</feature-id>
+                    <feature-code>UNTETH</feature-code>
+                    <feature-name>UNTETH</feature-name>
+                    <feature-desc>Sprint Data Services</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>VDMAIL</feature-id>
+                    <feature-code>VDMAIL</feature-code>
+                    <feature-name>VDMAIL</feature-name>
+                    <feature-desc>Video Mail</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>VMC2</feature-id>
+                    <feature-code>VMC2</feature-code>
+                    <feature-name>VMC2</feature-name>
+                    <feature-desc>Enhanced VoiceMail</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>WDA4RM</feature-id>
+                    <feature-code>WDA4RM</feature-code>
+                    <feature-name>WDA4RM</feature-name>
+                    <feature-desc>4G Domestic Data Roaming</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <feature>
+                    <feature-id>WDATRM</feature-id>
+                    <feature-code>WDATRM</feature-code>
+                    <feature-name>WDATRM</feature-name>
+                    <feature-desc>Domestic Data Roaming</feature-desc>
+                    <msisdn-ind>false</msisdn-ind>
+                </feature>
+                <other-option>
+                    <option-id>5GBHTSPTL</option-id>
+                    <option-name>Sprint Mobile Hotspot 5GB</option-name>
+                    <ban-level-option>false</ban-level-option>
+                    <related-option-id>PDSL3592</related-option-id>
+                    <cell-ind>false</cell-ind>
+                    <dc-ind>false</dc-ind>
+                    <pds-ind>Y</pds-ind>
+                    <service-type>O</service-type>
+                    <auto-add-ind>Y</auto-add-ind>
+                    <feature>
+                        <feature-id>15GBOV</feature-id>
+                        <feature-code>15GBOV</feature-code>
+                        <feature-name>15GBOV</feature-name>
+                        <feature-desc>$.015/MB OnNetOvg $.0000143/KB</feature-desc>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                    <feature>
+                        <feature-id>CPKG</feature-id>
+                        <feature-code>CPKG</feature-code>
+                        <feature-name>CPKG</feature-name>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                    <feature>
+                        <feature-id>PAM</feature-id>
+                        <feature-code>PAM</feature-code>
+                        <feature-name>PAM</feature-name>
+                        <feature-desc>Phone as Modem</feature-desc>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                    <feature>
+                        <feature-id>UNTE3P</feature-id>
+                        <feature-code>UNTE3P</feature-code>
+                        <feature-name>UNTE3P</feature-name>
+                        <feature-desc>Sprint eHRPD PAM Services</feature-desc>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                    <feature>
+                        <feature-id>UNTE4P</feature-id>
+                        <feature-code>UNTE4P</feature-code>
+                        <feature-name>UNTE4P</feature-name>
+                        <feature-desc>Sprint 4G LTE PAM Services</feature-desc>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                    <feature>
+                        <feature-id>UNTH3P</feature-id>
+                        <feature-code>UNTH3P</feature-code>
+                        <feature-name>UNTH3P</feature-name>
+                        <feature-desc>Sprint PAM Services</feature-desc>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                    <feature>
+                        <feature-id>UTOPLG</feature-id>
+                        <feature-code>UTOPLG</feature-code>
+                        <feature-name>UTOPLG</feature-name>
+                        <feature-desc>PAM Data Kilobytes</feature-desc>
+                        <msisdn-ind>false</msisdn-ind>
+                    </feature>
+                </other-option>
+                <nai-ind>false</nai-ind>
+            </plan>
+            <changed-socs>
+                <option>
+                    <option-id>5GBHTSPTC</option-id>
+                    <sequence-num>5684823961</sequence-num>
+                    <expiration-date>2017-09-25T19:12:14-04:00</expiration-date>
+                    <auto-update>true</auto-update>
+                </option>
+            </changed-socs>
+            <data-soc-ind>true</data-soc-ind>
+            <messaging-soc-ind>true</messaging-soc-ind>
+            <voice-control-valid>false</voice-control-valid>
+        </service-validation-response>
+    </ovm-response>
+</ovm>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

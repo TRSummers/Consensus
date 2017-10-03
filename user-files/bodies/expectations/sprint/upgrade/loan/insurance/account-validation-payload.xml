@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+>
+    <SOAP-ENV:Header>
+        <m:wsMessageHeader
+                xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+            <m:trackingMessageHeader>
+                <m:applicationId>XXX</m:applicationId>
+                <m:applicationUserId>XXXXXX</m:applicationUserId>
+                <m:consumerId>XXXX</m:consumerId>
+                <m:messageId>1234</m:messageId>
+                <m:conversationId>123</m:conversationId>
+                <m:timeToLive>30</m:timeToLive>
+                <m:replyCompletionCode>0</m:replyCompletionCode>
+                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+            </m:trackingMessageHeader>
+        </m:wsMessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+<ovm
+        xmlns="http://nextel.com/ovm"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oebgrtb2.test.sprint.com:8006/ovm/">
+    <ovm-header>
+        <message-type>ACCOUNT_VALIDATION_RESPONSE</message-type>
+        <timestamp>2017-09-25T00:00:00</timestamp>
+        <resend-number>1</resend-number>
+    </ovm-header>
+    <ovm-response>
+        <account-validation-response>
+            <account-status>ACTIVE</account-status>
+            <account-number>297765584</account-number>
+            <number-handsets-approved>6</number-handsets-approved>
+            <account-info>
+                <current-subscribers>4</current-subscribers>
+                <subscriber id="1">
+                    <price-plan-code>LSD134AS</price-plan-code>
+                    <price-plan-name>40GB Btr Choice XXL-$5off w/AP</price-plan-name>
+                    <price-plan-price>0.00</price-plan-price>
+                    <plan-type>fam</plan-type>
+                    <has-future-plan>false</has-future-plan>
+                    <lts-rank>2</lts-rank>
+                    <sharing-group-id>490632</sharing-group-id>
+                    <family-group>1</family-group>
+                    <serial-type>E</serial-type>
+                    <serial-number>089471437502304340</serial-number>
+                    <icc-id>89011201002100400443</icc-id>
+                    <phone-model-id>IPH7P32GGLD1</phone-model-id>
+                    <phone-name>IPHONE 7P GOLD 32GB SGL</phone-name>
+                    <ptn>7407078919</ptn>
+                    <ptn-status>ACTIVE</ptn-status>
+                    <ptn-port-out-ind>false</ptn-port-out-ind>
+                    <init-activation-date>2017-08-03</init-activation-date>
+                    <subscriber-email-address>test@test.com</subscriber-email-address>
+                    <handset-activation-date>2017-09-18</handset-activation-date>
+                    <upgrade>
+                        <eligible>false</eligible>
+                        <eligible-date>2019-09-01</eligible-date>
+                        <eligible-tier>
+                            <date>2019-09-01</date>
+                            <tier-level>2</tier-level>
+                        </eligible-tier>
+                    </upgrade>
+                    <existing-committed-order>N</existing-committed-order>
+                    <option>
+                        <option-name>Unlimited 2G Data Speeds</option-name>
+                        <option-code>LSD134ASD</option-code>
+                        <option-price>0.0</option-price>
+                    </option>
+                    <option>
+                        <option-name>Phone Access w/Unltd Talk/Text</option-name>
+                        <option-code>LSDPHN25D</option-code>
+                        <option-price>25.0</option-price>
+                    </option>
+                    <option>
+                        <option-name>LTE Provisioning w/Hotspot</option-name>
+                        <option-code>REQPROLHS</option-code>
+                        <option-price>0.0</option-price>
+                    </option>
+                    <mus-milestone-level>0</mus-milestone-level>
+                    <subscriber-id>01663386121</subscriber-id>
+                    <loan-exist-ind>false</loan-exist-ind>
+                    <lease-exist-ind>false</lease-exist-ind>
+                    <give-back-ind>false</give-back-ind>
+                </subscriber>
+                <subscriber id="2">
+                    <price-plan-code>PDSC3592</price-plan-code>
+                    <price-plan-name>My All-in with 5GB MHS</price-plan-name>
+                    <price-plan-price>110.00</price-plan-price>
+                    <plan-type>ind</plan-type>
+                    <has-future-plan>false</has-future-plan>
+                    <serial-type>E</serial-type>
+                    <serial-number>256691431004393064</serial-number>
+                    <phone-model-id>885909538065</phone-model-id>
+                    <phone-name>IPHONE 4S WHITE 64GB</phone-name>
+                    <ptn>7407078913</ptn>
+                    <ptn-status>ACTIVE</ptn-status>
+                    <ptn-port-out-ind>false</ptn-port-out-ind>
+                    <init-activation-date>2017-08-03</init-activation-date>
+                    <subscriber-email-address>test@test.com</subscriber-email-address>
+                    <contract-start-date>2017-08-03</contract-start-date>
+                    <contract-end-date>2019-08-02</contract-end-date>
+                    <handset-activation-date>2017-08-03</handset-activation-date>
+                    <upgrade>
+                        <eligible>true</eligible>
+                        <eligible-date>2017-09-01</eligible-date>
+                        <eligibility-code>630133691-23</eligibility-code>
+                        <current-tier>2</current-tier>
+                        <eligible-tier>
+                            <date>2017-09-01</date>
+                            <tier-level>2</tier-level>
+                        </eligible-tier>
+                        <current-eligibility-desc>
+                            <eligibility-desc>Buy One Get One offer w/ 2yr contract</eligibility-desc>
+                        </current-eligibility-desc>
+                        <current-eligibility-desc>
+                            <eligibility-desc>Retail Lease Price</eligibility-desc>
+                        </current-eligibility-desc>
+                        <current-eligibility-desc>
+                            <eligibility-desc>Standard Retail Price</eligibility-desc>
+                        </current-eligibility-desc>
+                        <current-eligibility-desc>
+                            <eligibility-desc>2-yr Agreement savings on a new device</eligibility-desc>
+                        </current-eligibility-desc>
+                        <current-eligibility-desc>
+                            <eligibility-desc>2-yr Agreement savings on a new phone</eligibility-desc>
+                        </current-eligibility-desc>
+                        <current-eligibility-desc>
+                            <eligibility-desc>2-yr Agreement savings on a new phone</eligibility-desc>
+                        </current-eligibility-desc>
+                    </upgrade>
+                    <existing-committed-order>N</existing-committed-order>
+                    <option>
+                        <option-name>Sprint Mobile Hotspot 5GB</option-name>
+                        <option-code>5GBHTSPTC</option-code>
+                        <option-price>0.0</option-price>
+                    </option>
+                    <mus-milestone-level>0</mus-milestone-level>
+                    <subscriber-id>80663386121</subscriber-id>
+                    <loan-exist-ind>false</loan-exist-ind>
+                    <lease-exist-ind>false</lease-exist-ind>
+                    <give-back-ind>false</give-back-ind>
+                </subscriber>
+                <subscriber id="3">
+                    <price-plan-code>LSD134AS</price-plan-code>
+                    <price-plan-name>40GB Btr Choice XXL-$5off w/AP</price-plan-name>
+                    <price-plan-price>100.00</price-plan-price>
+                    <plan-type>fam</plan-type>
+                    <has-future-plan>false</has-future-plan>
+                    <lts-rank>1</lts-rank>
+                    <sharing-group-id>490632</sharing-group-id>
+                    <family-group>1</family-group>
+                    <serial-type>E</serial-type>
+                    <serial-number>089496986400340311</serial-number>
+                    <icc-id>89011201000522889144</icc-id>
+                    <phone-model-id>IPH7256GBJB1</phone-model-id>
+                    <phone-name>IPHONE 7 JET 256GB SGL</phone-name>
+                    <ptn>7407078918</ptn>
+                    <ptn-status>ACTIVE</ptn-status>
+                    <ptn-port-out-ind>false</ptn-port-out-ind>
+                    <init-activation-date>2017-08-03</init-activation-date>
+                    <subscriber-email-address>test@test.com</subscriber-email-address>
+                    <handset-activation-date>2017-09-22</handset-activation-date>
+                    <upgrade>
+                        <eligible>false</eligible>
+                        <eligible-date>2019-09-01</eligible-date>
+                        <eligible-tier>
+                            <date>2019-09-01</date>
+                            <tier-level>2</tier-level>
+                        </eligible-tier>
+                    </upgrade>
+                    <existing-committed-order>N</existing-committed-order>
+                    <option>
+                        <option-name>Unlimited 2G Data Speeds</option-name>
+                        <option-code>LSD134ASD</option-code>
+                        <option-price>0.0</option-price>
+                    </option>
+                    <option>
+                        <option-name>Phone Access w/Unltd Talk/Text</option-name>
+                        <option-code>LSDPHN25D</option-code>
+                        <option-price>25.0</option-price>
+                    </option>
+                    <option>
+                        <option-name>LTE Provisioning w/Hotspot</option-name>
+                        <option-code>REQPROLHS</option-code>
+                        <option-price>0.0</option-price>
+                    </option>
+                    <mus-milestone-level>0</mus-milestone-level>
+                    <subscriber-id>90663386121</subscriber-id>
+                    <loan-exist-ind>true</loan-exist-ind>
+                    <lease-exist-ind>false</lease-exist-ind>
+                    <loan-details>
+                        <loan-model-type>A</loan-model-type>
+                        <loan-sequence-number>27027048</loan-sequence-number>
+                        <esn-meid-hex>35582808053157</esn-meid-hex>
+                        <item-description>IPHONE 7 JET 256GB KIT</item-description>
+                        <loan-number>NR-AM-357923</loan-number>
+                    </loan-details>
+                    <give-back-ind>false</give-back-ind>
+                </subscriber>
+                <allowed-loan-count>14</allowed-loan-count>
+                <loan-eligibility-ind>Y</loan-eligibility-ind>
+            </account-info>
+            <billing-name>
+                <first-name>TEST</first-name>
+                <last-business-name>FOSSEY</last-business-name>
+            </billing-name>
+            <billing-address>
+                <street-address-1>152 MILL ST</street-address-1>
+                <street-address-2></street-address-2>
+                <city>ATHENS</city>
+                <state-code>OH</state-code>
+                <zip-code>45701</zip-code>
+            </billing-address>
+        </account-validation-response>
+    </ovm-response>
+</ovm>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
