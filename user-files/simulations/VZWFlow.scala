@@ -258,6 +258,21 @@ object VZWFlow{
 		"Connection" -> "keep-alive",
 		"Upgrade-Insecure-Requests" -> "1")
 
+	val poa_headers_37 = Map(
+		"Accept" -> "image/webp,image/apng,image/*,*/*;q=0.8",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive")
+
+	val poa_headers_175 = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36")
+
+	val ui_headers_4 = Map("Upgrade-Insecure-Requests" -> "1")
+
 	val ui_headers_6 = Map("Accept" -> "application/json, text/plain, */*")
 
 	val ui_headers_8 = Map("Accept" -> "*/*", "X-Requested-With" -> "XMLHttpRequest")
@@ -286,6 +301,9 @@ object VZWFlow{
 		"Connection" -> "keep-alive",
 		"Content-Type" -> "application/json;charset=UTF-8",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com")
+
+	val ui_headers_208 = Map(
+		"Accept" -> "application/json, text/plain, */*")
 
 	val headers_223 = Map(
 		"Accept" -> "application/json, text/plain, */*",
@@ -355,6 +373,10 @@ object VZWFlow{
 		"Cache-Control" -> "no-cache",
 		"Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
 		"Pragma" -> "no-cache")
+
+	val pam_headers_02 = Map(
+		"Accept" -> "application/json"
+	)
 
 	val VZWFlowheaders_1000 = Map(
 		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -513,6 +535,7 @@ object VZWFlow{
 		"Accept" -> "application/json, text/javascript, */*; q=0.01",
 		"Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/creditcheck/result.htm",
 		"X-Requested-With" -> "XMLHttpRequest")
+
     val VZWFlowuri1 = "https://poa-perf-scale.consensuscorpdev.com:443"
     val VZWFlowuri2 = "https://perf-scale-dsom.consensuscorpdev.com:443"
 
@@ -522,6 +545,7 @@ object VZWFlow{
   	val uri_dsom_v1 = "https://perf-scale-dsom.consensuscorpdev.com:443/dsom-app/v1"
 	  val uri_ui   = "https://perf-scale-ui.consensuscorpdev.com/shopping"
     val uri_poa  = "https://poa-perf-scale.consensuscorpdev.com"
+	  val uri_pam  = "https://perf-scale-pam.consensuscorpdev.com"
 
 	val VZWScanToPaymentOptions = group("${carrier}_Scan"){
 		exec(http("dsom_Scan_30")
@@ -795,18 +819,18 @@ object VZWFlow{
 		.exec(http("IDP_Plan44")
 				.post(uri_dsom_v1 + "/getNextState")
 				.headers(dsom_headers_231)
-			  .body(RawFileBody("dsom/plans/IDPToPlans_015_request.json")))
+			  .body(ElFileBody("dsom/plans/IDPToPlans_015_request.json")))
 		.exec(http("IDP_Plan45")
 				.post(uri_dsom_v1 + "/getContentForAisle")
 				.headers(dsom_headers_1)
-				.body(RawFileBody("dsom/plans/IDPToPlans_016_request.json")))
+				.body(ElFileBody("dsom/plans/IDPToPlans_016_request.json")))
 		.exec(http("request_27")
 				.options(uri_dsom_v1 + "/getNextState")
 				.headers(dsom_headers_222))
 		.exec(http("request_28")
 					.post(uri_dsom_v1 + "/getNextState")
 					.headers(dsom_headers_1)
-					.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0028_request.json"))
+					.body(ElFileBody("dsom/planfeatures/PlansToFeatures_0028_request.json"))
 		.resources(
 				http("IDP_Planrequest_18")
 					.get(uri_ui + "/app/pages/frame/header/header.html"),
@@ -923,16 +947,16 @@ object VZWFlow{
 		.exec(http("featuresrequest_67")
 				.post(uri_dsom_v1 + "/getContentForAisle")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0067_request.json")))
+				.body(ElFileBody("dsom/planfeatures/PlansToFeatures_0067_request.json")))
 		.exec(http("featuresrequest_68")
 				.post(uri_dsom_v1 + "/getNextState")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0068_request.json")))
+				.body(ElFileBody("dsom/planfeatures/PlansToFeatures_0068_request.json")))
 		.pause(1)
 		.exec(http("featuresrequest_69")
 				.post(uri_dsom_v1 + "/getContentForAisle")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0069_request.json"))
+				.body(ElFileBody("dsom/planfeatures/PlansToFeatures_0069_request.json"))
 		    .resources(http("featuresrequest_71")
 				  .get(uri_ui + "/app/pages/frame/header/header.html")
 				  .headers(ui_headers_72),
@@ -951,7 +975,7 @@ object VZWFlow{
 			.exec(http("featuresrequest_76")
 				.post(uri_dsom_v1 + "/getNextState")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/planfeatures/PlansToFeatures_0076_request.json")))
+				.body(ElFileBody("dsom/planfeatures/PlansToFeatures_0076_request.json")))
 			.pause(1)
 			.exec(http("featuresrequest_77")
 				.get("/retail/orderassembly/controller/process.php")
@@ -1003,16 +1027,16 @@ object VZWFlow{
 		.exec(http("request_72")
 				.post(uri_dsom_v1 + "/getContentForAisle")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/insurance/miniCart_002_request.json")))
+				.body(ElFileBody("dsom/insurance/miniCart_002_request.json")))
 		.exec(http("request_73")
 				.post(uri_dsom_v1 + "/getNextState")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/insurance/miniCart_003_request.json")))
+				.body(ElFileBody("dsom/insurance/miniCart_003_request.json")))
 		.pause(1)
 		.exec(http("dsom_post_insurance_74")
 				.post(uri_dsom_v1 + "/getContentForAisle")
 				.headers(ui_headers_72)
-				.body(RawFileBody("dsom/insurance/miniCart_004_request.json")))
+				.body(ElFileBody("dsom/insurance/miniCart_004_request.json")))
 		.exec(http("request_75")
 					.get(uri_ui + "/app/pages/addons/device.html")
 					.headers(ui_headers_16)
@@ -1042,7 +1066,7 @@ object VZWFlow{
 					http("request_85")
 						.post(uri_dsom_v1 + "/getAddOnOptions")
 						.headers(ui_headers_72)
-						.body(RawFileBody("dsom/insurance/miniCart_005_request.json")),
+						.body(ElFileBody("dsom/insurance/miniCart_005_request.json")),
 					http("request_86")
 						.get(uri_ui + "/app/components/contempiler/contemloader.html")
 						.headers(ui_headers_16),
@@ -1070,11 +1094,11 @@ object VZWFlow{
 			.exec(http("request_93")
 				.post(uri_dsom + "/session/dsom/v1/cart/item")
 				.headers(dsom_headers_231)
-				.body(RawFileBody("dsom/insurance/CartItem_patch_003_request.json")))
+				.body(ElFileBody("dsom/insurance/CartItem_patch_003_request.json")))
 			.exec(http("request_94")
 					.post(uri_dsom_v1 + "/getNextState")
 					.headers(dsom_headers_1)
-					.body(RawFileBody("dsom/insurance/CartItem_patch_004_request.json")))
+					.body(ElFileBody("dsom/insurance/CartItem_patch_004_request.json")))
 			.pause(1)
 			.exec(http("request_95")
 				.get("/retail/orderassembly/controller/process.php")
@@ -1353,7 +1377,7 @@ object VZWFlow{
 		//.pause(5, 14)
 	}
 		// ScanReceipt
-		val ScanReceipt=group("${carrier}_ScanReceipt"){
+	val ScanReceipt=group("${carrier}_ScanReceipt"){
    	 exec(http("ScanReceipt_58")
 			.post("/ajax/retail/fakereceipt.php")
 			.headers(VZWFlowheaders_58))
@@ -1379,7 +1403,7 @@ object VZWFlow{
 		//.pause(5, 15)
 		}
 		// EnterIMEIandSIM
-		val EnterIMEIandSIM=group("${carrier}_EnterIMEIandSIM"){
+	val EnterIMEIandSIM=group("${carrier}_EnterIMEIandSIM"){
 		 exec(http("EnterIMEIandSIM64")
 			.post("/retail/checkout/activationscan.htm")
 			.headers(VZWFlowheaders_64)
@@ -1490,5 +1514,107 @@ object VZWFlow{
 			.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=c23599627c00cb8a&code=summary&page=2")
 			.headers(VZWFlowheaders_82))
 		}
+
+	val WarrantyPaymentCapture=group("${carrier}_WarrantyPaymentCapture") {
+		exec(http("poa_request_181")
+			.get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLTC%22%5D")
+			.headers(poa_headers_2))
+		.exec(http("poa_request_182")
+				.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/productimage")
+				.headers(poa_headers_175))
+		.exec(http("poa_request_183")
+				.get("/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png"))
+		.exec(http("poa_request_184")
+				.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=91abe108fe3020fa&code=finance&page=1&ordiIndex=1")
+				.headers(poa_headers_37))
+		.exec(http("poa_request_185")
+				.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=91abe108fe3020fa&code=finance&page=2&ordiIndex=1")
+				.headers(poa_headers_37))
+		.exec(http("poa_request_186")
+				.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=91abe108fe3020fa&code=finance&page=3&ordiIndex=1")
+				.headers(poa_headers_37))
+		.exec(http("poa_request_187")
+				.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=91abe108fe3020fa&code=finance&page=4&ordiIndex=1")
+				.headers(poa_headers_37))
+		.pause(1)
+		.exec(http("poa_request_188")
+				.get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLRC%22%5D")
+				.headers(poa_headers_175)
+				.resources(http("poa_request_189")
+					.post("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/signatures")
+					.headers(VZWFlowheaders_77)
+					.body(ElFileBody("dsom/warranty/ActivationsWithInsurance_0189_request.json")),
+					http("poa_request_190")
+						.get("/img/brands/target/retail/printed-logo.png")))
+		.pause(1)
+		.exec(http("poa_request_191")
+				.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status"))
+		.exec(http("ui_request_192")
+				.get(uri_ui + "/")
+				.headers(ui_headers_4))
+		.exec(http("ui_request_199")
+				.get(uri_ui + "/assets/img/cloader.gif"))
+		.exec(http("ui_request_200")
+				.get(uri_ui + "/config.json")
+				.headers(ui_headers_16))
+		.exec(http("dsom_request_201")
+				.options(uri_dsom_v1 + "/getContentForAisle")
+				.headers(dsom_headers_222))
+		.exec(http("dsom_request_202")
+				.options(uri_dsom_v1 + "/getContentForAisle")
+				.headers(dsom_headers_1))
+		.exec(http("dsom_request_204")
+				.options(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_70))
+		.exec(http("dsom_request_205")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(ElFileBody("dsom/warranty/ActivationsWithInsurance_0205_request.json")))
+		.exec(http("dsom_request_206")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(ElFileBody("dsom/warranty/ActivationsWithInsurance_0206_request.json")))
+		.exec(http("dsom_request_207")
+				.post(uri_dsom_v1 + "/getContentForAisle")
+				.headers(ui_headers_72)
+				.body(ElFileBody("dsom/warranty/ActivationsWithInsurance_0207_request.json")))
+		.pause(1)
+		.exec(http("ui_request_208")
+				.get(uri_ui + "/app/pages/frame/header/header.html")
+				.headers(ui_headers_208)
+				.resources(http("ui_request_209")
+					.get(uri_ui + "/app/pages/frame/footer/footer.html")
+					.headers(ui_headers_208),
+					http("ui_request_210")
+						.get(uri_ui + "/app/pages/addonpayment/addonpayment.html")
+						.headers(ui_headers_16),
+					http("ui_request_211")
+						.get(uri_ui + "/assets/img/bullseye.svg"),
+					http("ui_request_212")
+						.get("/img/brands/target/retail/EMV-machine.png")
+						.headers(poa_headers_37)))
+		.exec(http("dsom_request_213")
+				.options(uri_dsom_v1 + "/order/${p_orderid}/payment")
+				.headers(poa_headers_175)
+				.resources(http("dsom_request_214")
+					.post(uri_dsom_v1 + "/order/${p_orderid}/payment")
+					.headers(dsom_headers_20)
+					.body(ElFileBody("dsom/warranty/ActivationsWithInsurance_0214_request.json"))))
+		.pause(1)
+		.exec(http("dsom_pay_request_215")
+				.options(uri_dsom_v1 + "/order/${p_orderid}/payment/3726373689X133000")
+				.headers(dsom_headers_19))
+		.exec(http("dsom_pay_request_216")
+					.get(uri_dsom_v1 + "/order/${p_orderid}/payment/3726373689X133000")
+					.headers(dsom_headers_20)
+					.check(status.is(200)))
+		.exec(http("pam_request_asyncpayment")
+		      .post(uri_pam + "/PAM/api/pam/v1/payment/asyncpayment")
+		      .headers(pam_headers_02)
+ 			    .body(ElFileBody("pam/warranty/async_payment_request.json"))
+			    .check(status.is(200)))
+	}
+
+
 			
 }

@@ -1,0 +1,14 @@
+{
+  "header":{
+    "sessionId":""
+  },
+  "transactions":{
+    "vendor": "SQUARETRADE",
+    "paymentReferenceId": "100088000X0915195513"
+  },
+  "status":{
+    "code": "SUCCESS",
+    "message": "Payment succeeded!"
+  }
+
+}
