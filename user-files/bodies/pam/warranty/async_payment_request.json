@@ -4,7 +4,7 @@
   },
   "transactions":{
     "vendor": "SQUARETRADE",
-    "paymentReferenceId": "100088000X0915195513"
+    "paymentReferenceId": "${p_paymentId}"
   },
   "status":{
     "code": "SUCCESS",

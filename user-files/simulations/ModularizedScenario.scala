@@ -179,7 +179,7 @@ class End_to_End_Scenario extends Simulation {
     //  rampUsers(10) over(10 seconds)).protocols(httpProtocol))
 //)
   
-	   setUp(VZWNAInsured.inject(rampUsers(1) over (160 seconds)).protocols(httpProtocol))
+	   setUp(VZWNA.inject(rampUsers(1) over (160 seconds)).protocols(httpProtocol))
 	       //  SprintNA.inject(rampUsers(25) over (200 seconds)).protocols(httpProtocol))
 
 
