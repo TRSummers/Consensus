@@ -65,7 +65,42 @@ class End_to_End_Scenario extends Simulation {
         Common.Logout, Common.CommonPause)
     }
   }
-      		
+
+
+  val VZWNAInsured = scenario("VZWNAInsured").repeat(1){
+
+    group("VZW_NA_Insured"){
+      exec(
+        feed(VZWCarrierTestData),
+        feed(Lname), feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+        Common.LoginToRetail,     Common.CommonPause,
+        Common.RetailToChoosePathModule,        Common.CommonPause,
+        Common.ChoosePathToScan,        Common.CommonPause,
+        VZWFlow.VZWScanToPaymentOptions,  Common.CommonPause,
+        Common.PaymentOptionsToCartWheel,        Common.CommonPause,
+        Common.CartwheelToCreditCheck, Common.CommonPause,
+        VZWFlow.CreditCheck,       Common.CommonPause,
+        VZWFlow.CC2IDP,       Common.CommonPause,
+        VZWFlow.IDP2PlanInCC,   Common.CommonPause,
+        VZWFlow.SelectPlan, Common.CommonPause,
+        VZWFlow.YourCart,   Common.CommonPause,
+        VZWFlow.SelectPlanFeaturesInCC,     Common.CommonPause,
+        VZWFlow.SelectProtectionPlanInCC,   Common.CommonPause,
+        VZWFlow.NumberPort,             Common.CommonPause,
+        VZWFlow.OrderReviewandConfirm,  Common.CommonPause,
+        VZWFlow.TermsandConditions,     Common.CommonPause,
+        //        VZWFlow.SwipeCard,              Common.CommonPause,
+        VZWFlow.PrintMobileScanSheet,   Common.CommonPause,
+        VZWFlow.ScanReceipt,            Common.CommonPause,
+        VZWFlow.EnterIMEIandSIM,        Common.CommonPause,
+        VZWFlow.WirelessCustomerAgreement,  Common.CommonPause,
+        VZWFlow.DeviceFinancingInstallmentContract,   Common.CommonPause,
+        VZWFlow.WarrantyPaymentCapture, Common.CommonPause,
+        Common.NewGuest,    Common.CommonPause,
+        Common.Logout, Common.CommonPause)
+    }
+  }
+
        
 //       val VZWAAL= scenario("VZWAAL").repeat(1){
 	  
