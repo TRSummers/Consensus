@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ovm
+        xmlns="http://nextel.com/ovm"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nextel.com/ovm http://ovmrtb1.test.sprint.com:8080/ovm/xsd/ovm-response.xsd">
+    <ovm-header>
+        <vendor-code>TC</vendor-code>
+        <message-id>102612256009455</message-id>
+        <order-id>092504106025526</order-id>
+        <message-type>ACTIVATION_RESPONSE</message-type>
+        <timestamp>2016-10-26T15:34:55-04:00</timestamp>
+        <resend-number>0</resend-number>
+        <brand-type>SP</brand-type>
+    </ovm-header>
+    <ovm-response>
+        <activation-response>
+            <service>
+                <plan id="41922111">
+                    <phone id="5425891111">
+                        <subscriber-id>84245826121</subscriber-id>
+                        <meid>123456789876543</meid>
+                        <icc-id>89011201000218620498</icc-id>
+                        <result>SUCCESS</result>
+                        <msid>000007407073299</msid>
+                        <master-lock-code>000000</master-lock-code>
+                        <one-time-lock-code>509353</one-time-lock-code>
+                        <activation-fee-for-handset>30.0</activation-fee-for-handset>
+                        <activated-services>
+                            <activated-service>
+                                <code>5GBHTSPTC</code>
+                                <name>Sprint Mobile Hotspot 5GB</name>
+                                <expire-date>2016-10-26</expire-date>
+                            </activated-service>
+                            <activated-service>
+                                <code>LS130ASRC</code>
+                                <name>3GB High Speed Data Allowance</name>
+                                <monthly-charge>30.0</monthly-charge>
+                                <start-date>2016-10-26</start-date>
+                            </activated-service>
+                            <activated-service>
+                                <code>LSD130AS</code>
+                                <name>3GB Btr Choice S-$5off w/AP</name>
+                                <start-date>2016-10-26</start-date>
+                            </activated-service>
+                            <activated-service>
+                                <code>LSD130ASD</code>
+                                <name>Unlimited 2G Data Speeds</name>
+                                <start-date>2016-10-26</start-date>
+                            </activated-service>
+                            <activated-service>
+                                <code>LSDPHN25D</code>
+                                <name>Phone Access w/Unltd Talk/Text</name>
+                                <monthly-charge>25.0</monthly-charge>
+                                <start-date>2016-10-26</start-date>
+                            </activated-service>
+                            <activated-service>
+                                <code>REQPROLHS</code>
+                                <name>LTE Provisioning w/Hotspot</name>
+                                <start-date>2016-10-26</start-date>
+                            </activated-service>
+                        </activated-services>
+                        <meid-hex>123456789876543</meid-hex>
+                    </phone>
+                </plan>
+            </service>
+            <activation-fee>30.0</activation-fee>
+            <account-number>297765584</account-number>
+            <sprint-order-id>oa-tcnr-102905383</sprint-order-id>
+            <actual-sales-tax>0.0</actual-sales-tax>
+        </activation-response>
+    </ovm-response>
+</ovm>

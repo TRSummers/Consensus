@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SOAP-ENV:Envelope
-        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
->
-    <SOAP-ENV:Header>
-        <m:wsMessageHeader
-                xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
-            <m:trackingMessageHeader>
-                <m:applicationId>XXX</m:applicationId>
-                <m:applicationUserId>XXXXXX</m:applicationUserId>
-                <m:consumerId>XXXX</m:consumerId>
-                <m:messageId>1234</m:messageId>
-                <m:conversationId>123</m:conversationId>
-                <m:timeToLive>30</m:timeToLive>
-                <m:replyCompletionCode>0</m:replyCompletionCode>
-                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
-            </m:trackingMessageHeader>
-        </m:wsMessageHeader>
-    </SOAP-ENV:Header>
-    <SOAP-ENV:Body>
-        <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ovm
         xmlns="http://nextel.com/ovm"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nextel.com/ovm http://oebgrtb2.test.sprint.com:8005/ovm/xsd/ovm-response.xsd">
@@ -235,5 +215,3 @@
         </service-validation-response>
     </ovm-response>
 </ovm>
-    </SOAP-ENV:Body>
-</SOAP-ENV:Envelope>

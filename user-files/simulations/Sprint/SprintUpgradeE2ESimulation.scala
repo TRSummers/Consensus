@@ -10,7 +10,7 @@ import scala.util.Random
 class SprintUpgradeE2ESimulation extends Simulation {
 
   val httpProtocol = http
-    .baseURL("https://poa-local.consensuscorpdev.com/")
+    .baseURL(Common.uri_poa_no_port)
     .disableAutoReferer
     .acceptHeader("application/json, text/javascript, */*; q=0.01")
     .acceptEncodingHeader("gzip, deflate")
@@ -26,48 +26,52 @@ class SprintUpgradeE2ESimulation extends Simulation {
   val expectation7 = "expectations/sprint/upgrade/loan/insurance/account-validation"
   val expectation8 = "expectations/sprint/upgrade/loan/insurance/credit-check"
   val expectation9 = "expectations/sprint/upgrade/loan/insurance/service-validation"
+  val expectation10 = "expectations/sprint/upgrade/loan/insurance/activation"
 
   val gatlingData = sys.env("GATLING_DATA")
   val expectationPath = Array(
-    Map("expectationPath" -> expectation1, "payload" -> Source.fromFile(gatlingData + "/" + expectation1 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation2, "payload" -> Source.fromFile(gatlingData + "/" + expectation2 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation3, "payload" -> Source.fromFile(gatlingData + "/" + expectation3 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation4, "payload" -> Source.fromFile(gatlingData + "/" + expectation4 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation5, "payload" -> Source.fromFile(gatlingData + "/" + expectation5 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation6, "payload" -> Source.fromFile(gatlingData + "/" + expectation6 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation7, "payload" -> Source.fromFile(gatlingData + "/" + expectation7 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation8, "payload" -> Source.fromFile(gatlingData + "/" + expectation8 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", "")),
-    Map("expectationPath" -> expectation9, "payload" -> Source.fromFile(gatlingData + "/" + expectation9 + "-payload.xml").mkString.replace("\"", "\\\"").replace("\n", "").replace("\r", ""))
+    Map("expectationPath" -> expectation1, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation1 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation2, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation2 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation3, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation3 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation4, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation4 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation5, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation5 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation6, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation6 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation7, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation7 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation8, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation8 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation9, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation9 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString))
   ).queue
 
   val Setup = scenario("Setup").repeat(1) {
     exec(
-      CRExpectationManager.removeExpectations
+      //      CRExpectationManager.removeExpectations
+      //    )
+      //      .exec(
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation,
+      feed(expectationPath),
+      CRExpectationManager.createAndLoadExpectation
     )
-      .exec(
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation,
-        feed(expectationPath),
-        CRExpectationManager.createAndLoadExpectation
-      )
 
   }
 
-  val Scenario = scenario("Scenario").repeat(1){
+  val Scenario = scenario("Scenario").repeat(10){
     exec(
       Common.LoginToRetail,                                        Common.CommonPause,
       Common.RetailToChoosePathModule,                             Common.CommonPause,
@@ -96,9 +100,10 @@ class SprintUpgradeE2ESimulation extends Simulation {
   }
 
   val SprintUpgradeE2E = scenario("Sprint Upgrade E2E").repeat(1) {
-    exec(Setup)
-    .exec(Scenario)
+//    exec(Setup)
+//      .
+        exec(Scenario)
   }
 
-  setUp(SprintUpgradeE2E.inject(atOnceUsers(1)).protocols(httpProtocol))
+  setUp(SprintUpgradeE2E.inject(atOnceUsers(10)).protocols(httpProtocol))
 }

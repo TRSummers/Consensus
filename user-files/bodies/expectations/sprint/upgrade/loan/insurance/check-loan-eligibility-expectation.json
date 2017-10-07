@@ -7,7 +7,7 @@
     "url": "",
     "path": "/rtb1/services/wireless/account/LoanInfoService/v1",
     "environment": "PERF",
-    "pname1": "//*[local-name()='checkLoanEligbility']"
+    "pname1": "//*[local-name()='checkLoanEligibility']"
   },
   "response": {
     "body": "${payload}",

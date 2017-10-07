@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SOAP-ENV:Envelope
-        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
->
+        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header>
         <m:wsMessageHeader
                 xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
@@ -18,7 +17,6 @@
         </m:wsMessageHeader>
     </SOAP-ENV:Header>
     <SOAP-ENV:Body>
-        <?xml version="1.0" encoding="UTF-8"?>
         <tns:checkLoanEligibilityResponse
                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                 xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
@@ -46,7 +44,7 @@
                         <tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate>
                         <tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription>
                         <tns:deviceInfo>
-                            <tns:esnMeidHex>99000578827997</tns:esnMeidHex>
+                            <tns:esnMeidHex>123456789876543</tns:esnMeidHex>
                         </tns:deviceInfo>
                         <tns:equipmentType>D</tns:equipmentType>
                         <tns:additionalPartnerLoanInfo>
@@ -68,7 +66,7 @@
                         <tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate>
                         <tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription>
                         <tns:deviceInfo>
-                            <tns:esnMeidHex>99000578827997</tns:esnMeidHex>
+                            <tns:esnMeidHex>123456789876543</tns:esnMeidHex>
                         </tns:deviceInfo>
                         <tns:estimatedSalesTax>0</tns:estimatedSalesTax>
                         <tns:equipmentType>D</tns:equipmentType>

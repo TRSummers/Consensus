@@ -1,13 +1,13 @@
 {
   "user": "tward",
-  "name": "SPRINT_UPG_E2E_CreateLiteESA",
+  "name": "SPRINT_UPG_E2E_Activation",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "/rtb1/services/wireless/account/EsaManagementService/v1",
+    "path": "/rtb1/services/xml/ovm/OrderValidationService/v1/",
     "environment": "PERF",
-    "pname1": "//*[local-name()='createLiteEsa']"
+    "pname1": "//*[local-name()='activation-request']"
   },
   "response": {
     "body": "${payload}",
@@ -22,9 +22,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_UPG_E2E_CreateLiteESA",
+    "description": "SPRINT_UPG_E2E_Activation",
     "responder": "sprint",
-    "api": "createLiteESA",
+    "api": "activation",
     "environment": "PERF"
   }
 }
