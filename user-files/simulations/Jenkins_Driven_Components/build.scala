@@ -107,7 +107,7 @@ object build{
             VZWFlow.NumberPort,             Common.CommonPause,
             VZWFlow.OrderReviewandConfirm,  Common.CommonPause,
             VZWFlow.TermsandConditions,     Common.CommonPause,
-            VZWFlow.SwipeCard,              Common.CommonPause,
+//            VZWFlow.SwipeCard,              Common.CommonPause,
             VZWFlow.PrintMobileScanSheet,   Common.CommonPause,
             VZWFlow.ScanReceipt,            Common.CommonPause,
             VZWFlow.EnterIMEIandSIM,        Common.CommonPause,
