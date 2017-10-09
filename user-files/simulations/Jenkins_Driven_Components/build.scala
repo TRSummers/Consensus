@@ -29,6 +29,34 @@ object build{
       "nationalId" -> (110000000 + Random.nextInt(1000000)).toString,
       "carrier" -> "VerizonNA"))
 
+
+  //
+       // Sprint Add a Line
+       //
+       val SPRAAL = scenario("SprAAL").repeat(inum){
+          val Carrier = Iterator.continually(
+              Map( "imei" -> "YYZHOPEIMUNIQUE",
+                   "carrier" -> "Sprint")
+          )
+          group("SPRAAL"){
+  	          exec(
+  	          feed(Carrier),
+  	            feed(Lname),
+  	            feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+                Common.LoginToRetail,                 Common.CommonPause,
+                Common.RetailToChoosePathModule,      Common.CommonPause,
+                Common.AddALinetoExistingAccount,     Common.CommonPause,
+                SprAALIDP.AccountLookup_Sprint,       Common.CommonPause,
+                SprAALIDP.AddALinetoScan,             Common.CommonPause,
+                SprAALIDP.Scan,                       Common.CommonPause,
+                SprAALIDP.PaymentOptions,             Common.CommonPause,
+                SprAALIDP.CreditCheck,                Common.CommonPause,
+                SprAALIDP.CreditChecktoIDP,           Common.CommonPause,
+                SprAALIDP.IDPtoYourCart,              Common.CommonPause,
+                Common.NewGuest,                      Common.CommonPause,
+                Common.Logout)
+           }
+       }
        //
        // Verizon Add a Line
        //
