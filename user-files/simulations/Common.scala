@@ -1018,22 +1018,6 @@ object Common{
 		exec(http("Logout_0")
 			.get("/retail/orderassembly/controller/newcustomer.php?logout=1")
 			.headers(Logoutheaders_0))
-<<<<<<< HEAD
-			.exec(http("Logout_1")
-				.get("/jslibs/modernizr.php")
-				.headers(Logoutheaders_1))
-			.exec(http("Logout_2")
-				.get("/retail/public/styles/normalize.php")
-				.headers(Logoutheaders_2))
-			.exec(http("Completed Orders")
-				.get("/js/retail/topnav.php")
-				.headers(Logoutheaders_1))
-			.exec(http("Completed_${p_orderid}")
-				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490039628495")
-				.headers(Logoutheaders_4))
-	}
-}
-=======
 		.exec(http("Logout_1")
 			.get("/jslibs/modernizr.php")
 			.headers(Logoutheaders_1))
@@ -1049,4 +1033,3 @@ object Common{
 	}
 //	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }
->>>>>>> 95f3687f64ba69dc3c493766f5dc4dde7dcd5cc1
