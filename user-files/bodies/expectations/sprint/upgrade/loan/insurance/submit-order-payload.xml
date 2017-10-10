@@ -40,7 +40,7 @@
 							<tns:deviceList>
 								<tns:deviceInfo>
 									<tns:subscriberId>80663386121</tns:subscriberId>
-									<tns:meid>256691544808550807</tns:meid>
+									<tns:meid>123456789876543</tns:meid>
 									<tns:iccId>89011201000218620498</tns:iccId>
 									<tns:result>SUCCESS</tns:result>
 									<tns:msid>000007407073299</tns:msid>

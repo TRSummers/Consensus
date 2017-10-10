@@ -1,0 +1,25 @@
+{
+  "currentLocation": "upgraderesults",
+  "debug": true,
+  "sessionInfo": {
+    "sessionId": "${p_sessionid}",
+    "POAsid": "${p_sessionid}",
+    "sortRule": "",
+    "category": "",
+    "filterList": [],
+    "options": [
+      {
+        "request": {
+          "corpId": "545",
+          "phonenumber": "7407078913",
+          "pin": "112313"
+        }
+      }
+    ],
+    "paymentPricingOption": "",
+    "enableCart": "true",
+    "serialNumber": 0,
+    "cartCount": 0,
+    "currentLocation": "accountverification"
+  }
+}

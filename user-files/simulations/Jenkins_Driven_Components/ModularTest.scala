@@ -31,7 +31,8 @@ class E2E extends Simulation {
        val SAL = System.getenv("SALUSERS").toInt
        val TAL = System.getenv("TALUSERS").toInt
 	  	
-    	  setUp(build.VZWAAL.inject(rampUsers(VAL) over (rampup seconds)).protocols(httpProtocol),
+    	  setUp(
+					build.VZWAAL.inject(rampUsers(VAL) over (rampup seconds)).protocols(httpProtocol),
     	          build.SPRAAL.inject(rampUsers(SAL) over (rampup seconds)).protocols(httpProtocol),
     	        build.ATTAAL.inject(rampUsers(TAL) over (rampup seconds)).protocols(httpProtocol),
     	        build.VZWNA.inject(rampUsers(VNA) over (rampup seconds)).protocols(httpProtocol),

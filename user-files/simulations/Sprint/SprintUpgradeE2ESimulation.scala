@@ -42,7 +42,7 @@ class SprintUpgradeE2ESimulation extends Simulation {
     Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString))
   ).queue
 
-  val Setup = scenario("Setup").repeat(1) {
+  val SprintUpgradeE2ECR = scenario("SPR UPG CR").repeat(1) {
     exec(
       //      CRExpectationManager.removeExpectations
       //    )
@@ -71,7 +71,7 @@ class SprintUpgradeE2ESimulation extends Simulation {
 
   }
 
-  val Scenario = scenario("Scenario").repeat(10){
+  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(4){
     exec(
       Common.LoginToRetail,                                        Common.CommonPause,
       Common.RetailToChoosePathModule,                             Common.CommonPause,
@@ -99,11 +99,10 @@ class SprintUpgradeE2ESimulation extends Simulation {
     )
   }
 
-  val SprintUpgradeE2E = scenario("Sprint Upgrade E2E").repeat(1) {
+//  val SprintUpgradeE2E = scenario("Sprint Upgrade E2E").repeat(4) {
 //    exec(Setup)
 //      .
-        exec(Scenario)
-  }
-
-  setUp(SprintUpgradeE2E.inject(atOnceUsers(10)).protocols(httpProtocol))
+//        exec(Scenario)
+//  }
+  setUp(SprintUpgradeE2EFlow.inject(rampUsers(100) over (200 seconds)).protocols(httpProtocol))
 }
