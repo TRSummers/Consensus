@@ -264,7 +264,7 @@ object SprintUpgradeE2EPages {
       .formParam("Ecom_BillTo_Postal_StateProv", "CA")
       .formParam("Ecom_BillTo_Postal_PostalCode", "94127")
       .formParam("Ecom_BillTo_Telecom_Phone_Number", "4158419060")
-      .formParam("Ecom_BillTo_Online_Email", "nobody@letstalk.com")
+      .formParam("Ecom_BillTo_Online_Email", "${p_sessionid}@letstalk.com")
       .formParam("Date_of_Birth[1]", "02")
       .formParam("Date_of_Birth[2]", "20")
       .formParam("Date_of_Birth[3]", "1970")

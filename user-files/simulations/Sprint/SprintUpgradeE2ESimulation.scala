@@ -1,5 +1,3 @@
-
-
 import scala.io.Source
 import scala.concurrent.duration._
 import io.gatling.core.Predef._
@@ -8,14 +6,10 @@ import io.gatling.jdbc.Predef._
 import scala.util.Random
 
 class SprintUpgradeE2ESimulation extends Simulation {
+  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+}
 
-  val httpProtocol = http
-    .baseURL(Common.uri_poa_no_port)
-    .disableAutoReferer
-    .acceptHeader("application/json, text/javascript, */*; q=0.01")
-    .acceptEncodingHeader("gzip, deflate")
-    .acceptLanguageHeader("en-US,en;q=0.5")
-    .userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
+object SprintUpgradeE2EComponents{
 
   val expectation1 = "expectations/sprint/upgrade/loan/insurance/check-loan-eligibility"
   val expectation2 = "expectations/sprint/upgrade/loan/insurance/create-lite-esa"
@@ -44,9 +38,6 @@ class SprintUpgradeE2ESimulation extends Simulation {
 
   val SprintUpgradeE2ECR = scenario("SPR UPG CR").repeat(1) {
     exec(
-      //      CRExpectationManager.removeExpectations
-      //    )
-      //      .exec(
       feed(expectationPath),
       CRExpectationManager.createAndLoadExpectation,
       feed(expectationPath),
@@ -71,7 +62,7 @@ class SprintUpgradeE2ESimulation extends Simulation {
 
   }
 
-  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(4){
+  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum){
     exec(
       Common.LoginToRetail,                                        Common.CommonPause,
       Common.RetailToChoosePathModule,                             Common.CommonPause,
@@ -99,10 +90,4 @@ class SprintUpgradeE2ESimulation extends Simulation {
     )
   }
 
-//  val SprintUpgradeE2E = scenario("Sprint Upgrade E2E").repeat(4) {
-//    exec(Setup)
-//      .
-//        exec(Scenario)
-//  }
-  setUp(SprintUpgradeE2EFlow.inject(rampUsers(100) over (200 seconds)).protocols(httpProtocol))
 }

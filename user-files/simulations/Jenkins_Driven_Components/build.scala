@@ -1,12 +1,3 @@
-/**********************************************************
- *
- * This will build a simulation
- * Well...it was supposed to, anyway.
- *
- ***********************************************************/
-
-
-
 import scala.concurrent.duration._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
@@ -20,7 +11,6 @@ object build{
   val SSN2 = csv("SSN2.csv").random
   val SSN3 = csv("SSN3.csv").random
   val SSN4 = csv("SSN4.csv").random
-  val inum=System.getenv("ITERATIONS").toInt
 
   val VZWCarrierTestData =Iterator.continually(
     Map( "imei" -> "99000088304056",
@@ -33,7 +23,7 @@ object build{
   //
        // Sprint Add a Line
        //
-       val SPRAAL = scenario("SprAAL").repeat(inum){
+       val SPRAAL = scenario("SprAAL").repeat(SimParams.inum){
           val Carrier = Iterator.continually(
               Map( "imei" -> "YYZHOPEIMUNIQUE",
                    "carrier" -> "Sprint")
@@ -60,7 +50,7 @@ object build{
        //
        // Verizon Add a Line
        //
-       val VZWAAL= scenario("VZWAAL").repeat(inum){
+       val VZWAAL= scenario("VZWAAL").repeat(SimParams.inum){
 	  	    val Carrier =Iterator.continually(
              Map( "imei" -> "99000088304056",
                   "carrier" -> "Verizon")
@@ -86,7 +76,7 @@ object build{
 	  	 }
 
 
-          val ATTAAL= scenario("ATTAAL").repeat(inum){
+          val ATTAAL= scenario("ATTAAL").repeat(SimParams.inum){
           val Carrier = Iterator.continually(
               Map( "imei" -> "YYZHOPEIMUNIQUE",
                    "carrier" -> "Sprint")
@@ -110,7 +100,7 @@ object build{
        //
        // Verizion New Activation Flow
        //
-       val VZWNA= scenario("VZWNA").repeat(inum){
+       val VZWNA= scenario("VZWNA").repeat(SimParams.inum){
 	    	 val Carrier =Iterator.continually(
            Map( "imei" -> "99000088304056",
                 "carrier" -> "VerizonNA"))
@@ -148,7 +138,7 @@ object build{
 	    //
       // Sprint New Activaiton
       //
-      val SPRNA= scenario("SPRNA").repeat(1){
+      val SPRNA= scenario("SPRNA").repeat(SimParams.inum){
       val Carrier = Iterator.continually(
       Map( "imei" -> "foruday1",
            "carrier" -> "SprintNA"))
