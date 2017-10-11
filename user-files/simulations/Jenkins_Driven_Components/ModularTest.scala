@@ -30,7 +30,7 @@ object SimParams{
 		.userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
 
 	val rampup = if (System.getenv("RAMP") == null) 1 else System.getenv("RAMP").toInt
-	val inum = if (System.getenv("ITERATIONS") == null) 1 else System.getenv("ITERATIONS").toInt
+	val inum = if (System.getenv("ITERATIONS") == null) 10 else System.getenv("ITERATIONS").toInt
 
 
 	val VNA = if (System.getenv("VNAUSERS") == null) 1 else System.getenv("VNAUSERS").toInt

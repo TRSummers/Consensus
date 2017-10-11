@@ -42,7 +42,7 @@ object SprintUpgradeE2EComponents{
       .exec(CRExpectationManager.createAndLoadExpectation)
   }
 
-  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(10){
+  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum){
     exec(
       Common.LoginToRetail,                                        Common.CommonPause,
       Common.RetailToChoosePathModule,                             Common.CommonPause,
