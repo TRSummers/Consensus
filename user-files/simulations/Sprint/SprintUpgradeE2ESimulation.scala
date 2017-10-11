@@ -6,7 +6,8 @@ import io.gatling.jdbc.Predef._
 import scala.util.Random
 
 class SprintUpgradeE2ESimulation extends Simulation {
-  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+    setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(10)).protocols(SimParams.httpProtocol))
+//  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2ECR.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
 }
 
 object SprintUpgradeE2EComponents{
@@ -34,13 +35,14 @@ object SprintUpgradeE2EComponents{
     Map("expectationPath" -> expectation8, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation8 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation9, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation9 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString))
-  ).queue
+  )
 
-  val SprintUpgradeE2ECR = scenario("SPR UPG CR").feed(expectationPath).repeat(10) {
-    exec(CRExpectationManager.createAndLoadExpectation)
+  val SprintUpgradeE2ECR = scenario("SPR UPG CR").repeat(10) {
+    exec(feed(expectationPath))
+      .exec(CRExpectationManager.createAndLoadExpectation)
   }
 
-  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum){
+  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(10){
     exec(
       Common.LoginToRetail,                                        Common.CommonPause,
       Common.RetailToChoosePathModule,                             Common.CommonPause,
