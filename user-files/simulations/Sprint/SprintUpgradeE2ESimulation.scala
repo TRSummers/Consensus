@@ -36,30 +36,8 @@ object SprintUpgradeE2EComponents{
     Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString))
   ).queue
 
-  val SprintUpgradeE2ECR = scenario("SPR UPG CR").repeat(1) {
-    exec(
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation,
-      feed(expectationPath),
-      CRExpectationManager.createAndLoadExpectation
-    )
-
+  val SprintUpgradeE2ECR = scenario("SPR UPG CR").feed(expectationPath).repeat(10) {
+    exec(CRExpectationManager.createAndLoadExpectation)
   }
 
   val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum){
@@ -82,6 +60,9 @@ object SprintUpgradeE2EComponents{
       SprintUpgradeE2EPages.toMSS,                                 Common.CommonPause,
       SprintUpgradeE2EPages.toReceiptScan,                         Common.CommonPause,
       SprintUpgradeE2EPages.toActivationScan,                      Common.CommonPause,
+      //        .doIf((s: Session) =>
+      //        s.isAttributeDefined("success")
+      //          chain.exec(Common.CommonPause,
       SprintUpgradeE2EPages.toDeviceInstallmentContract,           Common.CommonPause,
       SprintUpgradeE2EPages.toDeviceFinancingInstallmentContract,  Common.CommonPause,
       SprintUpgradeE2EPages.toActivationCompletePage,              Common.CommonPause,
