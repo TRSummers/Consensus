@@ -47,6 +47,7 @@ object SprintUpgradeE2EComponents{
   val SprintUpgradeE2EFlow = scenario("Sprint Upgrade").repeat(SimParams.inum) {
     group("Sprint Upgrade"){
       exec(
+        feed(build.SSN1), feed(build.SSN2), feed(build.SSN3), feed(build.SSN4),
         Common.LoginToRetail, Common.CommonPause,
         Common.RetailToChoosePathModule, Common.CommonPause,
         SprintUpgradeE2EPages.toUpgradeEligibilityCheck, Common.CommonPause,

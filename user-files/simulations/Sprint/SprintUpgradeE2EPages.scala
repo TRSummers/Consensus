@@ -266,7 +266,7 @@ object SprintUpgradeE2EPages {
       .formParam("Date_of_Birth[1]", "02")
       .formParam("Date_of_Birth[2]", "20")
       .formParam("Date_of_Birth[3]", "1970")
-      .formParam("Social_Security", "231304079")
+      .formParam("Social_Security", "${SSN1}${SSN2}${SSN3}${SSN4}")
       .formParam("Identification_Type", "licns")
       .formParam("Identification_State", "CA")
       .formParam("Identification_Number", "123456789")
