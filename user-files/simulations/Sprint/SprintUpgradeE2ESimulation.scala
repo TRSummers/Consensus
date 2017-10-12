@@ -63,9 +63,6 @@ object SprintUpgradeE2EComponents{
         SprintUpgradeE2EPages.toMSS, Common.CommonPause,
         SprintUpgradeE2EPages.toReceiptScan, Common.CommonPause,
         SprintUpgradeE2EPages.toActivationScan, Common.CommonPause,
-        //        .doIf((s: Session) =>
-        //        s.isAttributeDefined("success")
-        //          chain.exec(Common.CommonPause,
         SprintUpgradeE2EPages.toDeviceInstallmentContract, Common.CommonPause,
         SprintUpgradeE2EPages.toDeviceFinancingInstallmentContract, Common.CommonPause,
         SprintUpgradeE2EPages.toActivationCompletePage, Common.CommonPause,

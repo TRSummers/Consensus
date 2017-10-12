@@ -1055,7 +1055,6 @@ object SprintUpgradeE2EPages {
       .exec(http("#454")
         .post("/retail/receiptscan.htm")
         .check(regex("#(.+?)</h3>").saveAs("p_orderid"))
-        .check(regex("#(.+?)</h3>").saveAs("success"))
         .headers(SprintUpgradeE2EHeaders.headers_0)
         .formParam("receiptId", "757898935042135485")
         .resources(http("#455")
