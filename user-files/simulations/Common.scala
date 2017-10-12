@@ -951,22 +951,39 @@ object Common{
 				.headers(AddaLine_headers_0)))
 	}
 
+	val status_call = Map(
+		"Accept" -> "application/json, text/plain, */*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.8",
+		"Cache-Control" -> "no-cache",
+		"Connection" -> "keep-alive",
+		"Pragma" -> "no-cache",
+		"User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Mobile Safari/537.36",
+		"X-COMMON-FLOW-TYPE" -> "home",
+		"X-COMMON-INTERACTION-ID" -> "051d3257-a5d2-40e5-ba0d-7ba1c252632d",
+		"X-COMMON-RETAIL-STORE-ID" -> "0003",
+		"X-COMMON-SALESREP-ID" -> "tadmin2")
+
 	val Logout=group("Logout"){
 		exec(http("Logout_0")
 			.get("/retail/orderassembly/controller/newcustomer.php?logout=1")
 			.headers(Logoutheaders_0))
-		.exec(http("Logout_1")
-			.get("/jslibs/modernizr.php")
-			.headers(Logoutheaders_1))
-		.exec(http("Logout_2")
-			.get("/retail/public/styles/normalize.php")
-			.headers(Logoutheaders_2))
-		.exec(http("Completed_${p_orderid}")
-			.get("/js/retail/topnav.php")
-			.headers(Logoutheaders_1))
-		.exec(http("Completed Orders")
-			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490039628495")
-			.headers(Logoutheaders_4))
+			.exec(http("Logout_1")
+				.get("/jslibs/modernizr.php")
+				.headers(Logoutheaders_1))
+			.exec(http("Logout_2")
+				.get("/retail/public/styles/normalize.php")
+				.headers(Logoutheaders_2))
+			.exec(http("Logout_3")
+				.get("/js/retail/topnav.php")
+				.headers(Logoutheaders_1))
+			.exec(http("Shipped Orders")
+				.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
+				.check(substring("COMPLETED"))
+				.headers(status_call))
+			.exec(http("Completed Flows")
+				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490039628495")
+				.headers(Logoutheaders_4))
 	}
-//	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+	//	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }

@@ -6,11 +6,11 @@ import io.gatling.jdbc.Predef._
 import scala.util.Random
 
 class SprintUpgradeE2ESimulation extends Simulation {
-    setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(10)).protocols(SimParams.httpProtocol))
-//  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2ECR.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(10)).protocols(SimParams.httpProtocol))
+  //  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2ECR.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
 }
 
-object SprintUpgradeE2EComponents{
+object SprintUpgradeE2EComponents {
 
   val expectation1 = "expectations/sprint/upgrade/loan/insurance/check-loan-eligibility"
   val expectation2 = "expectations/sprint/upgrade/loan/insurance/create-lite-esa"
@@ -45,7 +45,7 @@ object SprintUpgradeE2EComponents{
   }
 
   val SprintUpgradeE2EFlow = scenario("Sprint Upgrade").repeat(SimParams.inum) {
-    group("Sprint Upgrade"){
+    group("Sprint Upgrade") {
       exec(
         feed(build.SSN1), feed(build.SSN2), feed(build.SSN3), feed(build.SSN4),
         Common.LoginToRetail, Common.CommonPause,
