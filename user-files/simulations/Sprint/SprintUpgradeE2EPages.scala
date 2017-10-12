@@ -180,7 +180,7 @@ object SprintUpgradeE2EPages {
       .exec(http("#88")
         .get("/retail/orderassembly/controller/process.php")
         .headers(SprintUpgradeE2EHeaders.headers_11)
-        .resources(, http("#89")
+        .resources(http("#89")
           .get("/retail/public/styles/normalize.php")
           .headers(SprintUpgradeE2EHeaders.headers_89), http("#90")
           .get("/jslibs/jquery.php?ver=1.8.2")
