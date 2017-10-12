@@ -723,7 +723,7 @@ object VZWFlow{
 					http("ui_cc_request_16")
 						.get(uri_ui + "/app/pages/installmentdetails/installmentdetails.html")
 						.headers(ui_headers_16)))
-		.pause(74)
+	//	.pause(74)
 		.exec(http("ui_cc_request_17")
 				.get(uri_ui + "/assets/img/bullseye.svg")
 				.resources(http("uri_request_18")
