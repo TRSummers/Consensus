@@ -160,16 +160,16 @@ object SprintUpgradeE2EPages {
         .post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle")
         .headers(SprintUpgradeE2EHeaders.headers_82)
         .body(ElFileBody("Sprint/UpgradeE2E/SprintUpgradeE2E_0082_request.json")))
+      .exec(http("#83")
+        .get(Common.uri_ui + "/app/pages/paymentoptions/paymentoptions.html")
+        .headers(SprintUpgradeE2EHeaders.headers_83))
       .exec(http("#84")
         .options(Common.uri_dsom_no_port + "/dsom-app/v1/getPaymentDetails")
         .headers(SprintUpgradeE2EHeaders.headers_7))
       .exec(http("#85")
         .post(Common.uri_dsom_no_port + "/dsom-app/v1/getPaymentDetails")
         .headers(SprintUpgradeE2EHeaders.headers_85)
-        .body(ElFileBody("Sprint/UpgradeE2E/SprintUpgradeE2E_0085_request.json"))
-        .resources(http("#83")
-          .get(Common.uri_ui + "/app/pages/paymentoptions/paymentoptions.html")
-          .headers(SprintUpgradeE2EHeaders.headers_83)))
+        .body(ElFileBody("Sprint/UpgradeE2E/SprintUpgradeE2E_0085_request.json")))
   }
 
   val toCreditCheck = group("To Credit Check") {
