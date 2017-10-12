@@ -7,7 +7,7 @@ import io.gatling.jdbc.Predef._
 object SprintUpgradeE2EPages {
 
 
-  val toUpgradeEligbilityCheck = group("toUpgradeEligbilityCheck") {
+  val toUpgradeEligbilityCheck = group("To Upgrade Eligbility Check") {
     exec(http("#34")
       .options(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState")
       .headers(SprintUpgradeE2EHeaders.headers_7))
@@ -74,7 +74,7 @@ object SprintUpgradeE2EPages {
             .headers(SprintUpgradeE2EHeaders.headers_3)))
   }
 
-  val toScanDevice = group("toScanDevice") {
+  val toScanDevice = group("To Scan Device") {
     exec(http("#59")
       .options(Common.uri_dsom_no_port + "/dsom-app/v1/isWidgetEnabledEx")
       .headers(SprintUpgradeE2EHeaders.headers_7))
@@ -137,7 +137,7 @@ object SprintUpgradeE2EPages {
             .headers(SprintUpgradeE2EHeaders.headers_76)))
   }
 
-  val toPaymentOptions = group("toPaymentOptions") {
+  val toPaymentOptions = group("To Payment Options") {
     exec(http("#77")
       .options(Common.uri_dsom_no_port + "/session/dsom/v1/cart/item")
       .headers(SprintUpgradeE2EHeaders.headers_77))
@@ -171,7 +171,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_83)))
   }
 
-  val toCreditCheck = group("toCreditCheck") {
+  val toCreditCheck = group("To Credit Check") {
     exec(http("#86")
       .options(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState")
       .headers(SprintUpgradeE2EHeaders.headers_7))
@@ -241,7 +241,7 @@ object SprintUpgradeE2EPages {
             .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toCreditCheckResult = group("toCreditCheckResult") {
+  val toCreditCheckResult = group("To Credit Check Result") {
     exec(http("#117")
       .post("/retail/creditcheck/creditcheck.htm")
       .headers(SprintUpgradeE2EHeaders.headers_0)
@@ -257,7 +257,7 @@ object SprintUpgradeE2EPages {
       .formParam("Billing_Address_Radio", "unfinished")
       .formParam("Ecom_BillTo_Postal_Name_First", "Teddy")
       .formParam("Ecom_BillTo_Postal_Name_Middle", "")
-      .formParam("Ecom_BillTo_Postal_Name_Last", "${Lname}")
+      .formParam("Ecom_BillTo_Postal_Name_Last", "McTest")
       .formParam("Ecom_BillTo_Postal_Street_Line1", "278 Bella Vista Way")
       .formParam("Ecom_BillTo_Postal_Street_Line2", "")
       .formParam("Ecom_BillTo_Postal_City", "San Francisco")
@@ -268,7 +268,7 @@ object SprintUpgradeE2EPages {
       .formParam("Date_of_Birth[1]", "02")
       .formParam("Date_of_Birth[2]", "20")
       .formParam("Date_of_Birth[3]", "1970")
-      .formParam("Social_Security", "${SSN1}${SSN2}${SSN3}${SSN4}")
+      .formParam("Social_Security", "231304079")
       .formParam("Identification_Type", "licns")
       .formParam("Identification_State", "CA")
       .formParam("Identification_Number", "123456789")
@@ -433,10 +433,9 @@ object SprintUpgradeE2EPages {
         .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toInstallmentDetails = group("toInstallmentDetails") {
+  val toInstallmentDetails = group("To Installment Details") {
     exec(http("#194")
       .post("/retail/creditcheck/result.htm")
-//      .check(substring("Carrier credit check successful. Continue with Sprint"))
       .headers(SprintUpgradeE2EHeaders.headers_0)
       .formParam("submitType", "continue")
       .formParam("acceptCorp", "545")
@@ -506,7 +505,7 @@ object SprintUpgradeE2EPages {
         .headers(SprintUpgradeE2EHeaders.headers_3))
   }
 
-  val toPlans = group("toPlans") {
+  val toPlans = group("To Plans") {
     exec(http("#218")
       .options(Common.uri_dsom_no_port + "/session/dsom/v1/cart/item/1")
       .headers(SprintUpgradeE2EHeaders.headers_218))
@@ -576,7 +575,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toCart = group("toCart") {
+  val toCart = group("To Cart") {
     exec(http("#247")
       .get("/retail/orderassembly/controller/process.php?addServicePrIds=41922")
       .headers(SprintUpgradeE2EHeaders.headers_11))
@@ -638,7 +637,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toFeatures = group("toFeatures") {
+  val toFeatures = group("To Features") {
     exec(http("#275")
       .post("/retail/orderassembly/cart.htm")
       .headers(SprintUpgradeE2EHeaders.headers_0)
@@ -710,7 +709,7 @@ object SprintUpgradeE2EPages {
         .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toDeviceOptions = group("toDeviceOptions") {
+  val toDeviceOptions = group("To Device Options") {
     exec(http("#307")
       .post("/retail/orderassembly/features.htm")
       .headers(SprintUpgradeE2EHeaders.headers_0)
@@ -783,7 +782,7 @@ object SprintUpgradeE2EPages {
         .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toOrderConfirm = group("toOrderConfirm") {
+  val toOrderConfirm = group("To Order Confirm") {
     exec(http("#340")
       .get("/ajax/tracking/trackpageview.php?trk=RMPOP&trkFrom=RTLDO&isNoResponse=1")
       .headers(SprintUpgradeE2EHeaders.headers_1))
@@ -857,7 +856,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toTermsAndConditions = group("toTermsAndConditions") {
+  val toTermsAndConditions = group("To Terms And Conditions") {
     exec(http("#369")
       .post("/retail/checkout/controller/panicbuttonprocess.php")
       .headers(SprintUpgradeE2EHeaders.headers_369)
@@ -929,7 +928,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_3)))
   }
 
-  val toMSS = group("toMSS") {
+  val toMSS = group("To MSS") {
     exec(http("#401")
       .post("/retail/checkout/termsconditions.htm")
       .headers(SprintUpgradeE2EHeaders.headers_0)
@@ -995,7 +994,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toReceiptScan = group("toReceiptScan") {
+  val toReceiptScan = group("To Receipt Scan") {
     exec(http("#428")
       .get("/retail/controller/saleassocflowcontroller.php?activate=1")
       .headers(SprintUpgradeE2EHeaders.headers_11)
@@ -1050,7 +1049,7 @@ object SprintUpgradeE2EPages {
         .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toActivationScan = group("toActivationScan") {
+  val toActivationScan = group("To Activation Scan") {
     exec(http("#453")
       .post("/ajax/retail/fakereceipt.php")
       .headers(SprintUpgradeE2EHeaders.headers_453))
@@ -1116,7 +1115,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_116)))
   }
 
-  val toDeviceInstallmentContract = group("toDeviceInstallmentContract") {
+  val toDeviceInstallmentContract = group("To Device Installment Contract") {
     exec(http("#482")
       .post("/retail/checkout/activationscan.htm")
       .headers(SprintUpgradeE2EHeaders.headers_0)
@@ -1259,7 +1258,7 @@ object SprintUpgradeE2EPages {
           .headers(SprintUpgradeE2EHeaders.headers_3)))
   }
 
-  val toDeviceFinancingInstallmentContract = group("toDeviceFinancingInstallmentContract") {
+  val toDeviceFinancingInstallmentContract = group("To Device Financing Installment Contract") {
     exec(http("#545")
       .get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}")
       .headers(SprintUpgradeE2EHeaders.headers_545))
@@ -1283,7 +1282,7 @@ object SprintUpgradeE2EPages {
 
   }
 
-  val toActivationCompletePage = group("toActivationCompletePage") {
+  val toActivationCompletePage = group("To Activation Complete Page") {
     exec(http("#552")
       .get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLTC%22%5D")
       .headers(SprintUpgradeE2EHeaders.headers_552)

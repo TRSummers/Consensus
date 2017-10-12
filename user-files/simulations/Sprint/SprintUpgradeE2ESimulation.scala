@@ -37,13 +37,15 @@ object SprintUpgradeE2EComponents{
     Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString))
   )
 
-  val SprintUpgradeE2ECR = scenario("SPR UPG CR").repeat(10) {
-    exec(feed(expectationPath))
-      .exec(CRExpectationManager.createAndLoadExpectation)
+  val SprintUpgradeE2ECR = scenario("Sprint Upgrade Carrier Responder").repeat(10) {
+    group("Sprint Upgrade Carrier Responder") {
+      exec(feed(expectationPath))
+        .exec(CRExpectationManager.createAndLoadExpectation)
+    }
   }
 
-  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum) {
-    group("SprintUpgradeE2E"){
+  val SprintUpgradeE2EFlow = scenario("Sprint Upgrade").repeat(SimParams.inum) {
+    group("Sprint Upgrade"){
       exec(
         feed(build.Lname),
         feed(build.SSN1), feed(build.SSN2), feed(build.SSN3), feed(build.SSN4),
