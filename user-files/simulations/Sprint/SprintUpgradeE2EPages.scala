@@ -7,7 +7,7 @@ import io.gatling.jdbc.Predef._
 object SprintUpgradeE2EPages {
 
 
-  val toUpgradeEligbilityCheck = group("To Upgrade Eligbility Check") {
+  val toUpgradeEligibilityCheck = group("To Upgrade Eligibility Check") {
     exec(http("#34")
       .options(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState")
       .headers(SprintUpgradeE2EHeaders.headers_7))
@@ -15,6 +15,9 @@ object SprintUpgradeE2EPages {
         .post(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState")
         .headers(SprintUpgradeE2EHeaders.headers_35)
         .body(ElFileBody("Sprint/UpgradeE2E/SprintUpgradeE2E_0035_request.json")))
+      .exec(http("#42")
+        .get(Common.uri_ui + "/config.json")
+        .headers(SprintUpgradeE2EHeaders.headers_6))
       .exec(http("#43")
         .options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle")
         .headers(SprintUpgradeE2EHeaders.headers_7))
@@ -49,9 +52,7 @@ object SprintUpgradeE2EPages {
             .get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin")
             .headers(SprintUpgradeE2EHeaders.headers_4), http("#41")
             .get(Common.uri_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2")
-            .headers(SprintUpgradeE2EHeaders.headers_5), http("#42")
-            .get(Common.uri_ui + "/config.json")
-            .headers(SprintUpgradeE2EHeaders.headers_6), http("#48")
+            .headers(SprintUpgradeE2EHeaders.headers_5), http("#48")
             .get(Common.uri_ui + "/build/ch_523e04986e5df68da3af_min.js")
             .headers(SprintUpgradeE2EHeaders.headers_1), http("#50")
             .get(Common.uri_ui + "/app/pages/frame/header/header.html")
@@ -794,7 +795,7 @@ object SprintUpgradeE2EPages {
         .formParam("isNoInsuranceSelected", "1")
         .formParam("isInStore", "")
         .formParam("shownPoptIds[99485]", "99485")
-//        .formParam("addPurchaseOptionsArr[1][42588][259]", "")
+        //        .formParam("addPurchaseOptionsArr[1][42588][259]", "")
         .formParam("addPurchaseOptionsArr[1][42714][259]", "")
         .formParam("guestReview", "on")
         .formParam("continueButton", "continue"))
