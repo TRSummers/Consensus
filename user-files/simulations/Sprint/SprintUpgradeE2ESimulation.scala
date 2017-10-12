@@ -42,35 +42,36 @@ object SprintUpgradeE2EComponents{
       .exec(CRExpectationManager.createAndLoadExpectation)
   }
 
-  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum){
-    exec(
-      Common.LoginToRetail,                                        Common.CommonPause,
-      Common.RetailToChoosePathModule,                             Common.CommonPause,
-      Common.Upgrade,                                              Common.CommonPause,
-      SprintUpgradeE2EPages.toUpgradeEligbilityCheck,              Common.CommonPause,
-      SprintUpgradeE2EPages.toScanDevice,                          Common.CommonPause,
-      SprintUpgradeE2EPages.toPaymentOptions,                      Common.CommonPause,
-      SprintUpgradeE2EPages.toCreditCheck,                         Common.CommonPause,
-      SprintUpgradeE2EPages.toCreditCheckResult,                   Common.CommonPause,
-      SprintUpgradeE2EPages.toInstallmentDetails,                  Common.CommonPause,
-      SprintUpgradeE2EPages.toPlans,                               Common.CommonPause,
-      SprintUpgradeE2EPages.toCart,                                Common.CommonPause,
-      SprintUpgradeE2EPages.toFeatures,                            Common.CommonPause,
-      SprintUpgradeE2EPages.toDeviceOptions,                       Common.CommonPause,
-      SprintUpgradeE2EPages.toOrderConfirm,                        Common.CommonPause,
-      SprintUpgradeE2EPages.toTermsAndConditions,                  Common.CommonPause,
-      SprintUpgradeE2EPages.toMSS,                                 Common.CommonPause,
-      SprintUpgradeE2EPages.toReceiptScan,                         Common.CommonPause,
-      SprintUpgradeE2EPages.toActivationScan,                      Common.CommonPause,
-      //        .doIf((s: Session) =>
-      //        s.isAttributeDefined("success")
-      //          chain.exec(Common.CommonPause,
-      SprintUpgradeE2EPages.toDeviceInstallmentContract,           Common.CommonPause,
-      SprintUpgradeE2EPages.toDeviceFinancingInstallmentContract,  Common.CommonPause,
-      SprintUpgradeE2EPages.toActivationCompletePage,              Common.CommonPause,
-      Common.NewGuest,                                             Common.CommonPause,
-      Common.Logout
-    )
+  val SprintUpgradeE2EFlow = scenario("SPR UPG Flow").repeat(SimParams.inum) {
+    group("SprintUpgradeE2E"){
+      exec(
+        Common.LoginToRetail, Common.CommonPause,
+        Common.RetailToChoosePathModule, Common.CommonPause,
+        Common.Upgrade, Common.CommonPause,
+        SprintUpgradeE2EPages.toUpgradeEligbilityCheck, Common.CommonPause,
+        SprintUpgradeE2EPages.toScanDevice, Common.CommonPause,
+        SprintUpgradeE2EPages.toPaymentOptions, Common.CommonPause,
+        SprintUpgradeE2EPages.toCreditCheck, Common.CommonPause,
+        SprintUpgradeE2EPages.toCreditCheckResult, Common.CommonPause,
+        SprintUpgradeE2EPages.toInstallmentDetails, Common.CommonPause,
+        SprintUpgradeE2EPages.toPlans, Common.CommonPause,
+        SprintUpgradeE2EPages.toCart, Common.CommonPause,
+        SprintUpgradeE2EPages.toFeatures, Common.CommonPause,
+        SprintUpgradeE2EPages.toDeviceOptions, Common.CommonPause,
+        SprintUpgradeE2EPages.toOrderConfirm, Common.CommonPause,
+        SprintUpgradeE2EPages.toTermsAndConditions, Common.CommonPause,
+        SprintUpgradeE2EPages.toMSS, Common.CommonPause,
+        SprintUpgradeE2EPages.toReceiptScan, Common.CommonPause,
+        SprintUpgradeE2EPages.toActivationScan, Common.CommonPause,
+        //        .doIf((s: Session) =>
+        //        s.isAttributeDefined("success")
+        //          chain.exec(Common.CommonPause,
+        SprintUpgradeE2EPages.toDeviceInstallmentContract, Common.CommonPause,
+        SprintUpgradeE2EPages.toDeviceFinancingInstallmentContract, Common.CommonPause,
+        SprintUpgradeE2EPages.toActivationCompletePage, Common.CommonPause,
+        Common.NewGuest, Common.CommonPause,
+        Common.Logout
+      )
+    }
   }
-
 }
