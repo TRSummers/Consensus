@@ -6,7 +6,7 @@ import io.gatling.jdbc.Predef._
 
 object VerizonNewActivationPages{
 
-	val VZWScanToPaymentOptions = group("${carrier}_Scan"){
+	val DeviceScanToPaymentOptions = group("Scan"){
 		exec(http("dsom_Scan_30")
 			.options(Common.uri_dsom + "/session/dsom/v1/cart/item")
 			.headers(VerizonNewActivationHeaders.dsom_headers_230))
@@ -22,7 +22,7 @@ object VerizonNewActivationPages{
 				.check(regex("\"cartCount\":1").find.exists)
 				.headers(VerizonNewActivationHeaders.headers_223)
 				.body(ElFileBody("Verizon/NewActivationE2E/VZW_0033_request.json")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("dsom_Scan_34")
 				.options(Common.uri_dsom + "/dsom-app/v1/getContentForAisle")
 				.headers(VerizonNewActivationHeaders.dsom_headers_222))
@@ -44,7 +44,7 @@ object VerizonNewActivationPages{
 				.body(ElFileBody("Verizon/NewActivationE2E/VZW_0037_request.json")))
 	}
 
-	val CC=group("CreditCheck"){
+	val L_CreditCheckToCCResult = group("CreditCheck"){
 		exec(http("CC_0")
 			.post("/retail/creditcheck/creditcheck.htm")
 			.headers(VerizonNewActivationHeaders.VZW_CC_Headers_0)
@@ -90,7 +90,7 @@ object VerizonNewActivationPages{
 			.exec(http("CC_3")
 				.get("/js/retail/topnav.php")
 				.headers(VerizonNewActivationHeaders.VZW_CC_Headers_2))
-			//.pause(106 milliseconds)
+			////.pause(106 milliseconds)
 			.exec(http("CC_4")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490215046074")
 			.headers(VerizonNewActivationHeaders.VZW_CC_Headers_4))
@@ -106,7 +106,7 @@ object VerizonNewActivationPages{
 			.exec(http("CC_8")
 				.get("/js/retail/topnav.php")
 				.headers(VerizonNewActivationHeaders.VZW_CC_Headers_2))
-			//.pause(111 milliseconds)
+			////.pause(111 milliseconds)
 			.exec(http("CC_9")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490215055419")
 			.headers(VerizonNewActivationHeaders.VZW_CC_Headers_4))
@@ -123,23 +123,23 @@ object VerizonNewActivationPages{
 			.exec(http("CC_13")
 				.get("/js/retail/topnav.php")
 				.headers(VerizonNewActivationHeaders.VZW_CC_Headers_12))
-			//.pause(135 milliseconds)
+			////.pause(135 milliseconds)
 			.exec(http("CC_14")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490215057302")
 			.headers(VerizonNewActivationHeaders.VZW_CC_Headers_14))
 	}
 
-	val CreditCheck=group("CreditCheck"){
+	val CreditCheckToCCResult = group("CreditCheck"){
 		exec(http("dsom_CreditCheck_0")
 			.options(Common.uri_dsom_v1_port + "/getNextState")
 			.headers(VerizonNewActivationHeaders.dsom_headers_222))
-			.pause(30)
+			//.pause(30)
 			.exec(http("dsom_CreditCheck_1_post_form")
 				.post(Common.uri_dsom_v1_port + "/getNextState")
 				.check(regex("Error retrieving the next state for").find.notExists)
 				.headers(VerizonNewActivationHeaders.dsom_headers_1)
 				.body(ElFileBody("Verizon/NewActivationE2E/CreditCheckToIDP_0001_request.json")))
-			.pause(40)
+			//.pause(40)
 			.exec(http("dsom_CreditCheck_2_process_php")
 				.get(Common.uri_poa_no_port + "/retail/orderassembly/controller/process.php")
 				.headers(VerizonNewActivationHeaders.poa_headers_2)
@@ -148,22 +148,22 @@ object VerizonNewActivationPages{
 					http("ui_cc_request_8")
 						.get(Common.uri_ui + "/config.json")
 						.headers(VerizonNewActivationHeaders.ui_headers_8)))
-			.pause(5)
+			//.pause(5)
 			.exec(http("dsom_CreditCheck_9")
 				.options(Common.uri_dsom_v1_port + "/getContentForAisle")
 				.headers(VerizonNewActivationHeaders.dsom_headers_230))
-			.pause(5)
+			//.pause(5)
 			.exec(http("dsom_CreditCheck_10")
 				.post(Common.uri_dsom_v1_port + "/getNextState")
 				.check(regex("Error retrieving the next state for").find.notExists)
 				.headers(VerizonNewActivationHeaders.dsom_headers_231)
 				.body(ElFileBody("Verizon/NewActivationE2E/CreditCheckToIDP_0010_request.json")))
-			.pause(5)
+			//.pause(5)
 			.exec(http("dsom_CreditCheck_11")
 				.post(Common.uri_dsom_v1_port + "/getContentForAisle")
 				.headers(VerizonNewActivationHeaders.dsom_headers_231)
 				.body(ElFileBody("Verizon/NewActivationE2E/CreditCheckToIDP_0011_request.json")))
-			.pause(5)
+			//.pause(5)
 			.exec(http("dsom_CreditCheck_12")
 				.post(Common.uri_dsom_v1_port + "/getContentForAisle")
 				.check(regex("Installment Details").find.exists)
@@ -181,17 +181,17 @@ object VerizonNewActivationPages{
 					http("ui_cc_request_16")
 						.get(Common.uri_ui + "/app/pages/installmentdetails/installmentdetails.html")
 						.headers(VerizonNewActivationHeaders.ui_headers_16)))
-			//	.pause(74)
+			//	//.pause(74)
 			.exec(http("ui_cc_request_17")
 			.get(Common.uri_ui + "/assets/img/bullseye.svg")
 			.resources(http("uri_request_18")
 				.get(Common.uri_ui + "/app/components/channel/channel.html")
 				.headers(VerizonNewActivationHeaders.ui_headers_16)))
-			.pause(4)
+			//.pause(4)
 			.exec(http("dsom_creditcheck_19")
 				.options(Common.uri_dsom_v1_port + "/paymentPlans")
 				.headers(VerizonNewActivationHeaders.dsom_headers_19))
-			.pause(4)
+			//.pause(4)
 			.exec(http("dsom_creditcheck_20")
 				.get(Common.uri_dsom_v1_port + "/paymentPlans")
 				.headers(VerizonNewActivationHeaders.dsom_headers_20))
@@ -201,7 +201,7 @@ object VerizonNewActivationPages{
 
 	}
 
-	val CC2IDP=group("${carrier}_CreditCheck_IDP"){
+	val CreditCheckResultToIDP = group("CreditCheck_IDP"){
 		exec(http("CreditCheck_IDP_27")
 			.post("/retail/creditcheck/result.htm")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_1027)
@@ -234,17 +234,17 @@ object VerizonNewActivationPages{
 				.check(substring("Sales tax based on full"))
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_101)
 				.body(ElFileBody("Verizon/NewActivationE2E/VZWPO2Activation_0033_request.json")))
-			.pause(144 milliseconds)
+			//.pause(144 milliseconds)
 			.exec(http("CreditCheck_IDP_34")
 				.options(Common.uri_dsom_v1_port + "/paymentPlans")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_1034))
 			.exec(http("CreditCheck_IDP_35")
 				.get(Common.uri_dsom_v1_port + "/paymentPlans")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_1035))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val IDP2PlanInCC=group("${carrier}_IDP_Plan"){
+	val IDPToPlans = group("IDP_Plan"){
 		exec(http("IDP_Plan36")
 			.options(Common.uri_dsom + "/session/dsom/v1/cart/item/1")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_1036))
@@ -305,7 +305,7 @@ object VerizonNewActivationPages{
 						.get(Common.uri_ui + "/app/components/contempiler/sets/carrierinfo/verizon_hide.html")))
 	}
 
-	val IDP2Plan=group("${carrier}_IDP_Plan"){
+	val IDPToL_Plans = group("IDP_Plan"){
 		exec(http("IDP_Plan36")
 			.options(Common.uri_dsom + "/session/dsom/v1/cart/item/1")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_1036))
@@ -336,10 +336,10 @@ object VerizonNewActivationPages{
 			.exec(http("IDP_Plan44")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019148728")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_1044))
-		////.pause(10, 15)
+		//////.pause(10, 15)
 	}
 
-	val SelectPlan=group("SelectPlan"){
+	val PlansToCart = group("SelectPlan"){
 		exec(http("SelectPlan_45")
 			.get("/retail/orderassembly/controller/process.php?addServicePrIds=42340")
 			.check(substring("Your Cart"))
@@ -356,10 +356,10 @@ object VerizonNewActivationPages{
 			.exec(http("SelectPlan_49")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019193820")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_1049))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val YourCart=group("YourCart"){
+	val CartToPlanFeatures = group("YourCart"){
 		exec(http("YourCart_50")
 			.post("/retail/orderassembly/cart.htm")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_1050)
@@ -382,7 +382,7 @@ object VerizonNewActivationPages{
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_1055))
 	}
 
-	val SelectPlanFeaturesInCC=group("${carrier}_SelectPlanFeatures"){
+	val PlanFeaturesToProtectionPlans = group("SelectPlanFeatures"){
 		exec(http("SelectPlanFeatures_10")
 			.get(Common.uri_ui + "/assets/img/cloader.gif"))
 			.exec(http("featuresrequest_64")
@@ -402,7 +402,7 @@ object VerizonNewActivationPages{
 				.post(Common.uri_dsom_v1_port + "/getNextState")
 				.headers(VerizonNewActivationHeaders.ui_headers_72)
 				.body(ElFileBody("Verizon/NewActivationE2E/PlansToFeatures_0068_request.json")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("featuresrequest_69")
 				.post(Common.uri_dsom_v1_port + "/getContentForAisle")
 				.headers(VerizonNewActivationHeaders.ui_headers_72)
@@ -421,12 +421,12 @@ object VerizonNewActivationPages{
 					http("featuresrequest_75")
 						.get("/img/prod/cell-phones/verizonwireless/samsung/samsung-galaxy-s7-edge-black_front_med.png")
 						.headers(VerizonNewActivationHeaders.ui_headers_72)))
-			.pause(3)
+			//.pause(3)
 			.exec(http("featuresrequest_76")
 				.post(Common.uri_dsom_v1_port + "/getNextState")
 				.headers(VerizonNewActivationHeaders.ui_headers_72)
 				.body(ElFileBody("Verizon/NewActivationE2E/PlansToFeatures_0076_request.json")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("featuresrequest_77")
 				.get("/retail/orderassembly/controller/process.php")
 				.headers(VerizonNewActivationHeaders.poa_headers_2)
@@ -435,7 +435,7 @@ object VerizonNewActivationPages{
 						.get(Common.uri_ui + "/assets/img/cloader.gif")))
 	}
 
-	val SelectPlanFeatures=group("${carrier}_SelectPlanFeatures"){
+	val L_PlanFeaturesToL_ProtectionPlans = group("SelectPlanFeatures"){
 		exec(http("SelectPlanFeatures_10")
 			.post("/retail/orderassembly/features.htm")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_10)
@@ -458,10 +458,10 @@ object VerizonNewActivationPages{
 			.exec(http("SelectPlanFeatures_15")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604767762")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_15))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val SelectProtectionPlanInCC=group("${carrier}_SelectProtectionPlanCC"){
+	val ProtectionPlansToL_NumberPort = group("SelectProtectionPlanCC"){
 		exec(http("SelectProtectionPlan16")
 			.get(Common.uri_ui + "/config.json")
 			.headers(VerizonNewActivationHeaders.ui_headers_8))
@@ -479,7 +479,7 @@ object VerizonNewActivationPages{
 				.post(Common.uri_dsom_v1_port + "/getNextState")
 				.headers(VerizonNewActivationHeaders.ui_headers_72)
 				.body(ElFileBody("Verizon/NewActivationE2E/miniCart_003_request.json")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("dsom_post_insurance_74")
 				.post(Common.uri_dsom_v1_port + "/getContentForAisle")
 				.headers(VerizonNewActivationHeaders.ui_headers_72)
@@ -532,7 +532,7 @@ object VerizonNewActivationPages{
 					http("request_91")
 						.get(Common.uri_ui + "/assets/img/squaretrade_logo_325x160.png")
 						.headers(VerizonNewActivationHeaders.ui_headers_16)))
-			.pause(4)
+			//.pause(4)
 
 			//part 2 of selection protection plan - transition from DSOM to legacy number port
 			.exec(http("dsom_switch_to_legacy_numberport_92")
@@ -546,11 +546,11 @@ object VerizonNewActivationPages{
 				.post(Common.uri_dsom_v1_port + "/getNextState")
 				.headers(VerizonNewActivationHeaders.dsom_headers_1)
 				.body(ElFileBody("Verizon/NewActivationE2E/CartItem_patch_004_request.json")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("request_95")
 				.get("/retail/orderassembly/controller/process.php")
 				.headers(VerizonNewActivationHeaders.poa_headers_2))
-			.pause(1)
+			//.pause(1)
 			.exec(http("request_96")
 				.get("/retail/public/styles/normalize.php")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_01)
@@ -631,10 +631,10 @@ object VerizonNewActivationPages{
 					http("request_122")
 						.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1504646577165")
 						.headers(VerizonNewActivationHeaders.VZWFlowheaders_4)))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val SelectProtectionPlan=group("${carrier}_SelectProtectionPlan"){
+	val L_ProtectionPlansToL_NumberPort = group("SelectProtectionPlan"){
 		exec(http("SelectProtectionPlan16")
 			.get("/minicart/minicart.php?type=popt&isNoResponse=1&noCache=0.5845231551502829&action=update&dataArray%5Badd%5D%5BaddPoptId%5D=99485&dataArray%5Badd%5D%5BaddPoptIdIndex%5D=1")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_16))
@@ -663,10 +663,10 @@ object VerizonNewActivationPages{
 			.exec(http("SelectProtectionPlan22")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604798563")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_22))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val NumberPort=group("${carrier}_NumberPort"){
+	val L_NumberPortToL_OrderConfirm = group("NumberPort"){
 		exec(http("NumberPort_23")
 			.post("/retail/checkout/checkout.htm?copId=436")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_23)
@@ -688,10 +688,10 @@ object VerizonNewActivationPages{
 			.exec(http("NumberPort_27")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604817061")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_27))
-		//.pause(5, 18)
+		////.pause(5, 18)
 	}
 
-	val OrderReviewandConfirm=group("${carrier}_OrderReviewandConfirm"){
+	val L_OrderReviewToL_TermsAndConditions = group("OrderReviewandConfirm"){
 		exec(http("OrderReveviewandConfirm_28")
 			.get("/retail/checkout/termsconditions.htm")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_28))
@@ -704,14 +704,14 @@ object VerizonNewActivationPages{
 			.exec(http("OrderReveviewandConfirm_31")
 				.get("/js/retail/topnav.php")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_30))
-			////.pause(140 milliseconds)
+			//////.pause(140 milliseconds)
 			.exec(http("OrderReveviewandConfirm_32")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604837215")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_32))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val TermsandConditions=group("${carrier}_TermsandConditions"){
+	val L_TermsandConditionsToL_SwipeCard = group("TermsandConditions"){
 		exec(http("TermsandConditions_33")
 			.post("/retail/checkout/termsconditions.htm")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_33)
@@ -746,10 +746,10 @@ object VerizonNewActivationPages{
 			.exec(http("TermsandConditions_43")
 				.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1489604874544&storeId=0003")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_42))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val SwipeCard=group("${carrier}_SwipeCard"){
+	val L_SwipeCardToL_MSS = group("SwipeCard"){
 		exec(http("SwipeCard_44")
 			.post("/ajax/retail/savebillingaddress.php")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_44)
@@ -763,7 +763,7 @@ object VerizonNewActivationPages{
 			.formParam("Ecom_BillTo_Postal_City", "San Francisco")
 			.formParam("Ecom_BillTo_Postal_StateProv", "CA")
 			.formParam("Ecom_BillTo_Postal_PostalCode", "94117"))
-			.pause(15)
+			//.pause(15)
 			.exec(http("SwipeCard_45")
 				.get("/ajax/retail/auruscallbackresponse.php")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_42))
@@ -795,14 +795,14 @@ object VerizonNewActivationPages{
 			.exec(http("SwipeCard_51")
 				.get("/barcode.htm?code=9881257290057620&height=90&type=C128B&font=1")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_50))
-			//.pause(125 milliseconds)
+			////.pause(125 milliseconds)
 			.exec(http("SwipeCard_52")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604920754")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_52))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val PrintMobileScanSheet=group("${carrier}_PrintMobileScanSheet"){
+	val L_MSSToL_ScanReceipt = group("PrintMobileScanSheet"){
 		exec(http("PrintMobileScanSheet_53")
 			.get("/retail/controller/saleassocflowcontroller.php?activate=1")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_53))
@@ -818,10 +818,10 @@ object VerizonNewActivationPages{
 			.exec(http("PrintMobileScanSheet_57")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604944366")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_57))
-		//.pause(5, 14)
+		////.pause(5, 14)
 	}
 
-	val ScanReceipt=group("${carrier}_ScanReceipt"){
+	val L_ScanReceiptToL_ActivationScan = group("ScanReceipt"){
 		exec(http("ScanReceipt_58")
 			.post("/ajax/retail/fakereceipt.php")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_58))
@@ -844,10 +844,10 @@ object VerizonNewActivationPages{
 			.exec(http("ScanReceipt_63")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489604964706")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_63))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val EnterIMEIandSIM=group("${carrier}_EnterIMEIandSIM"){
+	val L_ActivationScanToL_WCA = group("EnterIMEIandSIM"){
 		exec(http("EnterIMEIandSIM64")
 			.post("/retail/checkout/activationscan.htm")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_64)
@@ -912,10 +912,10 @@ object VerizonNewActivationPages{
 			.exec(http("EnterIMEIandSIM83")
 				.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=c23599627c00cb8a&code=wca&page=2")
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_82))
-		//.pause(5, 15)
+		////.pause(5, 15)
 	}
 
-	val WirelessCustomerAgreement=group("${carrier}_WirelessCustomerAgreement"){
+	val L_WCAToL_DeviceFinancingInstallmentContract = group("WirelessCustomerAgreement"){
 		exec(http("WirelessCustomerAgreement")
 			.get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLTC%22%5D")
 			.headers(VerizonNewActivationHeaders.VZWFlowheaders_78))
@@ -936,7 +936,7 @@ object VerizonNewActivationPages{
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_82))
 	}
 
-	val DeviceFinancingInstallmentContract=group("${carrier}_DeviceFinancingInstallmentContract"){
+	val L_DeviceFinancingInstallmentContractToL_OrderSummary = group("DeviceFinancingInstallmentContract"){
 		exec(http("DeviceFinancingInstallmentContract_90")
 			.get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLRC%22%5D")
 			.check(substring("Order and Activation Complete"))
@@ -959,7 +959,7 @@ object VerizonNewActivationPages{
 				.headers(VerizonNewActivationHeaders.VZWFlowheaders_82))
 	}
 
-	val WarrantyPaymentCapture=group("${carrier}_WarrantyPaymentCapture") {
+	val WarrantyPaymentCapture = group("WarrantyPaymentCapture") {
 		exec(http("poa_request_181")
 			.get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLTC%22%5D")
 			.headers(VerizonNewActivationHeaders.poa_headers_2))
@@ -980,7 +980,7 @@ object VerizonNewActivationPages{
 			.exec(http("poa_request_187")
 				.get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=91abe108fe3020fa&code=finance&page=4&ordiIndex=1")
 				.headers(VerizonNewActivationHeaders.poa_headers_37))
-			.pause(1)
+			//.pause(1)
 			.exec(http("poa_request_188")
 				.get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLRC%22%5D")
 				.headers(VerizonNewActivationHeaders.poa_headers_175)
@@ -990,7 +990,7 @@ object VerizonNewActivationPages{
 					.body(ElFileBody("Verizon/NewActivationE2E/ActivationsWithInsurance_0189_request.json")),
 					http("poa_request_190")
 						.get("/img/brands/target/retail/printed-logo.png")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("poa_request_191")
 				.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status"))
 			.exec(http("ui_request_192")
@@ -1022,7 +1022,7 @@ object VerizonNewActivationPages{
 				.post(Common.uri_dsom_v1_port + "/getContentForAisle")
 				.headers(VerizonNewActivationHeaders.ui_headers_72)
 				.body(ElFileBody("Verizon/NewActivationE2E/ActivationsWithInsurance_0207_request.json")))
-			.pause(1)
+			//.pause(1)
 			.exec(http("ui_request_208")
 				.get(Common.uri_ui + "/app/pages/frame/header/header.html")
 				.headers(VerizonNewActivationHeaders.ui_headers_208)
@@ -1045,7 +1045,7 @@ object VerizonNewActivationPages{
 					.headers(VerizonNewActivationHeaders.dsom_headers_20)
 					.body(ElFileBody("Verizon/NewActivationE2E/ActivationsWithInsurance_0214_request.json"))
 					.check(headerRegex("Set-Cookie","paymentId=(.*); path=/").saveAs("p_paymentid"))))
-			.pause(1)
+			//.pause(1)
 			.exec(http("pam_request_asyncpayment")
 				.post(Common.uri_pam + "/PAM/api/pam/v1/payment/asyncpayment")
 				.headers(VerizonNewActivationHeaders.pam_headers_02)

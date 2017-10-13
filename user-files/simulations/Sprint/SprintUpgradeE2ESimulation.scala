@@ -70,7 +70,7 @@ object SprintUpgradeE2EComponents {
         SprintUpgradeE2EPages.toDeviceInstallmentContract, Common.CommonPause,
         SprintUpgradeE2EPages.toDeviceFinancingInstallmentContract, Common.CommonPause,
         SprintUpgradeE2EPages.toActivationCompletePage, Common.CommonPause,
-        Common.Results, Common.CommonPause,
+        Common.SprintResults, Common.CommonPause,
     //    Common.NewGuest, Common.CommonPause,
         Common.Logout
       )

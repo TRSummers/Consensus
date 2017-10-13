@@ -553,7 +553,14 @@ object Common{
 				.headers(CommonHeaders.Logoutheaders_4))
 	}
 
-	val Results = group("Results"){
+	val VerizonResults = group("Results"){
+		exec(http("Shipped Orders")
+			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
+			.check(substring("INSURANCE_ACTIVATION_NEEDED"))
+			.headers(CommonHeaders.status_call))
+	}
+
+	val SprintResults = group("Results"){
 		exec(http("Shipped Orders")
 			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
 			.check(substring("COMPLETED"))
