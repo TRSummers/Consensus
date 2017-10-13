@@ -1,0 +1,9 @@
+{
+  "cartItems": [
+    {
+      "type": "DEVICE_IMEI",
+      "value": "${imei}",
+      "quantity": 1
+    }
+  ]
+}

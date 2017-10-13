@@ -6,19 +6,6 @@ import scala.util.Random
 
 object build{
 
-  val Lname = csv("Lname.csv").random
-  val SSN1 = csv("SSN1.csv").random
-  val SSN2 = csv("SSN2.csv").random
-  val SSN3 = csv("SSN3.csv").random
-  val SSN4 = csv("SSN4.csv").random
-
-  val VZWCarrierTestData =Iterator.continually(
-    Map( "imei" -> "99000088304056",
-      "firstName" -> Random.shuffle(Array("James", "John", "Abraham", "George").toList).head,
-      "lastName" -> Random.shuffle(Array("Madison", "Adams", "Lincoln", "Washington").toList).head,
-      "nationalId" -> (110000000 + Random.nextInt(1000000)).toString,
-      "carrier" -> "VerizonNA"))
-
 
   //
        // Sprint Add a Line
@@ -31,8 +18,8 @@ object build{
           group("SPRAAL"){
   	          exec(
   	          feed(Carrier),
-  	            feed(Lname),
-  	            feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+  	            feed(Common.Lname),
+  	            feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
                 Common.LoginToRetail,                 Common.CommonPause,
                 Common.RetailToChoosePathModule,      Common.CommonPause,
                 Common.AddALinetoExistingAccount,     Common.CommonPause,
@@ -58,8 +45,8 @@ object build{
           group("VZWAAL"){
              exec(
           	    feed(Carrier),
-          	    feed(Lname),
-          	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+          	    feed(Common.Lname),
+          	    feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
                 Common.LoginToRetail,              Common.CommonPause,
                 Common.RetailToChoosePathModule,   Common.CommonPause,
                 Common.AddALinetoExistingAccount,  Common.CommonPause,
@@ -84,8 +71,8 @@ object build{
           group("ATTAAL"){
   	          exec(
   	          feed(Carrier),
-  	            feed(Lname),
-  	            feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+  	            feed(Common.Lname),
+  	            feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
                 Common.LoginToRetail,                 Common.CommonPause,
                 Common.RetailToChoosePathModule,      Common.CommonPause,
                 Common.AddALinetoExistingAccount,     Common.CommonPause,
@@ -93,48 +80,7 @@ object build{
                 Common.Logout)
            }
        }
-
-
-
-
-       //
-       // Verizion New Activation Flow
-       //
-       val VZWNA= scenario("VZWNA").repeat(SimParams.inum){
-	    	 val Carrier =Iterator.continually(
-           Map( "imei" -> "99000088304056",
-                "carrier" -> "VerizonNA"))
-
-        group("VZWNA"){
-          exec(
-            feed(VZWCarrierTestData),
-            feed(Lname), feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
-            Common.LoginToRetail,     Common.CommonPause,
-            Common.RetailToChoosePathModule,        Common.CommonPause,
-            Common.ChoosePathToScan,        Common.CommonPause,
-            VZWFlow.VZWScanToPaymentOptions,  Common.CommonPause,
-            Common.PaymentOptionsToCartWheel,        Common.CommonPause,
-            Common.CartwheelToCreditCheck, Common.CommonPause,
-            VZWFlow.CreditCheck,       Common.CommonPause,
-            VZWFlow.CC2IDP,       Common.CommonPause,
-            VZWFlow.IDP2PlanInCC,   Common.CommonPause,
-            VZWFlow.SelectPlan, Common.CommonPause,
-            VZWFlow.YourCart,   Common.CommonPause,
-            VZWFlow.SelectPlanFeaturesInCC,     Common.CommonPause,
-            VZWFlow.SelectProtectionPlanInCC,   Common.CommonPause,
-            VZWFlow.NumberPort,             Common.CommonPause,
-            VZWFlow.OrderReviewandConfirm,  Common.CommonPause,
-            VZWFlow.TermsandConditions,     Common.CommonPause,
-//            VZWFlow.SwipeCard,              Common.CommonPause,
-            VZWFlow.PrintMobileScanSheet,   Common.CommonPause,
-            VZWFlow.ScanReceipt,            Common.CommonPause,
-            VZWFlow.EnterIMEIandSIM,        Common.CommonPause,
-            VZWFlow.WirelessCustomerAgreement,  Common.CommonPause,
-            VZWFlow.DeviceFinancingInstallmentContract,   Common.CommonPause,
-            Common.Results, Common.CommonPause,
-            //    Common.NewGuest,    Common.CommonPause,
-            Common.Logout, Common.CommonPause)
-	}}
+  
 	
 	    //
       // Sprint New Activaiton
@@ -146,8 +92,8 @@ object build{
         group("SPRNA"){
   	    exec(
   	    feed(Carrier),
-  	    feed(Lname),
-  	    feed(SSN1), feed(SSN2), feed(SSN3), feed(SSN4),
+  	    feed(Common.Lname),
+  	    feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
   	    feed(Carrier),
         Common.LoginToRetail,    Common.CommonPause,
         Common.RetailToChoosePathModule,       Common.CommonPause,

@@ -6,22 +6,24 @@ import io.gatling.jdbc.Predef._
 import scala.util.Random
 
 class SprintUpgradeE2ESimulation extends Simulation {
-  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(10)).protocols(SimParams.httpProtocol))
+
+  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
   //  setUp(SprintUpgradeE2EComponents.SprintUpgradeE2ECR.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+
 }
 
 object SprintUpgradeE2EComponents {
 
-  val expectation1 = "expectations/sprint/upgrade/loan/insurance/check-loan-eligibility"
-  val expectation2 = "expectations/sprint/upgrade/loan/insurance/create-lite-esa"
-  val expectation3 = "expectations/sprint/upgrade/loan/insurance/create-loan-contract"
-  val expectation4 = "expectations/sprint/upgrade/loan/insurance/query-account-loan-details"
-  val expectation5 = "expectations/sprint/upgrade/loan/insurance/submit-order"
-  val expectation6 = "expectations/sprint/upgrade/loan/insurance/validate-account-info"
-  val expectation7 = "expectations/sprint/upgrade/loan/insurance/account-validation"
-  val expectation8 = "expectations/sprint/upgrade/loan/insurance/credit-check"
-  val expectation9 = "expectations/sprint/upgrade/loan/insurance/service-validation"
-  val expectation10 = "expectations/sprint/upgrade/loan/insurance/activation"
+  val expectation1 = "expectations/sprint/upgrade/check-loan-eligibility"
+  val expectation2 = "expectations/sprint/upgrade/create-lite-esa"
+  val expectation3 = "expectations/sprint/upgrade/create-loan-contract"
+  val expectation4 = "expectations/sprint/upgrade/query-account-loan-details"
+  val expectation5 = "expectations/sprint/upgrade/submit-order"
+  val expectation6 = "expectations/sprint/upgrade/validate-account-info"
+  val expectation7 = "expectations/sprint/upgrade/account-validation"
+  val expectation8 = "expectations/sprint/upgrade/credit-check"
+  val expectation9 = "expectations/sprint/upgrade/service-validation"
+  val expectation10 = "expectations/sprint/upgrade/activation"
 
   val gatlingData = sys.env("GATLING_DATA")
   val expectationPath = Array(
@@ -47,7 +49,7 @@ object SprintUpgradeE2EComponents {
   val SprintUpgradeE2EFlow = scenario("Sprint Upgrade").repeat(SimParams.inum) {
     group("Sprint Upgrade") {
       exec(
-        feed(build.SSN1), feed(build.SSN2), feed(build.SSN3), feed(build.SSN4),
+        feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
         Common.LoginToRetail, Common.CommonPause,
         Common.RetailToChoosePathModule, Common.CommonPause,
         SprintUpgradeE2EPages.toUpgradeEligibilityCheck, Common.CommonPause,
