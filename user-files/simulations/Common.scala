@@ -685,7 +685,7 @@ object Common{
 		//.pause(5, 15)
 	}
 
-	val CommonPause=pause(5,10)
+	val CommonPause=pause(8,45)
 
 	val CreditCheck=group("${carrier}_CreditCheck"){
 		exec(http("CreditCheck_${SSN1}")
