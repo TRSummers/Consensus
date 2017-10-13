@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>customerCredit</serviceName>
+        <serviceAction>submitCreditApplication</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[ESQA1srv01:vipsvcs01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails></applicationResponseDetails>
+        <timeStamp>2016-06-10T18:16:31.840-04:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>horder_54813</clientAddlInfo>
+        <transactionId>TRANSID_customerCredit_submitCreditApplication</transactionId>
+        <sessionID></sessionID>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>808913408</creditApplicationNum>
+            <orderNum>6643</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>8d98fd3c-da7c-424f-8f02-ba08ceb4ba90</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <creditWriteOrder>
+            <response>
+                <creditApplicationNum>808913408</creditApplicationNum>
+                <creditApprovalStatus>AP</creditApprovalStatus>
+                <securityDepositAmount>0</securityDepositAmount>
+                <creditStatusReason>CA CVAS AUTOMATIC APPROVAL</creditStatusReason>
+                <serviceClass>B</serviceClass>
+                <installClass>B</installClass>
+                <receivableControlled>false</receivableControlled>
+                <message></message>
+            </response>
+        </creditWriteOrder>
+    </ServiceBody>
+</VzwServices>

@@ -131,7 +131,8 @@ object build{
             VZWFlow.EnterIMEIandSIM,        Common.CommonPause,
             VZWFlow.WirelessCustomerAgreement,  Common.CommonPause,
             VZWFlow.DeviceFinancingInstallmentContract,   Common.CommonPause,
-        //    Common.NewGuest,    Common.CommonPause,
+            Common.Results, Common.CommonPause,
+            //    Common.NewGuest,    Common.CommonPause,
             Common.Logout, Common.CommonPause)
 	}}
 	

@@ -1,0 +1,1060 @@
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>accountManagement</serviceName>
+        <serviceAction>retrieveCustomerDetails</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[ESQA1srv01:vipsvcs01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails/>
+        <timeStamp>2017-02-23T18:51:38.859-05:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>standalone_P2489143990</clientAddlInfo>
+        <transactionId>TRANSID_accountManagement_retrieveCustomerDetails</transactionId>
+        <sessionID/>
+        <serviceAreaZip>48009</serviceAreaZip>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>e8f5f173-f02a-4768-a0c7-9377ac79da04</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <custLookup>
+            <response>
+                <customerFound>true</customerFound>
+                <customerDetails>
+                    <indvOrBussCustomer>I</indvOrBussCustomer>
+                    <billingSystem>VN</billingSystem>
+                    <accountNumber>0287637228</accountNumber>
+                    <accountSubNumber>00001</accountSubNumber>
+                    <accountStatus>A</accountStatus>
+                    <customerName>KENNY NICKS</customerName>
+                    <firstName>KENNY</firstName>
+                    <lastName>NICKS</lastName>
+                    <addressInfo>
+                        <addressLine1>355 S OLD WOODWARD AVE STE 100</addressLine1>
+                        <addressLine2>THE BASKIN LAW FIRM</addressLine2>
+                        <city>BIRMINGHAM</city>
+                        <state>MI</state>
+                        <zipCode>48009</zipCode>
+                        <zipCode4>4622</zipCode4>
+                        <country>USA</country>
+                    </addressInfo>
+                    <ssn>000009238</ssn>
+                    <email>VZW@VZW.COM</email>
+                    <homePhone>9999999999</homePhone>
+                    <workPhone>9999999999</workPhone>
+                    <reachNumber>9999999999</reachNumber>
+                    <accountIneligibilityReasonCode/>
+                    <accountIneligibilityReasonMsg/>
+                    <accountEstablishedDate>06/02/2013</accountEstablishedDate>
+                    <ecpdCustomer>true</ecpdCustomer>
+                    <ecpdInfo>
+                        <profileId>3616</profileId>
+                        <discount>21%</discount>
+                        <accessoryDiscount>25%</accessoryDiscount>
+                        <twoYearEligibility>true</twoYearEligibility>
+                    </ecpdInfo>
+                    <authorizedUserList>
+                        <authorizedUser>
+                            <currentAuthorizedLastName>JONIK</currentAuthorizedLastName>
+                            <currentAuthorizedFirstName>ZACH</currentAuthorizedFirstName>
+                            <currentEffectiveDate>06/02/2013</currentEffectiveDate>
+                        </authorizedUser>
+                    </authorizedUserList>
+                    <activeLines>4</activeLines>
+                    <pendingAddLines>0</pendingAddLines>
+                    <lineList>
+                        <lineInfo>
+                            <mobileNumber>2489143990</mobileNumber>
+                            <existingPlanList>
+                                <planInfo>
+                                    <planType>VD</planType>
+                                    <pricePlanId>91702~PTP=VD</pricePlanId>
+                                    <planPrice>100.00</planPrice>
+                                    <planSetId>0</planSetId>
+                                    <pricePlanDescription>MORE EVERYTHING UNL TALK &amp; TEXT 15GB $100 0914
+                                    </pricePlanDescription>
+                                    <nafInfo>
+                                        <nafCode>77573</nafCode>
+                                        <nafDescription>SMARTPHONE LINE ACCESS $40</nafDescription>
+                                        <nafPrice>40.00</nafPrice>
+                                    </nafInfo>
+                                </planInfo>
+                            </existingPlanList>
+                            <eqptInfo>
+                                <deviceInfo>
+                                    <deviceId>359231064950740</deviceId>
+                                    <deviceSKU>MG632LL/A</deviceSKU>
+                                    <deviceType>4GE</deviceType>
+                                    <modelName>IPHONE 6 64GB SPACE GRAY</modelName>
+                                    <deviceFamily>Phone</deviceFamily>
+                                    <deviceCategoryDesc>Smart Phone</deviceCategoryDesc>
+                                    <lostStolen>N</lostStolen>
+                                </deviceInfo>
+                                <lteEqpt>
+                                    <ICCID>89148000003016891504</ICCID>
+                                    <simSKU>BULKSIM4FF-A</simSKU>
+                                </lteEqpt>
+                            </eqptInfo>
+                            <billLanguage>E</billLanguage>
+                            <mtnEffectiveDate>06/12/2015</mtnEffectiveDate>
+                            <ne2EligibilityDate/>
+                            <eqptUpgdEligibilityDate>06/12/2017</eqptUpgdEligibilityDate>
+                            <mtnContractDuration>0</mtnContractDuration>
+                            <eligibleForUpgrade>N</eligibleForUpgrade>
+                            <eligibleForAltUpgrade>N</eligibleForAltUpgrade>
+                            <eligibleFor2yrToDPP>N</eligibleFor2yrToDPP>
+                            <isDeviceFamilyEditON>N</isDeviceFamilyEditON>
+                            <lineIneligibilityReasonCode/>
+                            <lineIneligibilityReasonMsg/>
+                            <activationDate>11/23/2016</activationDate>
+                            <contractEffectiveDate/>
+                            <contractEndDate/>
+                            <currentFeatureList>
+                                <featuresCount>31</featuresCount>
+                                <feature>
+                                    <code>48526</code>
+                                    <description>TXT MSG W PER MSG CHARGES</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>48553</code>
+                                    <description>STREAMLINED BILLING - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>BL</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>48676</code>
+                                    <description>INTERNATIONAL SERVICES ENABLED</description>
+                                    <price>0.00</price>
+                                    <groupCode>LD</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68869</code>
+                                    <description>CALLER ID</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68870</code>
+                                    <description>BUSY TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68871</code>
+                                    <description>CONFERENCE CALLING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68872</code>
+                                    <description>CALL DELIVERY</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68873</code>
+                                    <description>CALL WAITING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68874</code>
+                                    <description>NO ANSWER TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68876</code>
+                                    <description>CALL FORWARDING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75632</code>
+                                    <description>INTL TRVL USCAN VOICEDATA PAYG</description>
+                                    <price>0.00</price>
+                                    <groupCode>DR</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75706</code>
+                                    <description>TEXT MESSAGING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75802</code>
+                                    <description>DYNAMIC-PRIVATE IP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75836</code>
+                                    <description>4G INTERNET ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75837</code>
+                                    <description>4G APPLICATION ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76152</code>
+                                    <description>PICTURE MESSAGE PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>MP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76404</code>
+                                    <description>MOBILE HOTSPOT 4G PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77249</code>
+                                    <description>MOBILE HOT SPOT TRIGGER $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77256</code>
+                                    <description>RTR FOR ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77524</code>
+                                    <description>RTR/UC TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77556</code>
+                                    <description>4G PROVISIONING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77568</code>
+                                    <description>EMAIL ACCESS PDA $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77573</code>
+                                    <description>SMARTPHONE LINE ACCESS $40</description>
+                                    <price>40.00</price>
+                                    <groupCode>LC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77581</code>
+                                    <description>EMAIL TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77583</code>
+                                    <description>DATA PROVISION ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>79708</code>
+                                    <description>VISUAL VOICEMAIL SPEC</description>
+                                    <price>0.00</price>
+                                    <groupCode>VM</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>80148</code>
+                                    <description>INTL MESSAGES WHILE IN US $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81143</code>
+                                    <description>ACCESS - ADVANCED CALLING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81158</code>
+                                    <description>HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>AC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81186</code>
+                                    <description>ACCESS - HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81495</code>
+                                    <description>TOTAL EQUIPMENT COVERAGE $9.00</description>
+                                    <price>9.00</price>
+                                    <groupCode>EQ</groupCode>
+                                </feature>
+                            </currentFeatureList>
+                            <earlyUpgEligibility>N</earlyUpgEligibility>
+                            <cmUpgEligibility>N</cmUpgEligibility>
+                            <earlyEdgeUpgradeEligibility>N</earlyEdgeUpgradeEligibility>
+                            <earlyEdgeDeviceTradeInRequired>N</earlyEdgeDeviceTradeInRequired>
+                            <tier>1</tier>
+                            <installmentContractStatusCode>E</installmentContractStatusCode>
+                            <uniqueTransactionToken>
+                                MjA4ODk3MjIzNgBGWq1or4hjtAHKKS+gqri8VK5peW7A9LxXckUMzhREevuzJJJwa89Iv5GvKnOjOOo=
+                            </uniqueTransactionToken>
+                        </lineInfo>
+                        <lineInfo>
+                            <mobileNumber>2489145399</mobileNumber>
+                            <existingPlanList>
+                                <planInfo>
+                                    <planType>VD</planType>
+                                    <pricePlanId>91702~PTP=VD</pricePlanId>
+                                    <planPrice>100.00</planPrice>
+                                    <planSetId>0</planSetId>
+                                    <pricePlanDescription>MORE EVERYTHING UNL TALK &amp; TEXT 15GB $100 0914
+                                    </pricePlanDescription>
+                                    <nafInfo>
+                                        <nafCode>77573</nafCode>
+                                        <nafDescription>SMARTPHONE LINE ACCESS $40</nafDescription>
+                                        <nafPrice>40.00</nafPrice>
+                                    </nafInfo>
+                                </planInfo>
+                            </existingPlanList>
+                            <eqptInfo>
+                                <deviceInfo>
+                                    <deviceId>355730071725510</deviceId>
+                                    <deviceSKU>MKVD2LL/A</deviceSKU>
+                                    <deviceType>4GE</deviceType>
+                                    <modelName>IPHONE 6S PLUS 64GB GOLD</modelName>
+                                    <deviceFamily>Phone</deviceFamily>
+                                    <deviceCategoryDesc>Smart Phone</deviceCategoryDesc>
+                                    <lostStolen>N</lostStolen>
+                                </deviceInfo>
+                                <lteEqpt>
+                                    <ICCID>89148000002710753879</ICCID>
+                                    <simSKU>BULKSIM4FF-D</simSKU>
+                                </lteEqpt>
+                            </eqptInfo>
+                            <billLanguage>E</billLanguage>
+                            <mtnEffectiveDate>06/12/2015</mtnEffectiveDate>
+                            <ne2EligibilityDate/>
+                            <eqptUpgdEligibilityDate>06/12/2017</eqptUpgdEligibilityDate>
+                            <mtnContractDuration>0</mtnContractDuration>
+                            <eligibleForUpgrade>N</eligibleForUpgrade>
+                            <eligibleForAltUpgrade>N</eligibleForAltUpgrade>
+                            <eligibleFor2yrToDPP>N</eligibleFor2yrToDPP>
+                            <isDeviceFamilyEditON>N</isDeviceFamilyEditON>
+                            <lineIneligibilityReasonCode/>
+                            <lineIneligibilityReasonMsg/>
+                            <activationDate>10/16/2016</activationDate>
+                            <contractEffectiveDate/>
+                            <contractEndDate/>
+                            <currentFeatureList>
+                                <featuresCount>30</featuresCount>
+                                <feature>
+                                    <code>48526</code>
+                                    <description>TXT MSG W PER MSG CHARGES</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>48553</code>
+                                    <description>STREAMLINED BILLING - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>BL</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68869</code>
+                                    <description>CALLER ID</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68870</code>
+                                    <description>BUSY TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68871</code>
+                                    <description>CONFERENCE CALLING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68872</code>
+                                    <description>CALL DELIVERY</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68873</code>
+                                    <description>CALL WAITING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68874</code>
+                                    <description>NO ANSWER TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68876</code>
+                                    <description>CALL FORWARDING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75632</code>
+                                    <description>INTL TRVL USCAN VOICEDATA PAYG</description>
+                                    <price>0.00</price>
+                                    <groupCode>DR</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75706</code>
+                                    <description>TEXT MESSAGING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75802</code>
+                                    <description>DYNAMIC-PRIVATE IP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75836</code>
+                                    <description>4G INTERNET ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75837</code>
+                                    <description>4G APPLICATION ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76152</code>
+                                    <description>PICTURE MESSAGE PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>MP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76404</code>
+                                    <description>MOBILE HOTSPOT 4G PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77249</code>
+                                    <description>MOBILE HOT SPOT TRIGGER $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77256</code>
+                                    <description>RTR FOR ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77524</code>
+                                    <description>RTR/UC TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77556</code>
+                                    <description>4G PROVISIONING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77568</code>
+                                    <description>EMAIL ACCESS PDA $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77573</code>
+                                    <description>SMARTPHONE LINE ACCESS $40</description>
+                                    <price>40.00</price>
+                                    <groupCode>LC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77581</code>
+                                    <description>EMAIL TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77583</code>
+                                    <description>DATA PROVISION ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>79708</code>
+                                    <description>VISUAL VOICEMAIL SPEC</description>
+                                    <price>0.00</price>
+                                    <groupCode>VM</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>80148</code>
+                                    <description>INTL MESSAGES WHILE IN US $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81143</code>
+                                    <description>ACCESS - ADVANCED CALLING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81158</code>
+                                    <description>HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>AC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81186</code>
+                                    <description>ACCESS - HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81495</code>
+                                    <description>TOTAL EQUIPMENT COVERAGE $9.00</description>
+                                    <price>9.00</price>
+                                    <groupCode>EQ</groupCode>
+                                </feature>
+                            </currentFeatureList>
+                            <earlyUpgEligibility>N</earlyUpgEligibility>
+                            <cmUpgEligibility>N</cmUpgEligibility>
+                            <earlyEdgeUpgradeEligibility>N</earlyEdgeUpgradeEligibility>
+                            <earlyEdgeDeviceTradeInRequired>N</earlyEdgeDeviceTradeInRequired>
+                            <tier>1</tier>
+                            <installmentContractStatusCode>E</installmentContractStatusCode>
+                            <uniqueTransactionToken>
+                                MjA4ODk3MjIzNgBGWq1or4hjtAHKKS+gqri8VK5peW7A9LxXckUMzhREevuzJJJwa89Iv5GvKnOjOOo=
+                            </uniqueTransactionToken>
+                        </lineInfo>
+                        <lineInfo>
+                            <mobileNumber>2489779052</mobileNumber>
+                            <existingPlanList>
+                                <planInfo>
+                                    <planType>VD</planType>
+                                    <pricePlanId>91702~PTP=VD</pricePlanId>
+                                    <planPrice>100.00</planPrice>
+                                    <planSetId>0</planSetId>
+                                    <pricePlanDescription>MORE EVERYTHING UNL TALK &amp; TEXT 15GB $100 0914
+                                    </pricePlanDescription>
+                                    <nafInfo>
+                                        <nafCode>77573</nafCode>
+                                        <nafDescription>SMARTPHONE LINE ACCESS $40</nafDescription>
+                                        <nafPrice>40.00</nafPrice>
+                                    </nafInfo>
+                                </planInfo>
+                            </existingPlanList>
+                            <eqptInfo>
+                                <deviceInfo>
+                                    <deviceId>353817086525310</deviceId>
+                                    <deviceSKU>MN5X2LL/A</deviceSKU>
+                                    <deviceType>4GE</deviceType>
+                                    <modelName>IPHONE 7 PLUS JET BLACK 128GB</modelName>
+                                    <deviceFamily>Phone</deviceFamily>
+                                    <deviceCategoryDesc>Smart Phone</deviceCategoryDesc>
+                                    <lostStolen>N</lostStolen>
+                                </deviceInfo>
+                                <lteEqpt>
+                                    <ICCID>89148000002760536059</ICCID>
+                                    <simSKU>EMBD4GSIM-N</simSKU>
+                                </lteEqpt>
+                            </eqptInfo>
+                            <billLanguage>E</billLanguage>
+                            <mtnEffectiveDate>06/02/2013</mtnEffectiveDate>
+                            <ne2EligibilityDate/>
+                            <eqptUpgdEligibilityDate>12/27/2018</eqptUpgdEligibilityDate>
+                            <mtnContractDuration>0</mtnContractDuration>
+                            <eligibleForUpgrade>N</eligibleForUpgrade>
+                            <eligibleForAltUpgrade>N</eligibleForAltUpgrade>
+                            <eligibleFor2yrToDPP>N</eligibleFor2yrToDPP>
+                            <isDeviceFamilyEditON>N</isDeviceFamilyEditON>
+                            <lineIneligibilityReasonCode/>
+                            <lineIneligibilityReasonMsg/>
+                            <activationDate>12/27/2016</activationDate>
+                            <contractEffectiveDate/>
+                            <contractEndDate/>
+                            <currentFeatureList>
+                                <featuresCount>32</featuresCount>
+                                <feature>
+                                    <code>48526</code>
+                                    <description>TXT MSG W PER MSG CHARGES</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>48553</code>
+                                    <description>STREAMLINED BILLING - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>BL</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68869</code>
+                                    <description>CALLER ID</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68870</code>
+                                    <description>BUSY TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68871</code>
+                                    <description>CONFERENCE CALLING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68872</code>
+                                    <description>CALL DELIVERY</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68873</code>
+                                    <description>CALL WAITING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68874</code>
+                                    <description>NO ANSWER TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68876</code>
+                                    <description>CALL FORWARDING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75527</code>
+                                    <description>VERIZON CLOUD FREE</description>
+                                    <price>0.00</price>
+                                    <groupCode>VT</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75632</code>
+                                    <description>INTL TRVL USCAN VOICEDATA PAYG</description>
+                                    <price>0.00</price>
+                                    <groupCode>DR</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75706</code>
+                                    <description>TEXT MESSAGING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75802</code>
+                                    <description>DYNAMIC-PRIVATE IP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75836</code>
+                                    <description>4G INTERNET ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75837</code>
+                                    <description>4G APPLICATION ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76152</code>
+                                    <description>PICTURE MESSAGE PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>MP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76404</code>
+                                    <description>MOBILE HOTSPOT 4G PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77249</code>
+                                    <description>MOBILE HOT SPOT TRIGGER $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77256</code>
+                                    <description>RTR FOR ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77524</code>
+                                    <description>RTR/UC TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77556</code>
+                                    <description>4G PROVISIONING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77568</code>
+                                    <description>EMAIL ACCESS PDA $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77573</code>
+                                    <description>SMARTPHONE LINE ACCESS $40</description>
+                                    <price>40.00</price>
+                                    <groupCode>LC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77581</code>
+                                    <description>EMAIL TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77583</code>
+                                    <description>DATA PROVISION ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77885</code>
+                                    <description>INTEGRATED MESSAGING</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>79708</code>
+                                    <description>VISUAL VOICEMAIL SPEC</description>
+                                    <price>0.00</price>
+                                    <groupCode>VM</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>80148</code>
+                                    <description>INTL MESSAGES WHILE IN US $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81143</code>
+                                    <description>ACCESS - ADVANCED CALLING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81158</code>
+                                    <description>HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>AC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81186</code>
+                                    <description>ACCESS - HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81497</code>
+                                    <description>TOTAL MOBILE PROTECTION $11</description>
+                                    <price>11.00</price>
+                                    <groupCode>EQ</groupCode>
+                                </feature>
+                            </currentFeatureList>
+                            <earlyUpgEligibility>N</earlyUpgEligibility>
+                            <cmUpgEligibility>N</cmUpgEligibility>
+                            <earlyEdgeUpgradeEligibility>N</earlyEdgeUpgradeEligibility>
+                            <earlyEdgeDeviceTradeInRequired>N</earlyEdgeDeviceTradeInRequired>
+                            <tier>1</tier>
+                            <installmentContractStatusCode>E</installmentContractStatusCode>
+                            <uniqueTransactionToken>
+                                MjA4ODk3MjIzNgBGWq1or4hjtAHKKS+gqri8VK5peW7A9LxXckUMzhREevuzJJJwa89Iv5GvKnOjOOo=
+                            </uniqueTransactionToken>
+                        </lineInfo>
+                        <lineInfo>
+                            <mobileNumber>2489145363</mobileNumber>
+                            <existingPlanList>
+                                <planInfo>
+                                    <planType>VD</planType>
+                                    <pricePlanId>91702~PTP=VD</pricePlanId>
+                                    <planPrice>100.00</planPrice>
+                                    <planSetId>0</planSetId>
+                                    <pricePlanDescription>MORE EVERYTHING UNL TALK &amp; TEXT 15GB $100 0914
+                                    </pricePlanDescription>
+                                    <nafInfo>
+                                        <nafCode>77573</nafCode>
+                                        <nafDescription>SMARTPHONE LINE ACCESS $40</nafDescription>
+                                        <nafPrice>40.00</nafPrice>
+                                    </nafInfo>
+                                </planInfo>
+                            </existingPlanList>
+                            <eqptInfo>
+                                <deviceInfo>
+                                    <deviceId>359233065656530</deviceId>
+                                    <deviceSKU>MG632LL/A</deviceSKU>
+                                    <deviceType>4GE</deviceType>
+                                    <modelName>IPHONE 6 64GB SPACE GRAY</modelName>
+                                    <deviceFamily>Phone</deviceFamily>
+                                    <deviceCategoryDesc>Smart Phone</deviceCategoryDesc>
+                                    <lostStolen>N</lostStolen>
+                                </deviceInfo>
+                                <lteEqpt>
+                                    <ICCID>89148000001718194268</ICCID>
+                                    <simSKU>EMBD4GSIM-N</simSKU>
+                                </lteEqpt>
+                            </eqptInfo>
+                            <billLanguage>E</billLanguage>
+                            <mtnEffectiveDate>06/12/2015</mtnEffectiveDate>
+                            <ne2EligibilityDate/>
+                            <eqptUpgdEligibilityDate>06/12/2017</eqptUpgdEligibilityDate>
+                            <mtnContractDuration>0</mtnContractDuration>
+                            <eligibleForUpgrade>N</eligibleForUpgrade>
+                            <eligibleForAltUpgrade>N</eligibleForAltUpgrade>
+                            <eligibleFor2yrToDPP>N</eligibleFor2yrToDPP>
+                            <isDeviceFamilyEditON>N</isDeviceFamilyEditON>
+                            <lineIneligibilityReasonCode/>
+                            <lineIneligibilityReasonMsg/>
+                            <activationDate>06/12/2015</activationDate>
+                            <contractEffectiveDate/>
+                            <contractEndDate/>
+                            <currentFeatureList>
+                                <featuresCount>30</featuresCount>
+                                <feature>
+                                    <code>48526</code>
+                                    <description>TXT MSG W PER MSG CHARGES</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>48553</code>
+                                    <description>STREAMLINED BILLING - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>BL</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68869</code>
+                                    <description>CALLER ID</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68870</code>
+                                    <description>BUSY TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68871</code>
+                                    <description>CONFERENCE CALLING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68872</code>
+                                    <description>CALL DELIVERY</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68873</code>
+                                    <description>CALL WAITING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68874</code>
+                                    <description>NO ANSWER TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68876</code>
+                                    <description>CALL FORWARDING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75632</code>
+                                    <description>INTL TRVL USCAN VOICEDATA PAYG</description>
+                                    <price>0.00</price>
+                                    <groupCode>DR</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75706</code>
+                                    <description>TEXT MESSAGING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75802</code>
+                                    <description>DYNAMIC-PRIVATE IP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75836</code>
+                                    <description>4G INTERNET ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75837</code>
+                                    <description>4G APPLICATION ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76152</code>
+                                    <description>PICTURE MESSAGE PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>MP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>76404</code>
+                                    <description>MOBILE HOTSPOT 4G PROVISIONING</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77249</code>
+                                    <description>MOBILE HOT SPOT TRIGGER $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77256</code>
+                                    <description>RTR FOR ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77524</code>
+                                    <description>RTR/UC TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77556</code>
+                                    <description>4G PROVISIONING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77568</code>
+                                    <description>EMAIL ACCESS PDA $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77573</code>
+                                    <description>SMARTPHONE LINE ACCESS $40</description>
+                                    <price>40.00</price>
+                                    <groupCode>LC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77581</code>
+                                    <description>EMAIL TRIGGER ALP $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>77583</code>
+                                    <description>DATA PROVISION ALP</description>
+                                    <price>0.00</price>
+                                    <groupCode>TP</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>79708</code>
+                                    <description>VISUAL VOICEMAIL SPEC</description>
+                                    <price>0.00</price>
+                                    <groupCode>VM</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>80148</code>
+                                    <description>INTL MESSAGES WHILE IN US $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81143</code>
+                                    <description>ACCESS - ADVANCED CALLING $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81158</code>
+                                    <description>HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>AC</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81186</code>
+                                    <description>ACCESS - HD VOICE $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>81495</code>
+                                    <description>TOTAL EQUIPMENT COVERAGE $9.00</description>
+                                    <price>9.00</price>
+                                    <groupCode>EQ</groupCode>
+                                </feature>
+                            </currentFeatureList>
+                            <earlyUpgEligibility>N</earlyUpgEligibility>
+                            <cmUpgEligibility>N</cmUpgEligibility>
+                            <earlyEdgeUpgradeEligibility>N</earlyEdgeUpgradeEligibility>
+                            <earlyEdgeDeviceTradeInRequired>N</earlyEdgeDeviceTradeInRequired>
+                            <tier>1</tier>
+                            <installmentContractStatusCode>E</installmentContractStatusCode>
+                            <uniqueTransactionToken>
+                                MjA4ODk3MjIzNgBGWq1or4hjtAHKKS+gqri8VK5peW7A9LxXckUMzhREevuzJJJwa89Iv5GvKnOjOOo=
+                            </uniqueTransactionToken>
+                        </lineInfo>
+                        <count>4</count>
+                    </lineList>
+                    <alpPlanInfo>
+                        <pricePlanId>91702</pricePlanId>
+                        <planDescription>MORE EVERYTHING UNL TALK &amp; TEXT 15GB $100 0914</planDescription>
+                        <planPrice>100.00</planPrice>
+                        <planComponent>VD</planComponent>
+                        <sharePlanType>P</sharePlanType>
+                        <planCap>10</planCap>
+                        <linesUsed>4</linesUsed>
+                        <pendingLines>0</pendingLines>
+                    </alpPlanInfo>
+                    <autoPayIndicator>Y</autoPayIndicator>
+                </customerDetails>
+            </response>
+        </custLookup>
+    </ServiceBody>
+</VzwServices>

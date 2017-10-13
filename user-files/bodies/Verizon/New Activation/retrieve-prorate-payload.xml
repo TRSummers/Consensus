@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>documentManagement</serviceName>
+        <serviceAction>retrieveProrateReceipt</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[QA08:MS_ESQA1_EROES_01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails></applicationResponseDetails>
+        <timeStamp>2015-08-26T19:48:55.154-04:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>horder_41970</clientAddlInfo>
+        <transactionId>TRANSID_documentManagement_retrieveProrateReceipt</transactionId>
+        <sessionID></sessionID>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>817001255</creditApplicationNum>
+            <orderNum>3691</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>7580c3a8-4bd3-400b-8581-f0c2420ef79f</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <prorate>
+            <response>
+                <htmlProrateContent>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;&lt;html&gt;
+                    &lt;head&gt; &lt;title&gt;Prorate Receipt&lt;/title&gt; &lt;/head&gt; &lt;body &gt; &lt;font style=&quot;font-family:
+                    Arial, Helvetica, sans-serif;font-size: 9pt; &quot;&gt; &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot;
+                    cellpadding=&quot;0&quot; align=&quot;center&quot;&gt; &lt;tr&gt; &lt;td align= &quot;center&quot;&gt;&lt;b&gt;&amp;nbsp;Authorized
+                    Verizon Wireless Agent&lt;/b&gt;&lt;br/&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;hr/&gt; &lt;table
+                    align=&quot;center&quot;&gt; &lt;tr&gt; &lt;td nowrap align=&quot;center&quot;&gt;&lt;b&gt;&amp;nbsp;Account
+                    Number &amp;nbsp;:&amp;nbsp;530436619-1&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;hr/&gt;
+                    &lt;table
+                    width=&quot;180%&quot;&gt; &lt;tr&gt; &lt;td&gt;Receipt Date/Time: &lt;/td&gt; &lt;td&gt;08/26/2015
+                    19:48:34&lt;/td&gt;
+                    &lt;/tr&gt; &lt;tr&gt; &lt;td nowrap&gt;Next Bill Cycle Date: &lt;/td&gt; &lt;td&gt;08/26/2015&lt;/td&gt;
+                    &lt;/tr&gt; &lt;tr&gt; &lt;td wrap&gt;Price Plan: &lt;/td&gt; &lt;td&gt;THE VERIZON PLAN MEDIUM 3GB
+                    $45 &lt;/td&gt;
+                    &lt;/tr&gt; &lt;/table&gt; &lt;hr/&gt; &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot;
+                    cellpadding=&quot;0&quot;
+                    align=&quot;center&quot;&gt; &lt;tr&gt; &lt;td nowrap align= &quot;center&quot;&gt;&lt;b&gt;&amp;nbsp;Total
+                    Estimated First Bill Charges&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;br/&gt; &lt;hr/&gt;
+                    &lt;table
+                    width=&quot;60%&quot;&gt; &lt;tr&gt; &lt;td&gt;Estimated Monthly Access Fee: &lt;/td&gt; &lt;td&gt;$67.10&lt;/td&gt;
+                    &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Estimated Optional Services Access Fee: &lt;/td&gt; &lt;td&gt;$0.00&lt;/td&gt;
+                    &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Equipment, Surcharges and Other Charges Credits includes Activation
+                    Fee:
+                    &lt;/td&gt; &lt;td&gt;$18.24&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Estimated Taxes, Government
+                    Surcharge and Fees: &lt;/td&gt; &lt;td&gt;$1.81&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Estimated
+                    Total:
+                    &lt;/td&gt; &lt;td&gt;$87.14&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;br/&gt; &lt;table border=&quot;0&quot;
+                    cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt; &lt;tr&gt; &lt;td align=&quot;center&quot;&gt;
+                    &lt;table
+                    border=&quot;0&quot; width=&quot;100%&quot;&gt; &lt;tr&gt; &lt;td class=&quot;smaller&quot;&gt;&lt;b&gt;THIS
+                    IS AN ESTIMATE OF YOUR FIRST MONTH'S BILL. THE ACTUAL BILLED AMOUNTS MAY VARY, DEPENDING ON YOUR
+                    USAGE.&lt;/b&gt;
+                    &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;hr/&gt; &lt;hr/&gt;&lt;table
+                    width='60%' border='0' cellspacing='0' cellpadding='0' align='center'&gt;&lt;tr&gt;&lt;td nowrap
+                    align=
+                    'center'&gt;&amp;nbsp;&lt;b&gt;Plan&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table
+                    width='60%'&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt; Monthly Account Access : &lt;/b&gt; &lt;/td&gt;&lt;td
+                    align='right'&gt;$45.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Monthly
+                    AnyTime Minute
+                    Allowance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;UNLIMITED NIGHTS AND WEEKEND&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;Unlimited
+                    National M2M&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;UNLIMITED ANYTIME MINUTES&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Monthly
+                    AnyTime Message Allowance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;UNLIMITED
+                    MESSAGING&lt;/td&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rate
+                    per Minute after Monthly Allowance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;GENERAL 0.25&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rate
+                    per Message after Monthly Allowance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;GENERAL 0.10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Monthly
+                    AnyTime Data Allowance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;&amp;nbsp;3 GIGABYTE
+                    ALLOWANCE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rate
+                    per 1 GB after Monthly Allowance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ANYTIME 15.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;
+                    Monthly Account Access Information &lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PARTIAL
+                    MONTH Access &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;New Plan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;08/26/2015
+                    - 08/26/2015)&lt;/td&gt;&lt;td align='right'&gt; $1.45&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                    Monthly
+                    Account Access in Advance &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;New Plan&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(08/27/2015
+                    - 09/26/2015)&lt;/td&gt;&lt;td align='right'&gt; $45.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                    Total
+                    Estimated Monthly Access Fee :&lt;/td&gt;&lt;td align='right'&gt;$46.45&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+                    &lt;hr/&gt;&lt;table width='60%' align='center'&gt;&lt;tr&gt;&lt;td nowrap align='center'&gt;&amp;nbsp;&lt;b&gt;Mobile
+                    Number &amp;nbsp;:&amp;nbsp;6096781800&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table
+                    width='60%' align='center'&gt;&lt;tr&gt;&lt;td nowrap align='center'&gt;&amp;nbsp;&lt;b&gt; Monthly
+                    Line
+                    Access Information &lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table width='60%'&gt;&lt;tr&gt;&lt;td&gt;PARTIAL
+                    MONTH Line Access&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SMARTPHONE LINE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;08/26/2015
+                    - 08/26/2015)&lt;/td&gt;&lt;td align='right'&gt;$0.65&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+                    Monthly Line
+                    Access in Advance &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SMARTPHONE LINE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(08/27/2015
+                    - 09/26/2015)&lt;/td&gt;&lt;td align='right'&gt;$20.00&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table
+                    width='60%' align='center'&gt;&lt;tr&gt;&lt;td nowrap align='center'&gt;&amp;nbsp;&lt;b&gt; Optional
+                    Services &lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table width='60%'&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Total
+                    Estimated Optional Service&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Fee: $0.00&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table
+                    width='60%' align='center'&gt;&lt;tr&gt;&lt;td nowrap align='center'&gt;&amp;nbsp;&lt;b&gt;
+                    Promotional
+                    Information&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;table width='60%'&gt;&lt;tr&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;tr&gt;&lt;td&gt;DEVICE
+                    SETUP 5 MIN &lt;/td&gt;&lt;td&gt;5.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;(08/26/2015 -
+                    08/26/2015)&lt;/td&gt;&lt;/tr&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+                    &lt;table border=&quot;0&quot; align=&quot;center&quot;&gt; &lt;tr&gt; &lt;td nowrap&gt;&amp;nbsp;&lt;b&gt;Verizon
+                    Wireless Surcharges and Other Charges and Credits&lt;/b&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+                    &lt;hr/&gt; &lt;table width=&quot;60%&quot;&gt; &lt;tr&gt; &lt;td&gt;Total Estimated Verizon
+                    Wireless
+                    Surcharges &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; $1.42&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+                    &lt;td&gt;Federal
+                    Universal Service Charge: &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 17.10%&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt; &lt;td&gt;Regulatory Charge &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; $0.42&lt;/td&gt;
+                    &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Administrative Charge &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                    $1.90&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Total Estimated Other Charges and Credits includes
+                    Activation Fee &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; $0.00&lt;/td&gt; &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;Total Estimated VZW Surcharges and Other Charges and Credits &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                    $18.24&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Total estimated taxes, Governmental surcharges
+                    and Fees
+                    &lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; $1.81&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td
+                    colspan=&quot;2&quot;
+                    align=&quot;left&quot;&gt;Verizon Wireless Surcharges are Verizon Wireless charges, not taxes.&lt;/td&gt;
+                    &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+                    &lt;td&gt;&lt;b&gt;Total
+                    First Bill Estimate :&lt;/b&gt;&lt;/td&gt; &lt;td&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;$40.70&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt; &lt;/br&gt;&lt;/br&gt; &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot;
+                    cellpadding=&quot;0&quot;&gt;
+                    &lt;tr&gt; &lt;td align=&quot;center&quot;&gt; &lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+                    &lt;tr&gt; &lt;td class=&quot;smaller&quot;&gt; &lt;p&gt;*To receive a credit for the Consumer
+                    activation
+                    fee, service cancellations must occur within 3 days of purchase.&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/font&gt; &lt;/body&gt;&lt;/html&gt;
+                </htmlProrateContent>
+            </response>
+        </prorate>
+    </ServiceBody>
+</VzwServices>

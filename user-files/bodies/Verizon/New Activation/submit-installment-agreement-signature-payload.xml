@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VzwServices
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://pos.odc.vzwcorp.com"
+        xsi:schemaLocation="http://pos.odc.vzwcorp.com http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>documentManagement</serviceName>
+        <serviceAction>submitSigpadCaptureForInstallmentAgreement</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[QA08:MS_ESQA1_EROES_01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails/>
+        <timeStamp>2015-08-25T06:00:27.560-04:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>horder_41650</clientAddlInfo>
+        <transactionId>TRANSID_documentManagement_submitSigpadCaptureForInstallmentAgreement</transactionId>
+        <sessionID/>
+        <serviceAreaZip>94132</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>811001217</creditApplicationNum>
+            <orderNum>3400</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>fa553844-392c-46dc-ab9b-61e148a80d36</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <submitSigpadCaptureForInstallmentAgreement>
+            <response>
+                <status>SUCCESS</status>
+            </response>
+        </submitSigpadCaptureForInstallmentAgreement>
+    </ServiceBody>
+</VzwServices>

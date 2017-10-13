@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>accountManagement</serviceName>
+        <serviceAction>retrieveCustomerDetails</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[ESQA1srv01:vipsvcs01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails/>
+        <timeStamp>2016-06-10T17:39:52.229-04:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>standalone_P2106278804</clientAddlInfo>
+        <transactionId>TRANSID_accountManagement_retrieveCustomerDetails</transactionId>
+        <sessionID>cbe7e10f-254d-4507-b619-12a82dc528a3</sessionID>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>3bfccd53-ee10-4fa1-ba3b-4ff5fb6fb175</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <custLookup>
+            <response>
+                <customerFound>true</customerFound>
+                <customerDetails>
+                    <indvOrBussCustomer>I</indvOrBussCustomer>
+                    <billingSystem>VW</billingSystem>
+                    <accountNumber>0670360827</accountNumber>
+                    <accountSubNumber>00001</accountSubNumber>
+                    <accountStatus>A</accountStatus>
+                    <customerName>RYAN BOWER</customerName>
+                    <firstName>RYAN</firstName>
+                    <lastName>BOWER</lastName>
+                    <addressInfo>
+                        <addressLine1>10447 HENEY CREEK PL</addressLine1>
+                        <addressLine2/>
+                        <city>CUPERTINO</city>
+                        <state>CA</state>
+                        <zipCode>95014</zipCode>
+                        <zipCode4>0828</zipCode4>
+                        <country>USA</country>
+                    </addressInfo>
+                    <ssn>000007466</ssn>
+                    <email>HGZMXSF37@VZW.COM</email>
+                    <homePhone>9999999999</homePhone>
+                    <workPhone>9999999999</workPhone>
+                    <reachNumber>9999999999</reachNumber>
+                    <accountIneligibilityReasonCode/>
+                    <accountIneligibilityReasonMsg/>
+                    <accountEstablishedDate>02/11/2005</accountEstablishedDate>
+                    <ecpdCustomer>false</ecpdCustomer>
+                    <authorizedUserList>
+                        <authorizedUser>
+                            <currentAuthorizedLastName>CHU</currentAuthorizedLastName>
+                            <currentAuthorizedFirstName>NANCY</currentAuthorizedFirstName>
+                            <currentEffectiveDate>06/29/2011</currentEffectiveDate>
+                        </authorizedUser>
+                        <authorizedUser>
+                            <currentAuthorizedLastName>CHU</currentAuthorizedLastName>
+                            <currentAuthorizedFirstName>MICHAEL</currentAuthorizedFirstName>
+                            <currentEffectiveDate>12/19/2011</currentEffectiveDate>
+                        </authorizedUser>
+                    </authorizedUserList>
+                    <activeLines>1</activeLines>
+                    <pendingAddLines>0</pendingAddLines>
+                    <lineList>
+                        <lineInfo>
+                            <mobileNumber>2106278804</mobileNumber>
+                            <existingPlanList>
+                                <planInfo>
+                                    <planType>FS</planType>
+                                    <pricePlanId>96325~PTP=S</pricePlanId>
+                                    <planPrice>9.99</planPrice>
+                                    <planSetId>0</planSetId>
+                                    <pricePlanDescription>NATIONWIDE TALK FAMILY SHARE SEC 700 SHR W/PRI $9.99 S4968
+                                        0110
+                                    </pricePlanDescription>
+                                </planInfo>
+                            </existingPlanList>
+                            <eqptInfo>
+                                <deviceInfo>
+                                    <deviceId>99000088304056</deviceId>
+                                    <deviceType>CDM</deviceType>
+                                    <modelName>SAMSUNG BRIGHTSIDE</modelName>
+                                    <deviceFamily>Phone</deviceFamily>
+                                    <deviceCategoryDesc>Basic Phone</deviceCategoryDesc>
+                                </deviceInfo>
+                            </eqptInfo>
+                            <billLanguage>E</billLanguage>
+                            <mtnEffectiveDate>02/17/2005</mtnEffectiveDate>
+                            <ne2EligibilityDate/>
+                            <eqptUpgdEligibilityDate>05/31/2015</eqptUpgdEligibilityDate>
+                            <mtnContractDuration>24</mtnContractDuration>
+                            <eligibleForUpgrade>Y</eligibleForUpgrade>
+                            <eligibleForAltUpgrade>N</eligibleForAltUpgrade>
+                            <isDeviceFamilyEditON>N</isDeviceFamilyEditON>
+                            <lineIneligibilityReasonCode/>
+                            <lineIneligibilityReasonMsg/>
+                            <activationDate>05/31/2013</activationDate>
+                            <contractEffectiveDate/>
+                            <contractEndDate/>
+                            <currentFeatureList>
+                                <featuresCount>25</featuresCount>
+                                <feature>
+                                    <code>48526</code>
+                                    <description>TXT MSG W PER MSG CHARGES</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>48553</code>
+                                    <description>STREAMLINED BILLING - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>BL</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>53217</code>
+                                    <description>MESSAGE WAITING INDICATOR</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>56455</code>
+                                    <description>PIX FLIX PAY PER MSG</description>
+                                    <price>0.00</price>
+                                    <groupCode>MS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>66139</code>
+                                    <description>BLOCK APP DOWNLOADS</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>66332</code>
+                                    <description>DECLINE EQUIPMENT PROTECTION</description>
+                                    <price>0.00</price>
+                                    <groupCode>EQ</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68869</code>
+                                    <description>CALLER ID</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68870</code>
+                                    <description>BUSY TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68871</code>
+                                    <description>CONFERENCE CALLING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68872</code>
+                                    <description>CALL DELIVERY</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68873</code>
+                                    <description>CALL WAITING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68874</code>
+                                    <description>NO ANSWER TRANSFER</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68876</code>
+                                    <description>CALL FORWARDING</description>
+                                    <price>0.00</price>
+                                    <groupCode>BF</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68877</code>
+                                    <description>BASIC VOICE MAIL - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>VM</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>68994</code>
+                                    <description>M2M NATIONAL UNLIMITED - $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>MM</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>71804</code>
+                                    <description>BLOCK RBT DOWNLOADS</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>71905</code>
+                                    <description>BLOCK WEB ACCESS</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>72709</code>
+                                    <description>UNL NIGHT &amp; WEEKEND MIN $0</description>
+                                    <price>0.00</price>
+                                    <groupCode>WK</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>73324</code>
+                                    <description>OTA SOFTWAREUPDATE-$0.00</description>
+                                    <price>0.00</price>
+                                    <groupCode>MI</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>73661</code>
+                                    <description>BLOCK PREMIUM SMS</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75369</code>
+                                    <description>BLOCK PICTURE&amp;VIDEO MESSAGING</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75390</code>
+                                    <description>BLOCK DATA</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>75440</code>
+                                    <description>BLOCK PURCHASE AND GIFTING</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>78196</code>
+                                    <description>INTL TRVL ALLOW US/CANADA DATA</description>
+                                    <price>0.00</price>
+                                    <groupCode>DR</groupCode>
+                                </feature>
+                                <feature>
+                                    <code>78485</code>
+                                    <description>BLOCK MHS NW DATA SHARE</description>
+                                    <price>0.00</price>
+                                    <groupCode>VS</groupCode>
+                                </feature>
+                            </currentFeatureList>
+                            <earlyUpgEligibility>N</earlyUpgEligibility>
+                            <cmUpgEligibility>N</cmUpgEligibility>
+                            <earlyEdgeUpgradeEligibility>N</earlyEdgeUpgradeEligibility>
+                            <earlyEdgeDeviceTradeInRequired>N</earlyEdgeDeviceTradeInRequired>
+                            <tier>1</tier>
+                            <uniqueTransactionToken>
+                                MTcxNjU5MDcyOQALZ3yJ7PEhX2NWMv7/KEJARtD6LN6SkIsBe1u/firQw90Q2HVDBBHEq3yE1u7EKi8=
+                            </uniqueTransactionToken>
+                        </lineInfo>
+                        <count>1</count>
+                    </lineList>
+                </customerDetails>
+            </response>
+        </custLookup>
+    </ServiceBody>
+</VzwServices>

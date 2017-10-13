@@ -1,0 +1,267 @@
+<VzwServices
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pos.odc.vzwcorp.com http://pos.odc.vzwcorp.com"
+        xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>user</userName>
+        <password>pass</password>
+        <clientAppName>CLIENT</clientAppName>
+        <clientAppUserName>user</clientAppUserName>
+        <serviceName>CUSTSERVICE</serviceName>
+        <serviceAction>FEATURESLOOKUP</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[QA04:MS_ESQA3_EROES_01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails/>
+        <timeStamp>2012-12-10T11:15:17</timeStamp>
+        <storeID>281</storeID>
+        <clientAddlInfo/>
+        <transactionId>FEATURESLOOKUP_TRANS_ID</transactionId>
+        <sessionID>SESSION01</sessionID>
+        <serviceAreaZip>07059</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>M323501</location>
+            <creditApplicationNum>800003251</creditApplicationNum>
+            <orderNum>4000996</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000077594</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+    </ServiceHeader>
+    <ServiceBody>
+        <featuresLookup>
+            <response>
+                <lineInfo>
+                    <multiLineSeqNumber>1</multiLineSeqNumber>
+                    <mobileNumber>2106278804</mobileNumber>
+                    <planDeviceFeatures>
+                        <featuresCount>22</featuresCount>
+                        <feature>
+                            <code>68871</code>
+                            <description>3-WAY CALLING</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68870</code>
+                            <description>BUSY TRANSFER</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68876</code>
+                            <description>CALL FORWARDING</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68873</code>
+                            <description>CALL WAITING</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68872</code>
+                            <description>CALL DELIVERY</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68874</code>
+                            <description>NO ANSWER TRANSFER</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68869</code>
+                            <description>CALLER ID</description>
+                            <price>0.00</price>
+                            <groupCode>BF</groupCode>
+                        </feature>
+                        <feature>
+                            <code>76152</code>
+                            <description>PICTURE MESSAGE PROVISIONING</description>
+                            <price>0.00</price>
+                            <groupCode>PM</groupCode>
+                        </feature>
+                        <feature>
+                            <code>48526</code>
+                            <description>TXT MSG W PER MSG CHARGES</description>
+                            <price>0.00</price>
+                            <groupCode>MI</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77249</code>
+                            <description>MOBILE HOT SPOT TRIGGER $0</description>
+                            <price>0.00</price>
+                            <groupCode>MI</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77573</code>
+                            <description>SMARTPHONE LINE ACCESS $40</description>
+                            <price>40.00</price>
+                            <groupCode>MI</groupCode>
+                        </feature>
+                        <feature>
+                            <code>76405</code>
+                            <description>3G MOBILE HOTSPOT</description>
+                            <price>0.00</price>
+                            <groupCode>MI</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77524</code>
+                            <description>RTR/UC TRIGGER ALP $0</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77581</code>
+                            <description>EMAIL TRIGGER ALP $0</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77583</code>
+                            <description>DATA PROVISION ALP</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>75632</code>
+                            <description>DATA ROAM USA/CANADA</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>75668</code>
+                            <description>GENERAL IP NAT ADDRESS PDA $0</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77568</code>
+                            <description>EMAIL ACCESS PDA $0</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77256</code>
+                            <description>RTR FOR ALP</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>75903</code>
+                            <description>VISUAL VOICEMAIL SPEC</description>
+                            <price>0.00</price>
+                            <groupCode>VM</groupCode>
+                        </feature>
+                        <feature>
+                            <code>48553</code>
+                            <description>STREAMLINED BILLING - $0</description>
+                            <price>0.00</price>
+                            <groupCode>BL</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77540</code>
+                            <description>3G PROVISIONING $0</description>
+                            <price>0.00</price>
+                            <groupCode>MB</groupCode>
+                        </feature>
+                    </planDeviceFeatures>
+                    <optionalFeatures>
+                        <featuresCount>14</featuresCount>
+                        <feature>
+                            <code>65616</code>
+                            <description>DETAILED BILLING - $1.99</description>
+                            <price>1.99</price>
+                            <groupCode>BL</groupCode>
+                        </feature>
+                        <feature>
+                            <code>77305</code>
+                            <description>GLBL 3G HOTSPT PROVISIONING $0</description>
+                            <price>0.00</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>71735</code>
+                            <description>EMAIL SYNC FILE SYNC $5.99</description>
+                            <price>5.99</price>
+                            <groupCode>DT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>53035</code>
+                            <description>EXTENDED WARRANTY - $1.99</description>
+                            <price>1.99</price>
+                            <groupCode>EW</groupCode>
+                        </feature>
+                        <feature>
+                            <code>78118</code>
+                            <description>VZ NAV - SPECIAL DEVICES $2.00</description>
+                            <price>2.00</price>
+                            <groupCode>LB</groupCode>
+                        </feature>
+                        <feature>
+                            <code>76405</code>
+                            <description>3G MOBILE HOTSPOT</description>
+                            <price>0.00</price>
+                            <groupCode>MI</groupCode>
+                        </feature>
+                        <feature>
+                            <code>72188</code>
+                            <description>ROADSIDE ASSISTANCE - $3.00</description>
+                            <price>3.00</price>
+                            <groupCode>RD</groupCode>
+                        </feature>
+                        <feature>
+                            <code>54307</code>
+                            <description>BLOCK TEXT MESSAGING</description>
+                            <price>0.00</price>
+                            <groupCode>VS</groupCode>
+                        </feature>
+                        <feature>
+                            <code>66139</code>
+                            <description>BLOCK APP DOWNLOADS</description>
+                            <price>0.00</price>
+                            <groupCode>VS</groupCode>
+                        </feature>
+                        <feature>
+                            <code>73006</code>
+                            <description>BLOCK V CAST MUSIC</description>
+                            <price>0.00</price>
+                            <groupCode>VS</groupCode>
+                        </feature>
+                        <feature>
+                            <code>73661</code>
+                            <description>BLOCK PREMIUM SMS</description>
+                            <price>0.00</price>
+                            <groupCode>VS</groupCode>
+                        </feature>
+                        <feature>
+                            <code>68365</code>
+                            <description>RINGBACK TONES $0.99</description>
+                            <price>.99</price>
+                            <groupCode>WB</groupCode>
+                        </feature>
+                        <feature>
+                            <code>75988</code>
+                            <description>WPP ASURION $8.18</description>
+                            <price>8.18</price>
+                            <groupCode>WT</groupCode>
+                        </feature>
+                        <feature>
+                            <code>75989</code>
+                            <description>TEC ASURION $9.99</description>
+                            <price>9.99</price>
+                            <groupCode>WT</groupCode>
+                        </feature>
+                    </optionalFeatures>
+                    <lineErrorCode>00000</lineErrorCode>
+                    <lineErrorMessage>No error</lineErrorMessage>
+                </lineInfo>
+            </response>
+        </featuresLookup>
+    </ServiceBody>
+</VzwServices>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>customerService</serviceName>
+        <serviceAction>submitServiceDetails</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[ESQA1srv01:vipsvcs01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails></applicationResponseDetails>
+        <timeStamp>2016-06-10T13:16:43.037-04:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>horder_6004864</clientAddlInfo>
+        <transactionId>TRANSID_customerService_submitServiceDetails</transactionId>
+        <sessionID></sessionID>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>808913408</creditApplicationNum>
+            <orderNum>6589</orderNum>
+            <billingSystem>VE</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>890833a4-6584-414d-98ca-a5d5069881c3</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <custServiceWriteOrder>
+            <response>
+                <creditApplicationNum>808913408</creditApplicationNum>
+                <mobileNumber>2104859550</mobileNumber>
+                <multiLineSeqNumber>1</multiLineSeqNumber>
+                <contractTerm>0</contractTerm>
+                <contractEndDate>01/01/0001</contractEndDate>
+                <earlyTerminationFee>
+                    <etfText>$0</etfText>
+                    <etfIndicator></etfIndicator>
+                    <etfAmount>0</etfAmount>
+                </earlyTerminationFee>
+                <activationDate>06/10/2016</activationDate>
+                <eqptInfo>
+                    <deviceInfo>
+                        <deviceId>354409061658527</deviceId>
+                        <deviceType>4GE</deviceType>
+                        <modelName>IPHONE 6 128GB GOLD</modelName>
+                        <deviceFamily>Phone</deviceFamily>
+                        <deviceCategoryDesc>Smart Phone</deviceCategoryDesc>
+                        <installmentDetails>
+                            <installmentContractNum>1800267768</installmentContractNum>
+                            <eligibleForEDGE>Y</eligibleForEDGE>
+                            <spendingLimit>1996.03</spendingLimit>
+                            <installmentPaymentDetails>
+                                <totalAmountFinanced>749.99</totalAmountFinanced>
+                                <firstInstallmentAmount>31.47</firstInstallmentAmount>
+                                <installmentContractTerm>24</installmentContractTerm>
+                                <monthlyInstallmentPayment>31.24</monthlyInstallmentPayment>
+                                <agentDownPaymentAmount>0.00</agentDownPaymentAmount>
+                                <vZWRequiredDownPaymentAmount>0.00</vZWRequiredDownPaymentAmount>
+                                <totalDownPaymentAmount>0.00</totalDownPaymentAmount>
+                            </installmentPaymentDetails>
+                        </installmentDetails>
+                    </deviceInfo>
+                    <lteEqpt>
+                        <ICCID>89148000002599417083</ICCID>
+                    </lteEqpt>
+                </eqptInfo>
+                <featureList>
+                    <featuresCount>31</featuresCount>
+                    <feature>
+                        <code>48526</code>
+                        <description>TXT MSG W PER MSG CHARGES</description>
+                    </feature>
+                    <feature>
+                        <code>48553</code>
+                        <description>STREAMLINED BILLING - $0</description>
+                    </feature>
+                    <feature>
+                        <code>66332</code>
+                        <description>DECLINE EQUIPMENT PROTECTION</description>
+                    </feature>
+                    <feature>
+                        <code>68869</code>
+                        <description>CALLER ID</description>
+                    </feature>
+                    <feature>
+                        <code>68870</code>
+                        <description>BUSY TRANSFER</description>
+                    </feature>
+                    <feature>
+                        <code>68871</code>
+                        <description>CONFERENCE CALLING</description>
+                    </feature>
+                    <feature>
+                        <code>68872</code>
+                        <description>CALL DELIVERY</description>
+                    </feature>
+                    <feature>
+                        <code>68873</code>
+                        <description>CALL WAITING</description>
+                    </feature>
+                    <feature>
+                        <code>68874</code>
+                        <description>NO ANSWER TRANSFER</description>
+                    </feature>
+                    <feature>
+                        <code>68876</code>
+                        <description>CALL FORWARDING</description>
+                    </feature>
+                    <feature>
+                        <code>75527</code>
+                        <description>VERIZON CLOUD FREE</description>
+                    </feature>
+                    <feature>
+                        <code>75632</code>
+                        <description>INTL TRVL USCAN VOICEDATA PAYG</description>
+                    </feature>
+                    <feature>
+                        <code>75706</code>
+                        <description>TEXT MESSAGING</description>
+                    </feature>
+                    <feature>
+                        <code>75802</code>
+                        <description>DYNAMIC-PRIVATE IP</description>
+                    </feature>
+                    <feature>
+                        <code>75836</code>
+                        <description>4G INTERNET ACCESS</description>
+                    </feature>
+                    <feature>
+                        <code>75837</code>
+                        <description>4G APPLICATION ACCESS</description>
+                    </feature>
+                    <feature>
+                        <code>76152</code>
+                        <description>PICTURE MESSAGE PROVISIONING</description>
+                    </feature>
+                    <feature>
+                        <code>76404</code>
+                        <description>MOBILE HOTSPOT 4G PROVISIONING</description>
+                    </feature>
+                    <feature>
+                        <code>77249</code>
+                        <description>MOBILE HOT SPOT TRIGGER $0</description>
+                    </feature>
+                    <feature>
+                        <code>77256</code>
+                        <description>RTR FOR ALP</description>
+                    </feature>
+                    <feature>
+                        <code>77524</code>
+                        <description>RTR/UC TRIGGER ALP $0</description>
+                    </feature>
+                    <feature>
+                        <code>77556</code>
+                        <description>4G PROVISIONING $0</description>
+                    </feature>
+                    <feature>
+                        <code>77568</code>
+                        <description>EMAIL ACCESS PDA $0</description>
+                    </feature>
+                    <feature>
+                        <code>77581</code>
+                        <description>EMAIL TRIGGER ALP $0</description>
+                    </feature>
+                    <feature>
+                        <code>77583</code>
+                        <description>DATA PROVISION ALP</description>
+                    </feature>
+                    <feature>
+                        <code>79708</code>
+                        <description>VISUAL VOICEMAIL SPEC</description>
+                    </feature>
+                    <feature>
+                        <code>80148</code>
+                        <description>INTL MESSAGES WHILE IN US $0</description>
+                    </feature>
+                    <feature>
+                        <code>81143</code>
+                        <description>ACCESS - ADVANCED CALLING $0</description>
+                    </feature>
+                    <feature>
+                        <code>81158</code>
+                        <description>HD VOICE $0</description>
+                    </feature>
+                    <feature>
+                        <code>81186</code>
+                        <description>ACCESS - HD VOICE $0</description>
+                    </feature>
+                    <feature>
+                        <code>82825</code>
+                        <description>SMARTPHONE LINE ACCESS $20</description>
+                    </feature>
+                </featureList>
+                <status>SUCCESS</status>
+                <message></message>
+                <staticText>Taxes &amp; surcharges apply may vary. Federal Universal Service Charge of 17.90% of
+                    interstate
+                    &amp; int&apos;l telecom charges (varies quarterly based on FCC rate), a $0.21 Regulatory &amp; a
+                    $1.23
+                    Administrative Charge per line/month are our charges, not taxes. The iPhone 4 is configured to work
+                    only
+                    with the wireless services of Verizon Wireless, and may not work on another carriers network, even
+                    after
+                    completion of your contract term.
+                </staticText>
+                <prevCommissionedDevice>false</prevCommissionedDevice>
+                <accountLevelProduct>
+                    <description>RA TEST DO NOT USE - COPEN</description>
+                    <addDeleteInd>A</addDeleteInd>
+                </accountLevelProduct>
+            </response>
+        </custServiceWriteOrder>
+    </ServiceBody>
+</VzwServices>

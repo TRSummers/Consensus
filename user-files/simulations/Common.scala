@@ -977,13 +977,16 @@ object Common{
 			.exec(http("Logout_3")
 				.get("/js/retail/topnav.php")
 				.headers(Logoutheaders_1))
-			.exec(http("Shipped Orders")
-				.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
-				.check(substring("COMPLETED"))
-				.headers(status_call))
 			.exec(http("Completed Flows")
 				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490039628495")
 				.headers(Logoutheaders_4))
+	}
+
+	val Results = group("Results"){
+		exec(http("Shipped Orders")
+			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
+			.check(substring("COMPLETED"))
+			.headers(status_call))
 	}
 	//	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }

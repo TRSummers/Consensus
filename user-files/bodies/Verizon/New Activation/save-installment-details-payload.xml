@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>customerService</serviceName>
+        <serviceAction>saveInstallmentDetails</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[ESQA1srv01:vipsvcs01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails></applicationResponseDetails>
+        <timeStamp>2016-06-10T13:16:33.527-04:00</timeStamp>
+        <storeID>0003</storeID>
+        <clientAddlInfo>horder_6004864</clientAddlInfo>
+        <transactionId>TRANSID_customerService_saveInstallmentDetails</transactionId>
+        <sessionID></sessionID>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>808913408</creditApplicationNum>
+            <orderNum>6589</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>c69ce24b-b352-4fbd-9d22-f1e8c312e278</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <saveInstallmentDetails>
+            <response>
+                <status>SUCCESS</status>
+            </response>
+        </saveInstallmentDetails>
+    </ServiceBody>
+</VzwServices>

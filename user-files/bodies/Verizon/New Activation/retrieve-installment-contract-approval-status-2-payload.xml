@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VzwServices xmlns="http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*********</password>
+        <clientAppName>TARGET</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>customerService</serviceName>
+        <serviceAction>retrieveInstallmentContractApprovalStatus</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[ESQA4srv02:vipsvcs02:02]No error</applicationResponseMessage>
+        <applicationResponseDetails></applicationResponseDetails>
+        <timeStamp>2016-09-21T04:10:47.258-04:00</timeStamp>
+        <storeID>0004</storeID>
+        <clientAddlInfo>100086626</clientAddlInfo>
+        <transactionId>TRANSID_customerService_retrieveInstallmentContractApprovalStatus</transactionId>
+        <sessionID>cbe7e10f-254d-4507-b619-12a82dc528a3</sessionID>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>810001842</creditApplicationNum>
+            <orderNum>6576</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>16148057-381b-4e20-8f59-023c088867b2</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <retrieveInstallmentContractApprovalStatus>
+            <response>
+                <approvalStatus>Approved</approvalStatus>
+                <reason></reason>
+            </response>
+        </retrieveInstallmentContractApprovalStatus>
+    </ServiceBody>
+</VzwServices>

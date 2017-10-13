@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VzwServices
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://pos.odc.vzwcorp.com"
+        xsi:schemaLocation="http://pos.odc.vzwcorp.com http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>targetmbl1</userName>
+        <password>*******</password>
+        <clientAppName>TARGET2085</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>orderProcessing</serviceName>
+        <serviceAction>submitActivation</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[QA11:MS_ESQA4_EROES_01:01]No error</applicationResponseMessage>
+        <applicationResponseDetails/>
+        <timeStamp>2015-10-10T14:04:51</timeStamp>
+        <storeID>0004</storeID>
+        <clientAddlInfo>horder_3189031</clientAddlInfo>
+        <transactionId>TRANSID_orderProcessing_submitActivation</transactionId>
+        <sessionID/>
+        <serviceAreaZip>32541</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>SOUTH</clusterInfo>
+            <location>Q127001</location>
+            <creditApplicationNum>811001219</creditApplicationNum>
+            <orderNum>3400</orderNum>
+            <billingSystem>VE</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000121189</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>0a58c41d-a52d-4fcd-ba3b-810706d16746</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <lineActivation>
+            <response>
+                <accountNumber/>
+                <accountSubNumber/>
+                <mtnInfo>
+                    <mobileNumber>2106278804</mobileNumber>
+                    <multiLineSeqNumber>1</multiLineSeqNumber>
+                    <activationStatus>SUCCESS</activationStatus>
+                    <message>SUCCESS DVS 0296389732 acct 0324982680-00001 (10/10/2015-14:05:01)</message>
+                    <newEqptInfo>
+                        <deviceInfo>
+                            <deviceId>353259070865808</deviceId>
+                            <deviceType>4GE</deviceType>
+                        </deviceInfo>
+                        <lteEqpt>
+                            <ICCID>89148000000960224674</ICCID>
+                            <EUIMID>A000004C9EBB8E</EUIMID>
+                            <IMSIV>311480097943711</IMSIV>
+                            <IMSIVF>204043365761433</IMSIVF>
+                        </lteEqpt>
+                    </newEqptInfo>
+                    <activationFee>40.00</activationFee>
+                    <ETF>0</ETF>
+                    <lineErrorCode>00000</lineErrorCode>
+                    <lineErrorMessage>No error</lineErrorMessage>
+                </mtnInfo>
+            </response>
+        </lineActivation>
+    </ServiceBody>
+</VzwServices>

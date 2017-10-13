@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VzwServices
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://pos.odc.vzwcorp.com"
+        xsi:schemaLocation="http://pos.odc.vzwcorp.com http://pos.odc.vzwcorp.com">
+    <ServiceHeader>
+        <userName>TARGETTST</userName>
+        <password>*******</password>
+        <clientAppName>TARGET0003</clientAppName>
+        <clientAppUserName>ABC</clientAppUserName>
+        <serviceName>documentManagement</serviceName>
+        <serviceAction>submitReceipt</serviceAction>
+        <applicationResponseCode>00000</applicationResponseCode>
+        <applicationResponseClass>SUCCESS</applicationResponseClass>
+        <applicationResponseMessage>[QA09:MS_ESQA4_EROES_02:02]No error</applicationResponseMessage>
+        <applicationResponseDetails/>
+        <timeStamp>2015-07-29T16:18:45</timeStamp>
+        <storeID>0004</storeID>
+        <clientAddlInfo>horder_35268</clientAddlInfo>
+        <transactionId>TRANSID_documentManagement_submitReceipt</transactionId>
+        <sessionID/>
+        <serviceAreaZip>78205</serviceAreaZip>
+        <orderKeyInfo>
+            <clusterInfo>DEVEL</clusterInfo>
+            <location>N656701</location>
+            <creditApplicationNum>811001217</creditApplicationNum>
+            <orderNum>3400</orderNum>
+            <billingSystem>VN</billingSystem>
+            <salesForceId>ENC</salesForceId>
+            <outletId>000120557</outletId>
+        </orderKeyInfo>
+        <xmlVersion>2.0</xmlVersion>
+        <loggingId>f30f22a8-d422-4923-b582-817304025747</loggingId>
+    </ServiceHeader>
+    <ServiceBody>
+        <receitSubmit>
+            <response>
+                <status>SUCCESS</status>
+            </response>
+        </receitSubmit>
+    </ServiceBody>
+</VzwServices>
