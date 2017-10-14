@@ -21,7 +21,7 @@ object Common{
 	val uri_gstatic = "https://fonts.gstatic.com/s/lato/v13"
 	val uri_google  = "https://fonts.googleapis.com/css"
 
-	val CommonPause=pause(5,10)
+	val CommonPause=pause(8,45)
 
 
 	val Lname = csv("Lname.csv").random
