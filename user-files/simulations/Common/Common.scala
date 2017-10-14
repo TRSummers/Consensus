@@ -21,7 +21,7 @@ object Common{
 	val uri_gstatic = "https://fonts.gstatic.com/s/lato/v13"
 	val uri_google  = "https://fonts.googleapis.com/css"
 
-	val CommonPause=pause(5,10)
+	val CommonPause=pause(8,45)
 
 
 	val Lname = csv("Lname.csv").random
@@ -41,8 +41,7 @@ object Common{
 			"nationalId" -> (110000000 + Random.nextInt(1000000)).toString,
 			"carrier" -> "VerizonNA"))
 
-
-	val LoginToRetail=group("LoginToRetail"){
+	val LoginToRetail=group("Login->Retail"){
 		exec(http("Login")
 			.get("/retail/login.htm?brandId=731&metaCode=newSession"))
 			.pause(155 milliseconds)
@@ -113,7 +112,7 @@ object Common{
 
 	}
 
-	val RetailToChoosePathModule=group("RetailToChoosePathModule"){
+	val RetailToChoosePathModule=group("Retail->ChoosePath"){
 		exec(http("Retail_0")
 			.post(uri_poa + "/retail/")
 			.headers(CommonHeaders.poa_headers_0)
@@ -221,7 +220,7 @@ object Common{
 
 	}
 
-	val ChoosePathToScan=group("ChoosePathToScan"){
+	val ChoosePathToScan=group("ChoosePath->Scan"){
 		exec(http("dsom_scan_request_0")
 			.options(uri_dsom_v1 + "/getNextState")
 			.headers(CommonHeaders.dsom_headers_7)
@@ -242,7 +241,7 @@ object Common{
 						.get(uri_ui + "/app/pages/scan/scan.html")))
 	}
 
-	val PaymentOptionsToCartWheel = group("${carrier}_PaymentOptions"){
+	val PaymentOptionsToCartWheel = group("PaymentOpt->CartWheel"){
 		exec(http("dsom_po_request_0")
 			.options(uri_dsom + "/dsom-app/v1/getNextState")
 			.headers(CommonHeaders.dsom_headers_100))
@@ -266,7 +265,7 @@ object Common{
 				.headers(CommonHeaders.poa_headers_11))
 	}
 
-	val CartwheelToLegacyCreditCheck = group("${carrier}_Cartwheel"){
+	val CartwheelToLegacyCreditCheck = group("Cartwheel->CC"){
 		exec(http("dsom_Cartwheel_4")
 			.options(uri_dsom + "/dsom-app/v1/getNextState")
 			.headers(CommonHeaders.dsom_headers_100))
@@ -296,7 +295,7 @@ object Common{
 		//.pause(5, 15)
 	}
 
-	val CartwheelToCreditCheck = group("${carrier}_Cartwheel"){
+	val CartwheelToCreditCheck = group("Cartwheel->CC"){
 		exec(http("dsom_Cartwheel_4")
 			.options(uri_dsom_v1 + "/getNextState")
 			.headers(CommonHeaders.dsom_headers_100))
@@ -381,7 +380,7 @@ object Common{
 		//.pause(5, 15)
 	}
 
-	val CreditCheck=group("${carrier}_CreditCheck"){
+	val CreditCheck=group("CreditCheck->CCResult"){
 		exec(http("CreditCheck_${SSN1}")
 			.post("/retail/creditcheck/creditcheck.htm")
 			.headers(CommonHeaders.headers_1012)
