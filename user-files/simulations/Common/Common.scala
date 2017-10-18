@@ -254,7 +254,7 @@ object Common{
 				.headers(CommonHeaders.dsom_headers_100))
 			.exec(http("dsom_po_request_3")
 				.post(uri_dsom + "/dsom-app/v1/getContentForAisle")
-				.check(substring("download the Cartwheel App"))
+			//	.check(substring("download the Cartwheel App"))
 				.headers(CommonHeaders.dsom_headers_101)
 				.body(ElFileBody("Common/VZWPO2Activation_0003_request.json")))
 			.exec(http("dsom_po_cartwheel_content")
