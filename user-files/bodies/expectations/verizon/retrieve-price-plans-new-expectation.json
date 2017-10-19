@@ -1,56 +1,30 @@
 {
-  "id": 676,
-  "name": "retrievePricePlans_verizon_QA_676",
-  "description": "New Plan - M2M - Parking - 1 Line - Financed",
-  "requestId": 676,
-  "responseId": 676,
-  "responder": "verizon",
-  "setId": null,
-  "userId": 19,
-  "api": "retrievePricePlans",
-  "environment": "QA",
-  "dateCreated": "2016-09-26 20:33:06",
-  "dateModified": null,
-  "createdBy": "Dan",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_retrievePricePlans",
   "request": {
-    "id": 676,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
-    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrievePricePlans']",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
+    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrievePricePlans']"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 19,
-    "type": "SDET",
-    "name": "Dan",
-    "dateCreated": "2016-06-15 21:17:36",
-    "dateModified": null,
-    "createdBy": "Dan",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "retrievePricePlans",
+    "environment": "PERF"
+  }
 }

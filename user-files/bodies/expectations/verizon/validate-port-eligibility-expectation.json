@@ -1,56 +1,33 @@
 {
-  "id": 720,
-  "name": "validateportEligibility_verizon_QA_9421",
-  "description": "validate PortIn Elegibility Successful",
-  "requestId": 721,
-  "responseId": 721,
-  "responder": "verizon",
-  "setId": null,
-  "userId": 30,
-  "api": "validateportEligibility",
-  "environment": "QA",
-  "dateCreated": "2017-02-14 22:09:05",
-  "dateModified": null,
-  "createdBy": "jortiz",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_validateportEligibility",
   "request": {
-    "id": 721,
-    "method": "POST",
-    "url": null,
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
     "pname1": "//*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='validatePortInEligibility']",
-    "pvalue1": null,
-    "pname2": "//*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='storeID' and text()='0003']",
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": "/VzwServices/ServiceBody/validateMdn/request/multiplePorts/detail/mobileNumber",
-    "pvalue4": null,
-    "pname5": "/VzwServices/ServiceBody/validateMdn/response/multiplePorts/mtnPortInfo/mobileNumber",
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+     "pname2": "//*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='storeID' and text()='0003']",
+     "pname4": "/VzwServices/ServiceBody/validateMdn/request/multiplePorts/detail/mobileNumber",
+     "pname5": "/VzwServices/ServiceBody/validateMdn/response/multiplePorts/mtnPortInfo/mobileNumber"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 30,
-    "type": "default",
-    "name": "jortiz",
-    "dateCreated": "2017-02-14 22:08:33",
-    "dateModified": null,
-    "createdBy": "jortiz",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "validateportEligibility",
+    "environment": "PERF"
+  }
 }

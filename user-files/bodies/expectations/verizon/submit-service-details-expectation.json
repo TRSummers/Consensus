@@ -1,56 +1,30 @@
 {
-  "id": 690,
-  "name": "submitServiceDetails_submitServiceDetails-New-Edge_perfScale_690",
-  "description": "Verizon Edge new activation, Trigger Value - serviceAction,creditApplicationNum",
-  "requestId": 690,
-  "responseId": 690,
-  "responder": "submitServiceDetails-New-Edge",
-  "setId": null,
-  "userId": 28,
-  "api": "submitServiceDetails",
-  "environment": "perfScale",
-  "dateCreated": "2016-10-05 19:47:21",
-  "dateModified": null,
-  "createdBy": "Uday",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_submitServiceDetails",
   "request": {
-    "id": 690,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
-    "pname1": "//*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='submitServiceDetails']",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
+    "pname1": "//*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='submitServiceDetails']"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 28,
-    "type": "dev",
-    "name": "Uday",
-    "dateCreated": "2016-10-03 21:38:52",
-    "dateModified": null,
-    "createdBy": "Uday",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "submitServiceDetails",
+    "environment": "PERF"
+  }
 }

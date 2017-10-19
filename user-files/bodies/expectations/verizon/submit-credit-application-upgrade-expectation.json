@@ -1,56 +1,31 @@
 {
-  "id": 682,
-  "name": "submitCreditApplication_submitCreditApplication-New-Edge_perfScale_682",
-  "description": "Verizon Edge Upgrade, Trigger Values - customerType = U",
-  "requestId": 682,
-  "responseId": 682,
-  "responder": "submitCreditApplication-New-Edge",
-  "setId": null,
-  "userId": 28,
-  "api": "submitCreditApplication",
-  "environment": "perfScale",
-  "dateCreated": "2016-10-04 19:15:44",
-  "dateModified": null,
-  "createdBy": "Uday",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_submitCreditApplication",
   "request": {
-    "id": 682,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
     "pname1": "//*[local-name()='creditOrderDetails']/*[local-name()='customerType' and text()]",
-    "pvalue1": "'U'",
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "pvalue1": "'U'"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 28,
-    "type": "dev",
-    "name": "Uday",
-    "dateCreated": "2016-10-03 21:38:52",
-    "dateModified": null,
-    "createdBy": "Uday",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "submitCreditApplication",
+    "environment": "PERF"
+  }
 }

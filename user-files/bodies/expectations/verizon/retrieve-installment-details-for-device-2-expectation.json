@@ -1,26 +1,12 @@
 {
-  "id": 695,
-  "name": "retrieveInstallmentDetailsForDevice_retrieveInstallmentDetailsForDevice-New-Edge_perfScale_695",
-  "description": "Verizon Edge new activation, Trigger Value - Trigger Value:agentDownPaymentAmount,creditApplicationNum",
-  "requestId": 696,
-  "responseId": 696,
-  "responder": "retrieveInstallmentDetailsForDevice-New-Edge",
-  "setId": null,
-  "userId": 28,
-  "api": "retrieveInstallmentDetailsForDevice",
-  "environment": "perfScale",
-  "dateCreated": "2016-10-05 23:24:13",
-  "dateModified": null,
-  "createdBy": "Uday",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_retrieveInstallmentDetailsForDevice",
   "request": {
-    "id": 696,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
     "pname1": "//*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()]",
     "pvalue1": "'retrieveInstallmentDetailsForDevice'",
     "pname2": "",
@@ -29,19 +15,24 @@
     "pvalue3": null,
     "pname4": "/VzwServices/ServiceBody/retrieveInstallmentDetailsForDevice/request/agentDownPaymentAmount",
     "pvalue4": null,
-    "pname5": "/VzwServices/ServiceBody/retrieveInstallmentDetailsForDevice/response/installmentDetails/installmentPaymentDetails/agentDownPaymentAmount",
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "pname5": "/VzwServices/ServiceBody/retrieveInstallmentDetailsForDevice/response/installmentDetails/installmentPaymentDetails/agentDownPaymentAmount"
   },
-  "response": "${payload}",
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
+  },
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "retrieveInstallmentDetailsForDevice",
+    "environment": "PERF"
+  }
 }

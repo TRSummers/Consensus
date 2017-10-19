@@ -1,56 +1,30 @@
 {
-  "id": 752,
-  "name": "aurus_payment_canonical_expectation",
-  "description": "Aurus payment canonical expectation",
-  "requestId": 753,
-  "responseId": 753,
-  "responder": "Aurus",
-  "setId": null,
-  "userId": 28,
-  "api": "auruspayServices",
-  "environment": "QA",
-  "dateCreated": "2017-05-24 00:15:56",
-  "dateModified": null,
-  "createdBy": "Uday",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "AURUS_processTransactionService",
   "request": {
-    "id": 753,
+    "xpath": true,
     "method": "POST",
-    "url": "Amazon.com",
+    "url": "",
     "path": "/auruspay/api/auruspayServices/processTransactionService",
-    "queryParameters": null,
-    "xpath": false,
-    "json": true,
-    "pname1": "{\"encryptionFlag\":\"99\"}",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "environment": "PERF",
+    "pname1": ""
   },
-  "response": "${payload}",
-  "user": {
-    "id": 28,
-    "type": "dev",
-    "name": "Uday",
-    "dateCreated": "2016-10-03 21:38:52",
-    "dateModified": null,
-    "createdBy": "Uday",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/json"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "AURUS",
+    "api": "processTransactionService",
+    "environment": "PERF"
+  }
 }

@@ -1,56 +1,30 @@
 {
-  "id": 742,
-  "name": "CreditCheck_FEDEX_Address_Validator",
-  "description": "CreditCheck/Address/FEDEX/addressValidator",
-  "requestId": 743,
-  "responseId": 743,
-  "responder": "Verizon",
-  "setId": null,
-  "userId": 34,
-  "api": "AddressValidation",
-  "environment": "basic",
-  "dateCreated": "2017-04-06 22:23:47",
-  "dateModified": null,
-  "createdBy": "tsummers",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "FEDEX_AddressValidationRequest",
   "request": {
-    "id": 743,
-    "method": "POST",
-    "url": null,
-    "path": "/web-services",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
-    "pname1": "//*[local-name()='AddressValidationRequest']/*[local-name()='AddressesToValidate']/*[local-name()='Address']/*[local-name()='StreetLines'and text()='441 mountain st']",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "method": "POST",
+    "url": "",
+    "path": "/web-services",
+    "environment": "PERF",
+    "pname1": "//*[local-name()='AddressValidationRequest']"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 34,
-    "type": "default",
-    "name": "tsummers",
-    "dateCreated": "2017-04-05 20:14:50",
-    "dateModified": null,
-    "createdBy": "tsummers",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "FEDEX",
+    "api": "AddressValidationRequest",
+    "environment": "PERF"
+  }
 }

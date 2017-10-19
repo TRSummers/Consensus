@@ -1,56 +1,30 @@
 {
-  "id": 737,
-  "name": "VZN_EarlyEdge_PayUp_AccountLookup_retrieveMobileDataUsage",
-  "description": "VZN_EarlyEdge_PayUp_AccountLookup",
-  "requestId": 738,
-  "responseId": 738,
-  "responder": "verizon",
-  "setId": null,
-  "userId": 34,
-  "api": "retrieveMobileDataUsage",
-  "environment": "QA",
-  "dateCreated": "2017-04-05 20:51:39",
-  "dateModified": null,
-  "createdBy": "tsummers",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_retrieveMobileDataUsage",
   "request": {
-    "id": 738,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
-    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrieveMobileDeviceDataUsage'] and //*[local-name()='mobileNumber' and text()='2489779052']",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
+    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrieveMobileDeviceDataUsage']"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 34,
-    "type": "default",
-    "name": "tsummers",
-    "dateCreated": "2017-04-05 20:14:50",
-    "dateModified": null,
-    "createdBy": "tsummers",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "retrieveMobileDataUsage",
+    "environment": "PERF"
+  }
 }
