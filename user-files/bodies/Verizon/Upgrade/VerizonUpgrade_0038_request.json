@@ -1,0 +1,26 @@
+{
+  "currentLocation": "scan",
+  "debug": true,
+  "sessionInfo": {
+    "sessionId": "${p_sessionid}",
+    "POAsid": "${p_sessionid}",
+    "sortRule": "",
+    "category": "",
+    "filterList": [],
+    "options": [
+      {
+        "upgradeRequest": [
+          {
+            "phonenumber": "2106278804",
+            "upgradeType": "upgrade"
+          }
+        ]
+      }
+    ],
+    "paymentPricingOption": "",
+    "enableCart": "true",
+    "serialNumber": 0,
+    "cartCount": 0,
+    "currentLocation": "upgraderesults"
+  }
+}

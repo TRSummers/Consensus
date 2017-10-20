@@ -42,4 +42,36 @@ object VerizonScenarios {
       )
     }
   }
+
+  val Upgrade = scenario("Verizon Upgrade").repeat(SimParams.inum) {
+    group("VZN UPG") {
+      exec(
+        feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
+        Common.LoginToRetail, Common.CommonPause,
+        Common.RetailToChoosePathModule, Common.CommonPause,
+        VerizonUpgradePages.ChoosePathToUpgradeEligibilityCheck, Common.CommonPause,
+        VerizonUpgradePages.UpgradeEligibilityCheckToScanDevice, Common.CommonPause,
+        VerizonUpgradePages.ScanDeviceToPaymentOptions, Common.CommonPause,
+        VerizonUpgradePages.PaymentOptionsToCreditCheck, Common.CommonPause,
+        VerizonUpgradePages.CreditCheckToCreditCheckResult, Common.CommonPause,
+        VerizonUpgradePages.CreditCheckResultToInstallmentDetails, Common.CommonPause,
+        VerizonUpgradePages.InstallmentDetailsToPlans, Common.CommonPause,
+        VerizonUpgradePages.PlansToCart, Common.CommonPause,
+        VerizonUpgradePages.CartToPlanFeatures, Common.CommonPause,
+        VerizonUpgradePages.PlanFeaturesToDeviceOptions, Common.CommonPause,
+        VerizonUpgradePages.DeviceOptionsToOrderConfirm, Common.CommonPause,
+        VerizonUpgradePages.OrderConfirmToTermsAndConditions, Common.CommonPause,
+        VerizonUpgradePages.TermsAndConditionsToMSS, Common.CommonPause,
+        VerizonUpgradePages.MSSToScanReceipt, Common.CommonPause,
+        VerizonUpgradePages.ScanReceiptToActivationScan, Common.CommonPause,
+        VerizonUpgradePages.ActivationScanToWirelessCustomerAgreement, Common.CommonPause,
+        VerizonUpgradePages.WirelessCustomerAgreementToDeviceFinancingInstallmentContract, Common.CommonPause,
+        VerizonUpgradePages.DeviceFinancingInstallmentContractToOrderSummary, Common.CommonPause,
+        VerizonUpgradePages.TabulateResults, Common.CommonPause,
+        //    Common.NewGuest, Common.CommonPause,
+        Common.Logout
+      )
+    }
+  }
 }
+

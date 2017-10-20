@@ -1,0 +1,27 @@
+{
+  "currentLocation": "deviceTradeIn",
+  "debug": true,
+  "sessionInfo": {
+    "sessionId": "${p_sessionid}",
+    "POAsid": "${p_sessionid}",
+    "sortRule": "",
+    "category": "",
+    "filterList": [],
+    "options": [
+      {
+        "request": {
+          "corpId": "660",
+          "phonenumber": "2106278804",
+          "last4ssn": "1234",
+          "password": null,
+          "zip": "94117"
+        }
+      }
+    ],
+    "paymentPricingOption": "",
+    "enableCart": "true",
+    "serialNumber": 0,
+    "cartCount": 0,
+    "currentLocation": "upgraderesults"
+  }
+}

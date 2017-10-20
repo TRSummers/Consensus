@@ -12,9 +12,9 @@ class E2E extends Simulation {
 		build.SPRAAL.inject(rampUsers(SimParams.SAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		build.ATTAAL.inject(rampUsers(SimParams.TAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		VerizonScenarios.NewActivation.inject(rampUsers(SimParams.VNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
-		build.SPRNA.inject(rampUsers(SimParams.SNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol))
+		build.SPRNA.inject(rampUsers(SimParams.SNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+		VerizonScenarios.Upgrade.inject(rampUsers(SimParams.VUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol))
 	//    	        build.ATTNA.inject(rampUsers(SimParams.TNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
-	//					    build.VZWUG.inject(rampUsers(SimParams.VUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 	//					    build.SPRUG.inject(rampUsers(SimParams.SUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol))
 	//					    build.ATTUG.inject(rampUsers(SimParams.TUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol)
 }
