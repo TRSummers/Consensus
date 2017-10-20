@@ -26,11 +26,11 @@ object CRExpectationManager {
   val createAndLoadExpectation = group("Create & Load") {
 
     exec(http("Create Expectation")
-      .post(Common.non_tunneled_cr + "/CarrierResponder/expectation?overwriteIfExists=TRUE")
+      .post(Common.tunneled_cr + "/CarrierResponder/expectation?overwriteIfExists=TRUE")
       .body(ElFileBody("${expectationPath}" + "-expectation.json")).asJSON
       .headers(headers_list)
       .check(jsonPath("$.id").saveAs("expectationId")))
       .exec(http("Load Expectation")
-      .get(Common.non_tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
+      .get(Common.tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
   }
 }

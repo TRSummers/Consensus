@@ -44,7 +44,7 @@
                         <tns:loanLastInstallmentDueDate>2019-09-03-04:00</tns:loanLastInstallmentDueDate>
                         <tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription>
                         <tns:deviceInfo>
-                            <tns:esnMeidHex>123456789876543</tns:esnMeidHex>
+                            <tns:esnMeidHex>98765432112345</tns:esnMeidHex>
                         </tns:deviceInfo>
                         <tns:equipmentType>D</tns:equipmentType>
                         <tns:additionalPartnerLoanInfo>
@@ -66,7 +66,7 @@
                         <tns:loanLastInstallmentDueDate>2019-03-03-05:00</tns:loanLastInstallmentDueDate>
                         <tns:itemCategoryDescription>SAM G950U BLK XCVR SGL</tns:itemCategoryDescription>
                         <tns:deviceInfo>
-                            <tns:esnMeidHex>123456789876543</tns:esnMeidHex>
+                            <tns:esnMeidHex>98765432112345</tns:esnMeidHex>
                         </tns:deviceInfo>
                         <tns:estimatedSalesTax>0</tns:estimatedSalesTax>
                         <tns:equipmentType>D</tns:equipmentType>
