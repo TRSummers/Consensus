@@ -1,56 +1,30 @@
 {
-  "id": 765,
-  "name": "GenerateWirelessAccountAnalysis EarlyEdge_PayUp account=287637228",
-  "description": "Vzn GenerateWirelessAccountAnalysis EarlyEdge_PayUp account=287637228",
-  "requestId": 766,
-  "responseId": 766,
-  "responder": "verizon",
-  "setId": null,
-  "userId": 28,
-  "api": "GenerateWirelessAccountAnalysis",
-  "environment": "QA",
-  "dateCreated": "2017-07-12 19:02:07",
-  "dateModified": null,
-  "createdBy": "Uday",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_GenerateWirelessAccountAnalysis",
   "request": {
-    "id": 766,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
-    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceBody']/*[local-name()='generateWirelessAccountAnalysis']/*[local-name()='request'] and //*[local-name()='accountNumber' and text()='287637228']",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
+    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceBody']/*[local-name()='generateWirelessAccountAnalysis']"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 28,
-    "type": "dev",
-    "name": "Uday",
-    "dateCreated": "2016-10-03 21:38:52",
-    "dateModified": null,
-    "createdBy": "Uday",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "GenerateWirelessAccountAnalysis",
+    "environment": "PERF"
+  }
 }

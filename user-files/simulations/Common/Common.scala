@@ -15,10 +15,11 @@ object Common{
 	val uri_dsom_v1  = 				"https://perf-scale-dsom.consensuscorpdev.com/dsom-app/v1"
 	val uri_dsom_v1_port = 		"https://perf-scale-dsom.consensuscorpdev.com:443/dsom-app/v1"
 	val tunneled_cr = 				"https://localhost:58443"
+	val non_tunneled_cr = 		"https://localhost:7443"
 	val uri_pam  = 						"https://perf-scale-pam.consensuscorpdev.com"
 
 
-	val uri_gstatic = "https://fonts.gstatic.com/s/lato/v13"
+	val uri_gstatic = "https://fonts.gstatic.com/s/lato/v14"
 	val uri_google  = "https://fonts.googleapis.com/css"
 
 	val CommonPause=pause(8,45)
@@ -552,17 +553,4 @@ object Common{
 				.headers(CommonHeaders.Logoutheaders_4))
 	}
 
-	val VerizonResults = group("Results"){
-		exec(http("Shipped Orders")
-			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
-			.check(substring("INSURANCE_ACTIVATION_NEEDED"))
-			.headers(CommonHeaders.status_call))
-	}
-
-	val SprintResults = group("Results"){
-		exec(http("Shipped Orders")
-			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
-			.check(substring("COMPLETED"))
-			.headers(CommonHeaders.status_call))
-	}
 }

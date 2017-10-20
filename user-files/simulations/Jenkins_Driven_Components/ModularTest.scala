@@ -7,7 +7,7 @@ import scala.util.Random
 class E2E extends Simulation {
 
 	setUp(
-		SprintUpgradeE2EComponents.SprintUpgradeE2EFlow.inject(rampUsers(SimParams.SUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+		SprintScenarios.Upgrade.inject(rampUsers(SimParams.SUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		build.VZWAAL.inject(rampUsers(SimParams.VAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		build.SPRAAL.inject(rampUsers(SimParams.SAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		build.ATTAAL.inject(rampUsers(SimParams.TAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),

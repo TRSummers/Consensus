@@ -6,13 +6,6 @@ import io.gatling.jdbc.Predef._
 import scala.util.Random
 
 object VerizonNewActivationHeaders{
-  val httpProtocol = http
-    .baseURL("https://poa-perf-scale.consensuscorpdev.com")
-    .disableAutoReferer
-    .acceptHeader("*/*")
-    .acceptEncodingHeader("gzip, deflate")
-    .acceptLanguageHeader("en-US,en;q=0.5")
-    .userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
 
   val VZWFlowheaders_0 = Map(
     "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

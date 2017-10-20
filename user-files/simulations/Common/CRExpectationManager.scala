@@ -19,18 +19,18 @@ object CRExpectationManager {
   val removeExpectations = group("CR Management") {
 
     exec(http("Remove All Expectations")
-      get(Common.tunneled_cr + "/CarrierResponder/mockserver/remove")
+      get(Common.non_tunneled_cr + "/CarrierResponder/mockserver/remove")
     )
   }
 
-  val createAndLoadExpectation = group("CR Management") {
+  val createAndLoadExpectation = group("Create & Load") {
 
     exec(http("Create Expectation")
-      .post(Common.tunneled_cr + "/CarrierResponder/expectation?overwriteIfExists=TRUE")
+      .post(Common.non_tunneled_cr + "/CarrierResponder/expectation?overwriteIfExists=TRUE")
       .body(ElFileBody("${expectationPath}" + "-expectation.json")).asJSON
       .headers(headers_list)
       .check(jsonPath("$.id").saveAs("expectationId")))
       .exec(http("Load Expectation")
-      .get(Common.tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
+      .get(Common.non_tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
   }
 }

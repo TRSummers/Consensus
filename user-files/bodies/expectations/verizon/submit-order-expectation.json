@@ -1,56 +1,30 @@
 {
-  "id": 675,
-  "name": "submitOrder_verizon_QA_675",
-  "description": "New Plan - M2M - Parking - 1 Line - Financed",
-  "requestId": 675,
-  "responseId": 675,
-  "responder": "verizon",
-  "setId": null,
-  "userId": 19,
-  "api": "submitOrder",
-  "environment": "QA",
-  "dateCreated": "2016-09-26 20:32:49",
-  "dateModified": null,
-  "createdBy": "Dan",
-  "modifiedBy": null,
+  "user": "GATLING",
+  "name": "VERIZON_submitOrder",
   "request": {
-    "id": 675,
-    "method": "POST",
-    "url": "Amazon.com",
-    "path": "/eai/eroes/VzwWSAdapter",
-    "queryParameters": null,
     "xpath": true,
-    "json": false,
-    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='submitOrder']",
-    "pvalue1": null,
-    "pname2": null,
-    "pvalue2": null,
-    "pname3": null,
-    "pvalue3": null,
-    "pname4": null,
-    "pvalue4": null,
-    "pname5": null,
-    "pvalue5": null,
-    "dateCreated": null,
-    "dateModified": null,
-    "createdBy": null,
-    "modifiedBy": null,
-    "asyncRequests": [],
-    "cookies": [],
-    "headers": []
+    "method": "POST",
+    "url": "",
+    "path": "/eai/eroes/VzwWSAdapter",
+    "environment": "PERF",
+    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='submitOrder']"
   },
-  "response": "${payload}",
-  "user": {
-    "id": 19,
-    "type": "SDET",
-    "name": "Dan",
-    "dateCreated": "2016-06-15 21:17:36",
-    "dateModified": null,
-    "createdBy": "Dan",
-    "modifiedBy": null
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
   },
-  "retry": false,
-  "retryTimes": null,
-  "async": false,
-  "expectationset": null
+  "expectation": {
+    "description": "",
+    "responder": "VERIZON",
+    "api": "submitOrder",
+    "environment": "PERF"
+  }
 }
