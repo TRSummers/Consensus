@@ -1,0 +1,30 @@
+{
+  "user": "tward",
+  "name": "SPRINT_UPG_E2E_QueryAvailablePlans",
+  "request": {
+    "xpath": true,
+    "method": "POST",
+    "url": "",
+    "path": "/rtb1/services/wireless/account/QueryPlansAndOptionsService/v1",
+    "environment": "PERF",
+    "pname1": "//*[local-name()='queryAvailablePlans']"
+  },
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
+  },
+  "expectation": {
+    "description": "SPRINT_UPG_E2E_QueryAvailablePlans",
+    "responder": "sprint",
+    "api": "queryAvailablePlans",
+    "environment": "PERF"
+  }
+}

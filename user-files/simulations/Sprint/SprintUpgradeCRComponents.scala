@@ -17,6 +17,8 @@ object SprintUpgradeCRComponents {
   val expectation8 = "expectations/sprint/upgrade/credit-check"
   val expectation9 = "expectations/sprint/upgrade/service-validation"
   val expectation10 = "expectations/sprint/upgrade/activation"
+  val expectation11 = "expectations/sprint/upgrade/query-available-plans"
+  val expectation12 = "expectations/sprint/upgrade/query-available-options"
 
   val gatlingData = sys.env("GATLING_DATA")
   val expectationPath = Array(
@@ -29,10 +31,12 @@ object SprintUpgradeCRComponents {
     Map("expectationPath" -> expectation7, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation7 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation8, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation8 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation9, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation9 + "-payload.xml").mkString)),
-    Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString))
+    Map("expectationPath" -> expectation10, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation10 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation11, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation11 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation12, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation12 + "-payload.xml").mkString))
   )
 
-  val SetUpExpectations = scenario("Sprint Upgrade Carrier Responder").repeat(10) {
+  val SetUpExpectations = scenario("Sprint Upgrade Carrier Responder").repeat(12) {
     group("Sprint Upgrade Carrier Responder") {
       exec(feed(expectationPath))
         .exec(CRExpectationManager.createAndLoadExpectation)
