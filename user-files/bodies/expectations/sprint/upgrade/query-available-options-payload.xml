@@ -3,15 +3,21 @@
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns1:queryAvailableOptionsResponse
+                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                xmlns:xalan="http://xml.apache.org/xalan"
                 xmlns:ns1="http://integration.sprint.com/interfaces/queryAvailableOptions/v1/queryAvailableOptions.xsd"
-        >
+                xmlns:tns1="http://integration.sprint.com/integration/interfaces/queryOptionsInfoBt/v1/queryOptionsInfoBtV1.xsd">
             <ns1:pricePlanInfo>
-                <ns1:pricePlanSoc>LTD1013</ns1:pricePlanSoc>
+                <ns1:pricePlanSoc>LPDSA0501</ns1:pricePlanSoc>
                 <ns1:addOnSocList>
                     <ns1:addOnSocInfo>
                         <ns1:soc>TEPPLUS</ns1:soc>
-                        <ns1:socDesc>TEP Plus(NY only,ins avail $9)</ns1:socDesc>
-                        <ns1:socLongDesc>TEP Plus(NY only,ins avail $9)</ns1:socLongDesc>
+                        <ns1:socDesc>Total Equipmnt Protection Plus</ns1:socDesc>
+                        <ns1:socLongDesc>Total Equipment Protection Plus</ns1:socLongDesc>
                         <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
                         <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
                         <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
@@ -27,7 +33,7 @@
                         </ns1:productTypeList>
                         <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
                         <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
-                        <ns1:socCategory>Insurance</ns1:socCategory>
+                        <ns1:socCategory>Device Protection</ns1:socCategory>
                         <ns1:featureList>
                             <ns1:featureInfo>
                                 <ns1:featureCode>GENTEP</ns1:featureCode>
@@ -78,8 +84,522 @@
                         <ns1:requiredSocInd>false</ns1:requiredSocInd>
                     </ns1:addOnSocInfo>
                     <ns1:addOnSocInfo>
-                        <ns1:soc>TestCode</ns1:soc>
-                        <ns1:socDesc>Test Soc Code</ns1:socDesc>
+                        <ns1:soc>PREMRES03</ns1:soc>
+                        <ns1:socDesc>HD Streaming</ns1:socDesc>
+                        <ns1:socLongDesc>HD Streaming</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>true</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Premium Data</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>GENALL</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>REQVID</ns1:featureCode>
+                                <ns1:featureDesc>Required Streaming Policy</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>6705</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>O</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSLKOTRI</ns1:soc>
+                        <ns1:socDesc>Lookout Premium Indivdual-15Dy</ns1:socDesc>
+                        <ns1:socLongDesc>Lookout Premium Indivdual-15Dy</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Miscellaneous</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>APP</ns1:featureCode>
+                                <ns1:featureDesc>PDS Application</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>S</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSHS10G</ns1:soc>
+                        <ns1:socDesc>10GB Mobile Hotspot</ns1:socDesc>
+                        <ns1:socLongDesc>10GB Mobile Hotspot</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Premium Data</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>A3HSCH</ns1:featureCode>
+                                <ns1:featureDesc>Sprint 3G MHS/PAM Buy-Up</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>A4HSCH</ns1:featureCode>
+                                <ns1:featureDesc>Sprint 4G MHS/PAM Buy-Up</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>REQPAM</ns1:featureCode>
+                                <ns1:featureDesc>Hotspot Required</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>UTOPLG</ns1:featureCode>
+                                <ns1:featureDesc>PAM Data Kilobytes</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>6723</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>O</ns1:socType>
+                        <ns1:requiredSocInd>true</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSSFLTRI</ns1:soc>
+                        <ns1:socDesc>Sprint Family Locator-15Day</ns1:socDesc>
+                        <ns1:socLongDesc>Sprint Family Locator-15Day</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Miscellaneous</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>APP</ns1:featureCode>
+                                <ns1:featureDesc>PDS Application</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>S</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>ANUPGRADE</ns1:soc>
+                        <ns1:socDesc>Early Upgrade Option</ns1:socDesc>
+                        <ns1:socLongDesc>Early Upgrade Option</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>5.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Annual Upgrade</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>GENALL</ns1:featureCode>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>IDENOFF</ns1:soc>
+                        <ns1:socDesc>International IDEN Restriction</ns1:socDesc>
+                        <ns1:socLongDesc>International IDEN Restriction</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>true</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Restrict</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>IDENR</ns1:featureCode>
+                                <ns1:featureDesc>Intl iDEN Roaming Restriction</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>BNW7PM15</ns1:soc>
+                        <ns1:socDesc>Nights and Weekends 7pm</ns1:socDesc>
+                        <ns1:socLongDesc>Unlmtd Nights &amp; Weekends Starting at 7pm</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>15.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Nights and Weekends</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>OVER</ns1:featureCode>
+                                <ns1:featureDesc>Modified Nights and Weekends</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>UTOLTC</ns1:featureCode>
+                                <ns1:featureDesc>Cellular Minutes</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>CWAITBLCK</ns1:soc>
+                        <ns1:socDesc>Call Waiting Restriction</ns1:socDesc>
+                        <ns1:socLongDesc>Call Waiting Restriction</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>true</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Expired SOCs</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>BACW</ns1:featureCode>
+                                <ns1:featureDesc>Call Waiting Restriction</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSML999C</ns1:soc>
+                        <ns1:socDesc>Workforce Locator</ns1:socDesc>
+                        <ns1:socLongDesc>Location Service</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>9.99</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Mobile Locator</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>LBSMLC</ns1:featureCode>
+                                <ns1:featureDesc>Workforce Locator - CDMA</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSSFLOC</ns1:soc>
+                        <ns1:socDesc>Sprint Family Locator</ns1:socDesc>
+                        <ns1:socLongDesc>Sprint Family Locator</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>5.99</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Miscellaneous</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>APP</ns1:featureCode>
+                                <ns1:featureDesc>PDS Application</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PREMCNAP</ns1:soc>
+                        <ns1:socDesc>Premium Caller ID</ns1:socDesc>
+                        <ns1:socLongDesc>Premium Caller ID</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>2.99</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>CNAP</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CNPBSF</ns1:featureCode>
+                                <ns1:featureDesc>Basic Caller Name Presentation</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>SPOTFYREG</ns1:soc>
+                        <ns1:socDesc>Spotify Trial Registration</ns1:socDesc>
+                        <ns1:socLongDesc>Spotify Trial Registration</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Miscellaneous</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>GENALL</ns1:featureCode>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>FRAMLYWAL</ns1:soc>
+                        <ns1:socDesc>FamilyWall for Sprint</ns1:socDesc>
+                        <ns1:socLongDesc>FamilyWall for Sprint</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Framily</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>GENALL</ns1:featureCode>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSIPIE</ns1:soc>
+                        <ns1:socDesc>Premium Intl Experience</ns1:socDesc>
+                        <ns1:socLongDesc>Premium Intl Experience</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Premium Intl Experience</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>RSMSI</ns1:featureCode>
+                                <ns1:featureDesc>International Roaming Text Msg</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>SINT</ns1:featureCode>
+                                <ns1:featureDesc>International Long Distance</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>STDR</ns1:featureCode>
+                                <ns1:featureDesc>Roaming Minutes</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>WDRENB</ns1:featureCode>
+                                <ns1:featureDesc>Wireless Data Roaming</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>7099</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSTIDTRA</ns1:soc>
+                        <ns1:socDesc>TIDAL HiFi 6 Mo. Trial-SMS</ns1:socDesc>
+                        <ns1:socLongDesc>TIDAL HiFi 6 Mo. Trial-SMS</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Tidal Premium 6 Mo. Trial</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>APP</ns1:featureCode>
+                                <ns1:featureDesc>PDS Application</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>6755</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSLKOTPI</ns1:soc>
+                        <ns1:socDesc>Lookout Premium Security</ns1:socDesc>
                         <ns1:socLongDesc>Lookout Premium Security</ns1:socLongDesc>
                         <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
                         <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
@@ -99,8 +619,262 @@
                         <ns1:socCategory>Miscellaneous</ns1:socCategory>
                         <ns1:featureList>
                             <ns1:featureInfo>
-                                <ns1:featureCode>APP1</ns1:featureCode>
+                                <ns1:featureCode>APP</ns1:featureCode>
                                 <ns1:featureDesc>PDS Application</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>VVMCNAPL</ns1:soc>
+                        <ns1:socDesc>Prem VVM/Prem Caller ID Bundle</ns1:socDesc>
+                        <ns1:socLongDesc>Prem VVM/Prem Caller ID Bundle</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>5.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Prem VVM/Prem Caller ID Bundle</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CNPBSF</ns1:featureCode>
+                                <ns1:featureDesc>Basic Caller Name Presentation</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>6656</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>ILDCUBADD</ns1:soc>
+                        <ns1:socDesc>Cuba 20 Plus Add</ns1:socDesc>
+                        <ns1:socLongDesc>Cuba 20 Plus Add</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Intl Offer Cuba Pack</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>SINT</ns1:featureCode>
+                                <ns1:featureDesc>International Long Distance</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>SMSI</ns1:featureCode>
+                                <ns1:featureDesc>International Text Messages</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>33</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>ILDMEXCAN</ns1:soc>
+                        <ns1:socDesc>Mexico-Canada Unlimited Plus</ns1:socDesc>
+                        <ns1:socLongDesc>Mexico-Canada Unlimited Plus</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>5.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>true</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Mexico-Canada Unlimited Plus</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>SINT</ns1:featureCode>
+                                <ns1:featureDesc>International Long Distance</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>SMSI</ns1:featureCode>
+                                <ns1:featureDesc>International Text Messages</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>19</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>REQPROLHS</ns1:soc>
+                        <ns1:socDesc>LTE Provisioning w/Hotspot</ns1:socDesc>
+                        <ns1:socLongDesc>LTE Provisioning w/Hotspot</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>Y</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>REQUIRED</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>CPKG</ns1:featureCode>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>LTEPRO</ns1:featureCode>
+                                <ns1:featureDesc>LTE Provisioning Feature</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>PAM</ns1:featureCode>
+                                <ns1:featureDesc>Phone as Modem</ns1:featureDesc>
+                            </ns1:featureInfo>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>REQPRO</ns1:featureCode>
+                                <ns1:featureDesc>Required Provisioning Feature</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>true</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>ILDCUBA</ns1:soc>
+                        <ns1:socDesc>Cuba 20 Plus</ns1:socDesc>
+                        <ns1:socLongDesc>Cuba 20 Plus</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>10.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>0</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:productTypeList>
+                            <ns1:productTypeInfo>
+                                <ns1:productId>PRD</ns1:productId>
+                            </ns1:productTypeInfo>
+                        </ns1:productTypeList>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>Intl Offer Cuba Pack</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>SINT</ns1:featureCode>
+                                <ns1:featureDesc>International Long Distance</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:socCategorySequenceNumber>32</ns1:socCategorySequenceNumber>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>INTLCALLS</ns1:soc>
+                        <ns1:socDesc>International Calls Enabled</ns1:socDesc>
+                        <ns1:socLongDesc>International Calling Enabled</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>N</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>false</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>0.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>8</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>International</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>INT</ns1:featureCode>
+                                <ns1:featureDesc>International Calling</ns1:featureDesc>
+                            </ns1:featureInfo>
+                        </ns1:featureList>
+                        <ns1:prepaidSocAttributeInfo>
+                            <ns1:isSocStackableInd>false</ns1:isSocStackableInd>
+                            <ns1:isSocRenewableInd>false</ns1:isSocRenewableInd>
+                            <ns1:isSocDropInd>false</ns1:isSocDropInd>
+                            <ns1:isSocVxlInd>false</ns1:isSocVxlInd>
+                        </ns1:prepaidSocAttributeInfo>
+                        <ns1:socType>R</ns1:socType>
+                        <ns1:requiredSocInd>false</ns1:requiredSocInd>
+                    </ns1:addOnSocInfo>
+                    <ns1:addOnSocInfo>
+                        <ns1:soc>PDSSTATIC</ns1:soc>
+                        <ns1:socDesc>Public IP Address</ns1:socDesc>
+                        <ns1:socLongDesc>Public IP Address</ns1:socLongDesc>
+                        <ns1:banLevelCodeInd>false</ns1:banLevelCodeInd>
+                        <ns1:packetDataSupportInd>B</ns1:packetDataSupportInd>
+                        <ns1:cdmaPacketDataSupportInd>true</ns1:cdmaPacketDataSupportInd>
+                        <ns1:recurringCharge>3.00</ns1:recurringCharge>
+                        <ns1:oneTimeCharge>0.00</ns1:oneTimeCharge>
+                        <ns1:optionPriority>16</ns1:optionPriority>
+                        <ns1:mutuallyExclusiveInd>false</ns1:mutuallyExclusiveInd>
+                        <ns1:contractMonths>0</ns1:contractMonths>
+                        <ns1:corpRequiredInd>false</ns1:corpRequiredInd>
+                        <ns1:socEquivalentInd>false</ns1:socEquivalentInd>
+                        <ns1:socCategory>IP Provisioning</ns1:socCategory>
+                        <ns1:featureList>
+                            <ns1:featureInfo>
+                                <ns1:featureCode>STATIC</ns1:featureCode>
+                                <ns1:featureDesc>Static IP</ns1:featureDesc>
                             </ns1:featureInfo>
                         </ns1:featureList>
                         <ns1:prepaidSocAttributeInfo>
