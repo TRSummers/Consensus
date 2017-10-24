@@ -14,7 +14,7 @@
         <storeID>0003</storeID>
         <clientAddlInfo>standalone_P2489143990</clientAddlInfo>
         <transactionId>TRANSID_accountManagement_retrieveCustomerDetails</transactionId>
-        <sessionID/>
+        <sessionID></sessionID>
         <serviceAreaZip>48009</serviceAreaZip>
         <xmlVersion>2.0</xmlVersion>
         <loggingId>e8f5f173-f02a-4768-a0c7-9377ac79da04</loggingId>

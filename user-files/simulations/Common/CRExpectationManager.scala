@@ -19,7 +19,7 @@ object CRExpectationManager {
   val removeExpectations = group("CR Management") {
 
     exec(http("Remove All Expectations")
-      get(Common.non_tunneled_cr + "/CarrierResponder/mockserver/remove")
+      get(Common.tunneled_cr + "/CarrierResponder/mockserver/remove")
     )
   }
 

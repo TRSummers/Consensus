@@ -1,37 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VzwServices xmlns="http://pos.odc.vzwcorp.com">
-    <ServiceHeader xmlns="">
-        <userName>test
-        </userName>
-        <password/>
+    <ServiceHeader>
+        <userName>test</userName>
+        <password></password>
         <clientAppName>Sample</clientAppName>
         <clientAppUserName>WAA</clientAppUserName>
-        <serviceName>
-            accountManagement
-        </serviceName>
+        <serviceName>accountManagement</serviceName>
         <serviceAction>generateWirelessAccountAnalysis</serviceAction>
-        <applicationResponseCode>00000
-        </applicationResponseCode>
+        <applicationResponseCode>00000</applicationResponseCode>
         <applicationResponseClass>SUCCESS</applicationResponseClass>
-        <applicationResponseMessage>
-            [E04:vipsvcs13:13]No error
-        </applicationResponseMessage>
+        <applicationResponseMessage>            [E04:vipsvcs13:13]No error</applicationResponseMessage>
         <applicationResponseDetails/>
-        <timeStamp>2016-11-15T14:37:38.661-05:00
-        </timeStamp>
+        <timeStamp>2016-11-15T14:37:38.661-05:00</timeStamp>
         <storeID>0000</storeID>
         <clientAddlInfo>CLIENT INFORMATION</clientAddlInfo>
-        <transactionId>
-            CBD1437416858144644
-        </transactionId>
-        <sessionID/>
+        <transactionId>            CBD1437416858144644</transactionId>
+        <sessionID></sessionID>
         <serviceAreaZip>07059</serviceAreaZip>
         <xmlVersion>2.0</xmlVersion>
-        <loggingId>
-            f30dc71e-9fb7-472e-89fe-d93ed9ffec47
-        </loggingId>
+        <loggingId>            f30dc71e-9fb7-472e-89fe-d93ed9ffec47</loggingId>
     </ServiceHeader>
-    <ServiceBody xmlns="">
+    <ServiceBody>
         <generateWirelessAccountAnalysis>
             <response>
                 <planReview>

@@ -14,7 +14,7 @@
         <storeID>0003</storeID>
         <clientAddlInfo>standalone_P2489143990</clientAddlInfo>
         <transactionId>TRANSID_accountManagement_retrieveMobileDeviceDataUsage</transactionId>
-        <sessionID/>
+        <sessionID></sessionID>
         <serviceAreaZip>48009</serviceAreaZip>
         <xmlVersion>2.0</xmlVersion>
         <loggingId>d8ab1787-9fd5-4267-addf-d36e5c584bc7</loggingId>
