@@ -1,0 +1,16 @@
+{
+  "currentLocation": "deviceaddon",
+  "flowSelection": "continue",
+  "sessionInfo": {
+    "sessionId": "${p_sessionid}",
+    "POAsid": "${p_sessionid}",
+    "sortRule": "",
+    "category": "",
+    "filterList": [],
+    "paymentPricingOption": "",
+    "enableCart": "true",
+    "serialNumber": 0,
+    "cartCount": 1,
+    "currentLocation": "deviceaddon"
+  }
+}
