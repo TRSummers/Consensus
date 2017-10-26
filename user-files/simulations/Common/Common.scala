@@ -25,21 +25,14 @@ object Common{
 	val CommonPause=pause(8,45)
 
 
-	val Lname = csv("Lname.csv").random
-	val SSN1 = csv("SSN1.csv").random
-	val SSN2 = csv("SSN2.csv").random
-	val SSN3 = csv("SSN3.csv").random
-	val SSN4 = csv("SSN4.csv").random
-
-	val Carrier =Iterator.continually(
-		Map( "imei" -> "99000088304056",
-			"carrier" -> "VerizonNA"))
-
 	val VZWCarrierTestData =Iterator.continually(
-		Map( "imei" -> "99000088304056",
+		Map( "imei" -> "99000088304056"))
+
+	val CreditCheckData =Iterator.continually(
+		Map(
 			"firstName" -> Random.shuffle(Array("James", "John", "Abraham", "George").toList).head,
 			"lastName" -> Random.shuffle(Array("Madison", "Adams", "Lincoln", "Washington").toList).head,
-			"nationalId" -> (210000000 + Random.nextInt(1000000)).toString,
+			"nationalId" -> (100000000 + Random.nextInt(899999999)).toString,
 			"carrier" -> "VerizonNA"))
 
 	val LoginToRetail=group("Login->Retail"){
@@ -255,7 +248,7 @@ object Common{
 				.headers(CommonHeaders.dsom_headers_100))
 			.exec(http("dsom_po_request_3")
 				.post(uri_dsom + "/dsom-app/v1/getContentForAisle")
-			//	.check(substring("download the Cartwheel App"))
+				//	.check(substring("download the Cartwheel App"))
 				.headers(CommonHeaders.dsom_headers_101)
 				.body(ElFileBody("Common/VZWPO2Activation_0003_request.json")))
 			.exec(http("dsom_po_cartwheel_content")
@@ -379,89 +372,6 @@ object Common{
 				.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1489013252483&storeId=0003")
 				.headers(CommonHeaders.headers_14))
 		//.pause(5, 15)
-	}
-
-	val CreditCheck=group("CreditCheck->CCResult"){
-		exec(http("CreditCheck_${SSN1}")
-			.post("/retail/creditcheck/creditcheck.htm")
-			.headers(CommonHeaders.headers_1012)
-			.formParam("creditCheckToolArray[1008][newOrExisting]", "new")  //new
-			.formParam("creditCheckToolArray[1008][addLineType]", "addNewPlan") //addNewPlan
-			.formParam("currentPageCOPId", "439")
-			.formParam("secretSubmit", "")
-			.formParam("creditCheckTool", "1")
-			.formParam("edit", "")
-			.formParam("Lines_To_Be_Activated", "1")
-			.formParam("creditCheckToolArray[1008][numOfNewLines]", "1")
-			.formParam("creditCheckToolArray[1008][numOfExistingLines]", "")
-			.formParam("Billing_Address_Radio", "unfinished")
-			.formParam("Ecom_BillTo_Postal_Name_First", "Fred")
-			.formParam("Ecom_BillTo_Postal_Name_Middle", "")
-			.formParam("Ecom_BillTo_Postal_Name_Last", "${Lname}")
-			.formParam("Ecom_BillTo_Postal_Street_Line1", "536 Banks St")
-			.formParam("Ecom_BillTo_Postal_Street_Line2", "GROKKED")
-			.formParam("Ecom_BillTo_Postal_City", "San Francisco")
-			.formParam("Ecom_BillTo_Postal_StateProv", "CA")
-			.formParam("Ecom_BillTo_Postal_PostalCode", "94117")
-			.formParam("Ecom_BillTo_Telecom_Phone_Number", "2342342345")
-			.formParam("Ecom_BillTo_Online_Email", "${p_sessionid}@letstalk.com")
-			.formParam("Date_of_Birth[1]", "02")
-			.formParam("Date_of_Birth[2]", "20")
-			.formParam("Date_of_Birth[3]", "1970")
-			.formParam("Social_Security", "${SSN1}${SSN2}${SSN3}${SSN4}")
-			.formParam("Identification_Type", "licns")
-			.formParam("Identification_State", "CA")
-			.formParam("Identification_Number", "123456789")
-			.formParam("Identification_Expiration_Month", "12")
-			.formParam("Identification_Expiration_Year", "2020")
-			.formParam("Drivers_license_Checkbox", "Y")
-			.formParam("Agree_To_Credit_Check", "Y")
-			.formParam("Agree_To_Credit_Check_Hidden", "Y")
-			.formParam("checkoutSubmitType", "continue"))
-			.exec(http("CreditCheck_13")
-				.get("/retail/public/styles/normalize.php")
-				.headers(CommonHeaders.headers_1013))
-			.exec(http("CreditCheck_14")
-				.get("/jslibs/modernizr.php")
-				.headers(CommonHeaders.headers_1014))
-			.exec(http("CreditCheck_15")
-				.get("/js/retail/topnav.php")
-				.headers(CommonHeaders.headers_1014))
-			.exec(http("CreditCheck_16")
-				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019095749")
-				.headers(CommonHeaders.headers_1016))
-			.exec(http("CreditCheck_17")
-				.get("/retail/creditcheck/controller/runprecreditcheck.php")
-				.headers(CommonHeaders.headers_1017))
-			.exec(http("CreditCheck_18")
-				.get("/retail/public/styles/normalize.php")
-				.headers(CommonHeaders.headers_1013))
-			.exec(http("CreditCheck_19")
-				.get("/jslibs/modernizr.php")
-				.headers(CommonHeaders.headers_1014))
-			.exec(http("CreditCheck_20")
-				.get("/js/retail/topnav.php")
-				.headers(CommonHeaders.headers_1014))
-			.exec(http("CreditCheck_21")
-				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019104573")
-				.headers(CommonHeaders.headers_1016))
-			.exec(http("CreditCheck_22")
-				.get("/retail/creditcheck/controller/runprecreditcheck.php")
-				.check(substring("Carrier credit check successful. Continue with Verizon").count.saveAs("Checkcounts"))
-				.headers(CommonHeaders.headers_1017))
-			.exec(http("CreditCheck_>>${Checkcounts}<<")
-				.get("/retail/public/styles/normalize.php")
-				.headers(CommonHeaders.headers_1023))
-			.exec(http("CreditCheck_24")
-				.get("/jslibs/modernizr.php")
-				.headers(CommonHeaders.headers_1024))
-			.exec(http("CreditCheck_25")
-				.get("/js/retail/topnav.php")
-				.headers(CommonHeaders.headers_1024))
-			.exec(http("CreditCheck_26")
-				.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1489019106381")
-				.headers(CommonHeaders.headers_1026))
-		//.pause(5, 16)
 	}
 
 	val AddALinetoExistingAccount = group("AddALinetoExistingAccount") {

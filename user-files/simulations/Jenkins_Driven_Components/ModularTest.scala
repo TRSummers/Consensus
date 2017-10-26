@@ -8,11 +8,11 @@ class E2E extends Simulation {
 
 	setUp(
 		SprintScenarios.Upgrade.inject(rampUsers(SimParams.SUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
-		build.VZWAAL.inject(rampUsers(SimParams.VAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
-		build.SPRAAL.inject(rampUsers(SimParams.SAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
-		build.ATTAAL.inject(rampUsers(SimParams.TAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+//		build.VZWAAL.inject(rampUsers(SimParams.VAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+//		build.SPRAAL.inject(rampUsers(SimParams.SAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+//		build.ATTAAL.inject(rampUsers(SimParams.TAL) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		VerizonScenarios.NewActivation.inject(rampUsers(SimParams.VNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
-		build.SPRNA.inject(rampUsers(SimParams.SNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+//		build.SPRNA.inject(rampUsers(SimParams.SNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		VerizonScenarios.Upgrade.inject(rampUsers(SimParams.VUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol))
 	//    	        build.ATTNA.inject(rampUsers(SimParams.TNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 	//					    build.SPRUG.inject(rampUsers(SimParams.SUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol))

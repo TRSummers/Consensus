@@ -10,7 +10,8 @@ object SprintScenarios {
   val Upgrade = scenario("Sprint Upgrade").repeat(SimParams.inum) {
     group("SPT UPG") {
       exec(
-        feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
+        feed(Common.CreditCheckData),
+
         Common.LoginToRetail, Common.CommonPause,
         Common.RetailToChoosePathModule, Common.CommonPause,
         SprintUpgradePages.ChoosePathToUpgradeEligibilityCheck, Common.CommonPause,

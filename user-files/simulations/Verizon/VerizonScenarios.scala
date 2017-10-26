@@ -12,8 +12,8 @@ object VerizonScenarios {
     group("VZN NEW") {
       exec(
         feed(Common.VZWCarrierTestData),
-        feed(Common.Lname),
-        feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
+        feed(Common.CreditCheckData),
+
         Common.LoginToRetail, Common.CommonPause,
         Common.RetailToChoosePathModule, Common.CommonPause,
         Common.ChoosePathToScan, Common.CommonPause,
@@ -46,7 +46,9 @@ object VerizonScenarios {
   val Upgrade = scenario("Verizon Upgrade").repeat(SimParams.inum) {
     group("VZN UPG") {
       exec(
-        feed(Common.SSN1), feed(Common.SSN2), feed(Common.SSN3), feed(Common.SSN4),
+        feed(Common.VZWCarrierTestData),
+        feed(Common.CreditCheckData),
+
         Common.LoginToRetail, Common.CommonPause,
         Common.RetailToChoosePathModule, Common.CommonPause,
         VerizonUpgradePages.ChoosePathToUpgradeEligibilityCheck, Common.CommonPause,
