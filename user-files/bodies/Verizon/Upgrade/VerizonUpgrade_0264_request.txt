@@ -1,1 +1,0 @@
-{"currentLocation":"deviceaddon","debug":true,"sessionInfo":{"sessionId":"1174174890","POAsid":"1174174890","sortRule":"","category":"","filterList":[],"paymentPricingOption":"","enableCart":"","serialNumber":0,"cartCount":0,"currentLocation":"frame"}}

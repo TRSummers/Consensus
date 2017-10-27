@@ -1,1 +1,0 @@
-{"currentLocation":"scan","debug":true,"sessionInfo":{"sessionId":"1174174890","POAsid":"1174174890","sortRule":"","category":"","filterList":[],"options":[{"upgradeRequest":[{"phonenumber":"2106278804","upgradeType":"upgrade"}]}],"paymentPricingOption":"","enableCart":"true","serialNumber":0,"cartCount":0,"currentLocation":"upgraderesults"}}

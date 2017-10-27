@@ -1,0 +1,2520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <ns2:MessageHeader xmlns="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd"
+                           xmlns:ns2="http://csi.cingular.com/CSI/Namespaces/Types/Public/MessageHeader.xsd">
+            <ns2:TrackingMessageHeader>
+                <version>v116</version>
+                <messageId>P2102147247</messageId>
+                <originatorId>LETSTALK</originatorId>
+                <timeToLive>100000</timeToLive>
+                <conversationId>consensusTrgt~CNG-CSI~e1b0d92f-545d-4208-901d-c1a1081a69f6</conversationId>
+                <dateTimeStamp>2017-10-18T16:01:26Z</dateTimeStamp>
+                <uniqueTransactionId>ServiceGateway279034@q100csg106c3_ef4b20ee-224c-49e5-9acf-831373064687
+                </uniqueTransactionId>
+            </ns2:TrackingMessageHeader>
+            <ns2:SecurityMessageHeader>
+                <userName>consensusTrgt</userName>
+                <userPassword>consensusTrgt0424</userPassword>
+            </ns2:SecurityMessageHeader>
+            <ns2:SequenceMessageHeader>
+                <sequenceNumber>1</sequenceNumber>
+                <totalInSequence>1</totalInSequence>
+            </ns2:SequenceMessageHeader>
+        </ns2:MessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <InquireAccountProfileResponse
+                xmlns:cng="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd"
+                xmlns:isp="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireSubscriberProfileResponse.xsd"
+                xmlns="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireAccountProfileResponse.xsd">
+            <Account>
+                <billingMarket>
+                    <cng:billingMarket>SAN</cng:billingMarket>
+                    <cng:billingSubMarket>TON</cng:billingSubMarket>
+                </billingMarket>
+                <billingSystemId>T</billingSystemId>
+                <billingAccountNumber>365015034644</billingAccountNumber>
+                <AuthorizedUsers>
+                    <NonCriticalError>
+                        <cng:code>-20001</cng:code>
+                        <cng:description>No Data Found</cng:description>
+                    </NonCriticalError>
+                </AuthorizedUsers>
+                <CpniActivePreference>
+                    <cng:preference>X</cng:preference>
+                </CpniActivePreference>
+                <billingAccountPassword>*******</billingAccountPassword>
+                <BANSecurityDetails>
+                    <passwordSecurityLevel>E</passwordSecurityLevel>
+                </BANSecurityDetails>
+                <AccountStatus>
+                    <cng:status>A</cng:status>
+                </AccountStatus>
+                <AccountCreationDate>
+                    <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                </AccountCreationDate>
+                <AccountType>
+                    <cng:accountType>I</cng:accountType>
+                    <cng:accountSubType>R</cng:accountSubType>
+                    <cng:openChannel>R</cng:openChannel>
+                </AccountType>
+                <BmgIndicator>
+                    <cng:bmgIndicator>false</cng:bmgIndicator>
+                    <cng:userOverride>false</cng:userOverride>
+                </BmgIndicator>
+                <AccountBilling>
+                    <cng:billingCycle>5</cng:billingCycle>
+                    <cng:nextBillCycleDate>2017-10-29Z</cng:nextBillCycleDate>
+                    <cng:Balance>
+                        <cng:currentAmountDue>343.29</cng:currentAmountDue>
+                        <cng:totalAmountDue>343.29</cng:totalAmountDue>
+                        <cng:totalAmountPastDue>0</cng:totalAmountPastDue>
+                    </cng:Balance>
+                    <cng:billDueDate>2017-10-19Z</cng:billDueDate>
+                    <cng:lastPayment>
+                        <cng:billDate>2017-10-05Z</cng:billDate>
+                        <cng:receivedDate>2017-09-18Z</cng:receivedDate>
+                        <cng:amount>600</cng:amount>
+                    </cng:lastPayment>
+                </AccountBilling>
+                <PaymentMethod>AD</PaymentMethod>
+                <SolicitationIndicators>
+                    <cng:solicitationMedium>EMAIL</cng:solicitationMedium>
+                    <cng:enabled>false</cng:enabled>
+                </SolicitationIndicators>
+                <SolicitationIndicators>
+                    <cng:solicitationMedium>MAIL</cng:solicitationMedium>
+                    <cng:enabled>false</cng:enabled>
+                </SolicitationIndicators>
+                <SolicitationIndicators>
+                    <cng:solicitationMedium>PHONE</cng:solicitationMedium>
+                    <cng:enabled>false</cng:enabled>
+                </SolicitationIndicators>
+                <SolicitationIndicators>
+                    <cng:solicitationMedium>SMS</cng:solicitationMedium>
+                    <cng:enabled>false</cng:enabled>
+                </SolicitationIndicators>
+                <BillingPreferences>
+                    <cng:billingMedia>PA</cng:billingMedia>
+                    <cng:doNotMailBillCode>N</cng:doNotMailBillCode>
+                    <cng:numberOfBillsToPrint>2</cng:numberOfBillsToPrint>
+                    <cng:language>E</cng:language>
+                </BillingPreferences>
+                <TaxExemption>
+                    <cng:status>N</cng:status>
+                </TaxExemption>
+                <Customer>
+                    <name>
+                        <cng:firstName>TARGET</cng:firstName>
+                        <cng:lastName>PLS DONT TOUCH</cng:lastName>
+                    </name>
+                    <Address>
+                        <cng:addressType>S</cng:addressType>
+                        <cng:AddressLine1>8501 SPOTTED DEER ST</cng:AddressLine1>
+                        <cng:Street>
+                            <cng:streetNumber>8501</cng:streetNumber>
+                            <cng:streetName>SPOTTED DEER</cng:streetName>
+                            <cng:streetType>ST</cng:streetType>
+                        </cng:Street>
+                        <cng:City>SAN ANTONIO</cng:City>
+                        <cng:County>
+                            <cng:countyName>029</cng:countyName>
+                        </cng:County>
+                        <cng:State>TX</cng:State>
+                        <cng:Zip>
+                            <cng:zipCode>78242</cng:zipCode>
+                            <cng:zipCodeExtension>2635</cng:zipCodeExtension>
+                        </cng:Zip>
+                        <cng:Country>US</cng:Country>
+                        <cng:lastUpdate>2017-09-15T09:32:50Z</cng:lastUpdate>
+                    </Address>
+                    <Phone>
+                        <cng:homePhone>1111110001</cng:homePhone>
+                        <cng:workPhone>1111110002</cng:workPhone>
+                        <cng:workPhoneExtension>6387</cng:workPhoneExtension>
+                        <cng:canBeReachedPhone>1111110001</cng:canBeReachedPhone>
+                    </Phone>
+                    <Email>
+                        <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                        <cng:emailAddress>PS7713@ATT.COM</cng:emailAddress>
+                        <cng:emailType>P</cng:emailType>
+                        <cng:primaryAddressIndicator>true</cng:primaryAddressIndicator>
+                    </Email>
+                    <Identity>
+                        <Employer>
+                            <cng:employerName>N/A</cng:employerName>
+                        </Employer>
+                        <socialSecurityNumber>*******</socialSecurityNumber>
+                    </Identity>
+                </Customer>
+                <Subscriber>
+                    <isp:Subscriber>
+                        <isp:subscriberNumber>2102147247</isp:subscriberNumber>
+                        <isp:subscriptionID>T_SAN_TON_1505520128000100294584</isp:subscriptionID>
+                        <isp:SubscriberStatus>
+                            <cng:subscriberStatus>A</cng:subscriberStatus>
+                            <cng:statusReasonCode>CA</cng:statusReasonCode>
+                            <cng:statusDate>2017-09-15Z</cng:statusDate>
+                        </isp:SubscriberStatus>
+                        <isp:Contract>
+                            <isp:ContractTerm>
+                                <cng:startDate>2017-09-15Z</cng:startDate>
+                                <cng:term>24</cng:term>
+                                <cng:Commission>
+                                    <cng:dealer>
+                                        <cng:code>Z0066</cng:code>
+                                        <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                    </cng:dealer>
+                                    <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                                </cng:Commission>
+                            </isp:ContractTerm>
+                            <isp:commitmentReasonCode>EMR</isp:commitmentReasonCode>
+                            <isp:contractEndDate>2017-09-18Z</isp:contractEndDate>
+                            <isp:reasonCode>EMR</isp:reasonCode>
+                        </isp:Contract>
+                        <isp:ContactInformation>
+                            <isp:Name>
+                                <cng:firstName>TARGET</cng:firstName>
+                                <cng:lastName>PLS DONTTOUCH</cng:lastName>
+                            </isp:Name>
+                            <isp:PpuAddress>
+                                <cng:AddressLine1>8501 SPOTTED DEER ST</cng:AddressLine1>
+                                <cng:City>SAN ANTONIO</cng:City>
+                                <cng:State>TX</cng:State>
+                                <cng:Zip>
+                                    <cng:zipCode>78242</cng:zipCode>
+                                </cng:Zip>
+                            </isp:PpuAddress>
+                        </isp:ContactInformation>
+                        <isp:ServiceActivationDate>
+                            <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                        </isp:ServiceActivationDate>
+                        <isp:PricePlan>
+                            <cng:singleUserCode>CN1NM0A80</cng:singleUserCode>
+                            <cng:recurringCharge>39.99</cng:recurringCharge>
+                            <cng:description>NTN450RUMM5KNW</cng:description>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>5KNW96O</cng:offeringCode>
+                                <cng:offeringDescription>5000 N&amp;W</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>NW20</cng:featureCode>
+                                    <cng:featureDescription>N&amp;W Comes First Utolt</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CHT</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Domestic LD</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TDOMES</cng:featureCode>
+                                    <cng:featureDescription>Toll Domestic</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TINTNL</cng:featureCode>
+                                    <cng:featureDescription>INTERNATIONAL LD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CRT</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Roam LD</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TDOMES</cng:featureCode>
+                                    <cng:featureDescription>Toll Domestic</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TINTNL</cng:featureCode>
+                                    <cng:featureDescription>INTERNATIONAL LD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>DB00O</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CDB</cng:featureCode>
+                                    <cng:featureDescription>AT&amp;T DirectBill</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>GSMUSAELA</cng:offeringCode>
+                                <cng:offeringDescription>GSM Coverage Area</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>ELACA</cng:featureCode>
+                                    <cng:featureDescription>FEATURE FOR ELA SOC (CALLING AREAS)</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>MME0</cng:offeringCode>
+                                <cng:offeringDescription>Unlimited Expd M2M</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>UCFME</cng:featureCode>
+                                    <cng:featureDescription>EXPANDED M2M</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>MUOP</cng:offeringCode>
+                                <cng:offeringDescription>PIC/VIDEO PayPerUse</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>MMS</cng:featureCode>
+                                    <cng:featureDescription>Pict Video MSG</cng:featureDescription>
+                                    <cng:dataUsageCategory>MMS</cng:dataUsageCategory>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>RM450</cng:offeringCode>
+                                <cng:offeringDescription>450 Rollover Mins</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>ROLEX</cng:featureCode>
+                                    <cng:featureDescription>Rollover Minutes</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>TMI1O</cng:offeringCode>
+                                <cng:offeringDescription>Text Msg Pay Per Use</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>SMSAN</cng:featureCode>
+                                    <cng:featureDescription>Text/Instant Msgs</cng:featureDescription>
+                                    <cng:dataUsageCategory>SMS</cng:dataUsageCategory>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>SMSI</cng:featureCode>
+                                    <cng:featureDescription>Int'l Text Messaging</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CN1NM0A80</cng:offeringCode>
+                                <cng:offeringDescription>NTN450RUMM5KNW</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CFC</cng:featureCode>
+                                    <cng:featureDescription>NO ANSWER CALL FORWARD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CFI</cng:featureCode>
+                                    <cng:featureDescription>IMMEDIATE CALL FORWARD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CH</cng:featureCode>
+                                    <cng:featureDescription>Call Hold (G)</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CLI</cng:featureCode>
+                                    <cng:featureDescription>Caller ID</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CW</cng:featureCode>
+                                    <cng:featureDescription>Call Waiting</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>MPTY</cng:featureCode>
+                                    <cng:featureDescription>6 Way Calling</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>QD</cng:featureCode>
+                                    <cng:featureDescription>Direct Bill Detail</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>VMWI</cng:featureCode>
+                                    <cng:featureDescription>MESSAGE NOTIFICATION</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:RestrictedSubMarkets>
+                                <cng:code>ALL</cng:code>
+                            </cng:RestrictedSubMarkets>
+                        </isp:PricePlan>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>SMTLTE1</cng:offeringCode>
+                            <cng:offeringDescription>DATAPLUS 300MB LTE</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DATBUN</cng:featureCode>
+                                <cng:featureDescription>AT&amp;T World Bundle-Data</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GVC1</cng:featureCode>
+                                <cng:featureDescription>Video Calling</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DPTTOP</cng:featureCode>
+                                <cng:featureDescription>Push to Talk</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DVDSP</cng:featureCode>
+                                <cng:featureDescription>VOICE DISPATCHER</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APN002</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNA02</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNNG2</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNT02</cng:featureCode>
+                                <cng:featureDescription>Data Access</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>BMPRO</cng:featureCode>
+                                <cng:featureDescription>BALANCE MANAGER</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GPRS</cng:featureCode>
+                                <cng:featureDescription>Data Access</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>HTPHON</cng:featureCode>
+                                <cng:featureDescription>HSS Provisioning</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>NOTILH</cng:featureCode>
+                                <cng:featureDescription>NOTIFY POLICY H</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>SPTP03</cng:featureCode>
+                                <cng:featureDescription>SPEED TIER HIGH</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>H988</cng:featureCode>
+                                <cng:featureDescription>Data feature for MMV</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>VVM1</cng:featureCode>
+                                <cng:featureDescription>Visual Voice Mail</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>20.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459345</cng:sequenceNumber>
+                            <cng:category>CCS</cng:category>
+                            <cng:genAttribute>RTP;UPG_EQU_MRC_CALC;SPEED_TIER;TITAN_ELIGIBLE;REM_IF_DATAGRP_DUP;
+                            </cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>ENBUM</cng:offeringCode>
+                            <cng:offeringDescription>LTE USG Notify-Track</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>ENBUM</cng:featureCode>
+                                <cng:featureDescription>ENB USG Monitoring</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>0.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459350</cng:sequenceNumber>
+                            <cng:category>RESSOCREM;OK_RESTRICT;SKIP_SOC_MATCH;ENB_API_SOC;ENB_TRK_SOC;</cng:category>
+                            <cng:genAttribute>RESSOCREM;OK_RESTRICT;SKIP_SOC_MATCH;ENB_API_SOC;ENB_TRK_SOC;
+                            </cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:defaultAPN>PHONE</isp:defaultAPN>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>EMAIL</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>MAIL</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>PHONE</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>SMS</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:Commission>
+                            <cng:dealer>
+                                <cng:code>Z0066</cng:code>
+                            </cng:dealer>
+                            <cng:location>Z0066</cng:location>
+                            <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                        </isp:Commission>
+                        <isp:deviceInformation>
+                            <isp:device>
+                                <cng:equipmentType>G</cng:equipmentType>
+                                <cng:technologyType>LTE</cng:technologyType>
+                                <cng:IMSI>311180000681124</cng:IMSI>
+                                <cng:IMEI>359722050000078</cng:IMEI>
+                                <cng:IMEIType>P6</cng:IMEIType>
+                                <cng:SIM>89011803270006811243</cng:SIM>
+                                <cng:Manufacturer>
+                                    <cng:make>SAMSUNG</cng:make>
+                                    <cng:model>SGH-i337</cng:model>
+                                </cng:Manufacturer>
+                                <cng:umtsCapability>true</cng:umtsCapability>
+                                <cng:nfcCapability>IU</cng:nfcCapability>
+                                <cng:pinUnblockingCode1>11111111</cng:pinUnblockingCode1>
+                                <cng:pinUnblockingCode2>22222222</cng:pinUnblockingCode2>
+                                <cng:effectiveDate>2017-09-15</cng:effectiveDate>
+                                <cng:lteType>6</cng:lteType>
+                                <cng:IMSIPublicId>311180000681124@one.att.net</cng:IMSIPublicId>
+                                <cng:smsCapabilityIndicator>true</cng:smsCapabilityIndicator>
+                                <cng:pcCardIndicator>false</cng:pcCardIndicator>
+                                <cng:uiccCode>B</cng:uiccCode>
+                                <cng:uiccKeys>
+                                    <cng:publicKey>2102147247@one.att.net</cng:publicKey>
+                                    <cng:privateKey>311180000681124@private.att.net</cng:privateKey>
+                                </cng:uiccKeys>
+                                <cng:certificationStatus>true</cng:certificationStatus>
+                            </isp:device>
+                        </isp:deviceInformation>
+                        <isp:subscriberIndicators>
+                            <cng:gaitFeatureIndicator>false</cng:gaitFeatureIndicator>
+                            <cng:profitability>0</cng:profitability>
+                            <cng:churn>0</cng:churn>
+                            <cng:cseRatePlan>false</cng:cseRatePlan>
+                            <cng:pttFeature>false</cng:pttFeature>
+                            <cng:vmPlatformType>A</cng:vmPlatformType>
+                            <cng:portabilityIndicator>true</cng:portabilityIndicator>
+                            <cng:pendingEquipmentUpgrade>false</cng:pendingEquipmentUpgrade>
+                            <cng:smsFeatureIndicator>true</cng:smsFeatureIndicator>
+                        </isp:subscriberIndicators>
+                        <isp:voiceMailId>SAAV</isp:voiceMailId>
+                        <isp:hlrId>DUM</isp:hlrId>
+                        <isp:UpgradeEligibility>
+                            <cng:eligibilityStatus>A</cng:eligibilityStatus>
+                            <cng:eligibilityType>S</cng:eligibilityType>
+                            <cng:approvalNumber>0</cng:approvalNumber>
+                            <cng:QualificationDetails>
+                                <cng:allowedForSecuredOffers>false</cng:allowedForSecuredOffers>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>53</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is upgrade eligible. Before upgrading your
+                                        phone, be sure to back it up to make it easier to transfer content to your new
+                                        phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>54</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>45.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>true</cng:combineMessageIndicator>
+                                    <cng:eligibilityMessageType>A</cng:eligibilityMessageType>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>STD</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>30001</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is upgrade eligible. Before upgrading your
+                                        phone, be sure to back it up to make it easier to transfer content to your new
+                                        phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>W</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>54</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>45.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>true</cng:combineMessageIndicator>
+                                    <cng:eligibilityMessageType>A</cng:eligibilityMessageType>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>IPH</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>32001</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>312</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>N4,N6,Z6,R1,L2,L6,Z2,Z9</cng:imeiType>
+                                    <cng:offerCategory>SP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>SP20DP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29013</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>326</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE24M50P</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>24.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29014</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>328</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE24M50PDP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>24.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>32000</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>310</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>N4,N6,Z6,R1,L2,L6,Z2,Z9</cng:imeiType>
+                                    <cng:offerCategory>SP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>SP20A</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29012</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>30</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>328</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE30M80PDP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>30.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29011</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>30</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>326</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE30M80P</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>30.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29100</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>300</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>E8,K0,K9,L3,L4,S3,S4,T1,T2,T3,T6,T7,V0,V1,V8,V9</cng:imeiType>
+                                    <cng:offerCategory>IP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>IP20A</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>899999</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is ineligible for a shared upgrade at this time
+                                        due to the line being upgrade eligible.
+                                    </cng:qualificationMessage>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>N</cng:eligibilityResult>
+                                    <cng:reasonCode>-124</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>SHR</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                            </cng:QualificationDetails>
+                            <cng:newAEUChecker>true</cng:newAEUChecker>
+                            <cng:crossUpgradeEligibility>FALSE</cng:crossUpgradeEligibility>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Max Inst Plans Allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>2</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>IP</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>SmartDevice non SmartPhone Max IP allowed
+                                </cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>2</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>SP</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Total Plans allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>10</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>TT</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Total Plans allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>10</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>NE</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:upgradePercentage>50</cng:upgradePercentage>
+                        </isp:UpgradeEligibility>
+                        <isp:MobileToAnyNumberDetails>
+                            <isp:isEffective>false</isp:isEffective>
+                            <isp:callListCount>0</isp:callListCount>
+                            <isp:isHistoryAvailable>false</isp:isHistoryAvailable>
+                            <isp:maxNumberOfCallList>0</isp:maxNumberOfCallList>
+                            <isp:minPricePlanRecurringCharge>0.0</isp:minPricePlanRecurringCharge>
+                        </isp:MobileToAnyNumberDetails>
+                        <isp:epcHSSId>HC3</isp:epcHSSId>
+                        <isp:billingAccountNumber>365015034644</isp:billingAccountNumber>
+                        <isp:BillingMarket>
+                            <cng:billingMarket>SAN</cng:billingMarket>
+                            <cng:billingSubMarket>TON</cng:billingSubMarket>
+                        </isp:BillingMarket>
+                        <isp:depositAmount>0</isp:depositAmount>
+                        <isp:longDistanceCarrier>5475</isp:longDistanceCarrier>
+                        <isp:productType>G</isp:productType>
+                        <isp:enablerDataUsageMonitorIndicator>true</isp:enablerDataUsageMonitorIndicator>
+                        <isp:crossUpgradeIndicator>FALSE</isp:crossUpgradeIndicator>
+                    </isp:Subscriber>
+                    <isp:Response>
+                        <cng:code>0</cng:code>
+                        <cng:description>Success</cng:description>
+                    </isp:Response>
+                </Subscriber>
+                <Subscriber>
+                    <isp:Subscriber>
+                        <isp:subscriberNumber>2102147249</isp:subscriberNumber>
+                        <isp:subscriptionID>T_SAN_TON_1505520978000100294602</isp:subscriptionID>
+                        <isp:SubscriberStatus>
+                            <cng:subscriberStatus>A</cng:subscriberStatus>
+                            <cng:statusReasonCode>CA</cng:statusReasonCode>
+                            <cng:statusDate>2017-09-15Z</cng:statusDate>
+                        </isp:SubscriberStatus>
+                        <isp:Contract>
+                            <isp:ContractTerm>
+                                <cng:startDate>2017-09-15Z</cng:startDate>
+                                <cng:term>24</cng:term>
+                                <cng:Commission>
+                                    <cng:dealer>
+                                        <cng:code>Z0066</cng:code>
+                                        <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                    </cng:dealer>
+                                    <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                                </cng:Commission>
+                            </isp:ContractTerm>
+                            <isp:commitmentReasonCode>EMR</isp:commitmentReasonCode>
+                            <isp:contractEndDate>2017-09-18Z</isp:contractEndDate>
+                            <isp:reasonCode>EMR</isp:reasonCode>
+                        </isp:Contract>
+                        <isp:ContactInformation>
+                            <isp:Name>
+                                <cng:firstName>TARGET</cng:firstName>
+                                <cng:lastName>PLS DONTTOUCH</cng:lastName>
+                            </isp:Name>
+                            <isp:PpuAddress>
+                                <cng:AddressLine1>8501 SPOTTED DEER ST</cng:AddressLine1>
+                                <cng:City>SAN ANTONIO</cng:City>
+                                <cng:State>TX</cng:State>
+                                <cng:Zip>
+                                    <cng:zipCode>78242</cng:zipCode>
+                                </cng:Zip>
+                            </isp:PpuAddress>
+                        </isp:ContactInformation>
+                        <isp:ServiceActivationDate>
+                            <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                        </isp:ServiceActivationDate>
+                        <isp:PricePlan>
+                            <cng:singleUserCode>SDDVRP</cng:singleUserCode>
+                            <cng:recurringCharge>0.0</cng:recurringCharge>
+                            <cng:description>MOBILE SHARE DEVICE</cng:description>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CHT</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Domestic LD</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TDOMES</cng:featureCode>
+                                    <cng:featureDescription>Toll Domestic</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TINTNL</cng:featureCode>
+                                    <cng:featureDescription>INTERNATIONAL LD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CRT</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Roam LD</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TDOMES</cng:featureCode>
+                                    <cng:featureDescription>Toll Domestic</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TINTNL</cng:featureCode>
+                                    <cng:featureDescription>INTERNATIONAL LD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>DB00O</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CDB</cng:featureCode>
+                                    <cng:featureDescription>AT&amp;T DirectBill</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>GSMUSAELA</cng:offeringCode>
+                                <cng:offeringDescription>GSM Coverage Area</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>ELACA</cng:featureCode>
+                                    <cng:featureDescription>FEATURE FOR ELA SOC (CALLING AREAS)</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>UNLMSGSO</cng:offeringCode>
+                                <cng:offeringDescription>MobileShareMessaging</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>DTCON1</cng:featureCode>
+                                    <cng:featureDescription>DATAOPTOUTCON</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>MMS</cng:featureCode>
+                                    <cng:featureDescription>Pict Video MSG</cng:featureDescription>
+                                    <cng:dataUsageCategory>MMS</cng:dataUsageCategory>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>SMSNOW</cng:featureCode>
+                                    <cng:featureDescription>Text/Instant Msgs</cng:featureDescription>
+                                    <cng:dataUsageCategory>SMS</cng:dataUsageCategory>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>SDDVRP</cng:offeringCode>
+                                <cng:offeringDescription>MOBILE SHARE DEVICE</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CFC</cng:featureCode>
+                                    <cng:featureDescription>NO ANSWER CALL FORWARD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CFI</cng:featureCode>
+                                    <cng:featureDescription>IMMEDIATE CALL FORWARD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CH</cng:featureCode>
+                                    <cng:featureDescription>Call Hold (G)</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CLI</cng:featureCode>
+                                    <cng:featureDescription>Caller ID</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CW</cng:featureCode>
+                                    <cng:featureDescription>Call Waiting</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>MPTY</cng:featureCode>
+                                    <cng:featureDescription>6 Way Calling</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>QD</cng:featureCode>
+                                    <cng:featureDescription>Direct Bill Detail</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>VMWI</cng:featureCode>
+                                    <cng:featureDescription>MESSAGE NOTIFICATION</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:RestrictedSubMarkets>
+                                <cng:code>ALL</cng:code>
+                            </cng:RestrictedSubMarkets>
+                        </isp:PricePlan>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>MSDGC02GB</cng:offeringCode>
+                            <cng:offeringType>G</cng:offeringType>
+                            <cng:offeringDescription>RETIRED MS Value 2GB</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>SDGGPR</cng:featureCode>
+                                <cng:featureDescription>NOPROVISIONINGDATA</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>40.0</cng:oneTimeCharge>
+                            <cng:offeringLevel>G</cng:offeringLevel>
+                            <cng:SharedDataGroup>
+                                <cng:GroupDetails>
+                                    <cng:GroupReference>
+                                        <cng:dataGroupId>G3778723</cng:dataGroupId>
+                                    </cng:GroupReference>
+                                </cng:GroupDetails>
+                            </cng:SharedDataGroup>
+                            <cng:sequenceNumber>205459671</cng:sequenceNumber>
+                            <cng:category>ROLLOVER;UPG_EQU_MRC_CALC;FBF_XXX_LMT_GPR;DEFSPLHNL;STREAM_SAVER;
+                            </cng:category>
+                            <cng:genAttribute>ROLLOVER;UPG_EQU_MRC_CALC;FBF_XXX_LMT_GPR;DEFSPLHNL;STREAM_SAVER;
+                            </cng:genAttribute>
+                            <cng:retiringGroupPricePlanId>1508SDS19</cng:retiringGroupPricePlanId>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>SDFVSL62</cng:offeringCode>
+                            <cng:offeringType>P</cng:offeringType>
+                            <cng:offeringDescription>MOBILESHAREVSL62VT</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GPRS</cng:featureCode>
+                                <cng:featureDescription>Data Access</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GVC1</cng:featureCode>
+                                <cng:featureDescription>Video Calling</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>INETV6</cng:featureCode>
+                                <cng:featureDescription>HOTSPOT APN Policy</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>LTETH</cng:featureCode>
+                                <cng:featureDescription>Mob Tethering</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>LMHS1</cng:featureCode>
+                                <cng:featureDescription>Hot Spot 1 to 1</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>LMHSM</cng:featureCode>
+                                <cng:featureDescription>Hot Spot 1 to Many</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DPTTOP</cng:featureCode>
+                                <cng:featureDescription>Push to Talk</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DVDSP</cng:featureCode>
+                                <cng:featureDescription>VOICE DISPATCHER</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APN002</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNA02</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNA04</cng:featureCode>
+                                <cng:featureDescription>BROADBAND ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNNG2</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNT02</cng:featureCode>
+                                <cng:featureDescription>Data Access</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>BMPRO</cng:featureCode>
+                                <cng:featureDescription>BALANCE MANAGER</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>HTBROD</cng:featureCode>
+                                <cng:featureDescription>HSS Provisioning</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>NOTILP</cng:featureCode>
+                                <cng:featureDescription>NOTIFY POLICY P</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>SPTP03</cng:featureCode>
+                                <cng:featureDescription>SPEED TIER HIGH</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>H988</cng:featureCode>
+                                <cng:featureDescription>Data feature for MMV</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>VVM1</cng:featureCode>
+                                <cng:featureDescription>Visual Voice Mail</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>40.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459672</cng:sequenceNumber>
+                            <cng:category>CCS</cng:category>
+                            <cng:genAttribute>RTP;UPG_EQU_MRC_CALC;TETHERING;SPEED_TIER;FBF_XXX_LMT_GPR;DISC_SDF246G;
+                            </cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>ENBUM</cng:offeringCode>
+                            <cng:offeringDescription>LTE USG Notify-Track</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>ENBUM</cng:featureCode>
+                                <cng:featureDescription>ENB USG Monitoring</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>0.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459681</cng:sequenceNumber>
+                            <cng:category>RESSOCREM;OK_RESTRICT;SKIP_SOC_MATCH;ENB_API_SOC;ENB_TRK_SOC;</cng:category>
+                            <cng:genAttribute>RESSOCREM;OK_RESTRICT;SKIP_SOC_MATCH;ENB_API_SOC;ENB_TRK_SOC;
+                            </cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>DSABR2</cng:offeringCode>
+                            <cng:offeringDescription>Stream Saver Med</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z6DY7</cng:code>
+                                    <cng:secondaryCode>Z6DY7</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z6DY7</cng:location>
+                                <cng:salesRepresentative>Z6DY7</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DSABR2</cng:featureCode>
+                                <cng:featureDescription>StreamSaver Med</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>0.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459702</cng:sequenceNumber>
+                            <cng:category>SOCCOMB;</cng:category>
+                            <cng:genAttribute>SOCCOMB;</cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:defaultAPN>PHONE</isp:defaultAPN>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>EMAIL</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>MAIL</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>PHONE</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>SMS</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:Commission>
+                            <cng:dealer>
+                                <cng:code>Z0066</cng:code>
+                            </cng:dealer>
+                            <cng:location>Z0066</cng:location>
+                            <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                        </isp:Commission>
+                        <isp:Discounts>
+                            <cng:action>Q</cng:action>
+                            <cng:code>MSV15</cng:code>
+                            <cng:instanceId>2983542</cng:instanceId>
+                            <cng:description>Mobile Share Value Savings</cng:description>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:DiscountAmount>
+                                <cng:percentageAmount>37.5</cng:percentageAmount>
+                            </cng:DiscountAmount>
+                        </isp:Discounts>
+                        <isp:deviceInformation>
+                            <isp:device>
+                                <cng:equipmentType>G</cng:equipmentType>
+                                <cng:technologyType>LTE</cng:technologyType>
+                                <cng:IMSI>311180000681894</cng:IMSI>
+                                <cng:IMEI>359722050000193</cng:IMEI>
+                                <cng:IMEIType>P6</cng:IMEIType>
+                                <cng:SIM>89011803270006818941</cng:SIM>
+                                <cng:Manufacturer>
+                                    <cng:make>SAMSUNG</cng:make>
+                                    <cng:model>SGH-i337</cng:model>
+                                </cng:Manufacturer>
+                                <cng:umtsCapability>true</cng:umtsCapability>
+                                <cng:nfcCapability>IU</cng:nfcCapability>
+                                <cng:pinUnblockingCode1>11111111</cng:pinUnblockingCode1>
+                                <cng:pinUnblockingCode2>22222222</cng:pinUnblockingCode2>
+                                <cng:effectiveDate>2017-09-15</cng:effectiveDate>
+                                <cng:lteType>6</cng:lteType>
+                                <cng:IMSIPublicId>311180000681894@one.att.net</cng:IMSIPublicId>
+                                <cng:smsCapabilityIndicator>true</cng:smsCapabilityIndicator>
+                                <cng:pcCardIndicator>false</cng:pcCardIndicator>
+                                <cng:uiccCode>B</cng:uiccCode>
+                                <cng:uiccKeys>
+                                    <cng:publicKey>2102147249@one.att.net</cng:publicKey>
+                                    <cng:privateKey>311180000681894@private.att.net</cng:privateKey>
+                                </cng:uiccKeys>
+                                <cng:certificationStatus>true</cng:certificationStatus>
+                            </isp:device>
+                        </isp:deviceInformation>
+                        <isp:subscriberIndicators>
+                            <cng:gaitFeatureIndicator>false</cng:gaitFeatureIndicator>
+                            <cng:profitability>0</cng:profitability>
+                            <cng:churn>0</cng:churn>
+                            <cng:cseRatePlan>false</cng:cseRatePlan>
+                            <cng:pttFeature>false</cng:pttFeature>
+                            <cng:vmPlatformType>A</cng:vmPlatformType>
+                            <cng:portabilityIndicator>true</cng:portabilityIndicator>
+                            <cng:pendingEquipmentUpgrade>false</cng:pendingEquipmentUpgrade>
+                            <cng:smsFeatureIndicator>true</cng:smsFeatureIndicator>
+                        </isp:subscriberIndicators>
+                        <isp:voiceMailId>SAAV</isp:voiceMailId>
+                        <isp:hlrId>DUM</isp:hlrId>
+                        <isp:UpgradeEligibility>
+                            <cng:eligibilityStatus>A</cng:eligibilityStatus>
+                            <cng:eligibilityType>S</cng:eligibilityType>
+                            <cng:approvalNumber>0</cng:approvalNumber>
+                            <cng:QualificationDetails>
+                                <cng:allowedForSecuredOffers>false</cng:allowedForSecuredOffers>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>51</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is upgrade eligible. Before upgrading your
+                                        phone, be sure to back it up to make it easier to transfer content to your new
+                                        phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>222</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>45.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>true</cng:combineMessageIndicator>
+                                    <cng:eligibilityMessageType>A</cng:eligibilityMessageType>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>STD</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>30001</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is upgrade eligible. Before upgrading your
+                                        phone, be sure to back it up to make it easier to transfer content to your new
+                                        phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>W</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>222</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>45.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>true</cng:combineMessageIndicator>
+                                    <cng:eligibilityMessageType>A</cng:eligibilityMessageType>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>IPH</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>32001</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>312</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>N4,N6,Z6,R1,L2,L6,Z2,Z9</cng:imeiType>
+                                    <cng:offerCategory>SP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>SP20DP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29013</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>326</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE24M50P</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>24.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29014</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>328</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE24M50PDP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>24.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>32000</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>310</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>N4,N6,Z6,R1,L2,L6,Z2,Z9</cng:imeiType>
+                                    <cng:offerCategory>SP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>SP20A</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29012</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>30</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>328</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE30M80PDP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>30.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29011</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>30</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>326</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE30M80P</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>30.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29100</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>300</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>E8,K0,K9,L3,L4,S3,S4,T1,T2,T3,T6,T7,V0,V1,V8,V9</cng:imeiType>
+                                    <cng:offerCategory>IP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>IP20A</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>899999</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is ineligible for a shared upgrade at this time
+                                        due to the line being upgrade eligible.
+                                    </cng:qualificationMessage>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>N</cng:eligibilityResult>
+                                    <cng:reasonCode>-124</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>SHR</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                            </cng:QualificationDetails>
+                            <cng:newAEUChecker>true</cng:newAEUChecker>
+                            <cng:crossUpgradeEligibility>FALSE</cng:crossUpgradeEligibility>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Max Inst Plans Allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>2</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>IP</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>SmartDevice non SmartPhone Max IP allowed
+                                </cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>2</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>SP</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Total Plans allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>10</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>TT</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Total Plans allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>10</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>NE</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:upgradePercentage>50</cng:upgradePercentage>
+                        </isp:UpgradeEligibility>
+                        <isp:MobileToAnyNumberDetails>
+                            <isp:isEffective>false</isp:isEffective>
+                            <isp:callListCount>0</isp:callListCount>
+                            <isp:isHistoryAvailable>false</isp:isHistoryAvailable>
+                            <isp:maxNumberOfCallList>0</isp:maxNumberOfCallList>
+                            <isp:minPricePlanRecurringCharge>0.0</isp:minPricePlanRecurringCharge>
+                        </isp:MobileToAnyNumberDetails>
+                        <isp:epcHSSId>HC3</isp:epcHSSId>
+                        <isp:sharedDataGroupIndicator>S</isp:sharedDataGroupIndicator>
+                        <isp:billingAccountNumber>365015034644</isp:billingAccountNumber>
+                        <isp:BillingMarket>
+                            <cng:billingMarket>SAN</cng:billingMarket>
+                            <cng:billingSubMarket>TON</cng:billingSubMarket>
+                        </isp:BillingMarket>
+                        <isp:depositAmount>0</isp:depositAmount>
+                        <isp:longDistanceCarrier>5475</isp:longDistanceCarrier>
+                        <isp:productType>G</isp:productType>
+                        <isp:enablerDataUsageMonitorIndicator>true</isp:enablerDataUsageMonitorIndicator>
+                        <isp:crossUpgradeIndicator>FALSE</isp:crossUpgradeIndicator>
+                    </isp:Subscriber>
+                    <isp:Response>
+                        <cng:code>0</cng:code>
+                        <cng:description>Success</cng:description>
+                    </isp:Response>
+                </Subscriber>
+                <Subscriber>
+                    <isp:Subscriber>
+                        <isp:subscriberNumber>2102147248</isp:subscriberNumber>
+                        <isp:subscriptionID>T_SAN_TON_1505520860000100294594</isp:subscriptionID>
+                        <isp:SubscriberStatus>
+                            <cng:subscriberStatus>A</cng:subscriberStatus>
+                            <cng:statusReasonCode>CA</cng:statusReasonCode>
+                            <cng:statusDate>2017-09-15Z</cng:statusDate>
+                        </isp:SubscriberStatus>
+                        <isp:Contract>
+                            <isp:ContractTerm>
+                                <cng:startDate>2017-09-15Z</cng:startDate>
+                                <cng:term>24</cng:term>
+                                <cng:Commission>
+                                    <cng:dealer>
+                                        <cng:code>Z0066</cng:code>
+                                        <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                    </cng:dealer>
+                                    <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                                </cng:Commission>
+                            </isp:ContractTerm>
+                            <isp:commitmentReasonCode>EMR</isp:commitmentReasonCode>
+                            <isp:contractEndDate>2017-09-18Z</isp:contractEndDate>
+                            <isp:reasonCode>EMR</isp:reasonCode>
+                        </isp:Contract>
+                        <isp:ContactInformation>
+                            <isp:Name>
+                                <cng:firstName>TARGET</cng:firstName>
+                                <cng:lastName>PLS DONTTOUCH</cng:lastName>
+                            </isp:Name>
+                            <isp:PpuAddress>
+                                <cng:AddressLine1>8501 SPOTTED DEER ST</cng:AddressLine1>
+                                <cng:City>SAN ANTONIO</cng:City>
+                                <cng:State>TX</cng:State>
+                                <cng:Zip>
+                                    <cng:zipCode>78242</cng:zipCode>
+                                </cng:Zip>
+                            </isp:PpuAddress>
+                        </isp:ContactInformation>
+                        <isp:ServiceActivationDate>
+                            <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                        </isp:ServiceActivationDate>
+                        <isp:PricePlan>
+                            <cng:singleUserCode>SDDVRP</cng:singleUserCode>
+                            <cng:recurringCharge>0.0</cng:recurringCharge>
+                            <cng:description>MOBILE SHARE DEVICE</cng:description>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CHT</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Domestic LD</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TDOMES</cng:featureCode>
+                                    <cng:featureDescription>Toll Domestic</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TINTNL</cng:featureCode>
+                                    <cng:featureDescription>INTERNATIONAL LD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>CRT</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Roam LD</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TDOMES</cng:featureCode>
+                                    <cng:featureDescription>Toll Domestic</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>TINTNL</cng:featureCode>
+                                    <cng:featureDescription>INTERNATIONAL LD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>DB00O</cng:offeringCode>
+                                <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CDB</cng:featureCode>
+                                    <cng:featureDescription>AT&amp;T DirectBill</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>GSMUSAELA</cng:offeringCode>
+                                <cng:offeringDescription>GSM Coverage Area</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>ELACA</cng:featureCode>
+                                    <cng:featureDescription>FEATURE FOR ELA SOC (CALLING AREAS)</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>UNLMSGSO</cng:offeringCode>
+                                <cng:offeringDescription>MobileShareMessaging</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>DTCON1</cng:featureCode>
+                                    <cng:featureDescription>DATAOPTOUTCON</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>MMS</cng:featureCode>
+                                    <cng:featureDescription>Pict Video MSG</cng:featureDescription>
+                                    <cng:dataUsageCategory>MMS</cng:dataUsageCategory>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>SMSNOW</cng:featureCode>
+                                    <cng:featureDescription>Text/Instant Msgs</cng:featureDescription>
+                                    <cng:dataUsageCategory>SMS</cng:dataUsageCategory>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:OfferingsBundled>
+                                <cng:action>Q</cng:action>
+                                <cng:offeringCode>SDDVRP</cng:offeringCode>
+                                <cng:offeringDescription>MOBILE SHARE DEVICE</cng:offeringDescription>
+                                <cng:EffectiveDates>
+                                    <cng:startDate>2017-09-15</cng:startDate>
+                                    <cng:endDate>2017-09-18</cng:endDate>
+                                </cng:EffectiveDates>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CFC</cng:featureCode>
+                                    <cng:featureDescription>NO ANSWER CALL FORWARD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CFI</cng:featureCode>
+                                    <cng:featureDescription>IMMEDIATE CALL FORWARD</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CH</cng:featureCode>
+                                    <cng:featureDescription>Call Hold (G)</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CLI</cng:featureCode>
+                                    <cng:featureDescription>Caller ID</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>CW</cng:featureCode>
+                                    <cng:featureDescription>Call Waiting</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>MPTY</cng:featureCode>
+                                    <cng:featureDescription>6 Way Calling</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>QD</cng:featureCode>
+                                    <cng:featureDescription>Direct Bill Detail</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                                <cng:OfferingFeatures>
+                                    <cng:featureCode>VMWI</cng:featureCode>
+                                    <cng:featureDescription>MESSAGE NOTIFICATION</cng:featureDescription>
+                                </cng:OfferingFeatures>
+                            </cng:OfferingsBundled>
+                            <cng:RestrictedSubMarkets>
+                                <cng:code>ALL</cng:code>
+                            </cng:RestrictedSubMarkets>
+                        </isp:PricePlan>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>SDFVSL62</cng:offeringCode>
+                            <cng:offeringType>P</cng:offeringType>
+                            <cng:offeringDescription>MOBILESHAREVSL62VT</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GPRS</cng:featureCode>
+                                <cng:featureDescription>Data Access</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GVC1</cng:featureCode>
+                                <cng:featureDescription>Video Calling</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>INETV6</cng:featureCode>
+                                <cng:featureDescription>HOTSPOT APN Policy</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>LTETH</cng:featureCode>
+                                <cng:featureDescription>Mob Tethering</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>LMHS1</cng:featureCode>
+                                <cng:featureDescription>Hot Spot 1 to 1</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>LMHSM</cng:featureCode>
+                                <cng:featureDescription>Hot Spot 1 to Many</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DPTTOP</cng:featureCode>
+                                <cng:featureDescription>Push to Talk</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DVDSP</cng:featureCode>
+                                <cng:featureDescription>VOICE DISPATCHER</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APN002</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNA02</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNA04</cng:featureCode>
+                                <cng:featureDescription>BROADBAND ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNNG2</cng:featureCode>
+                                <cng:featureDescription>DATA ACCESS</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>APNT02</cng:featureCode>
+                                <cng:featureDescription>Data Access</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>BMPRO</cng:featureCode>
+                                <cng:featureDescription>BALANCE MANAGER</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>HTBROD</cng:featureCode>
+                                <cng:featureDescription>HSS Provisioning</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>NOTILP</cng:featureCode>
+                                <cng:featureDescription>NOTIFY POLICY P</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>SPTP03</cng:featureCode>
+                                <cng:featureDescription>SPEED TIER HIGH</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>H988</cng:featureCode>
+                                <cng:featureDescription>Data feature for MMV</cng:featureDescription>
+                                <cng:dataUsageCategory>GPRS</cng:dataUsageCategory>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>VVM1</cng:featureCode>
+                                <cng:featureDescription>Visual Voice Mail</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>40.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459523</cng:sequenceNumber>
+                            <cng:category>CCS</cng:category>
+                            <cng:genAttribute>RTP;UPG_EQU_MRC_CALC;TETHERING;SPEED_TIER;FBF_XXX_LMT_GPR;DISC_SDF246G;
+                            </cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>ENBUM</cng:offeringCode>
+                            <cng:offeringDescription>LTE USG Notify-Track</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>ENBUM</cng:featureCode>
+                                <cng:featureDescription>ENB USG Monitoring</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>0.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459532</cng:sequenceNumber>
+                            <cng:category>RESSOCREM;OK_RESTRICT;SKIP_SOC_MATCH;ENB_API_SOC;ENB_TRK_SOC;</cng:category>
+                            <cng:genAttribute>RESSOCREM;OK_RESTRICT;SKIP_SOC_MATCH;ENB_API_SOC;ENB_TRK_SOC;
+                            </cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>MSDGC02GB</cng:offeringCode>
+                            <cng:offeringType>G</cng:offeringType>
+                            <cng:offeringDescription>RETIRED MS Value 2GB</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>SDGGPR</cng:featureCode>
+                                <cng:featureDescription>NOPROVISIONINGDATA</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>GNRD</cng:featureCode>
+                                <cng:featureDescription>General Data</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>40.0</cng:oneTimeCharge>
+                            <cng:offeringLevel>G</cng:offeringLevel>
+                            <cng:SharedDataGroup>
+                                <cng:GroupDetails>
+                                    <cng:GroupReference>
+                                        <cng:dataGroupId>G3778723</cng:dataGroupId>
+                                    </cng:GroupReference>
+                                </cng:GroupDetails>
+                            </cng:SharedDataGroup>
+                            <cng:sequenceNumber>205459533</cng:sequenceNumber>
+                            <cng:category>ROLLOVER;UPG_EQU_MRC_CALC;FBF_XXX_LMT_GPR;DEFSPLHNL;STREAM_SAVER;
+                            </cng:category>
+                            <cng:genAttribute>ROLLOVER;UPG_EQU_MRC_CALC;FBF_XXX_LMT_GPR;DEFSPLHNL;STREAM_SAVER;
+                            </cng:genAttribute>
+                            <cng:retiringGroupPricePlanId>1508SDS19</cng:retiringGroupPricePlanId>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>SDTRACK</cng:offeringCode>
+                            <cng:offeringType>P</cng:offeringType>
+                            <cng:offeringDescription>MOBILESHAREPRIMTRACK</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z0066</cng:code>
+                                    <cng:secondaryCode>Z0066</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z0066</cng:location>
+                                <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>0.0</cng:oneTimeCharge>
+                            <cng:offeringLevel>G</cng:offeringLevel>
+                            <cng:primarySharedDataPlanIndicator>true</cng:primarySharedDataPlanIndicator>
+                            <cng:SharedDataGroup>
+                                <cng:GroupDetails>
+                                    <cng:GroupReference>
+                                        <cng:dataGroupId>G3778723</cng:dataGroupId>
+                                    </cng:GroupReference>
+                                </cng:GroupDetails>
+                            </cng:SharedDataGroup>
+                            <cng:sequenceNumber>205459534</cng:sequenceNumber>
+                            <cng:category>TITAN_ELIGIBLE;RTP;</cng:category>
+                            <cng:genAttribute>TITAN_ELIGIBLE;RTP;</cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:AdditionalOfferings>
+                            <cng:action>Q</cng:action>
+                            <cng:offeringCode>DSABR2</cng:offeringCode>
+                            <cng:offeringDescription>Stream Saver Med</cng:offeringDescription>
+                            <cng:Commission>
+                                <cng:dealer>
+                                    <cng:code>Z6DY7</cng:code>
+                                    <cng:secondaryCode>Z6DY7</cng:secondaryCode>
+                                </cng:dealer>
+                                <cng:location>Z6DY7</cng:location>
+                                <cng:salesRepresentative>Z6DY7</cng:salesRepresentative>
+                            </cng:Commission>
+                            <cng:OfferingFeatures>
+                                <cng:featureCode>DSABR2</cng:featureCode>
+                                <cng:featureDescription>StreamSaver Med</cng:featureDescription>
+                            </cng:OfferingFeatures>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:oneTimeCharge>0.0</cng:oneTimeCharge>
+                            <cng:sequenceNumber>205459590</cng:sequenceNumber>
+                            <cng:category>SOCCOMB;</cng:category>
+                            <cng:genAttribute>SOCCOMB;</cng:genAttribute>
+                        </isp:AdditionalOfferings>
+                        <isp:defaultAPN>PHONE</isp:defaultAPN>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>EMAIL</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>MAIL</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>PHONE</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:SolicitationIndicators>
+                            <cng:solicitationMedium>SMS</cng:solicitationMedium>
+                            <cng:enabled>false</cng:enabled>
+                        </isp:SolicitationIndicators>
+                        <isp:Commission>
+                            <cng:dealer>
+                                <cng:code>Z0066</cng:code>
+                            </cng:dealer>
+                            <cng:location>Z0066</cng:location>
+                            <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                        </isp:Commission>
+                        <isp:Discounts>
+                            <cng:action>Q</cng:action>
+                            <cng:code>MSV15</cng:code>
+                            <cng:instanceId>2983537</cng:instanceId>
+                            <cng:description>Mobile Share Value Savings</cng:description>
+                            <cng:EffectiveDates>
+                                <cng:effectiveDate>2017-09-15Z</cng:effectiveDate>
+                            </cng:EffectiveDates>
+                            <cng:DiscountAmount>
+                                <cng:percentageAmount>37.5</cng:percentageAmount>
+                            </cng:DiscountAmount>
+                        </isp:Discounts>
+                        <isp:deviceInformation>
+                            <isp:device>
+                                <cng:equipmentType>G</cng:equipmentType>
+                                <cng:technologyType>LTE</cng:technologyType>
+                                <cng:IMSI>311180000680967</cng:IMSI>
+                                <cng:IMEI>359722050000117</cng:IMEI>
+                                <cng:IMEIType>P6</cng:IMEIType>
+                                <cng:SIM>89011803270006809676</cng:SIM>
+                                <cng:Manufacturer>
+                                    <cng:make>SAMSUNG</cng:make>
+                                    <cng:model>SGH-i337</cng:model>
+                                </cng:Manufacturer>
+                                <cng:umtsCapability>true</cng:umtsCapability>
+                                <cng:nfcCapability>IU</cng:nfcCapability>
+                                <cng:pinUnblockingCode1>11111111</cng:pinUnblockingCode1>
+                                <cng:pinUnblockingCode2>22222222</cng:pinUnblockingCode2>
+                                <cng:effectiveDate>2017-09-15</cng:effectiveDate>
+                                <cng:lteType>6</cng:lteType>
+                                <cng:IMSIPublicId>311180000680967@one.att.net</cng:IMSIPublicId>
+                                <cng:smsCapabilityIndicator>true</cng:smsCapabilityIndicator>
+                                <cng:pcCardIndicator>false</cng:pcCardIndicator>
+                                <cng:uiccCode>B</cng:uiccCode>
+                                <cng:uiccKeys>
+                                    <cng:publicKey>2102147248@one.att.net</cng:publicKey>
+                                    <cng:privateKey>311180000680967@private.att.net</cng:privateKey>
+                                </cng:uiccKeys>
+                                <cng:certificationStatus>true</cng:certificationStatus>
+                            </isp:device>
+                        </isp:deviceInformation>
+                        <isp:subscriberIndicators>
+                            <cng:gaitFeatureIndicator>false</cng:gaitFeatureIndicator>
+                            <cng:profitability>0</cng:profitability>
+                            <cng:churn>0</cng:churn>
+                            <cng:cseRatePlan>false</cng:cseRatePlan>
+                            <cng:pttFeature>false</cng:pttFeature>
+                            <cng:vmPlatformType>A</cng:vmPlatformType>
+                            <cng:portabilityIndicator>true</cng:portabilityIndicator>
+                            <cng:pendingEquipmentUpgrade>false</cng:pendingEquipmentUpgrade>
+                            <cng:smsFeatureIndicator>true</cng:smsFeatureIndicator>
+                        </isp:subscriberIndicators>
+                        <isp:voiceMailId>SAAV</isp:voiceMailId>
+                        <isp:hlrId>DUM</isp:hlrId>
+                        <isp:UpgradeEligibility>
+                            <cng:eligibilityStatus>A</cng:eligibilityStatus>
+                            <cng:eligibilityType>S</cng:eligibilityType>
+                            <cng:approvalNumber>0</cng:approvalNumber>
+                            <cng:QualificationDetails>
+                                <cng:allowedForSecuredOffers>false</cng:allowedForSecuredOffers>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>53</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is upgrade eligible. Before upgrading your
+                                        phone, be sure to back it up to make it easier to transfer content to your new
+                                        phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>222</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>45.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>true</cng:combineMessageIndicator>
+                                    <cng:eligibilityMessageType>A</cng:eligibilityMessageType>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>STD</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>30001</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is upgrade eligible. Before upgrading your
+                                        phone, be sure to back it up to make it easier to transfer content to your new
+                                        phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>W</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>222</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>45.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>true</cng:combineMessageIndicator>
+                                    <cng:eligibilityMessageType>A</cng:eligibilityMessageType>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>IPH</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>32001</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>312</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>N4,N6,Z6,R1,L2,L6,Z2,Z9</cng:imeiType>
+                                    <cng:offerCategory>SP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>SP20DP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29013</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>326</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE24M50P</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>24.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29014</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>24</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>328</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE24M50PDP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>24.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>32000</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>310</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>N4,N6,Z6,R1,L2,L6,Z2,Z9</cng:imeiType>
+                                    <cng:offerCategory>SP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>SP20A</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29012</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>30</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>328</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE30M80PDP</cng:planIdentifier>
+                                    <cng:downPaymentPercent>30</cng:downPaymentPercent>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>30.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29011</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>30</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>326</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>
+                                        B3,B4,B6,B8,J0,J1,J2,J3,J4,J5,J6,J7,J8,J9,K3,K4,K5,K6,P3,P6,P7,P8,P9,V3,V4,V5,V6
+                                    </cng:imeiType>
+                                    <cng:offerCategory>NE</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>NE30M80P</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>30.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>29100</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is eligible for an AT&amp;T Next upgrade. Before
+                                        upgrading your phone, be sure to back it up to make it easier to transfer
+                                        content to your new phone. Go to Settings on your phone to learn how.
+                                    </cng:qualificationMessage>
+                                    <cng:minimumCommitment>20</cng:minimumCommitment>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>Y</cng:eligibilityResult>
+                                    <cng:reasonCode>300</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:upgradeFee>25.0</cng:upgradeFee>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:imeiType>E8,K0,K9,L3,L4,S3,S4,T1,T2,T3,T6,T7,V0,V1,V8,V9</cng:imeiType>
+                                    <cng:offerCategory>IP</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:planIdentifier>IP20A</cng:planIdentifier>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>20.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                                <cng:BaseOfferQualificationDetails>
+                                    <cng:qualificationLevel>899999</cng:qualificationLevel>
+                                    <cng:qualificationType>B</cng:qualificationType>
+                                    <cng:discountAmount>0.0</cng:discountAmount>
+                                    <cng:waiveUpgradeFee>false</cng:waiveUpgradeFee>
+                                    <cng:qualificationMessage>This line is ineligible for a shared upgrade at this time
+                                        due to the line being upgrade eligible.
+                                    </cng:qualificationMessage>
+                                    <cng:policyCategory>C</cng:policyCategory>
+                                    <cng:deviceType>N</cng:deviceType>
+                                    <cng:discountUOM>A</cng:discountUOM>
+                                    <cng:priceList>C</cng:priceList>
+                                    <cng:eligibilityResult>N</cng:eligibilityResult>
+                                    <cng:reasonCode>-124</cng:reasonCode>
+                                    <cng:upgradeFeeCollectionIndicator>N</cng:upgradeFeeCollectionIndicator>
+                                    <cng:combineMessageIndicator>false</cng:combineMessageIndicator>
+                                    <cng:deviceRequiredIndicator>false</cng:deviceRequiredIndicator>
+                                    <cng:offerCategory>SHR</cng:offerCategory>
+                                    <cng:offerType>UPG</cng:offerType>
+                                    <cng:exceptionUpgradeApproval>U</cng:exceptionUpgradeApproval>
+                                    <cng:minimumFinanceAmount>0.0</cng:minimumFinanceAmount>
+                                </cng:BaseOfferQualificationDetails>
+                            </cng:QualificationDetails>
+                            <cng:newAEUChecker>true</cng:newAEUChecker>
+                            <cng:crossUpgradeEligibility>FALSE</cng:crossUpgradeEligibility>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Max Inst Plans Allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>2</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>IP</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>SmartDevice non SmartPhone Max IP allowed
+                                </cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>2</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>SP</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Total Plans allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>10</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>TT</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:PlanDetails>
+                                <cng:counterTypeDescription>Total Plans allowed</cng:counterTypeDescription>
+                                <cng:referenceMaximumAllowedCountForPlan>10</cng:referenceMaximumAllowedCountForPlan>
+                                <cng:counterType>NE</cng:counterType>
+                                <cng:counterEligibilityIndicator>true</cng:counterEligibilityIndicator>
+                            </cng:PlanDetails>
+                            <cng:upgradePercentage>50</cng:upgradePercentage>
+                        </isp:UpgradeEligibility>
+                        <isp:MobileToAnyNumberDetails>
+                            <isp:isEffective>false</isp:isEffective>
+                            <isp:callListCount>0</isp:callListCount>
+                            <isp:isHistoryAvailable>false</isp:isHistoryAvailable>
+                            <isp:maxNumberOfCallList>0</isp:maxNumberOfCallList>
+                            <isp:minPricePlanRecurringCharge>0.0</isp:minPricePlanRecurringCharge>
+                        </isp:MobileToAnyNumberDetails>
+                        <isp:epcHSSId>HC3</isp:epcHSSId>
+                        <isp:sharedDataGroupIndicator>P</isp:sharedDataGroupIndicator>
+                        <isp:billingAccountNumber>365015034644</isp:billingAccountNumber>
+                        <isp:BillingMarket>
+                            <cng:billingMarket>SAN</cng:billingMarket>
+                            <cng:billingSubMarket>TON</cng:billingSubMarket>
+                        </isp:BillingMarket>
+                        <isp:depositAmount>0</isp:depositAmount>
+                        <isp:longDistanceCarrier>5475</isp:longDistanceCarrier>
+                        <isp:productType>G</isp:productType>
+                        <isp:enablerDataUsageMonitorIndicator>true</isp:enablerDataUsageMonitorIndicator>
+                        <isp:crossUpgradeIndicator>FALSE</isp:crossUpgradeIndicator>
+                    </isp:Subscriber>
+                    <isp:Response>
+                        <cng:code>0</cng:code>
+                        <cng:description>Success</cng:description>
+                    </isp:Response>
+                </Subscriber>
+                <Commission>
+                    <cng:dealer>
+                        <cng:code>Z0066</cng:code>
+                    </cng:dealer>
+                    <cng:location>Z0066</cng:location>
+                    <cng:salesRepresentative>Z0066</cng:salesRepresentative>
+                </Commission>
+                <coPayEnrolleesExistInd>false</coPayEnrolleesExistInd>
+                <coPayActiveEnrolleesExistInd>false</coPayActiveEnrolleesExistInd>
+                <totalNumberOfSubscribers>3</totalNumberOfSubscribers>
+                <sbsBundledComponentSubscribers>0</sbsBundledComponentSubscribers>
+            </Account>
+            <Response>
+                <cng:code>0</cng:code>
+                <cng:description>Success</cng:description>
+            </Response>
+        </InquireAccountProfileResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
