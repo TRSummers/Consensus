@@ -253,57 +253,6 @@ object CommonHeaders{
     "Referer" -> "https://poa-perf-scale.consensuscorpdev.com/retail/creditcheck/result.htm",
     "X-Requested-With" -> "XMLHttpRequest")
 
-  val AddaLine_headers_0 = Map(
-    "Accept" -> "application/json, text/javascript, */*; q=0.01",
-    "Accept-Encoding" -> "gzip, deflate, sdch, br",
-    "Accept-Language" -> "en-US,en;q=0.8",
-    "Connection" -> "keep-alive",
-    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36",
-    "X-Requested-With" -> "XMLHttpRequest")
-
-  val AddaLine_headers_2 = Map("User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
-
-  val AddaLine_headers_4 = Map(
-    "Accept" -> "text/css,*/*;q=0.1",
-    "Accept-Encoding" -> "gzip, deflate, sdch, br",
-    "Accept-Language" -> "en-US,en;q=0.8",
-    "Connection" -> "keep-alive",
-    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
-
-  val AddaLine_headers_6 = Map(
-    "Accept" -> "*/*",
-    "Accept-Encoding" -> "gzip, deflate, sdch, br",
-    "Accept-Language" -> "en-US,en;q=0.8",
-    "Connection" -> "keep-alive",
-    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
-
-  val AddaLine_headers_43 = Map(
-    "Accept" -> "*/*",
-    "Accept-Encoding" -> "gzip, deflate, sdch, br",
-    "Accept-Language" -> "en-US,en;q=0.8",
-    "Access-Control-Request-Headers" -> "content-type",
-    "Access-Control-Request-Method" -> "POST",
-    "Connection" -> "keep-alive",
-    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
-    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
-
-  val AddaLine_headers_45 = Map(
-    "Accept" -> "application/json, text/plain, */*",
-    "Accept-Encoding" -> "gzip, deflate, br",
-    "Accept-Language" -> "en-US,en;q=0.8",
-    "Connection" -> "keep-alive",
-    "Content-Type" -> "application/json;charset=UTF-8",
-    "Origin" -> "https://perf-scale-ui.consensuscorpdev.com",
-    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
-
-  val AddaLine_headers_47 = Map(
-    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Encoding" -> "gzip, deflate, sdch, br",
-    "Accept-Language" -> "en-US,en;q=0.8",
-    "Connection" -> "keep-alive",
-    "Upgrade-Insecure-Requests" -> "1",
-    "User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36")
-
   val status_call = Map(
     "Accept" -> "application/json, text/plain, */*",
     "Accept-Encoding" -> "gzip, deflate, br",
