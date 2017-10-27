@@ -2,3 +2,4 @@ gatling.log
 gatling.log.*
 results/*
 /.idea/
+/results/

@@ -1,29 +1,9 @@
-/*********************************************************
- * 
- *  
- * This simulation includes functionality for Verizon Add a Line and continues through the Your Cart page.
- * 
- * For this simulation to work, you need to use the following 
- * IMEI: YYZHOPEIMUNIQUE
- * Use phone number: 8122061972
- * 
- * 
- * Specifically, Steps are as follows:
- * 
- * Function Name denotes the required field in the Modularized Scenario
- * 
- *    Fucntion Name		Navigation
- *    =============		==========
- * 
- * 
- */
-
-
+import scala.io.Source
 import scala.concurrent.duration._
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
+import scala.util.Random
 
 object SprAALIDP {
 
@@ -268,7 +248,7 @@ object SprAALIDP {
 					.headers(headers_0)))
 	}
 
-	
+
 	val AccountLookup_Sprint = group("AccountLookupSprint") {
 		exec(http("request_100")
 			.post("/retail/eligibility/eligibility.htm")

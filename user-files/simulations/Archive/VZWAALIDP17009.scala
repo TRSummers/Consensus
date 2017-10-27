@@ -1,39 +1,9 @@
-/*********************************************
- * *******************************************
- * 
- * This simulation includes functionality for Verizon Add a Line and continues through the Your Cart page.
- * Specifically, Steps are as follows:
- * 
- * Function Name denotes the required field in the Modularized Scenario
- * 
- *    Fucntion Name		Navigation
- *    =============		==========
- * 1.	SelectVZW     	SelectVZW to SelectOption
- * 2. SelectOption		SelectOption to Scan
- * 3. ScantoPO				Scan to PO
- * 4. POtoCC					PO to Credit Check (Cartwheel disabled for this. If it's re-enabled, it will need to be included in the modularized scenario.
- * 5. CreditCheck 		CreditCheck to Credit Check Success (Credit check is legacy)
- * 6. CCtoIDP					Credit Check Success to IDP
- * 7. IDPtoYourCart		IDP to Your Cart
- * 
- * For this to work, use the Common library functions for the following:
- *  Login 
- *  PickYourPath
- *  Add a Line to Existing Account
- *  
- * For this to work, use the following Data:
- * 
- * Phone Number: 	2106278804
- * Last Name:			successSubmitCreditApplication
- * 
- * 
- ****************************************************/
-
+import scala.io.Source
 import scala.concurrent.duration._
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
+import scala.util.Random
 
 object VZWAALIDP17009 {
 
@@ -457,7 +427,7 @@ object VZWAALIDP17009 {
 			.get(uri_ui + "/assets/img/verizon.svg")
 			.headers(headers_5))
 	}
-	
+
 //		.pause(61)
 	val POtoCC=group("POtoCC"){
 		 exec(http("POtoCC_56")

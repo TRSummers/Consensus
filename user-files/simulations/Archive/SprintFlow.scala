@@ -1,9 +1,9 @@
-
+import scala.io.Source
 import scala.concurrent.duration._
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
+import scala.util.Random
 
 object SprintFlow{
 
@@ -742,7 +742,7 @@ object SprintFlow{
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1490218373146")
 			.headers(headers_75))
 	}
-	
+
 		// NP
 	val NumberPort=group("${carrier}_NumberPort"){
 		exec(http("NumberPort_76")
@@ -1468,7 +1468,7 @@ val chain_3 = exec(http("WirelessCustomerAgreement_220")
 		.exec(http("WirelessCustomerAgreement_279")
 			.get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1490218808063&storeId=0003")
 			.headers(headers_267))
-	}*/				
+	}*/
 //	val scn = scenario("SprintFlow").exec
 //chain_0, chain_1, chain_2, chain_3)
 

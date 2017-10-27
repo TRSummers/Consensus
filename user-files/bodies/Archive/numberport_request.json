@@ -1,0 +1,9 @@
+{
+  "phoneNumber": "${phoneNumber}",
+  "header": {
+    "serviceProvider": "${carrier}",
+    "callbackURL": "test.com",
+    "clientReferenceId": "orderId:2034376",
+    "clientOriginationId": "0003"
+  }
+}

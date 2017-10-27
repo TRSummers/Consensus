@@ -7,6 +7,6 @@ import scala.util.Random
 
 class VerizonUpgradeSim extends Simulation {
 
-  setUp(VerizonScenarios.Upgrade.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+  setUp(VerizonScenarios.Upgrade.inject(atOnceUsers(SimParams.VUG)).protocols(SimParams.httpProtocol))
 
 }

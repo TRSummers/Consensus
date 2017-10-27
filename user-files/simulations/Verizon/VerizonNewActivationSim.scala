@@ -7,6 +7,6 @@ import scala.util.Random
 
 class VerizonNewActivationSim extends Simulation {
 
-  setUp(VerizonScenarios.NewActivation.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+  setUp(VerizonScenarios.NewActivation.inject(atOnceUsers(SimParams.VNA)).protocols(SimParams.httpProtocol))
 
 }

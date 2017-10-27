@@ -7,6 +7,6 @@ import scala.util.Random
 
 class SprintUpgradeSim extends Simulation {
 
-  setUp(SprintScenarios.Upgrade.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+  setUp(SprintScenarios.Upgrade.inject(atOnceUsers(SimParams.SUG)).protocols(SimParams.httpProtocol))
 
 }
