@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "VERIZON_retrieveCustomerDetails",
+  "name": "VERIZON_custLookup",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
     "path": "/eai/eroes/VzwWSAdapter",
     "environment": "PERF",
-    "pname1": "/*[local-name()='VzwServices']/*[local-name()='ServiceHeader']/*[local-name()='serviceAction' and text()='retrieveCustomerDetails']"
+    "pname1": "//*[local-name()='ServiceBody']/*[local-name()='custLookup']"
   },
   "response": {
     "body": "${payload}",
@@ -24,7 +24,7 @@
   "expectation": {
     "description": "",
     "responder": "VERIZON",
-    "api": "retrieveCustomerDetails",
+    "api": "custLookup",
     "environment": "PERF"
   }
 }

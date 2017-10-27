@@ -1,14 +1,13 @@
 {
   "user": "GATLING",
-  "name": "VERIZON_submitCreditApplication",
+  "name": "VERIZON_submitCreditApplicationNew",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
     "path": "/eai/eroes/VzwWSAdapter",
     "environment": "PERF",
-    "pname1": "//*[local-name()='creditOrderDetails']/*[local-name()='customerType' and text()]",
-    "pvalue1": "'N'"
+    "pname1": "//*[local-name()='creditOrderDetails']/*[local-name()='customerType' and text()='N']"
   },
   "response": {
     "body": "${payload}",
@@ -25,7 +24,7 @@
   "expectation": {
     "description": "",
     "responder": "VERIZON",
-    "api": "submitCreditApplication",
+    "api": "submitCreditApplicationNew",
     "environment": "PERF"
   }
 }

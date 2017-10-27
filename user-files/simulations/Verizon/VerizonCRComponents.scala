@@ -14,13 +14,13 @@ object VerizonCRComponents {
   val expectation5 = "expectations/verizon/fedex-address-validation"
   val expectation6 = "expectations/verizon/generate-installment"
   val expectation7 = "expectations/verizon/retrieve-credit-application"
-  val expectation8 = "expectations/verizon/retrieve-customer-details"
-  val expectation9 = "expectations/verizon/retrieve-customer-details-upgrade"
-  val expectation11 = "expectations/verizon/retrieve-installment-contract-approval-status-2"
-  val expectation13 = "expectations/verizon/retrieve-installment-details-for-device-2"
+  val expectation9 = "expectations/verizon/retrieve-customer-details"
+  val expectation11 = "expectations/verizon/retrieve-installment-contract-approval-status"
+  val expectation12 = "expectations/verizon/retrieve-existing-customer-installment-details"
+  val expectation13 = "expectations/verizon/retrieve-installment-details-for-device"
   val expectation15 = "expectations/verizon/retrieve-mobile-usage"
   val expectation16 = "expectations/verizon/retrieve-npanxx"
-  val expectation18 = "expectations/verizon/retrieve-order-details-new"
+  val expectation18 = "expectations/verizon/retrieve-order-details"
   val expectation20 = "expectations/verizon/retrieve-price-plans-new"
   val expectation21 = "expectations/verizon/retrieve-prorate"
   val expectation22 = "expectations/verizon/save-installment-details"
@@ -46,9 +46,9 @@ object VerizonCRComponents {
     Map("expectationPath" -> expectation5, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation5 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation6, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation6 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation7, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation7 + "-payload.xml").mkString)),
-    Map("expectationPath" -> expectation8, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation8 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation9, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation9 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation11, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation11 + "-payload.xml").mkString)),
+    Map("expectationPath" -> expectation12, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation12 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation13, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation13 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation15, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation15 + "-payload.xml").mkString)),
     Map("expectationPath" -> expectation16, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation16 + "-payload.xml").mkString)),
