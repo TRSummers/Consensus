@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <MessageHeader xmlns:cng="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns="http://csi.cingular.com/CSI/Namespaces/Types/Public/MessageHeader.xsd">
+            <TrackingMessageHeader>
+                <cng:version>v116</cng:version>
+                <cng:originalVersion>v116</cng:originalVersion>
+                <cng:messageId>53629</cng:messageId>
+                <cng:originatorId>LETSTALK</cng:originatorId>
+                <cng:timeToLive>300000</cng:timeToLive>
+                <cng:conversationId>consensusTrgt~CNG-CSI~b052594a-920c-4108-8dfb-15b72bca7e84</cng:conversationId>
+                <cng:dateTimeStamp>2017-10-30T17:26:19Z</cng:dateTimeStamp>
+                <cng:uniqueTransactionId>ServiceGateway286925@q100csg106c3_67ff68e4-aab5-4dbb-955d-91e1e02331e2</cng:uniqueTransactionId>
+            </TrackingMessageHeader>
+            <SecurityMessageHeader>
+                <cng:userName>consensusTrgt</cng:userName>
+                <cng:userPassword>consensusTrgt0424</cng:userPassword>
+            </SecurityMessageHeader>
+            <SequenceMessageHeader>
+                <cng:sequenceNumber>1</cng:sequenceNumber>
+                <cng:totalInSequence>1</cng:totalInSequence>
+            </SequenceMessageHeader>
+        </MessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ReserveContractIdentifierResponse xmlns:cng="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns="http://csi.cingular.com/CSI/Namespaces/Container/Public/ReserveContractIdentifierResponse.xsd">
+            <installmentPlanId>360000000159550</installmentPlanId>
+            <Response>
+                <cng:code>0</cng:code>
+                <cng:description>Success</cng:description>
+            </Response>
+        </ReserveContractIdentifierResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

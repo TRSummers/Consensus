@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <ns2:MessageHeader xmlns="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns:ns2="http://csi.cingular.com/CSI/Namespaces/Types/Public/MessageHeader.xsd">
+            <ns2:TrackingMessageHeader>
+                <version>v116</version>
+                <messageId>53629</messageId>
+                <originatorId>LETSTALK</originatorId>
+                <timeToLive>300000</timeToLive>
+                <conversationId>consensusTrgt~CNG-CSI~b052594a-920c-4108-8dfb-15b72bca7e84</conversationId>
+                <dateTimeStamp>2017-10-30T17:31:09Z</dateTimeStamp>
+                <uniqueTransactionId>ServiceGateway286925@q100csg106c3_1d4eb179-a34d-4762-bb3f-43bdeea9ce79</uniqueTransactionId>
+            </ns2:TrackingMessageHeader>
+            <ns2:SecurityMessageHeader>
+                <userName>consensusTrgt</userName>
+                <userPassword>consensusTrgt0424</userPassword>
+            </ns2:SecurityMessageHeader>
+            <ns2:SequenceMessageHeader>
+                <sequenceNumber>1</sequenceNumber>
+                <totalInSequence>1</totalInSequence>
+            </ns2:SequenceMessageHeader>
+        </ns2:MessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <InquireDeviceDetailsResponse xmlns:cng="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireDeviceDetailsResponse.xsd">
+            <Device>
+                <ATTShippedDeviceDetails>
+                    <transactionStatus>NODATA</transactionStatus>
+                </ATTShippedDeviceDetails>
+            </Device>
+            <Response>
+                <cng:code>0</cng:code>
+                <cng:description>Success</cng:description>
+            </Response>
+        </InquireDeviceDetailsResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,2173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <MessageHeader xmlns:cng="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns="http://csi.cingular.com/CSI/Namespaces/Types/Public/MessageHeader.xsd">
+            <TrackingMessageHeader>
+                <cng:version>v116</cng:version>
+                <cng:originalVersion>v116</cng:originalVersion>
+                <cng:messageId>S2228</cng:messageId>
+                <cng:originatorId>LETSTALK</cng:originatorId>
+                <cng:timeToLive>300000</cng:timeToLive>
+                <cng:conversationId>consensusTrgt~CNG-CSI~b052594a-920c-4108-8dfb-15b72bca7e84</cng:conversationId>
+                <cng:dateTimeStamp>2017-10-30T17:22:03Z</cng:dateTimeStamp>
+                <cng:uniqueTransactionId>ServiceGateway286925@q100csg106c3_a54b733a-1312-4ba0-a3bc-0d4ab4ba9176</cng:uniqueTransactionId>
+            </TrackingMessageHeader>
+            <SecurityMessageHeader>
+                <cng:userName>consensusTrgt</cng:userName>
+                <cng:userPassword>consensusTrgt0424</cng:userPassword>
+            </SecurityMessageHeader>
+            <SequenceMessageHeader>
+                <cng:sequenceNumber>1</cng:sequenceNumber>
+                <cng:totalInSequence>1</cng:totalInSequence>
+            </SequenceMessageHeader>
+        </MessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <InquirePricePlansResponse xmlns:cng="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquirePricePlansResponse.xsd">
+            <PricePlans>
+                <planCode>SEN260</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>Nation 200 Anytime &amp; 500 Night/Weekend &amp; Unlimited Mobile-To-Mobile Minutes </cng:planName>
+                    <cng:planDescription>Senior Nation 200</cng:planDescription>
+                    <cng:recurringCharge>29.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <coverageArea>N</coverageArea>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>1</cng:id>
+                    <cng:name>Anytime Minutes</cng:name>
+                    <cng:value>200</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>500</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>GSMUSAELA</cng:offeringCode>
+                    <cng:offeringName>GSM Coverage Area</cng:offeringName>
+                    <cng:offeringDescription>GSM Coverage Area</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CRT</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Roam LD</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Roam LD</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>AM200</cng:offeringCode>
+                    <cng:offeringName>200 Anytime</cng:offeringName>
+                    <cng:offeringDescription>200 Anytime</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MME0</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CHT</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Domestic LD</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Domestic LD</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>500NW96O</cng:offeringCode>
+                    <cng:offeringName>500 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>500 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>ELIG_TYPE;VM:BASIC;BVM;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>NWC450</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>NATION W/CANADA  450 RATE PLAN </cng:planName>
+                    <cng:planDescription>AT&amp;T Nation with Canada 450 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>59.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>450</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILCANHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_LD_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_LD_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRCANRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM450</cng:offeringCode>
+                    <cng:offeringName>450 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>450 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>NWC450O</cng:offeringCode>
+                    <cng:offeringName>CANADA</cng:offeringName>
+                    <cng:offeringDescription>CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAN1MB2</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Canada</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Canada</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANDUM</cng:offeringCode>
+                    <cng:offeringName>NO_DUP_CANADA</cng:offeringName>
+                    <cng:offeringDescription>NO_DUP_CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CA59GSMU</cng:offeringCode>
+                    <cng:offeringName>CAN_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>CAN_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS450;ELIG_TYPE;NATIONCANADA;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>MEX2000</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>AT&amp;T Viva Mexico 2000 with Rollover</cng:planName>
+                    <cng:planDescription>AT&amp;T Viva Mexico 2000 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>114.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>2000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM2000</cng:offeringCode>
+                    <cng:offeringName>2000 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>2000 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEX2000O</cng:offeringCode>
+                    <cng:offeringName>MEXICO</cng:offeringName>
+                    <cng:offeringDescription>MEXICO</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX59GSMU</cng:offeringCode>
+                    <cng:offeringName>MEX_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>MEX_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX1MB5</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Mexico</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Mexico</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEXDUM</cng:offeringCode>
+                    <cng:offeringName>Dummy SOC for IMXBUN</cng:offeringName>
+                    <cng:offeringDescription>Dummy SOC for IMXBUN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILDSCO</cng:offeringCode>
+                    <cng:offeringName>IntlDialingAllowed</cng:offeringName>
+                    <cng:offeringDescription>IntlDialingAllowed</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MXM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRMEXRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILMEXHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ID_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ID_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS2000;ELIG_TYPE;VIVAMEXICO;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>NWC6000</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>NATION W/CANADA 6000 RATE PLAN</cng:planName>
+                    <cng:planDescription>AT&amp;T Nation with Canada 6000 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>219.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>6000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILCANHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_LD_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_LD_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRCANRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM6000</cng:offeringCode>
+                    <cng:offeringName>6000 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>6000 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>NWC6000O</cng:offeringCode>
+                    <cng:offeringName>CANADA</cng:offeringName>
+                    <cng:offeringDescription>CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAN1MB2</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Canada</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Canada</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANDUM</cng:offeringCode>
+                    <cng:offeringName>NO_DUP_CANADA</cng:offeringName>
+                    <cng:offeringDescription>NO_DUP_CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CA59GSMU</cng:offeringCode>
+                    <cng:offeringName>CAN_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>CAN_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS6000;ELIG_TYPE;NATIONCANADA;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>SDDVRP</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>Mobile Share with Unlimited Talk &amp; Text</cng:planName>
+                    <cng:planDescription>Shared Minutes</cng:planDescription>
+                    <cng:recurringCharge>0.0</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>1</cng:id>
+                    <cng:name>Anytime Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>GSMUSAELA</cng:offeringCode>
+                    <cng:offeringName>GSM Coverage Area</cng:offeringName>
+                    <cng:offeringDescription>GSM Coverage Area</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CRT</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Roam LD</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Roam LD</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>OFFGSM79O</cng:offeringCode>
+                    <cng:offeringName>Off-Network Roam</cng:offeringName>
+                    <cng:offeringDescription>Off-Network Roam</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CHT</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Domestic LD</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Domestic LD</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>UNLMSGSO</cng:offeringCode>
+                    <cng:offeringName>Shared Messaging</cng:offeringName>
+                    <cng:offeringDescription>Shared Messaging</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RM_SOC_ONLY_EX_FTR;INTEGRATE_MSG;FBF_XXX_UNL_SMS;FBF_XXX_UNL_MMS;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <requiredOfferingList>SDG100GBE,SDG10GBD,SDG10GBE,SDG10GBS,SDG10GBS,SDG15GBD,SDG15GBS,SDG15GBS,SDG1GBS,SDG1GBS,SDG20GBD,SDG20GBS,SDG20GBS,SDG25GBE,SDG30GBD,SDG30GBDI,SDG30GBI,SDG30GBS,SDG30GBSC,SDG30GBSD,SDG3GBE,SDG40GBD,SDG40GBDI,SDG40GBI,SDG40GBS,SDG40GBSC,SDG40GBSD,SDG4GBD,SDG4GBE,SDG4GBS,SDG4GBS,SDG50GBD,SDG50GBS,SDG50GBSC,SDG50GBSD,SDG5GBE,SDG6GBD,SDG6GBE,SDG6GBS,SDG6GBS</requiredOfferingList>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>BVM;SDGSPRVCRP;FBF_PRD_UNL;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@J4@J2@J3@P9@B3@B4@B6@B8@D1@D2@D3@J1@P2@P3@P6@P7@P8@Q4@Q8@S1@S2@U1@U2@U3@U4@V3@V4@V5@V6@W0@W1@W2@W3@W4@W5@W6@W7@W8@K1@Z2@Z6@M8@F2@K2@Z9@N4@K3@U0@J5@J6@N6@U9@J7@R1@J0@K4@J8@J9@K5@K6@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>NWC1350</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>NATION W/CANADA 1350 RATE PLAN</cng:planName>
+                    <cng:planDescription>AT&amp;T Nation with Canada 1350 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>99.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>1350</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM1350</cng:offeringCode>
+                    <cng:offeringName>1350 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>1350 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILCANHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_LD_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_LD_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRCANRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>NWC1350O</cng:offeringCode>
+                    <cng:offeringName>CANADA</cng:offeringName>
+                    <cng:offeringDescription>CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAN1MB2</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Canada</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Canada</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANDUM</cng:offeringCode>
+                    <cng:offeringName>NO_DUP_CANADA</cng:offeringName>
+                    <cng:offeringDescription>NO_DUP_CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CA59GSMU</cng:offeringCode>
+                    <cng:offeringName>CAN_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>CAN_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS1350;ELIG_TYPE;NATIONCANADA;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>NWC4000</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>NATION W/CANADA 4000 RATE PLAN</cng:planName>
+                    <cng:planDescription>AT&amp;T Nation with Canada 4000 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>169.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>4000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM4000</cng:offeringCode>
+                    <cng:offeringName>4000 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>4000 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILCANHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_LD_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_LD_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRCANRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>NWC4000O</cng:offeringCode>
+                    <cng:offeringName>CANADA</cng:offeringName>
+                    <cng:offeringDescription>CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAN1MB2</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Canada</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Canada</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANDUM</cng:offeringCode>
+                    <cng:offeringName>NO_DUP_CANADA</cng:offeringName>
+                    <cng:offeringDescription>NO_DUP_CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CA59GSMU</cng:offeringCode>
+                    <cng:offeringName>CAN_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>CAN_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS4000;ELIG_TYPE;NATIONCANADA;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>MEX450</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>AT&amp;T Viva Mexico 450 with Rollover</cng:planName>
+                    <cng:planDescription>AT&amp;T Viva Mexico 450 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>54.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>450</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEX450O</cng:offeringCode>
+                    <cng:offeringName>MEXICO</cng:offeringName>
+                    <cng:offeringDescription>MEXICO</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX59GSMU</cng:offeringCode>
+                    <cng:offeringName>MEX_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>MEX_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX1MB5</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Mexico</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Mexico</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEXDUM</cng:offeringCode>
+                    <cng:offeringName>Dummy SOC for IMXBUN</cng:offeringName>
+                    <cng:offeringDescription>Dummy SOC for IMXBUN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILDSCO</cng:offeringCode>
+                    <cng:offeringName>IntlDialingAllowed</cng:offeringName>
+                    <cng:offeringDescription>IntlDialingAllowed</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM450</cng:offeringCode>
+                    <cng:offeringName>450 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>450 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MXM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRMEXRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILMEXHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ID_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ID_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS450;ELIG_TYPE;VIVAMEXICO;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>MEX900</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>AT&amp;T Viva Mexico 900 with Rollover</cng:planName>
+                    <cng:planDescription>AT&amp;T Viva Mexico 900 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>74.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>900</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM900</cng:offeringCode>
+                    <cng:offeringName>900 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>900 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEX900O</cng:offeringCode>
+                    <cng:offeringName>MEXICO</cng:offeringName>
+                    <cng:offeringDescription>MEXICO</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX59GSMU</cng:offeringCode>
+                    <cng:offeringName>MEX_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>MEX_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX1MB5</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Mexico</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Mexico</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEXDUM</cng:offeringCode>
+                    <cng:offeringName>Dummy SOC for IMXBUN</cng:offeringName>
+                    <cng:offeringDescription>Dummy SOC for IMXBUN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILDSCO</cng:offeringCode>
+                    <cng:offeringName>IntlDialingAllowed</cng:offeringName>
+                    <cng:offeringDescription>IntlDialingAllowed</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MXM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRMEXRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILMEXHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ID_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ID_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS900;ELIG_TYPE;VIVAMEXICO;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>CN1NM0A80</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>Nation 450 with Rollover</cng:planName>
+                    <cng:planDescription>Nation 450 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>39.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <coverageArea>N</coverageArea>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>5000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>450</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>5KNW96O</cng:offeringCode>
+                    <cng:offeringName>5000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>5000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM450</cng:offeringCode>
+                    <cng:offeringName>450 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>450 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>GSMUSAELA</cng:offeringCode>
+                    <cng:offeringName>GSM Coverage Area</cng:offeringName>
+                    <cng:offeringDescription>GSM Coverage Area</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CRT</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Roam LD</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Roam LD</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>OFFGSM79O</cng:offeringCode>
+                    <cng:offeringName>Off-Network Roam</cng:offeringName>
+                    <cng:offeringDescription>Off-Network Roam</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MME0</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CHT</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Domestic LD</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Domestic LD</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>ELIG_TYPE;BVM;VM:BASIC;CAP_MINS450;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+            </PricePlans>
+            <PricePlans>
+                <planCode>MEX1350</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>AT&amp;T Viva Mexico 1350 with Rollover</cng:planName>
+                    <cng:planDescription>AT&amp;T Viva Mexico 1350 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>94.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>1350</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM1350</cng:offeringCode>
+                    <cng:offeringName>1350 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>1350 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX59GSMU</cng:offeringCode>
+                    <cng:offeringName>MEX_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>MEX_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MX1MB5</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Mexico</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Mexico</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEXDUM</cng:offeringCode>
+                    <cng:offeringName>Dummy SOC for IMXBUN</cng:offeringName>
+                    <cng:offeringDescription>Dummy SOC for IMXBUN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILDSCO</cng:offeringCode>
+                    <cng:offeringName>IntlDialingAllowed</cng:offeringName>
+                    <cng:offeringDescription>IntlDialingAllowed</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MEX1350O</cng:offeringCode>
+                    <cng:offeringName>MEXICO</cng:offeringName>
+                    <cng:offeringDescription>MEXICO</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MXM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRMEXRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;SOCCOMB;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILMEXHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ID_US_MEX</cng:offeringName>
+                    <cng:offeringDescription>INTL_ID_US_MEX</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS1350;ELIG_TYPE;VIVAMEXICO;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>NWC2000</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>NATION W/CANADA 2000 RATE PLAN </cng:planName>
+                    <cng:planDescription>AT&amp;T Nation with Canada 2000 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>119.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>2000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM2000</cng:offeringCode>
+                    <cng:offeringName>2000 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>2000 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILCANHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_LD_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_LD_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRCANRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>NWC2000O</cng:offeringCode>
+                    <cng:offeringName>CANADA</cng:offeringName>
+                    <cng:offeringDescription>CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAN1MB2</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Canada</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Canada</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANDUM</cng:offeringCode>
+                    <cng:offeringName>NO_DUP_CANADA</cng:offeringName>
+                    <cng:offeringDescription>NO_DUP_CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CA59GSMU</cng:offeringCode>
+                    <cng:offeringName>CAN_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>CAN_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS2000;ELIG_TYPE;NATIONCANADA;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <PricePlans>
+                <planCode>NWC900</planCode>
+                <PrimaryPricePlan>
+                    <cng:planName>NATION W/CANADA 900 RATE PLAN</cng:planName>
+                    <cng:planDescription>AT&amp;T Nation with Canada 900 with Rollover</cng:planDescription>
+                    <cng:recurringCharge>79.99</cng:recurringCharge>
+                    <cng:activationFee>45.0</cng:activationFee>
+                    <cng:EarlyTerminationFee>
+                        <cng:type>D</cng:type>
+                        <cng:amount>175.0</cng:amount>
+                        <cng:commitmentLength>24</cng:commitmentLength>
+                    </cng:EarlyTerminationFee>
+                </PrimaryPricePlan>
+                <planType>I</planType>
+                <crossMarketIndicator>true</crossMarketIndicator>
+                <defaultProductIndicator>false</defaultProductIndicator>
+                <topPlan>false</topPlan>
+                <ContractTerm>
+                    <cng:term>24</cng:term>
+                </ContractTerm>
+                <PricePlanSpecifications>
+                    <cng:id>2</cng:id>
+                    <cng:name>Night and Weekend Minutes</cng:name>
+                    <cng:value>1000</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>3</cng:id>
+                    <cng:name>Roaming Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>4</cng:id>
+                    <cng:name>Long Distance Charges per Minutes</cng:name>
+                    <cng:value>0.00</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>5</cng:id>
+                    <cng:name>Mobile to Mobile Minutes</cng:name>
+                    <cng:value>Unlimited</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>6</cng:id>
+                    <cng:name>Roll Over Minutes</cng:name>
+                    <cng:value>900</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>7</cng:id>
+                    <cng:name>Charge for Additional Text Message</cng:name>
+                    <cng:value>0.15</cng:value>
+                </PricePlanSpecifications>
+                <PricePlanSpecifications>
+                    <cng:id>8</cng:id>
+                    <cng:name>Text Messages Included in the Plan</cng:name>
+                    <cng:value>0</cng:value>
+                </PricePlanSpecifications>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>RM900</cng:offeringCode>
+                    <cng:offeringName>900 Anytime w/Rollover</cng:offeringName>
+                    <cng:offeringDescription>900 Anytime w/Rollover</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MPPUO</cng:offeringCode>
+                    <cng:offeringName>Data Pay Per Use</cng:offeringName>
+                    <cng:offeringDescription>Data Pay Per Use</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_GPR;BOLT_REWARD;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>DB00O</cng:offeringCode>
+                    <cng:offeringName>AT&amp;T Direct Bill</cng:offeringName>
+                    <cng:offeringDescription>AT&amp;T Direct Bill</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>MUOP</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Picture/Video Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Picture/Video Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_MMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ILCANHLD</cng:offeringCode>
+                    <cng:offeringName>INTL_LD_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_LD_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>ROAM79O</cng:offeringCode>
+                    <cng:offeringName>Roaming Airtime .79</cng:offeringName>
+                    <cng:offeringDescription>Roaming Airtime .79</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>IRCANRLD</cng:offeringCode>
+                    <cng:offeringName>INTL_ROAM_US_CAN</cng:offeringName>
+                    <cng:offeringDescription>INTL_ROAM_US_CAN</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANSTD65</cng:offeringCode>
+                    <cng:offeringName>ROAM_PRI_STD65</cng:offeringName>
+                    <cng:offeringDescription>ROAM_PRI_STD65</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>TMI1O</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Text/Instant Messaging</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Text/Instant Messaging</cng:offeringDescription>
+                    <cng:genAttribute>FBF_XXX_PPU_SMS;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>NWC900O</cng:offeringCode>
+                    <cng:offeringName>CANADA</cng:offeringName>
+                    <cng:offeringDescription>CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;RTP;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>1KNW96O</cng:offeringCode>
+                    <cng:offeringName>1000 Night &amp; Weekend</cng:offeringName>
+                    <cng:offeringDescription>1000 Night &amp; Weekend</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_NW;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAN1MB2</cng:offeringCode>
+                    <cng:offeringName>Pay Per Use Data - Canada</cng:offeringName>
+                    <cng:offeringDescription>Pay Per Use Data - Canada</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_LMT_GPR;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CANDUM</cng:offeringCode>
+                    <cng:offeringName>NO_DUP_CANADA</cng:offeringName>
+                    <cng:offeringDescription>NO_DUP_CANADA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CA59GSMU</cng:offeringCode>
+                    <cng:offeringName>CAN_LOCAL_AREA</cng:offeringName>
+                    <cng:offeringDescription>CAN_LOCAL_AREA</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;</cng:genAttribute>
+                </OfferingsBundled>
+                <OfferingsBundled>
+                    <cng:action>Q</cng:action>
+                    <cng:offeringCode>CAM2MU</cng:offeringCode>
+                    <cng:offeringName>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringName>
+                    <cng:offeringDescription>Unltd Mobile to AT&amp;T Mobile - U.S. only</cng:offeringDescription>
+                    <cng:genAttribute>RESSOCREM;FBF_XXX_UNL_M2M;</cng:genAttribute>
+                </OfferingsBundled>
+                <pricePlanStatus>A</pricePlanStatus>
+                <paymentMethod>O</paymentMethod>
+                <PricePlanProperties>
+                    <cng:dataOnlyInd>V</cng:dataOnlyInd>
+                    <cng:networkType>O</cng:networkType>
+                    <cng:serviceType>P</cng:serviceType>
+                    <cng:maxMembers>1</cng:maxMembers>
+                    <cng:pricePlanLevel>C</cng:pricePlanLevel>
+                    <cng:genAttribute>VM:BASIC;BVM;CAP_MINS900;ELIG_TYPE;NATIONCANADA;RTP;</cng:genAttribute>
+                    <cng:vdIndicator>V1</cng:vdIndicator>
+                </PricePlanProperties>
+                <IMEIType>@A1@</IMEIType>
+            </PricePlans>
+            <Response>
+                <cng:code>0</cng:code>
+                <cng:description>Success</cng:description>
+            </Response>
+        </InquirePricePlansResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

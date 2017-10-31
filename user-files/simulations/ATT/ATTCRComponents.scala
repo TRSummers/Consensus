@@ -7,18 +7,18 @@ import scala.util.Random
 
 object ATTCRComponents {
 
-  val expectation1 = "expectations/att/upgrade/add-sales-transaction-details"
-  val expectation2 = "expectations/att/upgrade/inquire-account-profile"
-  val expectation3 = "expectations/att/upgrade/inquire-additional-offerings"
-  val expectation4 = "expectations/att/upgrade/inquire-available-devices"
-  val expectation5 = "expectations/att/upgrade/inquire-device-details"
-  val expectation6 = "expectations/att/upgrade/inquire-incompatible-offerings"
-  val expectation7 = "expectations/att/upgrade/inquire-price-plans"
-  val expectation8 = "expectations/att/upgrade/inquire-subscriber-billing-agreement"
-  val expectation9 = "expectations/att/upgrade/post-transaction"
-  val expectation10 = "expectations/att/upgrade/reserve-contract-identifier"
-  val expectation11 = "expectations/att/upgrade/upgrade-equipment"
-  val expectation12 = "expectations/att/upgrade/inquire-donor-subscribers"
+  val expectation1 = "expectations/att/add-sales-transaction-details"
+  val expectation2 = "expectations/att/inquire-account-profile"
+  val expectation3 = "expectations/att/inquire-additional-offerings"
+  val expectation4 = "expectations/att/inquire-available-devices"
+  val expectation5 = "expectations/att/inquire-device-details"
+  val expectation6 = "expectations/att/inquire-incompatible-offerings"
+  val expectation7 = "expectations/att/inquire-price-plans"
+  val expectation8 = "expectations/att/inquire-subscriber-billing-agreement"
+  val expectation9 = "expectations/att/post-transaction"
+  val expectation10 = "expectations/att/reserve-contract-identifier"
+  val expectation11 = "expectations/att/upgrade-equipment"
+  val expectation12 = "expectations/att/inquire-donor-subscribers"
 
   val gatlingData = sys.env("GATLING_DATA")
   val expectationPath = Array(

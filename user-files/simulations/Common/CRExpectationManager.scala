@@ -1,10 +1,10 @@
 import scala.concurrent.duration._
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
 import scala.reflect.runtime.universe._
+import scala.io.Source
 
 
 object CRExpectationManager {
@@ -16,12 +16,6 @@ object CRExpectationManager {
 
   val headers_list = Map("Content-Type" -> "application/json")
 
-  val removeExpectations = group("CR Management") {
-
-    exec(http("Remove All Expectations")
-      get(Common.tunneled_cr + "/CarrierResponder/mockserver/remove")
-    )
-  }
 
   val createAndLoadExpectation = group("Create & Load") {
 
@@ -31,6 +25,16 @@ object CRExpectationManager {
       .headers(headers_list)
       .check(jsonPath("$.id").saveAs("expectationId")))
       .exec(http("Load Expectation")
-      .get(Common.tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
+        .get(Common.tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
   }
+
+  val CleanExpectations = scenario("Clean CR").repeat(1){
+    group("Removing All") {
+      exec(
+        http("#1")
+          .get(Common.tunneled_cr + "/CarrierResponder/mockserver/remove")
+      )
+    }
+  }
+
 }

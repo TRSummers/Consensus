@@ -5,20 +5,20 @@ import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
 
-object SprintUpgradeCRComponents {
+object SprintCRComponents {
 
-  val expectation1 = "expectations/sprint/upgrade/check-loan-eligibility"
-  val expectation2 = "expectations/sprint/upgrade/create-lite-esa"
-  val expectation3 = "expectations/sprint/upgrade/create-loan-contract"
-  val expectation4 = "expectations/sprint/upgrade/query-account-loan-details"
-  val expectation5 = "expectations/sprint/upgrade/submit-order"
-  val expectation6 = "expectations/sprint/upgrade/validate-account-info"
-  val expectation7 = "expectations/sprint/upgrade/account-validation"
-  val expectation8 = "expectations/sprint/upgrade/credit-check"
-  val expectation9 = "expectations/sprint/upgrade/service-validation"
-  val expectation10 = "expectations/sprint/upgrade/activation"
-  val expectation11 = "expectations/sprint/upgrade/query-available-plans"
-  val expectation12 = "expectations/sprint/upgrade/query-available-options"
+  val expectation1 = "expectations/sprint/check-loan-eligibility"
+  val expectation2 = "expectations/sprint/create-lite-esa"
+  val expectation3 = "expectations/sprint/create-loan-contract"
+  val expectation4 = "expectations/sprint/query-account-loan-details"
+  val expectation5 = "expectations/sprint/submit-order"
+  val expectation6 = "expectations/sprint/validate-account-info"
+  val expectation7 = "expectations/sprint/account-validation"
+  val expectation8 = "expectations/sprint/credit-check"
+  val expectation9 = "expectations/sprint/service-validation"
+  val expectation10 = "expectations/sprint/activation"
+  val expectation11 = "expectations/sprint/query-available-plans"
+  val expectation12 = "expectations/sprint/query-available-options"
 
   val gatlingData = sys.env("GATLING_DATA")
   val expectationPath = Array(
@@ -36,8 +36,8 @@ object SprintUpgradeCRComponents {
     Map("expectationPath" -> expectation12, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation12 + "-payload.xml").mkString))
   )
 
-  val SetUpExpectations = scenario("Sprint Upgrade Carrier Responder").repeat(12) {
-    group("Sprint Upgrade Carrier Responder") {
+  val SetUpExpectations = scenario("Sprint CR").repeat(12) {
+    group("Sprint CR") {
       exec(feed(expectationPath))
         .exec(CRExpectationManager.createAndLoadExpectation)
     }

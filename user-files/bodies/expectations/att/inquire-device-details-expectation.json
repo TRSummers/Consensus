@@ -5,9 +5,9 @@
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "/Services/com/cingular/csi/cam/InquireDeviceDetails.jws",
+    "path": "/Services/com/cingular/csi/dlc/InquireDeviceDetails.jws",
     "environment": "PERF",
-    "pname1": "//*[local-name()= 'InquireDeviceDetailsRequest']"
+    "pname1": "//*[local-name()='InquireDeviceDetailsRequest']"
   },
   "response": {
     "body": "${payload}",

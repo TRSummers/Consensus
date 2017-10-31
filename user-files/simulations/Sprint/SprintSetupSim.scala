@@ -5,8 +5,8 @@ import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
 
-class SprintUpgradeSetupSim extends Simulation {
+class SprintSetupSim extends Simulation {
 
-  setUp(SprintUpgradeCRComponents.SetUpExpectations.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
+  setUp(SprintCRComponents.SetUpExpectations.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol))
 
 }
