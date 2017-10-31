@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "ATT-API_NAME",
+  "name": "ATT_InquireIncompatibleOfferings",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "API_PATH"
+    "path": "/Services/com/cingular/csi/tlgapi/InquireIncompatibleOfferings.jws",
     "environment": "PERF",
-    "pname1": ""
+    "pname1": "//*[local-name()= 'InquireIncompatibleOfferingsRequest']"
   },
   "response": {
     "body": "${payload}",
@@ -26,7 +26,7 @@
   "expectation": {
     "description": "",
     "responder": "ATT",
-    "api": "API_NAME",
+    "api": "InquireIncompatibleOfferings",
     "environment": "PERF"
   }
 }

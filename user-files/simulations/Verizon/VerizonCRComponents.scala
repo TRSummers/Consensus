@@ -7,12 +7,18 @@ import scala.util.Random
 
 object VerizonCRComponents {
 
-  val expectation1 = "expectations/verizon/aurus-encryption"
-  val expectation2 = "expectations/verizon/aurus-get-encryption-key"
-  val expectation3 = "expectations/verizon/aurus-process-transaction-response"
-  val expectation4 = "expectations/verizon/features-lookup"
-  val expectation5 = "expectations/verizon/fedex-address-validation"
+  val expectation1 = "expectations/aurus/encryption"
+  val expectation2 = "expectations/aurus/get-encryption-key"
+  val expectation3 = "expectations/aurus/process-transaction"
+
+  val expectation5 = "expectations/fedex/address-validation"
+
+  val expectation23 = "expectations/squaretrade/commit-warranty"
+  val expectation24 = "expectations/squaretrade/create-warranty"
+  val expectation25 = "expectations/squaretrade/oauth"
+
   val expectation6 = "expectations/verizon/generate-installment"
+  val expectation4 = "expectations/verizon/features-lookup"
   val expectation7 = "expectations/verizon/retrieve-credit-application"
   val expectation9 = "expectations/verizon/retrieve-customer-details"
   val expectation11 = "expectations/verizon/retrieve-installment-contract-approval-status"
@@ -24,9 +30,6 @@ object VerizonCRComponents {
   val expectation20 = "expectations/verizon/retrieve-price-plans-new"
   val expectation21 = "expectations/verizon/retrieve-prorate"
   val expectation22 = "expectations/verizon/save-installment-details"
-  val expectation23 = "expectations/verizon/square-commit-warranty"
-  val expectation24 = "expectations/verizon/square-create-warranty"
-  val expectation25 = "expectations/verizon/square-trade-oauth"
   val expectation26 = "expectations/verizon/submit-activation"
   val expectation27 = "expectations/verizon/submit-credit-application-new"
   val expectation28 = "expectations/verizon/submit-credit-application-upgrade"

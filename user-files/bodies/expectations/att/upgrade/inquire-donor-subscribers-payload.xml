@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <ns2:MessageHeader xmlns="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns:ns2="http://csi.cingular.com/CSI/Namespaces/Types/Public/MessageHeader.xsd">
+            <ns2:TrackingMessageHeader>
+                <version>v116</version>
+                <originalVersion>v116</originalVersion>
+                <messageId>P2102969301</messageId>
+                <originatorId>LETSTALK</originatorId>
+                <timeToLive>300000</timeToLive>
+                <conversationId>consensusTrgt~CNG-CSI~2286b0da-cc2e-4f8f-8c45-d0814ae36c3f</conversationId>
+                <dateTimeStamp>2017-10-26T11:23:56Z</dateTimeStamp>
+                <uniqueTransactionId>ServiceGateway732116@q100csg32c1_b3729d02-f558-437d-8e26-20ee5a7be9cf</uniqueTransactionId>
+            </ns2:TrackingMessageHeader>
+            <ns2:SecurityMessageHeader>
+                <userName>consensusTrgt</userName>
+                <userPassword>consensusTrgt0424</userPassword>
+            </ns2:SecurityMessageHeader>
+            <ns2:SequenceMessageHeader>
+                <sequenceNumber>1</sequenceNumber>
+                <totalInSequence>1</totalInSequence>
+            </ns2:SequenceMessageHeader>
+        </ns2:MessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns2:InquireDonorSubscribersResponse xmlns="http://csi.cingular.com/CSI/Namespaces/Types/Public/CingularDataModel.xsd" xmlns:ns2="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireDonorSubscribersResponse.xsd">
+            <ns2:Pagination>
+                <maxResultsCount>5</maxResultsCount>
+                <numberOfRows>5</numberOfRows>
+                <hasMore>0</hasMore>
+            </ns2:Pagination>
+            <ns2:Reason>
+                <ns2:code>0</ns2:code>
+            </ns2:Reason>
+            <ns2:DonorSubscribersList>
+                <ns2:subscriberNumber>2106230784</ns2:subscriberNumber>
+                <ns2:subscriberName>CYNTHIA V. CHARLES</ns2:subscriberName>
+                <ns2:imei>355697053088260</ns2:imei>
+                <ns2:sim>89014103275821750832</ns2:sim>
+                <ns2:imeiType>PHONE</ns2:imeiType>
+                <ns2:ActivationDate>2003-09-23</ns2:ActivationDate>
+                <ns2:contractEndDate>2015-05-07</ns2:contractEndDate>
+            </ns2:DonorSubscribersList>
+            <ns2:DonorSubscribersList>
+                <ns2:subscriberNumber>2102969301</ns2:subscriberNumber>
+                <ns2:subscriberName>CYNTHIA V. CHARLES</ns2:subscriberName>
+                <ns2:imei>353257074896050</ns2:imei>
+                <ns2:sim>89014104278593463195</ns2:sim>
+                <ns2:imeiType>PHONE</ns2:imeiType>
+                <ns2:ActivationDate>2006-05-22</ns2:ActivationDate>
+                <ns2:contractEndDate>2017-09-06</ns2:contractEndDate>
+            </ns2:DonorSubscribersList>
+            <ns2:DonorSubscribersList>
+                <ns2:subscriberNumber>2106230783</ns2:subscriberNumber>
+                <ns2:subscriberName>CYNTHIA V. CHARLES</ns2:subscriberName>
+                <ns2:imei>352013071589342</ns2:imei>
+                <ns2:sim>89014104277819262795</ns2:sim>
+                <ns2:imeiType>PHONE</ns2:imeiType>
+                <ns2:ActivationDate>2003-09-23</ns2:ActivationDate>
+                <ns2:contractEndDate>2017-09-14</ns2:contractEndDate>
+            </ns2:DonorSubscribersList>
+            <ns2:DonorSubscribersList>
+                <ns2:subscriberNumber>2107059146</ns2:subscriberNumber>
+                <ns2:subscriberName>CYNTHIA V. CHARLES</ns2:subscriberName>
+                <ns2:imei>353804083375582</ns2:imei>
+                <ns2:sim>89014104279181003849</ns2:sim>
+                <ns2:imeiType>PHONE</ns2:imeiType>
+                <ns2:ActivationDate>2012-07-30</ns2:ActivationDate>
+                <ns2:contractEndDate>2018-09-22</ns2:contractEndDate>
+            </ns2:DonorSubscribersList>
+            <ns2:DonorSubscribersList>
+                <ns2:subscriberNumber>2106230033</ns2:subscriberNumber>
+                <ns2:subscriberName>CYNTHIA V. CHARLES</ns2:subscriberName>
+                <ns2:imei>351713082519805</ns2:imei>
+                <ns2:sim>89014103279517522406</ns2:sim>
+                <ns2:imeiType>PHONE</ns2:imeiType>
+                <ns2:ActivationDate>2016-10-16</ns2:ActivationDate>
+                <ns2:contractEndDate>2018-10-16</ns2:contractEndDate>
+            </ns2:DonorSubscribersList>
+            <ns2:Response>
+                <code>0</code>
+                <description>Success</description>
+            </ns2:Response>
+        </ns2:InquireDonorSubscribersResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

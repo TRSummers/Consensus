@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "ATT-API_NAME",
+  "name": "ATT_InquirePricePlans",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "API_PATH"
+    "path": "/Services/com/cingular/csi/cpc/InquirePricePlans.jws",
     "environment": "PERF",
-    "pname1": ""
+    "pname1": "//*[local-name()='InquirePricePlansRequest']"
   },
   "response": {
     "body": "${payload}",
@@ -26,7 +26,7 @@
   "expectation": {
     "description": "",
     "responder": "ATT",
-    "api": "API_NAME",
+    "api": "InquirePricePlans",
     "environment": "PERF"
   }
 }

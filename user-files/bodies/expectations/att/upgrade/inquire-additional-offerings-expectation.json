@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "ATT-API_NAME",
+  "name": "ATT_InquireAdditionalOfferings",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "API_PATH"
+    "path": "/Services/com/cingular/csi/cpc/InquireAdditionalOfferings.jws",
     "environment": "PERF",
-    "pname1": ""
+    "pname1": "//*[local-name()= 'InquireAdditionalOfferingsRequest']"
   },
   "response": {
     "body": "${payload}",
@@ -26,7 +26,7 @@
   "expectation": {
     "description": "",
     "responder": "ATT",
-    "api": "API_NAME",
+    "api": "InquireAdditionalOfferings",
     "environment": "PERF"
   }
 }
