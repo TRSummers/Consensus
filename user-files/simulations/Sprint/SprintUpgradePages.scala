@@ -580,8 +580,8 @@ object SprintUpgradePages {
         .formParam("continueOnConfirm", "")
         .formParam("phonenumber-1", "7407078913")
         .resources(
-          http("#228").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
-          http("#229").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
+//          http("#228").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
+//          http("#229").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
           http("#230").get(Common.uri_ui + "/assets/img/cloader.gif").headers(SprintUpgradeHeaders.headers_A5)))
       .exec(
         http("#231").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(SprintUpgradeHeaders.headers_A6))
@@ -600,7 +600,7 @@ object SprintUpgradePages {
       .exec(
         http("#238").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(SprintUpgradeHeaders.headers_A0)
           .resources(
-            http("#239").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(SprintUpgradeHeaders.headers_A3),
+//            http("#239").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(SprintUpgradeHeaders.headers_A3),
             http("#240").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(SprintUpgradeHeaders.headers_A240).body(ElFileBody("Sprint/Upgrade/sprintupg_0240_request.json"))))
       .exec(
         http("#241").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(SprintUpgradeHeaders.headers_A241)
