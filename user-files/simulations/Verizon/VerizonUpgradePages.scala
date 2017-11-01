@@ -13,8 +13,8 @@ object VerizonUpgradePages {
         http("#1").post(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState").headers(VerizonUpgradeHeaders.headers_1).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0001_request.json"))
           .resources(
             http("#2").get("/retail/orderassembly/controller/process.php?planType=contractExt&action=buyTypeChosen").headers(VerizonUpgradeHeaders.headers_2),
-            http("#3").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-            http("#4").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#3").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#4").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#5").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#6").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -268,8 +268,8 @@ object VerizonUpgradePages {
         .formParam("numofline_to_activate", "1")
         .formParam("checkbox-1", "on")
         .resources(
-          http("#158").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-          http("#159").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//          http("#158").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//          http("#159").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
           http("#160").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#161").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -398,7 +398,7 @@ object VerizonUpgradePages {
       .exec(
         http("#237").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_237).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0237_request.json"))
           .resources(
-            http("#236").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#236").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#238").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_238),
             http("#239").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(VerizonUpgradeHeaders.headers_239),
             http("#240").get(Common.uri_ui + "/app/pages/addons/serviceaddon.html").headers(VerizonUpgradeHeaders.headers_240),
@@ -420,8 +420,8 @@ object VerizonUpgradePages {
       .exec(
         http("#251").get("/retail/orderassembly/controller/process.php").headers(VerizonUpgradeHeaders.headers_2)
           .resources(
-            http("#252").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-            http("#253").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#252").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#253").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#254").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#255").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -440,7 +440,7 @@ object VerizonUpgradePages {
       .exec(
         http("#262").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_0)
           .resources(
-            http("#263").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#263").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#264").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_264).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0264_request.json"))))
       .exec(
         http("#265").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_265))

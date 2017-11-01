@@ -625,8 +625,8 @@ object SprintUpgradePages {
       .exec(
         http("#254").get("/retail/orderassembly/controller/process.php").headers(SprintUpgradeHeaders.headers_A2)
           .resources(
-            http("#255").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
-            http("#256").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
+//            http("#255").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
+//            http("#256").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(SprintUpgradeHeaders.headers_A3),
             http("#257").get(Common.uri_ui + "/assets/img/cloader.gif").headers(SprintUpgradeHeaders.headers_A5)))
       .exec(
         http("#258").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(SprintUpgradeHeaders.headers_A6))
@@ -651,7 +651,7 @@ object SprintUpgradePages {
       .exec(
         http("#277").post(Common.uri_dsom_no_port + "/dsom-app/v1/getAddOnOptions").headers(SprintUpgradeHeaders.headers_A277).body(ElFileBody("Sprint/Upgrade/sprintupg_0277_request.json"))
           .resources(
-            http("#266").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(SprintUpgradeHeaders.headers_A3),
+//            http("#266").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(SprintUpgradeHeaders.headers_A3),
             http("#268").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(SprintUpgradeHeaders.headers_A268),
             http("#269").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(SprintUpgradeHeaders.headers_A269),
             http("#270").get(Common.uri_ui + "/app/pages/addons/device.html").headers(SprintUpgradeHeaders.headers_A270),

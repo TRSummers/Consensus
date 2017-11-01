@@ -12,8 +12,8 @@ object ATTUpgradePages{
 				http("#1").post(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState").headers(ATTUpgradeHeaders.headers_1).body(ElFileBody("ATT/ATTUpgrade_0001_request.json"))
 					.resources(
 						http("#2").get("/retail/orderassembly/controller/process.php?planType=contractExt&action=buyTypeChosen").headers(ATTUpgradeHeaders.headers_2),
-						http("#3").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
-						http("#4").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
+//						http("#3").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
+//						http("#4").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
 						http("#5").get(Common.uri_ui + "/assets/img/cloader.gif").headers(ATTUpgradeHeaders.headers_5)))
 			.exec(
 				http("#6").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(ATTUpgradeHeaders.headers_6))
@@ -32,7 +32,7 @@ object ATTUpgradePages{
 					.resources(
 						http("#7").get(Common.uri_ui + "/config.json").headers(ATTUpgradeHeaders.headers_7),
 						http("#10").get(Common.uri_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2").headers(ATTUpgradeHeaders.headers_10),
-						http("#14").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(ATTUpgradeHeaders.headers_3),
+//						http("#14").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(ATTUpgradeHeaders.headers_3),
 						http("#16").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(ATTUpgradeHeaders.headers_16),
 						http("#17").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(ATTUpgradeHeaders.headers_17),
 						http("#18").get(Common.uri_ui + "/app/pages/accountverification/accountverification.html").headers(ATTUpgradeHeaders.headers_18),
@@ -144,8 +144,8 @@ object ATTUpgradePages{
 				.formParam("isPaymentRequired[2106025090]", "")
 				.formParam("eligibility", "proceedWithUpgrade")
 				.resources(
-					http("#90").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
-					http("#91").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
+//					http("#90").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
+//					http("#91").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(ATTUpgradeHeaders.headers_3),
 					http("#92").get(Common.uri_ui + "/assets/img/cloader.gif").headers(ATTUpgradeHeaders.headers_5)))
 			.exec(
 				http("#93").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(ATTUpgradeHeaders.headers_6))
@@ -165,7 +165,7 @@ object ATTUpgradePages{
 				http("#102").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(ATTUpgradeHeaders.headers_102).body(ElFileBody("ATT/ATTUpgrade_0102_request.json"))
 					.resources(
 						http("#97").get(Common.uri_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2").headers(ATTUpgradeHeaders.headers_10),
-						http("#101").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(ATTUpgradeHeaders.headers_3),
+//						http("#101").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(ATTUpgradeHeaders.headers_3),
 						http("#103").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(ATTUpgradeHeaders.headers_103),
 						http("#104").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(ATTUpgradeHeaders.headers_104),
 						http("#105").get(Common.uri_ui + "/app/pages/scan/scan.html").headers(ATTUpgradeHeaders.headers_105),
