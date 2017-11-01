@@ -7,6 +7,6 @@ import scala.util.Random
 
 class ATTUpgradeSim extends Simulation {
 
-  setUp(ATTScenarios.Upgrade.inject(atOnceUsers(SimParams.SUG)).protocols(SimParams.httpProtocol))
+  setUp(ATTScenarios.Upgrade.inject(atOnceUsers(SimParams.TUG)).protocols(SimParams.httpProtocol))
 
 }
