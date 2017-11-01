@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_CheckLoanEligibility",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "checkLoanEligibility",
     "environment": "PERF"
   }

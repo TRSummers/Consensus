@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_ValidateAccountInfo",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "validateAccountInfo",
     "environment": "PERF"
   }

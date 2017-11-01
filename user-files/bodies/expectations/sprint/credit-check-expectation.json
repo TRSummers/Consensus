@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_CreditCheck",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "creditCheck",
     "environment": "PERF"
   }

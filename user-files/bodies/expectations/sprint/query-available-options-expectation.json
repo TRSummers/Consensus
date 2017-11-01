@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_QueryAvailableOptions",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "queryAvailableOptions",
     "environment": "PERF"
   }

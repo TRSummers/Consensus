@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_Activation",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "activation",
     "environment": "PERF"
   }

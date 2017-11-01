@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_CreateLoanContract",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "createLoanContract",
     "environment": "PERF"
   }

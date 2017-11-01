@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_QueryAccountLoanDetails",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "queryAccountLoanDetails",
     "environment": "PERF"
   }

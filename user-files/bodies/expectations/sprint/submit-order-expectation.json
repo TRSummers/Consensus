@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_SubmitOrder",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "submitOrder",
     "environment": "PERF"
   }

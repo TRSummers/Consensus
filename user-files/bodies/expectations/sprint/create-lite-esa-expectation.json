@@ -23,7 +23,7 @@
   },
   "expectation": {
     "description": "SPRINT_UPG_E2E_CreateLiteESA",
-    "responder": "sprint",
+    "responder": "SPRINT",
     "api": "createLiteESA",
     "environment": "PERF"
   }
