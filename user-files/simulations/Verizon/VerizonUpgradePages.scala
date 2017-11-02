@@ -772,11 +772,11 @@ object VerizonUpgradePages {
         http("#510").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status").headers(VerizonUpgradeHeaders.headers_510)
           .resources(
             http("#511").get(Common.uri_ui + "/").headers(VerizonUpgradeHeaders.headers_2)))
-      .exec(
+//      .exec(
 //        http("#512").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3)
-          .resources(
-            http("#513").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-            http("#514").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
+//          .resources(
+//            http("#513").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+//            http("#514").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#515").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
       .exec(
