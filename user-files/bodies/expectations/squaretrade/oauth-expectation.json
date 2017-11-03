@@ -2,7 +2,7 @@
   "user": "GATLING",
   "name": "SQUARETRADE_oauth",
   "request": {
-    "xpath": true,
+    "json": true,
     "method": "POST",
     "url": "",
     "path": "/squaretrade/oauth/token",
@@ -15,7 +15,7 @@
     "headers": [{
       "name": "Content-Type",
       "headerparams": [{
-        "value": "text/json"
+        "value": "application/json"
       }
       ]
     }

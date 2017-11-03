@@ -1,7 +1,7 @@
 {
   "access_token": "abchbGciOiJSUzI1NiJ9.eyJzY29wZSI6WyJ0cnVzdCJdLCJleHAiOjE0NjgzMDM4NDYsImp0aSI6IjZiZDkyNmIzLWU4YWUtNGY2YS04NzA2LTkxNDBiYjUzYWQ4NiIsImNsaWVudF9pZCI6InRhcmdldF9pZCJ9.Tty5eT0pI6vFcMUaNhqNeYSFk3XZOl9IG0k9tJnbPX9jtSu8-vdSHaoICJ7O9Jm0-ewRCoKWmTfq3WHEnNR4utJlPEOFN0CZaPYDSBjzJek_1PNg0gHCVu5ACZ2F_C7AxKw3gQmQnycbjatPO2jEdvHAPseSyKEnb1deUv9TsyUFhHQWZvpZesFJUazaBobl8buzjsduKKR8EHPiyab3lHMT6Y8752E8ID_nePuOJIqVoY4_3uXLFHlnPdfKtBRcOHz1qhApDKywVxe_Ru0KdXkpxKDrTkdmimzF-hjPEOMClbYwYBSxGwlgWUeR--pB54PtJzBXi4qb1-BDjxbo4A",
   "token_type": "bearer",
-  "expires_in": 43199,
+  "expires_in": 2147483646,
   "scope": "trust",
   "jti": "6bd926b3-e8ae-4f6a-8706-9140bb53ad86"
 }
