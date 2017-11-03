@@ -13,8 +13,8 @@ object VerizonUpgradePages {
         http("#1").post(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState").headers(VerizonUpgradeHeaders.headers_1).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0001_request.json"))
           .resources(
             http("#2").get("/retail/orderassembly/controller/process.php?planType=contractExt&action=buyTypeChosen").headers(VerizonUpgradeHeaders.headers_2),
-//            http("#3").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-//            http("#4").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#3").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#4").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#5").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#6").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -33,7 +33,7 @@ object VerizonUpgradePages {
           .resources(
             http("#7").get(Common.uri_ui + "/config.json").headers(VerizonUpgradeHeaders.headers_7),
             http("#10").get(Common.uri_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2").headers(VerizonUpgradeHeaders.headers_10),
-//            http("#14").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#14").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#16").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_16),
             http("#17").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(VerizonUpgradeHeaders.headers_17),
             http("#18").get(Common.uri_ui + "/app/pages/accountverification/accountverification.html").headers(VerizonUpgradeHeaders.headers_18),
@@ -268,8 +268,8 @@ object VerizonUpgradePages {
         .formParam("numofline_to_activate", "1")
         .formParam("checkbox-1", "on")
         .resources(
-//          http("#158").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-//          http("#159").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+          //          http("#158").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+          //          http("#159").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
           http("#160").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#161").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -287,8 +287,8 @@ object VerizonUpgradePages {
         http("#167").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_0))
       .exec(
         http("#169").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_169).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0169_request.json"))
-//          .resources(
-//            http("#168").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3))
+        //          .resources(
+        //            http("#168").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3))
       )
       .exec(
         http("#170").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_170))
@@ -377,8 +377,8 @@ object VerizonUpgradePages {
         .formParam("continueOnConfirm", "")
         .formParam("phonenumber-1", "2106278804")
         .resources(
-//          http("#225").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-//          http("#226").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+          //          http("#225").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+          //          http("#226").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
           http("#227").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#228").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -399,7 +399,7 @@ object VerizonUpgradePages {
       .exec(
         http("#237").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_237).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0237_request.json"))
           .resources(
-//            http("#236").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#236").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#238").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_238),
             http("#239").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(VerizonUpgradeHeaders.headers_239),
             http("#240").get(Common.uri_ui + "/app/pages/addons/serviceaddon.html").headers(VerizonUpgradeHeaders.headers_240),
@@ -421,8 +421,8 @@ object VerizonUpgradePages {
       .exec(
         http("#251").get("/retail/orderassembly/controller/process.php").headers(VerizonUpgradeHeaders.headers_2)
           .resources(
-//            http("#252").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-//            http("#253").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#252").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#253").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#254").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
       .exec(
         http("#255").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
@@ -441,7 +441,7 @@ object VerizonUpgradePages {
       .exec(
         http("#262").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_0)
           .resources(
-//            http("#263").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
+            //            http("#263").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3),
             http("#264").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_264).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0264_request.json"))))
       .exec(
         http("#265").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_265))
@@ -745,7 +745,7 @@ object VerizonUpgradePages {
         http("#497").get("/legacy/v1/index.php/strings?pageTags=%5B%22WCAGR%22%5D").headers(VerizonUpgradeHeaders.headers_497))
   }
 
-  val DeviceFinancingInstallmentContractToOrderSummary = group("FinanceContract->AddOnPayment") {
+  val DeviceFinancingInstallmentContractToAddOnPayment = group("FinanceContract->AddOnPayment") {
     exec(
       http("#498").get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=8d1921a78153fc3a&code=wca&page=1")
         .headers(VerizonUpgradeHeaders.headers_5)
@@ -762,50 +762,114 @@ object VerizonUpgradePages {
             http("#504").get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=8d1921a78153fc3a&code=finance&page=2&ordiIndex=1").headers(VerizonUpgradeHeaders.headers_5),
             http("#505").get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=8d1921a78153fc3a&code=finance&page=3&ordiIndex=1").headers(VerizonUpgradeHeaders.headers_5),
             http("#506").get("/webservices/external/poa_rest/poa_rest_stream.php?ordId=8d1921a78153fc3a&code=finance&page=4&ordiIndex=1").headers(VerizonUpgradeHeaders.headers_5)))
+  }
+
+  val AddOnPaymentToSwipeCard = group("AddOnPayment->SwipeCard"){
+
+    exec(
+      http("#0").get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLRC%22%5D").headers(VerizonUpgradeHeaders.headers_A0)
+        .resources(
+          http("#1").post("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/signatures").headers(VerizonUpgradeHeaders.headers_A1).body(ElFileBody("Verizon/Upgrade/WarrantyPayment_0001_request.json")),
+          http("#2").get("/img/brands/target/retail/printed-logo.png").headers(VerizonUpgradeHeaders.headers_A2)))
       .exec(
-        http("#507").get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLRC%22%5D").headers(VerizonUpgradeHeaders.headers_507))
+        http("#3").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status").headers(VerizonUpgradeHeaders.headers_A3))
       .exec(
-        http("#508").post("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/signatures").headers(VerizonUpgradeHeaders.headers_508).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0508_request.json"))
+        http("#10").options(Common.uri_dsom_v1 + "/getContentForAisle").headers(VerizonUpgradeHeaders.headers_A10))
+      .exec(
+        http("#11").options(Common.uri_dsom_v1 + "/getContentForAisle").headers(VerizonUpgradeHeaders.headers_A10))
+      .exec(
+        http("#13").options(Common.uri_dsom_v1 + "/getContentForAisle").headers(VerizonUpgradeHeaders.headers_A10))
+      .exec(
+        http("#14").post(Common.uri_dsom_v1 + "/getContentForAisle").headers(VerizonUpgradeHeaders.headers_A14).body(ElFileBody("Verizon/Upgrade/WarrantyPayment_0014_request.json")))
+      .exec(
+        http("#15").post(Common.uri_dsom_v1 + "/getContentForAisle").headers(VerizonUpgradeHeaders.headers_A15).body(ElFileBody("Verizon/Upgrade/WarrantyPayment_0015_request.json")))
+      .exec(
+        http("#17").post(Common.uri_dsom_v1 + "/getContentForAisle").headers(VerizonUpgradeHeaders.headers_A17).body(ElFileBody("Verizon/Upgrade/WarrantyPayment_0017_request.json"))
           .resources(
-            http("#509").get("/img/brands/target/retail/printed-logo.png").headers(VerizonUpgradeHeaders.headers_5)))
+            http("#4").get(Common.uri_ui + "/").headers(VerizonUpgradeHeaders.headers_A4),
+            http("#5").get(Common.uri_ui + "/build/bundle_35a8d4c475b2b4cccd3f_min.js").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#6").get(Common.uri_ui + "/build/css_35a8d4c475b2b4cccd3f_min.js").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#7").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#8").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_A8),
+            http("#9").get(Common.uri_ui + "/config.json").headers(VerizonUpgradeHeaders.headers_A9),
+            http("#12").get(Common.uri_ui + "/build/ch_68fd10af5c7827a3128a_min.js").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#16").get(Common.uri_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2").headers(VerizonUpgradeHeaders.headers_A16)))
       .exec(
-        http("#510").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status").headers(VerizonUpgradeHeaders.headers_510)
+        http("#18").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_A18)
           .resources(
-            http("#511").get(Common.uri_ui + "/").headers(VerizonUpgradeHeaders.headers_2)))
-//      .exec(
-//        http("#512").get(Common.uri_ui + "/build/bundle_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3)
-//          .resources(
-//            http("#513").get(Common.uri_ui + "/build/css_a575200e0eb7d10c68d1_min.js").headers(VerizonUpgradeHeaders.headers_3),
-//            http("#514").get(Common.uri_ui + "/assets/img/cloader.gif").headers(VerizonUpgradeHeaders.headers_5)))
+            http("#19").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(VerizonUpgradeHeaders.headers_A19),
+            http("#20").get(Common.uri_ui + "/app/pages/addonpayment/addonpayment.html").headers(VerizonUpgradeHeaders.headers_A20),
+            http("#21").get(Common.uri_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2").headers(VerizonUpgradeHeaders.headers_A16),
+            http("#22").get(Common.uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2").headers(VerizonUpgradeHeaders.headers_A22),
+            http("#23").get(Common.uri_ui + "/assets/img/bullseye.svg").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#24").get("/img/brands/target/retail/EMV-machine.png").headers(VerizonUpgradeHeaders.headers_A2)))
+
+  }
+
+  val SwipeCardToOrderSummary = group("SwipeCard->OrderSummary") {
+
+    exec(
+      http("#25").options(Common.uri_dsom_v1 + "/order/${p_orderid}/payment").headers(VerizonUpgradeHeaders.headers_A25)
+        .resources(
+          http("#26").post(Common.uri_dsom_v1 + "/order/${p_orderid}/payment").headers(VerizonUpgradeHeaders.headers_A26).body(ElFileBody("Verizon/Upgrade/WarrantyPayment_0026_request.json"))))
       .exec(
-        http("#515").get(Common.uri_google + "?family=Lato:400,700,400italic,700italic&subset=latin").headers(VerizonUpgradeHeaders.headers_6))
-      .exec(
-        http("#516").get(Common.uri_ui + "/config.json").headers(VerizonUpgradeHeaders.headers_7))
-      .exec(
-        http("#517").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_0))
-      .exec(
-        http("#518").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_0))
-//      .exec(
-//        http("#519").get(Common.uri_ui + "/build/ch_e87f4acfabb2708fcad9_min.js").headers(VerizonUpgradeHeaders.headers_3))
-      .exec(
-        http("#520").options(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_0))
-      .exec(
-        http("#521").get(Common.uri_gstatic + "/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2").headers(VerizonUpgradeHeaders.headers_10))
-      .exec(
-        http("#522").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_522).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0522_request.json")))
-      .exec(
-        http("#523").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_523).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0523_request.json")))
-      .exec(
-        http("#524").post(Common.uri_dsom_no_port + "/dsom-app/v1/getContentForAisle").headers(VerizonUpgradeHeaders.headers_524).body(ElFileBody("Verizon/Upgrade/VerizonUpgrade_0524_request.json")))
-      .exec(
-        http("#525").get(Common.uri_ui + "/app/pages/frame/header/header.html").headers(VerizonUpgradeHeaders.headers_525)
+        http("#27").options(Common.uri_dsom_v1 + "/order/${p_orderid}/payment/3726373689X133000").headers(VerizonUpgradeHeaders.headers_A27)
           .resources(
-            http("#526").get(Common.uri_ui + "/app/pages/frame/footer/footer.html").headers(VerizonUpgradeHeaders.headers_526),
-            http("#527").get(Common.uri_ui + "/app/pages/addonpayment/addonpayment.html").headers(VerizonUpgradeHeaders.headers_527),
-            http("#528").get(Common.uri_gstatic + "/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2").headers(VerizonUpgradeHeaders.headers_10),
-            http("#529").get(Common.uri_ui + "/build/font_af7ae505a9eed503f8b8e6982036873e.woff2").headers(VerizonUpgradeHeaders.headers_19),
-            http("#530").get(Common.uri_ui + "/assets/img/bullseye.svg").headers(VerizonUpgradeHeaders.headers_5),
-            http("#531").get("/img/brands/target/retail/EMV-machine.png").headers(VerizonUpgradeHeaders.headers_5)))
+            http("#28").get(Common.uri_dsom_v1 + "/order/${p_orderid}/payment/3726373689X133000").headers(VerizonUpgradeHeaders.headers_A28),
+            http("#29").get("/retail/checkout/insuranceactivation.htm").headers(VerizonUpgradeHeaders.headers_A4),
+            http("#30").get("/retail/public/styles/normalize.php").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#31").get("/jslibs/jquery.php?ver=1.8.2").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#32").get("/jslibs/modernizr.php").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#33").get("/jslibs/jquerymobile.php").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#34").get("/template/public/styles/new.main.css").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#35").get("/template/css/semantic.jqmsafe.min.css").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#36").get("/retail/public/styles/main.css").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#37").get("/js/retail/topnav.php").headers(VerizonUpgradeHeaders.headers_A5),
+            http("#38").get("/retail/public/styles/jquery.mobile-1.2.0.css").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#39").get("/brands/target/retail/public/styles/jquery.mobile-1.2.0.css").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#40").get("/brands/target/retail/public/styles/main.css").headers(VerizonUpgradeHeaders.headers_A30),
+            http("#41").get("/img/brands/target/retail/ajax-loader-l.gif").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#42").get("/img/retail/ajax-loader.gif").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#43").get("/img/brands/target/retail/logo-mini.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#44").get("/retail/public/img/alertsprite.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#45").get("/retail/public/img/reservesprite.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#46").get("/img/retail/cart.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#47").get("/img/retail/setting.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#48").get("/img/retail/home.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#49").get("/img/retail/inventory-management.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#50").get("/img/retail/customer-lookup.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#51").get("/img/retail/save.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#52").get("/img/retail/lock.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#53").get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1509672714608").headers(VerizonUpgradeHeaders.headers_A53),
+            http("#54").get("/js/retail/getnotifications.php?reqType=getreservationcount&cacheVar=1509672714939&storeId=0003").headers(VerizonUpgradeHeaders.headers_A53)))
+      .exec(
+        http("#55").get("/retail/checkout/controller/insuranceactivationprocess.php?activating=").headers(VerizonUpgradeHeaders.headers_A4))
+      .exec(
+        http("#56").get("/retail/ng/POA/config.json").headers(VerizonUpgradeHeaders.headers_A9)
+          .resources(
+            http("#57").post("/webservices/external/poa_rest/index.php/sales/v1/order").headers(VerizonUpgradeHeaders.headers_A57).body(ElFileBody("Verizon/Upgrade/WarrantyPayment_0057_request.json")),
+            http("#58").get("/img/retail/home.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#59").get("/img/retail/inventory-management.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#60").get("/img/retail/customer-lookup.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#61").get("/img/retail/save.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#62").get("/img/retail/lock.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#63").get("/img/brands/target/retail/logo-mini.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#64").get("/img/retail/cart.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#65").get("/img/retail/setting.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#66").get("/img/retail/faqs.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#67").get("/img/retail/logout.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#68").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}").headers(VerizonUpgradeHeaders.headers_A68)))
+      .exec(
+        http("#69").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/contracts").headers(VerizonUpgradeHeaders.headers_A69))
+      .exec(
+        http("#70").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status").headers(VerizonUpgradeHeaders.headers_A70))
+      .exec(
+        http("#71").get("/legacy/v1/index.php/strings?pageTags=%5B%22RTLRC%22%5D").headers(VerizonUpgradeHeaders.headers_A71)
+          .resources(
+            http("#72").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status").headers(VerizonUpgradeHeaders.headers_A72),
+            http("#73").get("/img/brands/target/retail/printed-logo.png").headers(VerizonUpgradeHeaders.headers_A2),
+            http("#74").get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}").headers(VerizonUpgradeHeaders.headers_A74)))
+
   }
 
   val TabulateResults = group("Results"){

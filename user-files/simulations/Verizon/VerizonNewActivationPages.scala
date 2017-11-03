@@ -979,7 +979,7 @@ object VerizonNewActivationPages{
 	val TabulateResults = group("Results"){
 		exec(http("Shipped Orders")
 			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
-			.check(substring("INSURANCE_ACTIVATION_NEEDED"))
+			.check(substring("COMPLETED"))
 			.headers(CommonHeaders.status_call))
 	}
 

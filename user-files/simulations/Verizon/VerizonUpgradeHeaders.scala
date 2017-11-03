@@ -1311,4 +1311,376 @@ object VerizonUpgradeHeaders {
     "X-COMMON-RETAIL-STORE-ID" -> "0003",
     "X-COMMON-SALESREP-ID" -> "tadmin2")
 
+  val headers_A0 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "orderSummary",
+    "X-COMMON-INTERACTION-ID" -> "85d3e4ce-911a-4305-b283-422029cedfe5",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A1 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> Common.uri_poa_no_port,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "orderSummary",
+    "X-COMMON-INTERACTION-ID" -> "89dbb13f-b07b-43f0-a965-c528c8bc1f3a",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A2 = Map(
+    "Accept" -> "image/webp,image/*,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A3 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "orderSummary",
+    "X-COMMON-INTERACTION-ID" -> "3484deb6-8d05-4647-a83c-26cf2f0520c1",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A4 = Map(
+    "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "Upgrade-Insecure-Requests" -> "1",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A5 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A8 = Map(
+    "accept" -> "text/css,*/*;q=0.1",
+    "accept-encoding" -> "gzip, deflate, sdch, br",
+    "accept-language" -> "en-US,en;q=0.8",
+    "cache-control" -> "no-cache",
+    "pragma" -> "no-cache",
+    "referer" -> Common.uri_ui,
+    "user-agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "x-chrome-uma-enabled" -> "1",
+    "x-client-data" -> "CIu2yQEIpbbJAQjBtskBCPqcygEIqZ3KAQ==")
+
+  val headers_A9 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-Requested-With" -> "XMLHttpRequest")
+
+  val headers_A10 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Access-Control-Request-Headers" -> "content-type,x-common-flow-type,x-common-interaction-id,x-common-retail-store-id,x-common-salesrep-id",
+    "Access-Control-Request-Method" -> "POST",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A14 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "frame",
+    "X-COMMON-INTERACTION-ID" -> "937bd6ae-4cbd-4a0b-9cea-485b535e5fcd",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A15 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "addonpayment",
+    "X-COMMON-INTERACTION-ID" -> "5fb026f4-20c9-41d6-a890-b825729987fc",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A16 = Map(
+    "accept" -> "*/*",
+    "accept-encoding" -> "gzip, deflate, sdch, br",
+    "accept-language" -> "en-US,en;q=0.8",
+    "cache-control" -> "no-cache",
+    "origin" -> Common.uri_ui_no_shopping,
+    "pragma" -> "no-cache",
+    "referer" -> "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin",
+    "user-agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "x-chrome-uma-enabled" -> "1",
+    "x-client-data" -> "CIu2yQEIpbbJAQjBtskBCPqcygEIqZ3KAQ==")
+
+  val headers_A17 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "addonpayment",
+    "X-COMMON-INTERACTION-ID" -> "e7ed5810-9a6a-4442-9fa9-f27459cc14d5",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A18 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-INTERACTION-ID" -> "05845575-d1d0-4db0-a1e6-7156855e5e67",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A19 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-INTERACTION-ID" -> "1e555499-5282-4224-984c-1d92a4fc4c70",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A20 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-INTERACTION-ID" -> "512a0773-bdb8-4c6b-b4ea-05fcd0405b48",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A22 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A25 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Access-Control-Request-Headers" -> "content-type,sessionid,x-common-flow-type,x-common-interaction-id,x-common-retail-store-id,x-common-salesrep-id",
+    "Access-Control-Request-Method" -> "POST",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A26 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "addonpayment",
+    "X-COMMON-INTERACTION-ID" -> "e5d49992-dd12-4a2a-85e8-34a3740733a8",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2",
+    "sessionId" -> "${p_sessionid}")
+
+  val headers_A27 = Map(
+    "Accept" -> "*/*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Access-Control-Request-Headers" -> "sessionid,x-common-flow-type,x-common-interaction-id,x-common-retail-store-id,x-common-salesrep-id",
+    "Access-Control-Request-Method" -> "GET",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A28 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Origin" -> Common.uri_ui_no_shopping,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "addonpayment",
+    "X-COMMON-INTERACTION-ID" -> "3b91781d-10ba-4b03-8fe8-58a3275bbbb8",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2",
+    "sessionId" -> "${p_sessionid}")
+
+  val headers_A30 = Map(
+    "Accept" -> "text/css,*/*;q=0.1",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36")
+
+  val headers_A53 = Map(
+    "Accept" -> "application/json, text/javascript, */*; q=0.01",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-Requested-With" -> "XMLHttpRequest")
+
+  val headers_A57 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Content-Type" -> "application/json;charset=UTF-8",
+    "Origin" -> Common.uri_poa_no_port,
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "home",
+    "X-COMMON-INTERACTION-ID" -> "58cd232c-d50b-4b93-b539-72bfd72f6697",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A68 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "home",
+    "X-COMMON-INTERACTION-ID" -> "7b290420-4697-4c9c-93a5-bf9827a0edcd",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A69 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "home",
+    "X-COMMON-INTERACTION-ID" -> "2b1b9eaa-5630-4c1b-9a53-a040d2ce17c5",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A70 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "home",
+    "X-COMMON-INTERACTION-ID" -> "b548d95a-e899-41ff-b76a-3557336e99e4",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A71 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "orderSummary",
+    "X-COMMON-INTERACTION-ID" -> "710e2d13-6ba8-438e-8e74-598e6f23de97",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A72 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "orderSummary",
+    "X-COMMON-INTERACTION-ID" -> "5a0a872b-3b93-40e6-95f3-acb9c5f03c9e",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
+  val headers_A74 = Map(
+    "Accept" -> "application/json, text/plain, */*",
+    "Accept-Encoding" -> "gzip, deflate, sdch, br",
+    "Accept-Language" -> "en-US,en;q=0.8",
+    "Cache-Control" -> "no-cache",
+    "Connection" -> "keep-alive",
+    "Pragma" -> "no-cache",
+    "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
+    "X-COMMON-FLOW-TYPE" -> "orderSummary",
+    "X-COMMON-INTERACTION-ID" -> "d4b8683c-59f7-4cc9-963f-1762b163b19a",
+    "X-COMMON-RETAIL-STORE-ID" -> "0003",
+    "X-COMMON-SALESREP-ID" -> "tadmin2")
+
 }
