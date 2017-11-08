@@ -36,7 +36,7 @@ object ATTScenarios {
         ATTUpgradePages.TabulateResults, Common.CommonPause,
 
         //    Common.NewGuest, Common.CommonPause,
-        Common.Logout
+//        Common.Logout
       )
     }
   }

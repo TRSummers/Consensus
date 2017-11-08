@@ -38,7 +38,7 @@ object VerizonScenarios {
         VerizonNewActivationPages.L_DeviceFinancingInstallmentContractToL_OrderSummary, Common.CommonPause,
         VerizonNewActivationPages.TabulateResults, Common.CommonPause,
         //    Common.NewGuest,    Common.CommonPause,
-        Common.Logout
+//        Common.Logout
       )
     }
   }
@@ -73,7 +73,7 @@ object VerizonScenarios {
         VerizonUpgradePages.SwipeCardToOrderSummary, Common.CommonPause,
         VerizonUpgradePages.TabulateResults, Common.CommonPause,
         //    Common.NewGuest, Common.CommonPause,
-        Common.Logout
+//        Common.Logout
       )
     }
   }

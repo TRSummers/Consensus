@@ -30,11 +30,11 @@ object SprintScenarios {
         SprintUpgradePages.MSSToScanReceipt, Common.CommonPause,
         SprintUpgradePages.ScanReceiptToActivationScan, Common.CommonPause,
         SprintUpgradePages.ActivationScanToWirelessCustomerAgreement, Common.CommonPause,
-        SprintUpgradePages.WirelessCustomerAgreementToDeviceFinancingInstallmentContract, Common.CommonPause,
-        SprintUpgradePages.DeviceFinancingInstallmentContractToOrderSummary, Common.CommonPause,
-        SprintUpgradePages.TabulateResults, Common.CommonPause,
+//        SprintUpgradePages.WirelessCustomerAgreementToDeviceFinancingInstallmentContract, Common.CommonPause,
+//        SprintUpgradePages.DeviceFinancingInstallmentContractToOrderSummary, Common.CommonPause,
+//        SprintUpgradePages.TabulateResults, Common.CommonPause,
         //    Common.NewGuest, Common.CommonPause,
-        Common.Logout
+//        Common.Logout
       )
     }
   }
