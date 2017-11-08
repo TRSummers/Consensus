@@ -33,7 +33,7 @@ object ATTScenarios {
         ATTUpgradePages.ScanReceiptToActivationScan, Common.CommonPause,
         ATTUpgradePages.ActivationScanToFinanceContract, Common.CommonPause,
         ATTUpgradePages.DeviceFinancingInstallmentContractToOrderSummary, Common.CommonPause,
-        ATTUpgradePages.TabulateResults, Common.CommonPause,
+        ATTUpgradePages.TabulateResults, Common.CommonPause
 
         //    Common.NewGuest, Common.CommonPause,
 //        Common.Logout

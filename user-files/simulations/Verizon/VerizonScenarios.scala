@@ -36,7 +36,7 @@ object VerizonScenarios {
         VerizonNewActivationPages.L_ActivationScanToL_WirelessCustomerAgreement, Common.CommonPause,
         VerizonNewActivationPages.L_WirelessCustomerAgreementToL_DeviceFinancingInstallmentContract, Common.CommonPause,
         VerizonNewActivationPages.L_DeviceFinancingInstallmentContractToL_OrderSummary, Common.CommonPause,
-        VerizonNewActivationPages.TabulateResults, Common.CommonPause,
+        VerizonNewActivationPages.TabulateResults, Common.CommonPause
         //    Common.NewGuest,    Common.CommonPause,
 //        Common.Logout
       )
@@ -71,7 +71,7 @@ object VerizonScenarios {
         VerizonUpgradePages.DeviceFinancingInstallmentContractToAddOnPayment, Common.CommonPause,
         VerizonUpgradePages.AddOnPaymentToSwipeCard, Common.CommonPause,
         VerizonUpgradePages.SwipeCardToOrderSummary, Common.CommonPause,
-        VerizonUpgradePages.TabulateResults, Common.CommonPause,
+        VerizonUpgradePages.TabulateResults, Common.CommonPause
         //    Common.NewGuest, Common.CommonPause,
 //        Common.Logout
       )
