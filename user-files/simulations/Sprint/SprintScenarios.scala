@@ -28,8 +28,8 @@ object SprintScenarios {
         SprintUpgradePages.OrderConfirmToTermsAndConditions, Common.CommonPause,
         SprintUpgradePages.TermsAndConditionsToMSS, Common.CommonPause,
         SprintUpgradePages.MSSToScanReceipt, Common.CommonPause,
-        SprintUpgradePages.ScanReceiptToActivationScan, Common.CommonPause,
-        SprintUpgradePages.ActivationScanToWirelessCustomerAgreement, Common.CommonPause
+        SprintUpgradePages.ScanReceiptToActivationScan, Common.CommonPause
+//        SprintUpgradePages.ActivationScanToWirelessCustomerAgreement, Common.CommonPause
         //        SprintUpgradePages.WirelessCustomerAgreementToDeviceFinancingInstallmentContract, Common.CommonPause,
         //        SprintUpgradePages.DeviceFinancingInstallmentContractToOrderSummary, Common.CommonPause,
         //        SprintUpgradePages.TabulateResults, Common.CommonPause,
