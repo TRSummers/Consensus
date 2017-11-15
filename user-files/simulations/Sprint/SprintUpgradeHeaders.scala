@@ -2142,4 +2142,49 @@ object SprintUpgradeHeaders {
     "X-COMMON-RETAIL-STORE-ID" -> "0003",
     "X-COMMON-SALESREP-ID" -> "tadmin2")
 
+
+//Added below on 11/15/17
+	val SPTLegacyHeaders_0 = Map(
+		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.9",
+		"Cache-Control" -> "max-age=0",
+		"Connection" -> "keep-alive",
+		"Origin" -> "https://poa-perf-scale.consensuscorpdev.com",
+		"Upgrade-Insecure-Requests" -> "1",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36")
+
+	val SPTLegacyHeaders_1 = Map(
+		"Accept" -> "text/css,*/*;q=0.1",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.9",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36")
+
+	val SPTLegacyHeaders_3 = Map(
+		"Accept" -> "*/*",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.9",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36")
+
+	val SPTLegacyHeaders_6 = Map("User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36")
+
+	val SPTLegacyHeaders_21 = Map(
+		"Accept" -> "application/json, text/javascript, */*; q=0.01",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.9",
+		"Connection" -> "keep-alive",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36",
+		"X-Requested-With" -> "XMLHttpRequest")
+
+	val SPTLegacyHeaders_23 = Map(
+		"Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+		"Accept-Encoding" -> "gzip, deflate, br",
+		"Accept-Language" -> "en-US,en;q=0.9",
+		"Connection" -> "keep-alive",
+		"Upgrade-Insecure-Requests" -> "1",
+		"User-Agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36")
+
+
 }
