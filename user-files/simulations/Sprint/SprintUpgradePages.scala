@@ -700,7 +700,7 @@ object SprintUpgradePages {
   }
 
 //Added below for legacy
-	val ActivationScanToWirelessCustomerAgreement = group("ActivationScanToWirelessCustomerAgreement"){ 
+	val ActivationScanToWirelessCustomerAgreement_LEGACY = group("ActivationScanToWirelessCustomerAgreement"){ 
 	  exec(http("request_0")
 			.post("/retail/checkout/activationscan.htm")
 			.headers(SPTLegacyHeaders_0))
@@ -849,7 +849,7 @@ object SprintUpgradePages {
 			.headers(SPTLegacyHeaders_21))
 	}
 	//	.pause(20)
-		val WirelessCustomerAgreementToDeviceFinancingInstallmentContract = group("WirelessCustomerAgreementToDeviceFinancingInstallmentContract"){
+		val WirelessCustomerAgreementToDeviceFinancingInstallmentContract_LEGACY = group("WirelessCustomerAgreementToDeviceFinancingInstallmentContract"){
 		  exec(http("request_57")
 			.get("/retail/public/styles/pen.cur")
 			.headers(SPTLegacyHeaders_6))
@@ -917,7 +917,7 @@ object SprintUpgradePages {
 			.headers(SPTLegacyHeaders_21))
 		}
 		
-		val DeviceFinancingInstallmentContractToOrderSummary = group("DeviceFinancingInstallmentContractToOrderSummary"){
+		val DeviceFinancingInstallmentContractToOrderSummary_LEGACY = group("DeviceFinancingInstallmentContractToOrderSummary"){
 		 exec(http("request_82")
 			.get("/retail/checkout/controller/activationprocess.php?activating=")
 			.headers(SPTLegacyHeaders_23))
