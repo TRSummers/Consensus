@@ -6,7 +6,7 @@ import io.gatling.jdbc.Predef._
 object SprintUpgradePages {
 
   val ChoosePathToUpgradeEligibilityCheck = group("ChoosePath->UpgradeCheck") {
-    exec(http("#34").options(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState").headers(SprintUpgradeHeaders.headers_7))
+    exec(http("${p_sessionid}").options(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState").headers(SprintUpgradeHeaders.headers_7))
       .exec(http("#35").post(Common.uri_dsom_no_port + "/dsom-app/v1/getNextState").headers(SprintUpgradeHeaders.headers_35).body(ElFileBody("Sprint/Upgrade/SprintUpgradeE2E_0035_request.json")))
       .exec(http("#36").get("/retail/orderassembly/controller/process.php?planType=contractExt&action=buyTypeChosen").headers(SprintUpgradeHeaders.headers_11))
       .exec(http("#42").get(Common.uri_ui + "/config.json").headers(SprintUpgradeHeaders.headers_6))
