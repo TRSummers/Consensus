@@ -1844,7 +1844,7 @@ object SPRLegacy4{
 			.get("/img/retail/save.png"))
 		.exec(http("request_550")
 			.get("/img/retail/lock.png"))
-		.exec(http("${p_sessionid}")
+		.exec(http("551")
 			.get("/js/retail/getactivealerts.php?reqType=getactivealerts&cacheVar=1510794187092")
 			.headers(headers_79))
 		}			
