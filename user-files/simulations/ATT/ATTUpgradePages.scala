@@ -828,7 +828,7 @@ object ATTUpgradePages{
 
 	}
 
-	val TabulateResults = group("${p_orderid}}"){
+	val TabulateResults = group("Results"){
 		exec(http("Shipped Orders")
 			.get("/webservices/external/poa_rest/index.php/sales/v1/order/${p_orderid}/status")
 			.check(substring("COMPLETED"))
