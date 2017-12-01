@@ -1,23 +1,6 @@
 @REM set [/p] <Variable>=[<PromptString>]
 @echo off
 
-rem set VNAUSERS=%1
-rem set SNAUSERS=%2
-rem set TNAUSERS=%3
-
-rem set VUGUSERS=%4
-rem set SUGUSERS=%5
-rem set TUGUSERS=%6
-
-rem set VALUSERS=%7
-rem set SALUSERS=%8
-rem set TALUSERS=%9
-
-rem shift
-rem set RAMP=%9
-rem shift
-rem set ITERATIONS=%9
-rem shift
 set USERFILESLOCATION=%1
 
 :passiton
