@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><quer1:queryPlansRequiredServicesResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:quer="http://integration.sprint.com/integration/interfaces/queryPlansRequiredServicesBt/v1/queryPlansRequiredServicesBtV1" xmlns:quer1="http://integration.sprint.com/interfaces/queryPlansRequiredServices/v1/queryPlansRequiredServices.xsd">
+      <quer1:pricePlanList>
+        <quer1:pricePlanInfo>
+          <quer1:pricePlanSoc>LPDSA0505</quer1:pricePlanSoc>
+          <quer1:addOnSocInfoList>
+            <quer1:addOnSocInfo>
+              <quer1:soc>PREMRES03</quer1:soc>
+              <quer1:socDesc>HD Streaming</quer1:socDesc>
+              <quer1:socLongDesc>HD Streaming</quer1:socLongDesc>
+              <quer1:optionPriority>0</quer1:optionPriority>
+              <quer1:mutuallyExclusiveInd>true</quer1:mutuallyExclusiveInd>
+              <quer1:requiredSocInd>true</quer1:requiredSocInd>
+              <quer1:chargeInfo>
+                <quer1:recurringCharge>0.00</quer1:recurringCharge>
+              </quer1:chargeInfo>
+              <quer1:corpRequiredInd>false</quer1:corpRequiredInd>
+              <quer1:socCategory>Premium Data</quer1:socCategory>
+              <quer1:categoryRequired>false</quer1:categoryRequired>
+              <quer1:socType>O</quer1:socType>
+            </quer1:addOnSocInfo>
+            <quer1:addOnSocInfo>
+              <quer1:soc>PDSHS10G</quer1:soc>
+              <quer1:socDesc>10GB Mobile Hotspot</quer1:socDesc>
+              <quer1:socLongDesc>10GB Mobile Hotspot</quer1:socLongDesc>
+              <quer1:optionPriority>0</quer1:optionPriority>
+              <quer1:mutuallyExclusiveInd>false</quer1:mutuallyExclusiveInd>
+              <quer1:requiredSocInd>true</quer1:requiredSocInd>
+              <quer1:chargeInfo>
+                <quer1:recurringCharge>0.00</quer1:recurringCharge>
+              </quer1:chargeInfo>
+              <quer1:corpRequiredInd>false</quer1:corpRequiredInd>
+              <quer1:socCategory>Premium Data</quer1:socCategory>
+              <quer1:categoryRequired>false</quer1:categoryRequired>
+              <quer1:socType>O</quer1:socType>
+            </quer1:addOnSocInfo>
+            <quer1:addOnSocInfo>
+              <quer1:soc>REQPROLHS</quer1:soc>
+              <quer1:socDesc>LTE Provisioning w/Hotspot</quer1:socDesc>
+              <quer1:socLongDesc>LTE Provisioning w/Hotspot</quer1:socLongDesc>
+              <quer1:optionPriority>0</quer1:optionPriority>
+              <quer1:mutuallyExclusiveInd>true</quer1:mutuallyExclusiveInd>
+              <quer1:requiredSocInd>true</quer1:requiredSocInd>
+              <quer1:chargeInfo>
+                <quer1:recurringCharge>0.00</quer1:recurringCharge>
+              </quer1:chargeInfo>
+              <quer1:corpRequiredInd>false</quer1:corpRequiredInd>
+              <quer1:socCategory>REQUIRED</quer1:socCategory>
+              <quer1:categoryRequired>false</quer1:categoryRequired>
+              <quer1:socType>R</quer1:socType>
+            </quer1:addOnSocInfo>
+          </quer1:addOnSocInfoList>
+        </quer1:pricePlanInfo>
+      </quer1:pricePlanList>
+    </quer1:queryPlansRequiredServicesResponse>

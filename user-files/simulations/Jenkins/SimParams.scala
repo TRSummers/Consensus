@@ -14,19 +14,27 @@ object SimParams{
     .acceptEncodingHeader("gzip, deflate")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
-
+  
+  val SohoHttpProtocol = http
+    .baseURL("https://cdsprf0-api.consensuscorpdev.com")
+    .acceptHeader("application/json;q=0.9,*/*;q=0.8")
+    .acceptLanguageHeader("en-US,en;q=0.5")
+    .acceptEncodingHeader("gzip, deflate")
+  
   val rampup = if (System.getenv("RAMP") == null) 1 else System.getenv("RAMP").toInt
   val inum = if (System.getenv("ITERATIONS") == null) 10 else System.getenv("ITERATIONS").toInt
 
-
-  val VNA = if (System.getenv("VNAUSERS") == null) 1 else System.getenv("VNAUSERS").toInt
-  val SNA = if (System.getenv("SNAUSERS") == null) 1 else System.getenv("SNAUSERS").toInt
-  val TNA = if (System.getenv("TNAUSERS") == null) 1 else System.getenv("TNAUSERS").toInt
-  val VUG = if (System.getenv("VUGUSERS") == null) 1 else System.getenv("VUGUSERS").toInt
-  val SUG = if (System.getenv("SUGUSERS") == null) 1 else System.getenv("SUGUSERS").toInt
-  val TUG = if (System.getenv("TUGUSERS") == null) 1 else System.getenv("TUGUSERS").toInt
-  val VAL = if (System.getenv("VALUSERS") == null) 1 else System.getenv("VALUSERS").toInt
-  val SAL = if (System.getenv("SALUSERS") == null) 1 else System.getenv("SALUSERS").toInt
-  val TAL = if (System.getenv("TALUSERS") == null) 1 else System.getenv("TALUSERS").toInt
+  val TGTVNA = if (System.getenv("TGTVNA") == null) 1 else System.getenv("TGTVNA").toInt
+  val TGTSNA = if (System.getenv("TGTSNA") == null) 1 else System.getenv("TGTSNA").toInt
+  val TGTTNA = if (System.getenv("TGTTNA") == null) 1 else System.getenv("TGTTNA").toInt
+  val TGTVUG = if (System.getenv("TGTVUG") == null) 1 else System.getenv("TGTVUG").toInt
+  val TGTSUG = if (System.getenv("TGTSUG") == null) 1 else System.getenv("TGTSUG").toInt
+  val TGTTUG = if (System.getenv("TGTTUG") == null) 1 else System.getenv("TGTTUG").toInt
+  val TGTVAL = if (System.getenv("TGTVAL") == null) 1 else System.getenv("TGTVAL").toInt
+  val TGTSAL = if (System.getenv("TGTSAL") == null) 1 else System.getenv("TGTSAL").toInt
+  val TGTTAL = if (System.getenv("TGTTAL") == null) 1 else System.getenv("TGTTAL").toInt
+  val SOHOSNA = if (System.getenv("SOHOSNA") == null) 1 else System.getenv("SOHOSNA").toInt
+  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 1 else System.getenv("SOHOSUG").toInt
+  val SOHOSAL = if (System.getenv("SOHOSAL") == null) 1 else System.getenv("SOHOSAL").toInt
 
 }

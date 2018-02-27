@@ -1,0 +1,30 @@
+{
+  "user": "GATLING",
+  "name": "SPRINT_SOHO_E2E_processDeviceReturn",
+  "request": {
+    "xpath": true,
+    "method": "POST",
+    "url": "",
+    "path": FILL_ME_IN,
+    "environment": "PERF_SOHO",
+    "pname1": FILL_ME_IN
+  },
+  "response": {
+    "body": "${payload}",
+    "statusCode": "200",
+    "headers": [{
+      "name": "Content-Type",
+      "headerparams": [{
+        "value": "text/xml"
+      }
+      ]
+    }
+    ]
+  },
+  "expectation": {
+    "description": "SPRINT_SOHO_E2E_processDeviceReturn",
+    "responder": "SPRINT",
+    "api": "processDeviceReturn",
+    "environment": "PERF-SOHO"
+  }
+}

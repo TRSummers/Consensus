@@ -14,8 +14,6 @@ object Common{
 	val uri_ui_no_shopping  = "https://perf-scale-ui.consensuscorpdev.com"
 	val uri_dsom_v1  = 				"https://perf-scale-dsom.consensuscorpdev.com/dsom-app/v1"
 	val uri_dsom_v1_port = 		"https://perf-scale-dsom.consensuscorpdev.com:443/dsom-app/v1"
-	val tunneled_cr = 				"https://localhost:58443"
-	val non_tunneled_cr = 		"https://localhost:7443"
 	val uri_pam  = 						"https://perf-scale-pam.consensuscorpdev.com"
 
 
@@ -23,8 +21,6 @@ object Common{
 	val uri_google  = "https://fonts.googleapis.com/css"
 
 	val CommonPause=pause(8,45)
-//	val CommonPause=pause(2,5)
-
 
 	val VZWCarrierTestData =Iterator.continually(
 		Map( "imei" -> "99000088304056"))
