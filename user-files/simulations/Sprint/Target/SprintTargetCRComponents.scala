@@ -20,6 +20,7 @@ object SprintTargetCRComponents {
   val expectation11 = "expectations/sprint/query-available-plans"
   val expectation12 = "expectations/sprint/query-available-options"
 
+
   val gatlingData = sys.env("GATLING_DATA")
   val expectationPath = Array(
     Map("expectationPath" -> expectation1, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation1 + "-payload.xml").mkString)),
