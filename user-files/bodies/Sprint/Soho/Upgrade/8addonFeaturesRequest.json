@@ -1,0 +1,27 @@
+{
+  "transactionType": "UPGRADE",
+  "header": {
+    "dealerCode": "9AKAWD1X",
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  },
+  "cart": {
+    "plans": [
+      {
+        "serviceContractType": "MONTH_TO_MONTH",
+        "code": "LSD133AS",
+        "connections": [
+          {
+            "device": {
+              "paymentPlan": {
+                "type": "LEASE"
+              },
+              "serialNumber": "356718081115559"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

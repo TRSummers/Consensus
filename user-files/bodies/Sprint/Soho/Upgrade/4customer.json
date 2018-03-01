@@ -1,0 +1,16 @@
+{
+  "input": {
+    "isRealTime": true,
+    "mobile": {
+      "orderType": "UPGRADE",
+      "paymentPlan": {
+        "type": "LEASE"
+      }
+    }
+  },
+  "header": {
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  }
+}

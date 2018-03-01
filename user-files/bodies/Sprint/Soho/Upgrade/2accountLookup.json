@@ -1,0 +1,16 @@
+{
+  "accountPhoneNumber": "7407076488",
+  "options": {
+    "verifyOnly": false
+  },
+  "header": {
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  },
+  "customer": {
+    "serviceProviderAuthentication": {
+      "passCode": "112314"
+    }
+  }
+}

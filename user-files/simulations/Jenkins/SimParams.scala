@@ -20,9 +20,10 @@ object SimParams{
     .acceptHeader("application/json;q=0.9,*/*;q=0.8")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .acceptEncodingHeader("gzip, deflate")
+
   
   val rampup = if (System.getenv("RAMP") == null) 1 else System.getenv("RAMP").toInt
-  val inum = if (System.getenv("ITERATIONS") == null) 10 else System.getenv("ITERATIONS").toInt
+  val inum = if (System.getenv("ITERATIONS") == null) 1 else System.getenv("ITERATIONS").toInt
 
   val TGTVNA = if (System.getenv("TGTVNA") == null) 1 else System.getenv("TGTVNA").toInt
   val TGTSNA = if (System.getenv("TGTSNA") == null) 1 else System.getenv("TGTSNA").toInt

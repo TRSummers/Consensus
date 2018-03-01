@@ -1,0 +1,15 @@
+{
+  "devices": [
+    {
+      "additionalInfos": [
+
+      ],
+      "serialNumber": "356718081115559",
+      "networkConnectionId": "89011202002349416548"
+    }
+  ],
+  "header": {
+    "serviceProvider": "SPRINT",
+    "clientReferenceId": "054320566"
+  }
+}

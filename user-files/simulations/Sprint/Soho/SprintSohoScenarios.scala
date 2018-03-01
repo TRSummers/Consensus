@@ -6,28 +6,23 @@ import scala.util.Random
 
 object SprintSohoScenarios{
 
-  val Upgrade = scenario("SoHo UPG E2E").repeat(SimParams.inum){
+  val Upgrade = scenario("SoHo UPG").repeat(SimParams.inum){
 
-    group("SoHo UPG E2E"){
+    group("SoHo / UPG"){
       exec(
-        feed(SprintSohoUpgradeGroups.createUserTokenUsers),
-        feed(SprintSohoUpgradeGroups.validateDeviceTestData),
-        feed(SprintSohoUpgradeGroups.accountLookupGroupTestData),
-
-        SprintSohoUpgradeGroups.accountLookupGroup,
-        SprintSohoUpgradeGroups.SprintCreateCustomer,
-        SprintSohoUpgradeGroups.validateDevice,
-        SprintSohoUpgradeGroups.createUserToken,
-        SprintSohoUpgradeGroups.SubmitReturn,
-
-        feed(SprintSohoUpgradeGroups.checkTradeInGroupUsers),
-        feed(SprintSohoUpgradeGroups.numberPortPhoneNumbers),
-
-        SprintSohoUpgradeGroups.checkTradeInGroup,
-        SprintSohoUpgradeGroups.SprintpaymentPlans,
-        SprintSohoUpgradeGroups.numberPort,
-        SprintSohoUpgradeGroups.order_post_call,
-        SprintSohoUpgradeGroups.order_put_call
+        SprintSohoUpgradeGroups.device,
+        SprintSohoUpgradeGroups.accountAccountLookup,
+        SprintSohoUpgradeGroups.deviceTradein,
+        SprintSohoUpgradeGroups.customer,
+        SprintSohoUpgradeGroups.supportAccesscode,
+        SprintSohoUpgradeGroups.customerDevicePaymentPlansRequest,
+        SprintSohoUpgradeGroups.catalogPlansRequest,
+        SprintSohoUpgradeGroups.addonFeaturesRequest,
+        SprintSohoUpgradeGroups.orderPost,
+        SprintSohoUpgradeGroups.orderPut,
+        SprintSohoUpgradeGroups.orderValidation,
+        SprintSohoUpgradeGroups.accountConnection,
+        SprintSohoUpgradeGroups.orderValidation2
       )
     }
   }

@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><proc1:processDeviceReturnResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:proc="http://integration.sprint.com/integration/interfaces/processDeviceReturnBtV1/v1/processDeviceReturnBtV1" xmlns:proc1="http://integration.sprint.com/interfaces/processDeviceReturn/v1/processDeviceReturn.xsd">
-      <proc1:subscriberResponseInfo>
+<?xml version="1.0" encoding="UTF-8"?>
+<proc1:processDeviceReturnResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                                   xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xmlns:proc="http://integration.sprint.com/integration/interfaces/processDeviceReturnBtV1/v1/processDeviceReturnBtV1"
+                                   xmlns:proc1="http://integration.sprint.com/interfaces/processDeviceReturn/v1/processDeviceReturn.xsd">
+    <proc1:subscriberResponseInfo>
         <proc1:ban>352138798</proc1:ban>
         <proc1:subscriberId>44023248121</proc1:subscriberId>
         <proc1:mdn>7407076488</proc1:mdn>
-      </proc1:subscriberResponseInfo>
-    </proc1:processDeviceReturnResponse>
+    </proc1:subscriberResponseInfo>
+</proc1:processDeviceReturnResponse>

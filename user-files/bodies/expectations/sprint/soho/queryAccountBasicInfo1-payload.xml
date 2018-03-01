@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><quer1:querySubscriberBasicInfoResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:quer="http://integration.sprint.com/integration/interfaces/querySubscriberBasicInfoBtV1/v1/querySubscriberBasicInfoBtV1" xmlns:quer1="http://integration.sprint.com/interfaces/querySubscriberBasicInfo/v1/querySubscriberBasicInfo.xsd">
-      <quer1:basicInfo>
+<?xml version="1.0" encoding="UTF-8"?>
+<quer1:querySubscriberBasicInfoResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                        xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                                        xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                        xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                                        xmlns:quer="http://integration.sprint.com/integration/interfaces/querySubscriberBasicInfoBtV1/v1/querySubscriberBasicInfoBtV1"
+                                        xmlns:quer1="http://integration.sprint.com/interfaces/querySubscriberBasicInfo/v1/querySubscriberBasicInfo.xsd">
+    <quer1:basicInfo>
         <quer1:ban>352138798</quer1:ban>
         <quer1:subscriberId>44023248121</quer1:subscriberId>
         <quer1:status>A</quer1:status>
@@ -13,8 +20,8 @@
         <quer1:mdnPendingPortOutInd>false</quer1:mdnPendingPortOutInd>
         <quer1:tclHotlineInd>false</quer1:tclHotlineInd>
         <quer1:premiumInd>false</quer1:premiumInd>
-      </quer1:basicInfo>
-      <quer1:detailInfo>
+    </quer1:basicInfo>
+    <quer1:detailInfo>
         <quer1:mdn>7407076488</quer1:mdn>
         <quer1:mdnStatus>A</quer1:mdnStatus>
         <quer1:mdnStatusDate>2018-01-28</quer1:mdnStatusDate>
@@ -45,5 +52,5 @@
         <quer1:relationInd>N</quer1:relationInd>
         <quer1:minSequenceNumber>2893525051</quer1:minSequenceNumber>
         <quer1:dataLinkInd>false</quer1:dataLinkInd>
-      </quer1:detailInfo>
-    </quer1:querySubscriberBasicInfoResponse>
+    </quer1:detailInfo>
+</quer1:querySubscriberBasicInfoResponse>

@@ -1,0 +1,21 @@
+{
+  "devices": [
+    {
+      "serialNumber": "356718081115559",
+      "price": {
+        "amount": 1149.99,
+        "code": "USD"
+      },
+      "connection": {
+        "transactionType": "UPGRADE_DEVICE",
+        "phoneNumber": "7407076488"
+      }
+    }
+  ],
+  "header": {
+    "dealerCode": "9AKAWD1X",
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  }
+}

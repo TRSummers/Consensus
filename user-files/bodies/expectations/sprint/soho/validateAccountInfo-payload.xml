@@ -1,216 +1,222 @@
-<?xml version="1.0" encoding="UTF-8"?><val1:validateAccountInfoResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:val="http://integration.sprint.com/interfaces/validateAccountInfoBt/validateAccountInfoBt.xsd" xmlns:val1="http://integration.sprint.com/interfaces/validateAccountInfo/v1/validateAccountInfo.xsd">
-      <val1:accountStatus>ACTIVE</val1:accountStatus>
-      <val1:ban>352138798</val1:ban>
-      <val1:numberOfHandsetsApproved>7</val1:numberOfHandsetsApproved>
-      <val1:accountSubscribertInfo>
+<?xml version="1.0" encoding="UTF-8"?>
+<val1:validateAccountInfoResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                                  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                  xmlns:val="http://integration.sprint.com/interfaces/validateAccountInfoBt/validateAccountInfoBt.xsd"
+                                  xmlns:val1="http://integration.sprint.com/interfaces/validateAccountInfo/v1/validateAccountInfo.xsd">
+    <val1:accountStatus>ACTIVE</val1:accountStatus>
+    <val1:ban>352138798</val1:ban>
+    <val1:numberOfHandsetsApproved>7</val1:numberOfHandsetsApproved>
+    <val1:accountSubscribertInfo>
         <val1:currentNumberOfSubscribers>3</val1:currentNumberOfSubscribers>
         <val1:subscriberList>
-          <val1:subscriberInfo>
-            <val1:subscriberId>44023248121</val1:subscriberId>
-            <val1:pricePlanCode>LSD133AS</val1:pricePlanCode>
-            <val1:pricePlanName>24GB Btr Choice XL-$5off w/AP</val1:pricePlanName>
-            <val1:pricePlanPrice>80.00</val1:pricePlanPrice>
-            <val1:planType>fam</val1:planType>
-            <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
-            <val1:ltsRank>1</val1:ltsRank>
-            <val1:sharingGroupId>490642</val1:sharingGroupId>
-            <val1:familyGroup>1</val1:familyGroup>
-            <val1:serialType>E</val1:serialType>
-            <val1:serialNumber>256691573506506899</val1:serialNumber>
-            <val1:iccId>89011201002099091815</val1:iccId>
-            <val1:itemId>SPHG92032BK1</val1:itemId>
-            <val1:phoneName>SAM G920 32G BLK XCVR SGL</val1:phoneName>
-            <val1:mdn>7407076488</val1:mdn>
-            <val1:mdnStatus>ACTIVE</val1:mdnStatus>
-            <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
-            <val1:initialActivationDate>2018-01-28</val1:initialActivationDate>
-            <val1:emailAddress>test@test.com</val1:emailAddress>
-            <val1:handsetActivationDate>2018-01-28</val1:handsetActivationDate>
-            <val1:upgradeInfo>
-              <val1:eligibleInd>true</val1:eligibleInd>
-              <val1:eligibleDate>2018-01-01</val1:eligibleDate>
-              <val1:eligibilityCode>709089881-99</val1:eligibilityCode>
-              <val1:currentTier>1</val1:currentTier>
-              <val1:eligibleTierList>
-                <val1:eligibleTierInfo>
-                  <val1:eligibleTierDate>2018-01-01</val1:eligibleTierDate>
-                  <val1:eligibleTierLevel>1</val1:eligibleTierLevel>
-                </val1:eligibleTierInfo>
-              </val1:eligibleTierList>
-              <val1:currentEligibilityList>
-                <val1:currentEligibilityInfo>
-                  <val1:eligibilityDescription>IB or Lease without Discount</val1:eligibilityDescription>
-                </val1:currentEligibilityInfo>
-                <val1:currentEligibilityInfo>
-                  <val1:eligibilityDescription>IB or Lease with Discount</val1:eligibilityDescription>
-                </val1:currentEligibilityInfo>
-              </val1:currentEligibilityList>
-              <val1:subscriberDevicePricingList/>
-            </val1:upgradeInfo>
-            <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
-            <val1:addOnSocList>
-              <val1:addOnSocInfo>
-                <val1:optionName>Phone Access w/Unltd Talk/Text</val1:optionName>
-                <val1:optionCode>LSDPHN25D</val1:optionCode>
-                <val1:optionPrice>25.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-              <val1:addOnSocInfo>
-                <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
-                <val1:optionCode>REQPROLHS</val1:optionCode>
-                <val1:optionPrice>0.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-              <val1:addOnSocInfo>
-                <val1:optionName>Unlimited 2G Data Speeds</val1:optionName>
-                <val1:optionCode>LSD133ASD</val1:optionCode>
-                <val1:optionPrice>0.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-            </val1:addOnSocList>
-            <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
-            <val1:loanExistInd>false</val1:loanExistInd>
-            <val1:leaseExistInd>true</val1:leaseExistInd>
-            <val1:giveBackInd>false</val1:giveBackInd>
-            <val1:leaseInfo>
-              <val1:leaseDeviceTurnInInd>true</val1:leaseDeviceTurnInInd>
-              <val1:currentLeaseTermStatus>SSG</val1:currentLeaseTermStatus>
-            </val1:leaseInfo>
-          </val1:subscriberInfo>
-          <val1:subscriberInfo>
-            <val1:subscriberId>54023248121</val1:subscriberId>
-            <val1:pricePlanCode>LSD133AS</val1:pricePlanCode>
-            <val1:pricePlanName>24GB Btr Choice XL-$5off w/AP</val1:pricePlanName>
-            <val1:pricePlanPrice>0.00</val1:pricePlanPrice>
-            <val1:planType>fam</val1:planType>
-            <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
-            <val1:ltsRank>2</val1:ltsRank>
-            <val1:sharingGroupId>490642</val1:sharingGroupId>
-            <val1:familyGroup>1</val1:familyGroup>
-            <val1:serialType>E</val1:serialType>
-            <val1:serialNumber>089594368804542832</val1:serialNumber>
-            <val1:iccId>89011202000071382862</val1:iccId>
-            <val1:itemId>SPHG92032BK1</val1:itemId>
-            <val1:phoneName>SAM G920 32G BLK XCVR SGL</val1:phoneName>
-            <val1:mdn>7407076491</val1:mdn>
-            <val1:mdnStatus>ACTIVE</val1:mdnStatus>
-            <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
-            <val1:initialActivationDate>2018-01-28</val1:initialActivationDate>
-            <val1:emailAddress>test@test.com</val1:emailAddress>
-            <val1:handsetActivationDate>2018-01-28</val1:handsetActivationDate>
-            <val1:upgradeInfo>
-              <val1:eligibleInd>true</val1:eligibleInd>
-              <val1:eligibleDate>2018-01-01</val1:eligibleDate>
-              <val1:eligibilityCode>191445611-99</val1:eligibilityCode>
-              <val1:currentTier>1</val1:currentTier>
-              <val1:eligibleTierList>
-                <val1:eligibleTierInfo>
-                  <val1:eligibleTierDate>2018-01-01</val1:eligibleTierDate>
-                  <val1:eligibleTierLevel>1</val1:eligibleTierLevel>
-                </val1:eligibleTierInfo>
-              </val1:eligibleTierList>
-              <val1:currentEligibilityList>
-                <val1:currentEligibilityInfo>
-                  <val1:eligibilityDescription>IB or Lease without Discount</val1:eligibilityDescription>
-                </val1:currentEligibilityInfo>
-                <val1:currentEligibilityInfo>
-                  <val1:eligibilityDescription>IB or Lease with Discount</val1:eligibilityDescription>
-                </val1:currentEligibilityInfo>
-              </val1:currentEligibilityList>
-            </val1:upgradeInfo>
-            <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
-            <val1:addOnSocList>
-              <val1:addOnSocInfo>
-                <val1:optionName>Phone Access w/Unltd Talk/Text</val1:optionName>
-                <val1:optionCode>LSDPHN25D</val1:optionCode>
-                <val1:optionPrice>25.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-              <val1:addOnSocInfo>
-                <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
-                <val1:optionCode>REQPROLHS</val1:optionCode>
-                <val1:optionPrice>0.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-              <val1:addOnSocInfo>
-                <val1:optionName>Unlimited 2G Data Speeds</val1:optionName>
-                <val1:optionCode>LSD133ASD</val1:optionCode>
-                <val1:optionPrice>0.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-            </val1:addOnSocList>
-            <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
-            <val1:loanExistInd>false</val1:loanExistInd>
-            <val1:leaseExistInd>true</val1:leaseExistInd>
-            <val1:giveBackInd>false</val1:giveBackInd>
-            <val1:leaseInfo>
-              <val1:leaseDeviceTurnInInd>true</val1:leaseDeviceTurnInInd>
-              <val1:currentLeaseTermStatus>SSG</val1:currentLeaseTermStatus>
-            </val1:leaseInfo>
-          </val1:subscriberInfo>
-          <val1:subscriberInfo>
-            <val1:subscriberId>89023248121</val1:subscriberId>
-            <val1:pricePlanCode>PDSL3592</val1:pricePlanCode>
-            <val1:pricePlanName>My All-in with 5GB MHS</val1:pricePlanName>
-            <val1:pricePlanPrice>110.00</val1:pricePlanPrice>
-            <val1:planType>ind</val1:planType>
-            <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
-            <val1:serialType>E</val1:serialType>
-            <val1:serialNumber>256691544801323591</val1:serialNumber>
-            <val1:iccId>89011201000180018903</val1:iccId>
-            <val1:itemId>SPHG92032BK1</val1:itemId>
-            <val1:phoneName>SAM G920 32G BLK XCVR SGL</val1:phoneName>
-            <val1:mdn>7407076700</val1:mdn>
-            <val1:mdnStatus>ACTIVE</val1:mdnStatus>
-            <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
-            <val1:initialActivationDate>2018-01-28</val1:initialActivationDate>
-            <val1:emailAddress>test@test.com</val1:emailAddress>
-            <val1:contractStartDate>2018-01-28</val1:contractStartDate>
-            <val1:contractEndDate>2020-01-27</val1:contractEndDate>
-            <val1:handsetActivationDate>2018-01-28</val1:handsetActivationDate>
-            <val1:upgradeInfo>
-              <val1:eligibleInd>true</val1:eligibleInd>
-              <val1:eligibleDate>2018-01-01</val1:eligibleDate>
-              <val1:eligibilityCode>200532086-99</val1:eligibilityCode>
-              <val1:currentTier>1</val1:currentTier>
-              <val1:eligibleTierList>
-                <val1:eligibleTierInfo>
-                  <val1:eligibleTierDate>2018-01-01</val1:eligibleTierDate>
-                  <val1:eligibleTierLevel>1</val1:eligibleTierLevel>
-                </val1:eligibleTierInfo>
-              </val1:eligibleTierList>
-              <val1:currentEligibilityList>
-                <val1:currentEligibilityInfo>
-                  <val1:eligibilityDescription>IB or Lease without Discount</val1:eligibilityDescription>
-                </val1:currentEligibilityInfo>
-                <val1:currentEligibilityInfo>
-                  <val1:eligibilityDescription>IB or Lease with Discount</val1:eligibilityDescription>
-                </val1:currentEligibilityInfo>
-              </val1:currentEligibilityList>
-            </val1:upgradeInfo>
-            <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
-            <val1:addOnSocList>
-              <val1:addOnSocInfo>
-                <val1:optionName>Sprint Mobile Hotspot 5GB</val1:optionName>
-                <val1:optionCode>5GBHTSPTL</val1:optionCode>
-                <val1:optionPrice>0.00</val1:optionPrice>
-              </val1:addOnSocInfo>
-            </val1:addOnSocList>
-            <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
-            <val1:loanExistInd>false</val1:loanExistInd>
-            <val1:leaseExistInd>true</val1:leaseExistInd>
-            <val1:giveBackInd>false</val1:giveBackInd>
-            <val1:leaseInfo>
-              <val1:leaseDeviceTurnInInd>true</val1:leaseDeviceTurnInInd>
-              <val1:currentLeaseTermStatus>SSG</val1:currentLeaseTermStatus>
-            </val1:leaseInfo>
-          </val1:subscriberInfo>
+            <val1:subscriberInfo>
+                <val1:subscriberId>44023248121</val1:subscriberId>
+                <val1:pricePlanCode>LSD133AS</val1:pricePlanCode>
+                <val1:pricePlanName>24GB Btr Choice XL-$5off w/AP</val1:pricePlanName>
+                <val1:pricePlanPrice>80.00</val1:pricePlanPrice>
+                <val1:planType>fam</val1:planType>
+                <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                <val1:ltsRank>1</val1:ltsRank>
+                <val1:sharingGroupId>490642</val1:sharingGroupId>
+                <val1:familyGroup>1</val1:familyGroup>
+                <val1:serialType>E</val1:serialType>
+                <val1:serialNumber>256691573506506899</val1:serialNumber>
+                <val1:iccId>89011201002099091815</val1:iccId>
+                <val1:itemId>SPHG92032BK1</val1:itemId>
+                <val1:phoneName>SAM G920 32G BLK XCVR SGL</val1:phoneName>
+                <val1:mdn>7407076488</val1:mdn>
+                <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                <val1:initialActivationDate>2018-01-28</val1:initialActivationDate>
+                <val1:emailAddress>test@test.com</val1:emailAddress>
+                <val1:handsetActivationDate>2018-01-28</val1:handsetActivationDate>
+                <val1:upgradeInfo>
+                    <val1:eligibleInd>true</val1:eligibleInd>
+                    <val1:eligibleDate>2018-01-01</val1:eligibleDate>
+                    <val1:eligibilityCode>709089881-99</val1:eligibilityCode>
+                    <val1:currentTier>1</val1:currentTier>
+                    <val1:eligibleTierList>
+                        <val1:eligibleTierInfo>
+                            <val1:eligibleTierDate>2018-01-01</val1:eligibleTierDate>
+                            <val1:eligibleTierLevel>1</val1:eligibleTierLevel>
+                        </val1:eligibleTierInfo>
+                    </val1:eligibleTierList>
+                    <val1:currentEligibilityList>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>IB or Lease without Discount</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>IB or Lease with Discount</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                    </val1:currentEligibilityList>
+                    <val1:subscriberDevicePricingList/>
+                </val1:upgradeInfo>
+                <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                <val1:addOnSocList>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>Phone Access w/Unltd Talk/Text</val1:optionName>
+                        <val1:optionCode>LSDPHN25D</val1:optionCode>
+                        <val1:optionPrice>25.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
+                        <val1:optionCode>REQPROLHS</val1:optionCode>
+                        <val1:optionPrice>0.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>Unlimited 2G Data Speeds</val1:optionName>
+                        <val1:optionCode>LSD133ASD</val1:optionCode>
+                        <val1:optionPrice>0.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                </val1:addOnSocList>
+                <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                <val1:loanExistInd>false</val1:loanExistInd>
+                <val1:leaseExistInd>true</val1:leaseExistInd>
+                <val1:giveBackInd>false</val1:giveBackInd>
+                <val1:leaseInfo>
+                    <val1:leaseDeviceTurnInInd>true</val1:leaseDeviceTurnInInd>
+                    <val1:currentLeaseTermStatus>SSG</val1:currentLeaseTermStatus>
+                </val1:leaseInfo>
+            </val1:subscriberInfo>
+            <val1:subscriberInfo>
+                <val1:subscriberId>54023248121</val1:subscriberId>
+                <val1:pricePlanCode>LSD133AS</val1:pricePlanCode>
+                <val1:pricePlanName>24GB Btr Choice XL-$5off w/AP</val1:pricePlanName>
+                <val1:pricePlanPrice>0.00</val1:pricePlanPrice>
+                <val1:planType>fam</val1:planType>
+                <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                <val1:ltsRank>2</val1:ltsRank>
+                <val1:sharingGroupId>490642</val1:sharingGroupId>
+                <val1:familyGroup>1</val1:familyGroup>
+                <val1:serialType>E</val1:serialType>
+                <val1:serialNumber>089594368804542832</val1:serialNumber>
+                <val1:iccId>89011202000071382862</val1:iccId>
+                <val1:itemId>SPHG92032BK1</val1:itemId>
+                <val1:phoneName>SAM G920 32G BLK XCVR SGL</val1:phoneName>
+                <val1:mdn>7407076491</val1:mdn>
+                <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                <val1:initialActivationDate>2018-01-28</val1:initialActivationDate>
+                <val1:emailAddress>test@test.com</val1:emailAddress>
+                <val1:handsetActivationDate>2018-01-28</val1:handsetActivationDate>
+                <val1:upgradeInfo>
+                    <val1:eligibleInd>true</val1:eligibleInd>
+                    <val1:eligibleDate>2018-01-01</val1:eligibleDate>
+                    <val1:eligibilityCode>191445611-99</val1:eligibilityCode>
+                    <val1:currentTier>1</val1:currentTier>
+                    <val1:eligibleTierList>
+                        <val1:eligibleTierInfo>
+                            <val1:eligibleTierDate>2018-01-01</val1:eligibleTierDate>
+                            <val1:eligibleTierLevel>1</val1:eligibleTierLevel>
+                        </val1:eligibleTierInfo>
+                    </val1:eligibleTierList>
+                    <val1:currentEligibilityList>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>IB or Lease without Discount</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>IB or Lease with Discount</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                    </val1:currentEligibilityList>
+                </val1:upgradeInfo>
+                <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                <val1:addOnSocList>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>Phone Access w/Unltd Talk/Text</val1:optionName>
+                        <val1:optionCode>LSDPHN25D</val1:optionCode>
+                        <val1:optionPrice>25.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>LTE Provisioning w/Hotspot</val1:optionName>
+                        <val1:optionCode>REQPROLHS</val1:optionCode>
+                        <val1:optionPrice>0.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>Unlimited 2G Data Speeds</val1:optionName>
+                        <val1:optionCode>LSD133ASD</val1:optionCode>
+                        <val1:optionPrice>0.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                </val1:addOnSocList>
+                <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                <val1:loanExistInd>false</val1:loanExistInd>
+                <val1:leaseExistInd>true</val1:leaseExistInd>
+                <val1:giveBackInd>false</val1:giveBackInd>
+                <val1:leaseInfo>
+                    <val1:leaseDeviceTurnInInd>true</val1:leaseDeviceTurnInInd>
+                    <val1:currentLeaseTermStatus>SSG</val1:currentLeaseTermStatus>
+                </val1:leaseInfo>
+            </val1:subscriberInfo>
+            <val1:subscriberInfo>
+                <val1:subscriberId>89023248121</val1:subscriberId>
+                <val1:pricePlanCode>PDSL3592</val1:pricePlanCode>
+                <val1:pricePlanName>My All-in with 5GB MHS</val1:pricePlanName>
+                <val1:pricePlanPrice>110.00</val1:pricePlanPrice>
+                <val1:planType>ind</val1:planType>
+                <val1:hasFuturePlanInd>false</val1:hasFuturePlanInd>
+                <val1:serialType>E</val1:serialType>
+                <val1:serialNumber>256691544801323591</val1:serialNumber>
+                <val1:iccId>89011201000180018903</val1:iccId>
+                <val1:itemId>SPHG92032BK1</val1:itemId>
+                <val1:phoneName>SAM G920 32G BLK XCVR SGL</val1:phoneName>
+                <val1:mdn>7407076700</val1:mdn>
+                <val1:mdnStatus>ACTIVE</val1:mdnStatus>
+                <val1:mdnPortOutInd>false</val1:mdnPortOutInd>
+                <val1:initialActivationDate>2018-01-28</val1:initialActivationDate>
+                <val1:emailAddress>test@test.com</val1:emailAddress>
+                <val1:contractStartDate>2018-01-28</val1:contractStartDate>
+                <val1:contractEndDate>2020-01-27</val1:contractEndDate>
+                <val1:handsetActivationDate>2018-01-28</val1:handsetActivationDate>
+                <val1:upgradeInfo>
+                    <val1:eligibleInd>true</val1:eligibleInd>
+                    <val1:eligibleDate>2018-01-01</val1:eligibleDate>
+                    <val1:eligibilityCode>200532086-99</val1:eligibilityCode>
+                    <val1:currentTier>1</val1:currentTier>
+                    <val1:eligibleTierList>
+                        <val1:eligibleTierInfo>
+                            <val1:eligibleTierDate>2018-01-01</val1:eligibleTierDate>
+                            <val1:eligibleTierLevel>1</val1:eligibleTierLevel>
+                        </val1:eligibleTierInfo>
+                    </val1:eligibleTierList>
+                    <val1:currentEligibilityList>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>IB or Lease without Discount</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                        <val1:currentEligibilityInfo>
+                            <val1:eligibilityDescription>IB or Lease with Discount</val1:eligibilityDescription>
+                        </val1:currentEligibilityInfo>
+                    </val1:currentEligibilityList>
+                </val1:upgradeInfo>
+                <val1:existingCommittedOrderInd>false</val1:existingCommittedOrderInd>
+                <val1:addOnSocList>
+                    <val1:addOnSocInfo>
+                        <val1:optionName>Sprint Mobile Hotspot 5GB</val1:optionName>
+                        <val1:optionCode>5GBHTSPTL</val1:optionCode>
+                        <val1:optionPrice>0.00</val1:optionPrice>
+                    </val1:addOnSocInfo>
+                </val1:addOnSocList>
+                <val1:musMilestoneLevel>0</val1:musMilestoneLevel>
+                <val1:loanExistInd>false</val1:loanExistInd>
+                <val1:leaseExistInd>true</val1:leaseExistInd>
+                <val1:giveBackInd>false</val1:giveBackInd>
+                <val1:leaseInfo>
+                    <val1:leaseDeviceTurnInInd>true</val1:leaseDeviceTurnInInd>
+                    <val1:currentLeaseTermStatus>SSG</val1:currentLeaseTermStatus>
+                </val1:leaseInfo>
+            </val1:subscriberInfo>
         </val1:subscriberList>
         <val1:allowedLoanCount>15</val1:allowedLoanCount>
         <val1:loanEligibilityInd>true</val1:loanEligibilityInd>
-      </val1:accountSubscribertInfo>
-      <val1:billingNameInfo>
+    </val1:accountSubscribertInfo>
+    <val1:billingNameInfo>
         <val1:firstName>TEST</val1:firstName>
         <val1:lastBusinessName>SOLIS</val1:lastBusinessName>
-      </val1:billingNameInfo>
-      <val1:billingAddressInfo>
+    </val1:billingNameInfo>
+    <val1:billingAddressInfo>
         <val1:streetAddress1>152 MILL ST</val1:streetAddress1>
         <val1:city>ATHENS</val1:city>
         <val1:stateCode>OH</val1:stateCode>
         <val1:zipCode>45701</val1:zipCode>
-      </val1:billingAddressInfo>
-    </val1:validateAccountInfoResponse>
+    </val1:billingAddressInfo>
+</val1:validateAccountInfoResponse>

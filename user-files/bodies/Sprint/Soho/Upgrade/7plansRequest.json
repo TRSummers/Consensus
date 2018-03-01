@@ -1,0 +1,20 @@
+{
+  "transactionType": "UPGRADE",
+  "devices": [
+    {
+      "paymentPlan": {
+        "type": "LEASE"
+      },
+      "serialNumber": "356718081115559",
+      "connection": {
+        "phoneNumber": "7407076488"
+      }
+    }
+  ],
+  "header": {
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  },
+  "details": true
+}

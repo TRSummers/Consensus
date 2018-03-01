@@ -1,0 +1,27 @@
+{
+  "devices": [
+    {
+      "serialNumber": "990006976349935",
+      "connectionPhoneNumber": "7407076488",
+      "conditionAnswers": [
+        {
+          "question": "Is the body of the device free of breaks or cracks in the housing, keypad, hinge, or battery cover?",
+          "answer": "Yes"
+        },
+        {
+          "question": "Does the device power on and off?",
+          "answer": "Yes"
+        },
+        {
+          "question": "Is the screen intact, free of any chips or cracks, and functioning correctly?",
+          "answer": "Yes"
+        }
+      ]
+    }
+  ],
+  "header": {
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  }
+}

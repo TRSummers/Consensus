@@ -1,0 +1,65 @@
+{
+  "header": {
+    "dealerCode": "9AKAWD1X",
+    "serviceProvider": "SPRINT",
+    "sessionId": "${p_sessionId}",
+    "clientReferenceId": "054320566"
+  },
+  "store": {
+    "id": "0003"
+  },
+  "cart": {
+    "plans": [
+      {
+        "serviceContractType": "MONTH_TO_MONTH",
+        "code": "LSD133AS",
+        "connections": [
+          {
+            "transactionType": "UPGRADE_DEVICE",
+            "phoneNumber": "7407076488",
+            "addOnFeatures": [
+              {
+                "code": "LSDPHN25D"
+              },
+              {
+                "code": "REQPROLHS"
+              }
+            ],
+            "index": 1,
+            "tradeInDevice": {
+              "serialNumber": "990006976349935"
+            },
+            "device": {
+              "paymentPlan": {
+                "installmentAmount": {
+                  "amount": 50.01,
+                  "code": "USD"
+                },
+                "installmentPeriod": "MONTH",
+                "type": "LEASE",
+                "lastInstallmentAmount": {
+                  "amount": 49.89,
+                  "code": "USD"
+                },
+                "contractLength": 18,
+                "residualLeaseAmount": {
+                  "amount": 249.93,
+                  "code": "USD"
+                },"postContractAmount": {
+                  "code": "USD",
+                  "amount": 50.01
+                }
+              },
+              "serialNumber": "356718081115559",
+              "networkConnectionId": "89011202002349416548",
+              "retailPrice": {
+                "amount": 1149.99,
+                "code": "USD"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

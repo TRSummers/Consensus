@@ -5,20 +5,22 @@
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": FILL_ME_IN,
+    "path": "/rtb2/services/wireless/account/QueryPlansAndOptionsService/v1",
     "environment": "PERF_SOHO",
-    "pname1": FILL_ME_IN
+    "pname1": ""
   },
   "response": {
     "body": "${payload}",
     "statusCode": "200",
-    "headers": [{
-      "name": "Content-Type",
-      "headerparams": [{
-        "value": "text/xml"
+    "headers": [
+      {
+        "name": "Content-Type",
+        "headerparams": [
+          {
+            "value": "text/xml"
+          }
+        ]
       }
-      ]
-    }
     ]
   },
   "expectation": {

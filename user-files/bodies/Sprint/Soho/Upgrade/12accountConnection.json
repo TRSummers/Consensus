@@ -1,0 +1,16 @@
+{
+  "header": {
+    "dealerCode": "9AKAWD1X",
+    "serviceProvider": "SPRINT",
+    "clientReferenceId": "054320566",
+    "sessionId": "${p_sessionId}"
+  },
+  "connection": {
+    "transactionType": "RETURN_DEVICE",
+    "phoneNumber": "7407076488",
+    "device": {
+      "serialNumber": "356718081115559",
+      "networkConnectionId": "89011202002349416548"
+    }
+  }
+}
