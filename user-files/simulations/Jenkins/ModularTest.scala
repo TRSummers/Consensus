@@ -1,8 +1,14 @@
+package Jenkins
+
 import scala.concurrent.duration._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
+import Verizon.Target.VerizonScenarios
+import ATT.Target.ATTScenarios
+import Sprint.Target.SprintTargetScenarios
+import Sprint.Soho.SprintSohoScenarios
 
 class ModularTest extends Simulation {
 	setUp(

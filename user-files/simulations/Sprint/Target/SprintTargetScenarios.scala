@@ -1,9 +1,14 @@
+package Sprint.Target
+
 import scala.io.Source
 import scala.concurrent.duration._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
+import Sprint.Target.Upgrade.SprintTargetUpgradeGroups
+import Jenkins.SimParams
+import CarrierCommon.Target.Common
 
 object SprintTargetScenarios {
 

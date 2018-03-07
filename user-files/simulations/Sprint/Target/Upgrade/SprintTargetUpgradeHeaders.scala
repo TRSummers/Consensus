@@ -1,3 +1,7 @@
+package Sprint.Target.Upgrade
+
+import CarrierCommon.Target.Common
+
 object SprintTargetUpgradeHeaders {
 
   val headers_0 = Map(

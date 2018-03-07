@@ -1,3 +1,5 @@
+package Jenkins
+
 import scala.io.Source
 import scala.concurrent.duration._
 import io.gatling.core.Predef._

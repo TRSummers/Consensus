@@ -1,3 +1,7 @@
+package Verizon.Target.NewActivation
+
+import CarrierCommon.Target.Common
+
 object VerizonNewActivationHeaders{
 
   val VZWFlowheaders_0 = Map(

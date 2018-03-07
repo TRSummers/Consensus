@@ -1,11 +1,12 @@
+package CarrierResponder
+
 import scala.concurrent.duration._
+import scala.reflect.runtime.universe._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
-import scala.reflect.runtime.universe._
 import scala.io.Source
-
 
 object CRExpectationManager {
 

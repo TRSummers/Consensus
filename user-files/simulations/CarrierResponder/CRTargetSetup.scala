@@ -1,9 +1,15 @@
+package CarrierResponder
+
 import scala.io.Source
 import scala.concurrent.duration._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
+import Verizon.Target.VerizonCRComponents
+import ATT.Target.ATTCRComponents
+import Sprint.Target.SprintTargetCRComponents
+import Jenkins.SimParams
 
 class CRTargetSetup extends Simulation {
 

@@ -1,3 +1,7 @@
+package ATT.Target.Upgrade
+
+import CarrierCommon.Target.Common
+
 object ATTUpgradeHeaders{
 
   val headers_0 = Map(

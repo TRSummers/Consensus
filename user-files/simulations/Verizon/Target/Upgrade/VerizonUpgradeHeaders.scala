@@ -1,3 +1,7 @@
+package Verizon.Target.Upgrade
+
+import CarrierCommon.Target.Common
+
 object VerizonUpgradeHeaders {
 
   val headers_0 = Map(
