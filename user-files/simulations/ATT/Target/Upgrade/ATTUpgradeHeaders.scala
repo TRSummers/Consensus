@@ -1,8 +1,3 @@
-import scala.concurrent.duration._
-import io.gatling.core.Predef._
-import io.gatling.http.Predef._
-import io.gatling.jdbc.Predef._
-
 object ATTUpgradeHeaders{
 
   val headers_0 = Map(
@@ -436,5 +431,5 @@ object ATTUpgradeHeaders{
     "Pragma" -> "no-cache",
     "User-Agent" -> "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Mobile Safari/537.36",
     "X-Requested-With" -> "XMLHttpRequest")
-  
+
 }

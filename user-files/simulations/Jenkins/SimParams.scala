@@ -7,24 +7,13 @@ import scala.util.Random
 
 object SimParams{
 
-  val httpProtocol = http
-    .baseURL("https://poa-perf-scale.consensuscorpdev.com")
-    .disableAutoReferer
-    .acceptHeader("application/json, text/javascript, */*; q=0.01")
-    .acceptEncodingHeader("gzip, deflate")
-    .acceptLanguageHeader("en-US,en;q=0.5")
-    .userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
-  
-  val SohoHttpProtocol = http
-    .baseURL("https://cdsprf0-api.consensuscorpdev.com")
-    .acceptHeader("application/json;q=0.9,*/*;q=0.8")
-    .acceptLanguageHeader("en-US,en;q=0.5")
-    .acceptEncodingHeader("gzip, deflate")
-
-  
+  //GLOBAL
   val rampup = if (System.getenv("RAMP") == null) 1 else System.getenv("RAMP").toInt
   val inum = if (System.getenv("ITERATIONS") == null) 1 else System.getenv("ITERATIONS").toInt
 
+
+
+  // TARGET
   val TGTVNA = if (System.getenv("TGTVNA") == null) 1 else System.getenv("TGTVNA").toInt
   val TGTSNA = if (System.getenv("TGTSNA") == null) 1 else System.getenv("TGTSNA").toInt
   val TGTTNA = if (System.getenv("TGTTNA") == null) 1 else System.getenv("TGTTNA").toInt
@@ -34,8 +23,26 @@ object SimParams{
   val TGTVAL = if (System.getenv("TGTVAL") == null) 1 else System.getenv("TGTVAL").toInt
   val TGTSAL = if (System.getenv("TGTSAL") == null) 1 else System.getenv("TGTSAL").toInt
   val TGTTAL = if (System.getenv("TGTTAL") == null) 1 else System.getenv("TGTTAL").toInt
+
+  val httpProtocol = http
+    .baseURL("https://poa-perf-scale.consensuscorpdev.com")
+    .disableAutoReferer
+    .acceptHeader("application/json, text/javascript, */*; q=0.01")
+    .acceptEncodingHeader("gzip, deflate")
+    .acceptLanguageHeader("en-US,en;q=0.5")
+    .userAgentHeader("Mozilla/5.0 (Windows NT 6.3; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0")
+
+
+
+  // SOHO
   val SOHOSNA = if (System.getenv("SOHOSNA") == null) 1 else System.getenv("SOHOSNA").toInt
   val SOHOSUG = if (System.getenv("SOHOSUG") == null) 1 else System.getenv("SOHOSUG").toInt
   val SOHOSAL = if (System.getenv("SOHOSAL") == null) 1 else System.getenv("SOHOSAL").toInt
+
+  val SohoHttpProtocol = http
+    .baseURL("https://cdsprf0-api.consensuscorpdev.com")
+    .acceptHeader("application/json;q=0.9,*/*;q=0.8")
+    .acceptLanguageHeader("en-US,en;q=0.5")
+    .acceptEncodingHeader("gzip, deflate")
 
 }

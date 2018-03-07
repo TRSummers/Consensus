@@ -6,10 +6,14 @@ import scala.util.Random
 
 class ModularTest extends Simulation {
 	setUp(
+
+    // TARGET
 		SprintTargetScenarios.Upgrade.inject(rampUsers(SimParams.TGTSUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		VerizonScenarios.NewActivation.inject(rampUsers(SimParams.TGTVNA) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		VerizonScenarios.Upgrade.inject(rampUsers(SimParams.TGTVUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
 		ATTScenarios.Upgrade.inject(rampUsers(SimParams.TGTTUG) over (SimParams.rampup seconds)).protocols(SimParams.httpProtocol),
+
+    // SOHO
     SprintSohoScenarios.Upgrade.inject(rampUsers(SimParams.SOHOSUG) over (SimParams.rampup seconds)).protocols(SimParams.SohoHttpProtocol)
 	)
 }
