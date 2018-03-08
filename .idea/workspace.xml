@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/ATTUpgrade.scala" afterPath="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/Sim.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/Constants.scala" afterPath="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/Constants.scala" />
       <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgrade.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/Sim.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/SprintTargetUpgrade.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/Sim.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/VerizonNewActivation.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/Sim.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/VerizonUpgrade.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/Sim.scala" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="765">
-              <caret line="51" column="256" lean-forward="false" selection-start-line="51" selection-start-column="256" selection-end-line="51" selection-end-column="256" />
+              <caret line="51" column="248" lean-forward="false" selection-start-line="51" selection-start-column="248" selection-end-line="51" selection-end-column="248" />
               <folding />
             </state>
           </provider>
@@ -753,7 +747,7 @@
       <workItem from="1520274430448" duration="7796000" />
       <workItem from="1520366783807" duration="3923000" />
       <workItem from="1520446527053" duration="13415000" />
-      <workItem from="1520467517412" duration="3119000" />
+      <workItem from="1520467517412" duration="3537000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -818,11 +812,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520468583656</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="udpates to gat-dev.bat">
+      <created>1520470647967</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1520470647967</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129141000" />
+    <option name="totallyTimeSpent" value="129559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1921" y="22" width="1920" height="1058" extended-state="6" />
@@ -1274,14 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/Sim.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1292,10 +1285,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
-          <caret line="51" column="256" lean-forward="false" selection-start-line="51" selection-start-column="256" selection-end-line="51" selection-end-column="256" />
+          <caret line="51" column="248" lean-forward="false" selection-start-line="51" selection-start-column="248" selection-end-line="51" selection-end-column="248" />
           <folding />
         </state>
       </provider>
