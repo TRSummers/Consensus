@@ -46,6 +46,10 @@ echo ***
 echo ******************************************
 echo ******************************************
 
+
+set gatling.http.ssl.keyStore.type=PKCS12
+set gatling.http.ssl.keyStore.file=%USERFILESLOCATION%\user-files\simulations\Jenkins\gatling.p12
+set gatling.http.ssl.keyStore.password=changeit
 set GATLING_DATA=%USERFILESLOCATION%\user-files\bodies
 
 c:/gatling/gatling-charts-highcharts-bundle-2.2.3/bin/gatling.bat -sf %USERFILESLOCATION%\user-files\simulations -bdf %USERFILESLOCATION%\user-files\bodies -bf %USERFILESLOCATION%\binaries -on VZW_%VNAUSERS%_%ITERATIONS%_Iterations -s Jenkins.ModularTest
