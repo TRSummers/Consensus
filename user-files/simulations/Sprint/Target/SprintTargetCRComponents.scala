@@ -10,18 +10,18 @@ import CarrierResponder.CRExpectationManager
 
 object SprintTargetCRComponents {
 
-  val expectation1 = "expectations/sprint/check-loan-eligibility"
-  val expectation2 = "expectations/sprint/create-lite-esa"
-  val expectation3 = "expectations/sprint/create-loan-contract"
-  val expectation4 = "expectations/sprint/query-account-loan-details"
-  val expectation5 = "expectations/sprint/submit-order"
-  val expectation6 = "expectations/sprint/validate-account-info"
-  val expectation7 = "expectations/sprint/account-validation"
-  val expectation8 = "expectations/sprint/credit-check"
-  val expectation9 = "expectations/sprint/service-validation"
-  val expectation10 = "expectations/sprint/activation"
-  val expectation11 = "expectations/sprint/query-available-plans"
-  val expectation12 = "expectations/sprint/query-available-options"
+  val expectation1 = "expectations/sprint/target/check-loan-eligibility"
+  val expectation2 = "expectations/sprint/target/create-lite-esa"
+  val expectation3 = "expectations/sprint/target/create-loan-contract"
+  val expectation4 = "expectations/sprint/target/query-account-loan-details"
+  val expectation5 = "expectations/sprint/target/submit-order"
+  val expectation6 = "expectations/sprint/target/validate-account-info"
+  val expectation7 = "expectations/sprint/target/account-validation"
+  val expectation8 = "expectations/sprint/target/credit-check"
+  val expectation9 = "expectations/sprint/target/service-validation"
+  val expectation10 = "expectations/sprint/target/activation"
+  val expectation11 = "expectations/sprint/target/query-available-plans"
+  val expectation12 = "expectations/sprint/target/query-available-options"
 
 
   val gatlingData = sys.env("GATLING_DATA")
