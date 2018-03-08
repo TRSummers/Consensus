@@ -11,7 +11,7 @@ import ATT.Target.ATTCRComponents
 import Sprint.Target.SprintTargetCRComponents
 import Jenkins.SimParams
 
-class CRTargetSetup extends Simulation {
+class TargetSetup extends Simulation {
 
   setUp(
     CRExpectationManager.CleanExpectations.inject(atOnceUsers(1)).protocols(SimParams.httpProtocol),

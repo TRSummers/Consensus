@@ -9,7 +9,7 @@ import scala.util.Random
 import Sprint.Soho.SprintSohoCRComponents
 import Jenkins.SimParams
 
-class CRSohoSetup extends Simulation {
+class SohoSetup extends Simulation {
 
   setUp(
     CRExpectationManager.CleanExpectations.inject(atOnceUsers(1)).protocols(SimParams.SohoHttpProtocol),
