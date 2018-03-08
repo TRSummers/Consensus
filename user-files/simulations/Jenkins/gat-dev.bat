@@ -20,7 +20,6 @@ shift
 set ITERATIONS=%9
 shift
 set USERFILESLOCATION=%9
-@echo on
 
 echo ******************************************
 echo ******************************************
