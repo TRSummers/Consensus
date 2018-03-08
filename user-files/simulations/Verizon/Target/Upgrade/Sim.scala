@@ -1,4 +1,4 @@
-package ATT.Target.Upgrade
+package Verizon.Target.Upgrade
 
 import scala.io.Source
 import scala.concurrent.duration._
@@ -6,11 +6,11 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 import scala.util.Random
-import ATT.Target.ATTScenarios
+import Verizon.Target.VerizonScenarios
 import Jenkins.SimParams
 
-class ATTUpgrade extends Simulation {
+class Sim extends Simulation {
 
-  setUp(ATTScenarios.Upgrade.inject(atOnceUsers(SimParams.TGTTUG)).protocols(SimParams.httpProtocol))
+  setUp(VerizonScenarios.Upgrade.inject(atOnceUsers(SimParams.TGTVUG)).protocols(SimParams.httpProtocol))
 
 }

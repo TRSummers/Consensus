@@ -14,6 +14,6 @@ object Constants{
   val uri_gstatic = "https://fonts.gstatic.com/s/lato/v14"
   val uri_google  = "https://fonts.googleapis.com/css"
 
-  val CommonPause=pause(8,45)
+//  val CommonPause=pause(8,45)
 
 }

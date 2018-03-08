@@ -9,7 +9,7 @@ import scala.util.Random
 import Sprint.Soho.SprintSohoScenarios
 import Jenkins.SimParams
 
-class SprintSohoUpgrade extends Simulation {
+class Sim extends Simulation {
 
   setUp(SprintSohoScenarios.Upgrade.inject(atOnceUsers(SimParams.SOHOSUG)).protocols(SimParams.SohoHttpProtocol))
 

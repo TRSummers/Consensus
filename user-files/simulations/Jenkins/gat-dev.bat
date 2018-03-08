@@ -20,32 +20,33 @@ shift
 set ITERATIONS=%9
 shift
 set USERFILESLOCATION=%9
+@echo on
 
 echo ******************************************
 echo ******************************************
 echo ***
-echo ***   TGT  Verizon  NA   Users:...%TGTVNA%
-echo ***   TGT  Sprint   NA   Users:...%TGTSNA%
-echo ***   TGT  ATT      NA   Users:...%TGTTNA%
+echo ***   TGT   Verizon  NA   Users:...%TGTVNA%
+echo ***   TGT   Sprint   NA   Users:...%TGTSNA%
+echo ***   TGT   ATT      NA   Users:...%TGTTNA%
 echo ***
-echo ***   TGT  Verizon  UPG  Users:...%TGTVUG%
-echo ***   TGT  Sprint   UPG  Users:...%TGTSUG%
-echo ***   TGT  ATT      UPG  Users:...%TGTTUG%
+echo ***   TGT   Verizon  UPG  Users:...%TGTVUG%
+echo ***   TGT   Sprint   UPG  Users:...%TGTSUG%
+echo ***   TGT   ATT      UPG  Users:...%TGTTUG%
 echo ***
-echo ***   TGT  Verizon  AAL  Users:...%TGTVAL%
-echo ***   TGT  Sprint   AAL  Users:...%TGTSAL%
-echo ***   TGT  ATT      AAL  Users:...%TGTTAL%
+echo ***   TGT   Verizon  AAL  Users:...%TGTVAL%
+echo ***   TGT   Sprint   AAL  Users:...%TGTSAL%
+echo ***   TGT   ATT      AAL  Users:...%TGTTAL%
 echo ***
-echo ***   SOHO Verizon  NA   Users:...%SOHOSNA%
-echo ***   SOHO Sprint   UPG  Users:...%SOHOSUG%
-echo ***   SOHO ATT      AAL  Users:...%SOHOSAL%
+echo ***   SOHO  Verizon  NA   Users:...%SOHOSNA%
+echo ***   SOHO  Sprint   UPG  Users:...%SOHOSUG%
+echo ***   SOHO  ATT      AAL  Users:...%SOHOSAL%
 echo ***
-echo ***   iterations:.................%ITERATIONS%
-echo ***   ramp:.......................%RAMP%
+echo ***   Iterations:..................%ITERATIONS%
+echo ***   Ramp:........................%RAMP%
 echo ***
 echo ******************************************
 echo ******************************************
 
 set GATLING_DATA=%USERFILESLOCATION%\user-files\bodies
 
-c:/gatling/gatling-charts-highcharts-bundle-2.2.3/bin/gatling.bat -sf %USERFILESLOCATION%\user-files\simulations -bdf %USERFILESLOCATION%\user-files\bodies -bf %USERFILESLOCATION%\binaries -on VZW_%VNAUSERS%_%ITERATIONS%_Iterations -s Jenkins.ModularTest
+c:/gatling/gatling-charts-highcharts-bundle-2.2.3/bin/gatling.bat -sf %USERFILESLOCATION%\user-files\simulations -bdf %USERFILESLOCATION%\user-files\bodies -bf %USERFILESLOCATION%\binaries -on VZW_%VNAUSERS%_%ITERATIONS%_Iterations -s "Jenkins.ModularTest"

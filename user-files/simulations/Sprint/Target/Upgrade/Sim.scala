@@ -9,7 +9,7 @@ import scala.util.Random
 import Sprint.Target.SprintTargetScenarios
 import Jenkins.SimParams
 
-class SprintTargetUpgrade extends Simulation {
+class Sim extends Simulation {
 
   setUp(SprintTargetScenarios.Upgrade.inject(atOnceUsers(SimParams.TGTSUG)).protocols(SimParams.httpProtocol))
 

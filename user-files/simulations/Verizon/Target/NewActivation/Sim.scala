@@ -9,7 +9,7 @@ import scala.util.Random
 import Verizon.Target.VerizonScenarios
 import Jenkins.SimParams
 
-class VerizonNewActivation extends Simulation {
+class Sim extends Simulation {
 
   setUp(VerizonScenarios.NewActivation.inject(atOnceUsers(SimParams.TGTVNA)).protocols(SimParams.httpProtocol))
 
