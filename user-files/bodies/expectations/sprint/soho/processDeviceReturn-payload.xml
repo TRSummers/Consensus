@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<proc1:processDeviceReturnResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                                   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
-                                   xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                   xmlns:proc="http://integration.sprint.com/integration/interfaces/processDeviceReturnBtV1/v1/processDeviceReturnBtV1"
-                                   xmlns:proc1="http://integration.sprint.com/interfaces/processDeviceReturn/v1/processDeviceReturn.xsd">
-    <proc1:subscriberResponseInfo>
-        <proc1:ban>352138798</proc1:ban>
-        <proc1:subscriberId>44023248121</proc1:subscriberId>
-        <proc1:mdn>7407076488</proc1:mdn>
-    </proc1:subscriberResponseInfo>
-</proc1:processDeviceReturnResponse>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <m:wsMessageHeader xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+            <m:trackingMessageHeader>
+                <m:applicationId>XXX</m:applicationId>
+                <m:applicationUserId>XXXXXX</m:applicationUserId>
+                <m:consumerId>XXXX</m:consumerId>
+                <m:messageId>1234</m:messageId>
+                <m:conversationId>123</m:conversationId>
+                <m:timeToLive>30</m:timeToLive>
+                <m:replyCompletionCode>0</m:replyCompletionCode>
+                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+            </m:trackingMessageHeader>
+        </m:wsMessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <proc1:processDeviceReturnResponse
+                xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                xmlns:proc1="http://integration.sprint.com/interfaces/processDeviceReturn/v1/processDeviceReturn.xsd">
+            <proc1:subscriberResponseInfo>
+                <proc1:ban>352138798</proc1:ban>
+                <proc1:subscriberId>44023248121</proc1:subscriberId>
+                <proc1:mdn>7407076488</proc1:mdn>
+            </proc1:subscriberResponseInfo>
+        </proc1:processDeviceReturnResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

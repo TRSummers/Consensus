@@ -7,7 +7,7 @@
     "url": "",
     "path": "/rtb2/services/wireless/account/AccountManagementService/v1",
     "environment": "PERF_SOHO",
-    "pname1": ""
+    "pname1": "//*[local-name()='validateAccountInfo']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_SOHO_E2E_validateAccountInfo",
+    "description": "validateAccountInfo",
     "responder": "SPRINT",
     "api": "validateAccountInfo",
-    "environment": "PERF-SOHO"
+    "environment": "PERF_SOHO"
   }
 }

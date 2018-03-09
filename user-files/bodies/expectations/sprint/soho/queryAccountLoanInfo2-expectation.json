@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "SPRINT_SOHO_E2E_queryAccountBasicInfo1",
+  "name": "SPRINT_SOHO_E2E_queryAccountLoanInfo1",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "THIS IS NOT A REAL PATH",
+    "path": "/rtb2/services/wireless/account/LoanInfoService/v1",
     "environment": "PERF_SOHO",
-    "pname1": ""
+    "pname1": "//*[local-name()='queryAccountLoanDetails']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_SOHO_E2E_queryAccountBasicInfo1",
+    "description": "queryAccountLoanInfo1",
     "responder": "SPRINT",
-    "api": "queryAccountBasicInfo1",
-    "environment": "PERF-SOHO"
+    "api": "queryAccountLoanInfo1",
+    "environment": "PERF_SOHO"
   }
 }

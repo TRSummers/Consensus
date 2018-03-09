@@ -15,12 +15,9 @@
         </m:wsMessageHeader>
     </SOAP-ENV:Header>
     <SOAP-ENV:Body>
-        <tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                                          xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
-                                          xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                          xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-                                          xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
+        <tns:checkLoanEligibilityResponse
+                xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
             <tns:loanEligibilityInfo>
                 <tns:accountType>I</tns:accountType>
                 <tns:accountSubType>I</tns:accountSubType>
@@ -35,12 +32,12 @@
                     <tns:openLeaseCount>3</tns:openLeaseCount>
                     <tns:leaseSubscriberInfoList>
                         <tns:leaseSubscriberInfo>
-                            <tns:subscriberId>89023248121</tns:subscriberId>
-                            <tns:mdn>7407076700</tns:mdn>
-                            <tns:leaseNumber>NR-L-360274</tns:leaseNumber>
-                            <tns:leaseSequenceNumber>41497999</tns:leaseSequenceNumber>
+                            <tns:subscriberId>54023248121</tns:subscriberId>
+                            <tns:mdn>7407076491</tns:mdn>
+                            <tns:leaseNumber>NR-L-360166</tns:leaseNumber>
+                            <tns:leaseSequenceNumber>41497946</tns:leaseSequenceNumber>
                             <tns:itemId>SPHG92032BKS</tns:itemId>
-                            <tns:esnMeidHex>99000578143247</tns:esnMeidHex>
+                            <tns:esnMeidHex>35670408455170</tns:esnMeidHex>
                             <tns:leaseUnbilledAmount>438.12</tns:leaseUnbilledAmount>
                             <tns:currentLeaseTermStatus>SSG</tns:currentLeaseTermStatus>
                             <tns:upgradeDeviceTurnInCreditAmount>584</tns:upgradeDeviceTurnInCreditAmount>

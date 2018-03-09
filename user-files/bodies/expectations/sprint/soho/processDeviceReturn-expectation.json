@@ -5,9 +5,9 @@
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "THIS IS NOT A REAL PATH",
+    "path": "/rtb2/services/wireless/account/DiscountManagementService/v1",
     "environment": "PERF_SOHO",
-    "pname1": ""
+    "pname1": "//*[local-name()='processDeviceReturn']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_SOHO_E2E_processDeviceReturn",
+    "description": "processDeviceReturn",
     "responder": "SPRINT",
     "api": "processDeviceReturn",
-    "environment": "PERF-SOHO"
+    "environment": "PERF_SOHO"
   }
 }

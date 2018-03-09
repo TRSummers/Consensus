@@ -5,9 +5,9 @@
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "THIS IS NOT A REAL PATH",
+    "path": "/rtb2/services/wireless/account/SecurityTokenManagementService/v1",
     "environment": "PERF_SOHO",
-    "pname1": ""
+    "pname1": "//*[local-name()='createUserToken']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_SOHO_E2E_createUserToken",
+    "description": "createUserToken",
     "responder": "SPRINT",
     "api": "createUserToken",
-    "environment": "PERF-SOHO"
+    "environment": "PERF_SOHO"
   }
 }

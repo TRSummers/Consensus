@@ -5,9 +5,9 @@
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "THIS IS NOT A REAL PATH",
+    "path": "/rtb2/services/wireless/account/QueryPlansAndOptionsService/v1",
     "environment": "PERF_SOHO",
-    "pname1": ""
+    "pname1": "//*[local-name()='queryPlansRequiredServices']/*[local-name()='pricePlanCriteria']/*[local-name()='pricePlanList']/*[local-name()='pricePlanInfo']/*[local-name()='pricePlanSoc' and text()='LPDSA0502']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_SOHO_E2E_queryPlansRequiredServices1",
+    "description": "queryPlansRequiredServices1",
     "responder": "SPRINT",
     "api": "queryPlansRequiredServices1",
-    "environment": "PERF-SOHO"
+    "environment": "PERF_SOHO"
   }
 }

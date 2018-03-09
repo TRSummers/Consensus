@@ -1,32 +1,32 @@
 {
   "user": "GATLING",
-  "name": "SPRINT_SOHO_E2E_submitOrder",
+  "name": "SPRINT_SOHO_E2E_validateDevice",
   "request": {
     "xpath": true,
     "method": "POST",
-    "url": "",
-    "path": "/rtb2/services/wireless/account/SubscriberManagementService/v1",
+    "path": "/rtb2/services/wireless/account/QueryDeviceInfoService/v1",
     "environment": "PERF_SOHO",
-    "pname1": "//*[local-name()='submitOrder']"
+    "pname1": "//*[local-name()='deviceInfo']"
   },
   "response": {
     "body": "${payload}",
     "statusCode": "200",
+    "cookie": "testCookie",
     "headers": [
       {
         "name": "Content-Type",
         "headerparams": [
           {
-            "value": "text/xml"
+            "value": "application/xml"
           }
         ]
       }
     ]
   },
   "expectation": {
-    "description": "submitOrder",
-    "responder": "SPRINT",
-    "api": "submitOrder",
+    "description": "validateDevice",
+    "responder": "Sprint",
+    "api": "SPRINT_SOHO_E2E_validateDevice",
     "environment": "PERF_SOHO"
   }
 }

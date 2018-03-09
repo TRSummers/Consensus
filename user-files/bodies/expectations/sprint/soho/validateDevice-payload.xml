@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <tns:validateDeviceV11Response xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+                                       xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                                       xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                                       xmlns:tns="http://integration.sprint.com/interfaces/validateDevice/v11/validateDeviceV11.xsd"
+                                       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <tns:availabilityTypeCode>1</tns:availabilityTypeCode>
+            <tns:notAvailableReasonCode>0</tns:notAvailableReasonCode>
+            <tns:validationMessage>Device is valid and cleared for use</tns:validationMessage>
+            <tns:manufacturerName>APPLE, INC</tns:manufacturerName>
+            <tns:modelName>IPH 6S PLUS ROSE 16GB SGL</tns:modelName>
+            <tns:freqMode>C</tns:freqMode>
+            <tns:equipmentFreqTypeCode>G</tns:equipmentFreqTypeCode>
+            <tns:modelNumber>IP6SP16GBRS1</tns:modelNumber>
+            <tns:preferredSerialNumber>356718081115559</tns:preferredSerialNumber>
+            <tns:deviceSerialNumberDec>240504426846049625</tns:deviceSerialNumberDec>
+            <tns:deviceSerialNumberHex>356718081115559</tns:deviceSerialNumberHex>
+            <tns:deviceType>U</tns:deviceType>
+            <tns:iccId>89011202002349416548</tns:iccId>
+            <tns:imsi>310120132141673</tns:imsi>
+            <tns:uiccSku>CZ2134LWC</tns:uiccSku>
+            <tns:uiccAvailabilityCode>1</tns:uiccAvailabilityCode>
+            <tns:uiccNotAvailableReasonCode>0</tns:uiccNotAvailableReasonCode>
+            <tns:uiccCompatibility>Y</tns:uiccCompatibility>
+            <tns:uiccType>C</tns:uiccType>
+            <tns:deviceProcurementCode>S</tns:deviceProcurementCode>
+            <tns:activationStatus>I</tns:activationStatus>
+        </tns:validateDeviceV11Response>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

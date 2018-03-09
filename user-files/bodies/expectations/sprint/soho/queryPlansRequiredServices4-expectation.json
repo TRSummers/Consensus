@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "SPRINT_SOHO_E2E_checkLoanEligibility4",
+  "name": "SPRINT_SOHO_E2E_queryPlansRequiredServices4",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "/rtb2/services/wireless/account/LoanInfoService/v1",
+    "path": "/rtb2/services/wireless/account/QueryPlansAndOptionsService/v1",
     "environment": "PERF_SOHO",
-    "pname1": "//*[local-name()='checkLoanEligibility']/*[local-name()='orderInfo']/*[local-name()='equipmentWithDeviceInfo']/*[local-name()='deviceInfo']/*[local-name()='esnMeidHex' and text()='356718081115559']"
+    "pname1": "//*[local-name()='queryPlansRequiredServices']/*[local-name()='pricePlanCriteria']/*[local-name()='pricePlanList']/*[local-name()='pricePlanInfo']/*[local-name()='pricePlanSoc' and text()='LSD133AS']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "checkLoanEligibility4",
+    "description": "queryPlansRequiredServices4",
     "responder": "SPRINT",
-    "api": "checkLoanEligibility",
+    "api": "queryPlansRequiredServices1",
     "environment": "PERF_SOHO"
   }
 }

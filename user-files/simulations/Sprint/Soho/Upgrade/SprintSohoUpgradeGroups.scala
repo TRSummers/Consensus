@@ -31,7 +31,7 @@ object SprintSohoUpgradeGroups {
   }
 
   val accountAccountLookup = group("Account") {
-    exec(http("AccountLookup")
+    exec(http("Account / Lookup")
       .post("/pam/v2/account/accountLookup")
       .body(ElFileBody("Sprint/Soho/Upgrade/2accountLookup.json")).asJSON
       .headers(default_header)
@@ -68,7 +68,7 @@ object SprintSohoUpgradeGroups {
 
   val supportAccesscode = group("Support"){
     exec(http("AccessCode")
-      .post("/pam/v2/support/accesscode")
+      .post("/pam/v2/support/accessCode")
       .body(ElFileBody("Sprint/Soho/Upgrade/5accessCode.json")).asJSON
       .headers(default_header)
       .check(status.is(200))
@@ -109,11 +109,11 @@ object SprintSohoUpgradeGroups {
 
   val addonFeaturesRequest = group("Catalog / Plans") {
     exec(http("AddonFeaturesRequest")
-      .post("/pam/v2/catalog/plans/addonfeaturesrequest")
+      .post("/pam/v2/catalog/plans/addOnFeaturesRequest")
       .body(ElFileBody("Sprint/Soho/Upgrade/8addonFeaturesRequest.json")).asJSON
       .headers(default_header)
       .check(status.is(200))
-      .check(regex("${carrier}").exists))
+      .check(regex("Sprint").exists))
   }
 
   val orderPost = group("Order") {
@@ -135,8 +135,8 @@ object SprintSohoUpgradeGroups {
       .check(regex("ESB_UNAVAILABLE").notExists))
   }
 
-  val orderValidation = group("Account") {
-    exec(http("Lookup")
+  val orderValidation = group("Account / Lookup") {
+    exec(http("OV")
       .put("/pam/v2/account/accountLookup")
       .body(ElFileBody("Sprint/Soho/Upgrade/11accountLookup.json")).asJSON
       .headers(default_header)
@@ -159,8 +159,8 @@ object SprintSohoUpgradeGroups {
     )
   }
 
-  val orderValidation2 = group("Account") {
-    exec(http("Lookup")
+  val orderValidation2 = group("Account / Lookup") {
+    exec(http("OV / Return")
       .put("/pam/v2/account/accountLookup")
       .body(ElFileBody("Sprint/Soho/Upgrade/13accountLookup.json")).asJSON
       .headers(default_header)

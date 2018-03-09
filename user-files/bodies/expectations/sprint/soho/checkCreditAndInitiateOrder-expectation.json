@@ -5,9 +5,9 @@
     "xpath": true,
     "method": "POST",
     "url": "",
-    "path": "/rtb2/services/xml/ovm/OrderValidationService/v1/",
+    "path": "/rtb2/services/wireless/account/ActivationManagementService/v1",
     "environment": "PERF_SOHO",
-    "pname1": ""
+    "pname1": "//*[local-name()='checkCreditAndInitiateOrder']"
   },
   "response": {
     "body": "${payload}",
@@ -24,9 +24,9 @@
     ]
   },
   "expectation": {
-    "description": "SPRINT_SOHO_E2E_checkCreditAndInitiateOrder",
+    "description": "checkCreditAndInitiateOrder",
     "responder": "SPRINT",
     "api": "checkCreditAndInitiateOrder",
-    "environment": "PERF-SOHO"
+    "environment": "PERF_SOHO"
   }
 }

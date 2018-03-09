@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:createUserTokenResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                             xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
-                             xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-                             xmlns:tns="http://integration.sprint.com/interfaces/createUserToken/v1/createUserToken.xsd">
-    <tns:tokenRequesterId>9AKAWD1X</tns:tokenRequesterId>
-    <tns:tokenId>ZOLYPNL65Z</tns:tokenId>
-</tns:createUserTokenResponse>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <m:wsMessageHeader xmlns:m="http://integration.sprint.com/common/header/WSMessageHeader/v2">
+            <m:trackingMessageHeader>
+                <m:applicationId>XXX</m:applicationId>
+                <m:applicationUserId>XXXXXX</m:applicationUserId>
+                <m:consumerId>XXXX</m:consumerId>
+                <m:messageId>1234</m:messageId>
+                <m:conversationId>123</m:conversationId>
+                <m:timeToLive>30</m:timeToLive>
+                <m:replyCompletionCode>0</m:replyCompletionCode>
+                <m:messageDateTimeStamp>2016-03-29T15:13:17-04:00</m:messageDateTimeStamp>
+            </m:trackingMessageHeader>
+        </m:wsMessageHeader>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <tns:createUserTokenResponse
+                xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                xmlns:tns="http://integration.sprint.com/interfaces/createUserToken/v1/createUserToken.xsd">
+            <tns:tokenRequesterId>9AKAWD1X</tns:tokenRequesterId>
+            <tns:tokenId>ZOLYPNL65Z</tns:tokenId>
+        </tns:createUserTokenResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

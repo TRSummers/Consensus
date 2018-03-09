@@ -1,13 +1,13 @@
 {
   "user": "GATLING",
-  "name": "SPRINT_SOHO_E2E_checkLoanEligibility4",
+  "name": "SPRINT_SOHO_E2E_checkLoanEligibility2",
   "request": {
     "xpath": true,
     "method": "POST",
     "url": "",
     "path": "/rtb2/services/wireless/account/LoanInfoService/v1",
     "environment": "PERF_SOHO",
-    "pname1": "//*[local-name()='checkLoanEligibility']/*[local-name()='orderInfo']/*[local-name()='equipmentWithDeviceInfo']/*[local-name()='deviceInfo']/*[local-name()='esnMeidHex' and text()='356718081115559']"
+    "pname1": "//*[local-name()='checkLoanEligibility']/*[local-name()='accountInfo']/*[local-name()='mdn' and text()='7407076488']"
   },
   "response": {
     "body": "${payload}",
@@ -24,7 +24,7 @@
     ]
   },
   "expectation": {
-    "description": "checkLoanEligibility4",
+    "description": "checkLoanEligibility2",
     "responder": "SPRINT",
     "api": "checkLoanEligibility",
     "environment": "PERF_SOHO"

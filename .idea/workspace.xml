@@ -2,9 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility4-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility4-payload.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract-payload.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo-payload.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo2-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-expectation.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-payload.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkCreditAndInitiateOrder-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkCreditAndInitiateOrder-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkCreditAndInitiateOrder-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkCreditAndInitiateOrder-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligiblity4-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract1-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract1-payload.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract2-payload.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/processDeviceReturn-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/processDeviceReturn-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/processDeviceReturn-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/processDeviceReturn-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo1-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo1-payload.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo2-payload.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo2-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo2-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-payload.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-expectation.json" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-expectation.json" />
+      <change beforePath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-payload.xml" afterPath="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-payload.xml" />
       <change beforePath="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" afterPath="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,30 +73,7 @@
     <favorites_list name="Gatling-POA" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gat-dev.bat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRExpectationManager.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-              <folding>
-                <element signature="e#26#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,21 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Check Trade In</find>
-      <find>create customer</find>
-      <find>retrieve Payment</find>
-      <find>Orders</find>
-      <find>Validate Device</find>
-      <find>http</find>
-      <find>uriPrefix</find>
-      <find>testdata</find>
-      <find>USERS</find>
-      <find>defaultPamPrefix</find>
-      <find>&quot;/PAM/api/pam/v1/</find>
-      <find>SprintUpgradePages</find>
-      <find>SprintUpgradeHeaders</find>
-      <find>SprintSohoPamAPIHeaders</find>
-      <find>SprintSohoPamUpgradeAPIHeaders</find>
       <find>SprintTargetUpgradePages</find>
       <find>.xml</find>
       <find>ElFileBody</find>
@@ -86,10 +99,23 @@
       <find>import CarrierCommon.CRExpectationManager</find>
       <find>import CarrierCommon.Common</find>
       <find>sprint/</find>
+      <find>'</find>
+      <find>querydeviceinfo</find>
+      <find>submit</find>
+      <find>status.is(200</find>
+      <find>validGiveBackDeviceInd</find>
+      <find>89011202002349416548</find>
+      <find>99000579473512</find>
+      <find>89011201002037894957</find>
+      <find>356718081115559</find>
+      <find>7407076488</find>
+      <find>mdn</find>
+      <find>LoanInfoService</find>
+      <find>&quot;description&quot;: &quot;SPRINT_SOHO_E2E_</find>
+      <find>&quot;environment&quot;: &quot;PERF-SOHO&quot;</find>
+      <find>.check(status.is(200))</find>
     </findStrings>
     <replaceStrings>
-      <replace>Sprint/UpgradeE2E</replace>
-      <replace>Sprint</replace>
       <replace>To Order Complete Page</replace>
       <replace>${p_sessionid}</replace>
       <replace>To Upg Eligibility Check</replace>
@@ -113,10 +139,18 @@
       <replace>import CarrierResponder.CRExpectationManager</replace>
       <replace>import CarrierCommon.Target.Common</replace>
       <replace>sprint/target/</replace>
+      <replace>status.is(999</replace>
+      <replace>99000579473512</replace>
+      <replace>356718081115559</replace>
+      <replace>89011201002037894957</replace>
+      <replace>&quot;description&quot;: &quot;</replace>
+      <replace>&quot;environment&quot;: &quot;PERF_SOHO&quot;</replace>
+      <replace>.check(status.is(999))</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/user-files/bodies/Sprint/UpgradeE2E</dir>
       <dir>$PROJECT_DIR$/user-files/simulations</dir>
+      <dir>$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -137,57 +171,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/processDeviceReturn-expectation.json" />
-        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo1-expectation.json" />
-        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-expectation.json" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/New Activation/VerizonNewActivationPages.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Common/Common.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Common/CommonHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Common/CRExpectationManager.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/SimParams.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/New Activation/VerizonNewActivation.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/VerizonNewActivationHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/VerizonUpgradeHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonCRComponents.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/ATTUpgradeHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoScenarios.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/ATTUpgrade.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgrade.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/VerizonNewActivation.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/VerizonUpgrade.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Common/CRSohoSetup.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Common/CRTargetSetup.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonScenarios.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTScenarios.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/VerizonUpgradePages.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/SprintTargetUpgrade.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/SprintTargetUpgradeGroups.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/VerizonNewActivationPages.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Groups.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/SprintTargetUpgradeHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Common.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/CommonHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/CRExpectationManager.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/CRSohoSetup.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/CRTargetSetup.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/ATTUpgradePages.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetScenarios.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTCRComponents.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRSohoSetup.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRTargetSetup.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/CommonHeaders.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/CommonGroups.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/Common.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/expectations.bat" />
-        <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/Upgrade.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/Constants.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/scriptFile.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-payload2.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkCreditAndInitiateOrder-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract1-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo1-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/vdp.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/vdv11p.xml" />
         <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
+        <option value="$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/1device.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoScenarios.scala" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract2-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo2-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract1-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility4-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-expectation.json" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo2-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-payload.xml" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -202,10 +236,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1921" />
-    <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="x" value="-1845" />
+    <option name="y" value="33" />
+    <option name="width" value="1636" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -226,6 +260,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,35 +279,52 @@
               <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
               <item name="user-files" type="462c0819:PsiDirectoryNode" />
-              <item name="simulations" type="462c0819:PsiDirectoryNode" />
+              <item name="bodies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
+              <item name="user-files" type="462c0819:PsiDirectoryNode" />
+              <item name="bodies" type="462c0819:PsiDirectoryNode" />
+              <item name="expectations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
+              <item name="user-files" type="462c0819:PsiDirectoryNode" />
+              <item name="bodies" type="462c0819:PsiDirectoryNode" />
+              <item name="expectations" type="462c0819:PsiDirectoryNode" />
+              <item name="sprint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
+              <item name="user-files" type="462c0819:PsiDirectoryNode" />
+              <item name="bodies" type="462c0819:PsiDirectoryNode" />
+              <item name="Sprint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
+              <item name="user-files" type="462c0819:PsiDirectoryNode" />
+              <item name="bodies" type="462c0819:PsiDirectoryNode" />
+              <item name="Sprint" type="462c0819:PsiDirectoryNode" />
+              <item name="Soho" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
+              <item name="user-files" type="462c0819:PsiDirectoryNode" />
+              <item name="bodies" type="462c0819:PsiDirectoryNode" />
+              <item name="Sprint" type="462c0819:PsiDirectoryNode" />
+              <item name="Soho" type="462c0819:PsiDirectoryNode" />
+              <item name="Upgrade" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
               <item name="user-files" type="462c0819:PsiDirectoryNode" />
               <item name="simulations" type="462c0819:PsiDirectoryNode" />
-              <item name="ATT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
-              <item name="user-files" type="462c0819:PsiDirectoryNode" />
-              <item name="simulations" type="462c0819:PsiDirectoryNode" />
-              <item name="CarrierCommon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
-              <item name="user-files" type="462c0819:PsiDirectoryNode" />
-              <item name="simulations" type="462c0819:PsiDirectoryNode" />
-              <item name="CarrierResponder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
-              <item name="user-files" type="462c0819:PsiDirectoryNode" />
-              <item name="simulations" type="462c0819:PsiDirectoryNode" />
-              <item name="Jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
@@ -285,23 +339,22 @@
               <item name="user-files" type="462c0819:PsiDirectoryNode" />
               <item name="simulations" type="462c0819:PsiDirectoryNode" />
               <item name="Sprint" type="462c0819:PsiDirectoryNode" />
-              <item name="Target" type="462c0819:PsiDirectoryNode" />
+              <item name="Soho" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
               <item name="user-files" type="462c0819:PsiDirectoryNode" />
               <item name="simulations" type="462c0819:PsiDirectoryNode" />
-              <item name="Verizon" type="462c0819:PsiDirectoryNode" />
+              <item name="Sprint" type="462c0819:PsiDirectoryNode" />
+              <item name="Soho" type="462c0819:PsiDirectoryNode" />
+              <item name="Upgrade" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,19 +364,19 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho" />
+      <recent name="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/extra" />
+      <recent name="$PROJECT_DIR$/user-files/simulations/Jenkins" />
+      <recent name="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target" />
+      <recent name="$PROJECT_DIR$/user-files/simulations/CarrierResponder" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho" />
       <recent name="$PROJECT_DIR$/user-files/simulations/Common" />
       <recent name="$PROJECT_DIR$/user-files/simulations/Sprint/Soho" />
       <recent name="$PROJECT_DIR$/user-files/bodies/dsom/warranty" />
       <recent name="$PROJECT_DIR$/user-files/bodies/dsom/planfeatures" />
-      <recent name="$PROJECT_DIR$/user-files/bodies/dsom/plans" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/user-files/simulations/Jenkins" />
-      <recent name="$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target" />
-      <recent name="$PROJECT_DIR$/user-files/simulations/CarrierResponder" />
-      <recent name="$PROJECT_DIR$/user-files/simulations/CarrierCommon" />
-      <recent name="$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -684,7 +737,10 @@
       <workItem from="1520274430448" duration="7796000" />
       <workItem from="1520366783807" duration="3923000" />
       <workItem from="1520446527053" duration="13415000" />
-      <workItem from="1520467517412" duration="8423000" />
+      <workItem from="1520467517412" duration="8435000" />
+      <workItem from="1520533465286" duration="12462000" />
+      <workItem from="1520549183225" duration="11478000" />
+      <workItem from="1520560999674" duration="22416000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -798,43 +854,49 @@
       <option name="project" value="LOCAL" />
       <updated>1520473370740</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="udpates to gat-dev.bat">
+      <created>1520475968173</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1520475968173</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134445000" />
+    <option name="totallyTimeSpent" value="180813000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1921" y="22" width="1920" height="1058" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1920" y="22" width="1920" height="1058" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4925926" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33177084" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3328125" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34228188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28194726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28194726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -919,307 +981,385 @@
     <option name="serverIp" value="localhost" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-expectation.json">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateAccountInfo-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="864">
+          <caret line="239" column="20" lean-forward="false" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/vdp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/submitOrder-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/target/activation-expectation.json">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/vdv11p.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="63" />
+        <state relative-caret-position="345">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/SohoSetup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/6paymentPlansRequest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoScenarios.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/1device.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract2-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo2-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="2481" column="20" lean-forward="false" selection-start-line="2481" selection-start-column="20" selection-end-line="2481" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailableOptions-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAvailablePlans-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createLoanContract-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/createUserToken-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="135">
+          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-expectation.json">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/processDeviceReturn-expectation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo1-expectation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="135">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetSetup.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoSetup.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/VerizonSetup.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/ATTSetup.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/VerizonScenarios.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoUpgradeGroups.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/VerizonNewActivationHeaders.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/VerizonUpgradeHeaders.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="132" lean-forward="true" selection-start-line="9" selection-start-column="132" selection-end-line="9" selection-end-column="132" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="915">
+          <caret line="67" column="57" lean-forward="false" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/Sim.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#38#60#0" expanded="false" />
-          </folding>
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/Sim.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility4-expectation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-expectation.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#32#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/Upgrade/VerizonUpgradePages.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#32#66#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/Sim.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="212" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/NewActivation/VerizonNewActivationPages.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility4-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="819">
+          <caret line="59" column="43" lean-forward="true" selection-start-line="59" selection-start-column="43" selection-end-line="61" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/Groups.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility1-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#29#63#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/Sim.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="111" lean-forward="false" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="111" />
-          <folding>
-            <element signature="e#29#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/SprintTargetUpgradeGroups.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="e#31#65#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoScenarios.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="e#21#55#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/Upgrade/SprintTargetUpgradeHeaders.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="879">
+          <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/CommonHeaders.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/ATTUpgradePages.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility3-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="879">
+          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/checkLoanEligibility2-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="82" lean-forward="true" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/deviceTradeIn-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountBasicInfo-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo2-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="112" column="20" lean-forward="false" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices1-payload.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="49" />
           <folding>
-            <element signature="e#28#62#0" expanded="false" />
+            <element signature="n#quer1:addOnSocInfoList#0;n#quer1:pricePlanInfo#0;n#quer1:pricePlanList#0;n#quer1:queryPlansRequiredServicesResponse#0;n#SOAP-ENV:Body#0;n#SOAP-ENV:Envelope#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetScenarios.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices2-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="879">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/ATTUpgradeHeaders.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices3-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="879">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/CRExpectationManager.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/Common.scala" />
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTCRComponents.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices4-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="879">
+          <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonCRComponents.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices5-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="879">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonScenarios.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryPlansRequiredServices6-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#58#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/Common.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#30#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/CommonHeaders.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#30#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/expectations.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="705">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierCommon/Target/Constants.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo1-payload.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="819">
+          <caret line="80" column="48" lean-forward="false" selection-start-line="80" selection-start-column="48" selection-end-line="82" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTScenarios.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/2accountLookup.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/Upgrade/Sim.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#28#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="e#17#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/scriptFile.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/11accountLookup.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1227,53 +1367,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        <state relative-caret-position="174">
+          <caret line="125" column="37" lean-forward="false" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/SimParams.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/9orderPost.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/SohoSetup.scala">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="75">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/TargetSetup.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-          <folding>
-            <element signature="e#26#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
