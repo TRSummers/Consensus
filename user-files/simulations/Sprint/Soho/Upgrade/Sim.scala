@@ -11,6 +11,6 @@ import Jenkins.SimParams
 
 class Sim extends Simulation {
 
-  setUp(SprintSohoScenarios.Upgrade.inject(atOnceUsers(SimParams.SOHOSUG)).protocols(SimParams.SohoHttpProtocol))
+  setUp(SprintSohoScenarios.Upgrade.inject(rampUsers(SimParams.SOHOSUG) over (SimParams.rampup seconds)).protocols(SimParams.SohoHttpProtocol))
 
 }

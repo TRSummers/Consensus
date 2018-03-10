@@ -1,6 +1,6 @@
 {
   "user": "GATLING",
-  "name": "SPRINT_SOHO_E2E_queryAccountLoanInfo1",
+  "name": "SPRINT_SOHO_E2E_queryAccountLoanInfo",
   "request": {
     "xpath": true,
     "method": "POST",
@@ -24,7 +24,7 @@
     ]
   },
   "expectation": {
-    "description": "queryAccountLoanInfo1",
+    "description": "queryAccountLoanInfo",
     "responder": "SPRINT",
     "api": "queryAccountLoanInfo1",
     "environment": "PERF_SOHO"

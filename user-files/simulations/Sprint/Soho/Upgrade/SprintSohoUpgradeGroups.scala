@@ -122,8 +122,7 @@ object SprintSohoUpgradeGroups {
       .body(ElFileBody("Sprint/Soho/Upgrade/9orderPost.json")).asJSON
       .headers(default_header)
       .check(status.is(200))
-      .check(regex("ESB_UNAVAILABLE").notExists)
-      .check(regex("\"sessionId\": \"(.+?)\",").saveAs("p_sessionid")))
+      .check(regex("ESB_UNAVAILABLE").notExists))
   }
 
   val orderPut = group("Order") {
@@ -137,7 +136,7 @@ object SprintSohoUpgradeGroups {
 
   val orderValidation = group("Account / Lookup") {
     exec(http("OV")
-      .put("/pam/v2/account/accountLookup")
+      .post("/pam/v2/account/accountLookup")
       .body(ElFileBody("Sprint/Soho/Upgrade/11accountLookup.json")).asJSON
       .headers(default_header)
       .check(status.is(200))
@@ -161,7 +160,7 @@ object SprintSohoUpgradeGroups {
 
   val orderValidation2 = group("Account / Lookup") {
     exec(http("OV / Return")
-      .put("/pam/v2/account/accountLookup")
+      .post("/pam/v2/account/accountLookup")
       .body(ElFileBody("Sprint/Soho/Upgrade/13accountLookup.json")).asJSON
       .headers(default_header)
       .check(status.is(200))

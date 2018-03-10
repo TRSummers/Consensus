@@ -15,12 +15,9 @@
         </m:wsMessageHeader>
     </SOAP-ENV:Header>
     <SOAP-ENV:Body>
-        <tns:checkLoanEligibilityResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                                          xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
-                                          xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
-                                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                          xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
-                                          xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
+        <tns:checkLoanEligibilityResponse
+                xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+                xmlns:tns="http://integration.sprint.com/interfaces/checkLoanEligibility/v1/checkLoanEligibility.xsd">
             <tns:loanEligibilityInfo>
                 <tns:accountType>I</tns:accountType>
                 <tns:accountSubType>I</tns:accountSubType>
@@ -28,53 +25,6 @@
                 <tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd>
                 <tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd>
                 <tns:loanMaxLimit>15</tns:loanMaxLimit>
-                <tns:equipmentEligibilityInfoList>
-                    <tns:equipmentEligibilityInfo>
-                        <tns:equipmentLineId>1</tns:equipmentLineId>
-                        <tns:itemId>IPHX256GSIL1</tns:itemId>
-                        <tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd>
-                        <tns:srp>1149.99</tns:srp>
-                        <tns:installmentAmt>47.92</tns:installmentAmt>
-                        <tns:lastInstallmentAmt>47.83</tns:lastInstallmentAmt>
-                        <tns:loanDownPayment>0</tns:loanDownPayment>
-                        <tns:loanTerm>24</tns:loanTerm>
-                        <tns:loanFirstInstallmentDueDate>2018-01-31-05:00</tns:loanFirstInstallmentDueDate>
-                        <tns:loanLastInstallmentDueDate>2019-12-31-05:00</tns:loanLastInstallmentDueDate>
-                        <tns:itemCategoryDescription>IPH X SILVER 256 SGL</tns:itemCategoryDescription>
-                        <tns:deviceInfo>
-                            <tns:esnMeidHex>356718081115559</tns:esnMeidHex>
-                        </tns:deviceInfo>
-                        <tns:equipmentType>D</tns:equipmentType>
-                        <tns:additionalPartnerLoanInfo>
-                            <tns:loanAmount>1149.99</tns:loanAmount>
-                            <tns:loanMinAmount>24</tns:loanMinAmount>
-                            <tns:loanMaxAmount>1149.99</tns:loanMaxAmount>
-                            <tns:additionalPaymentAmount>0</tns:additionalPaymentAmount>
-                        </tns:additionalPartnerLoanInfo>
-                    </tns:equipmentEligibilityInfo>
-                    <tns:equipmentEligibilityInfo>
-                        <tns:equipmentLineId>1</tns:equipmentLineId>
-                        <tns:itemId>IPHX256GSIL1</tns:itemId>
-                        <tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd>
-                        <tns:srp>1149.99</tns:srp>
-                        <tns:installmentAmt>50.01</tns:installmentAmt>
-                        <tns:lastInstallmentAmt>49.89</tns:lastInstallmentAmt>
-                        <tns:loanDownPayment>0</tns:loanDownPayment>
-                        <tns:loanTerm>18</tns:loanTerm>
-                        <tns:loanFirstInstallmentDueDate>2018-01-31-05:00</tns:loanFirstInstallmentDueDate>
-                        <tns:loanLastInstallmentDueDate>2019-06-30-04:00</tns:loanLastInstallmentDueDate>
-                        <tns:itemCategoryDescription>IPH X SILVER 256 SGL</tns:itemCategoryDescription>
-                        <tns:deviceInfo>
-                            <tns:esnMeidHex>356718081115559</tns:esnMeidHex>
-                        </tns:deviceInfo>
-                        <tns:estimatedSalesTax>0</tns:estimatedSalesTax>
-                        <tns:equipmentType>D</tns:equipmentType>
-                        <tns:leaseEligibilityInd>true</tns:leaseEligibilityInd>
-                        <tns:adjustedSrpAmt>1149.99</tns:adjustedSrpAmt>
-                        <tns:residualLeaseAmt>249.93</tns:residualLeaseAmt>
-                        <tns:monthToMonthAmount>50.01</tns:monthToMonthAmount>
-                    </tns:equipmentEligibilityInfo>
-                </tns:equipmentEligibilityInfoList>
                 <tns:accountloanInfo>
                     <tns:openLoanCount>0</tns:openLoanCount>
                 </tns:accountloanInfo>
@@ -82,12 +32,12 @@
                     <tns:openLeaseCount>3</tns:openLeaseCount>
                     <tns:leaseSubscriberInfoList>
                         <tns:leaseSubscriberInfo>
-                            <tns:subscriberId>44023248121</tns:subscriberId>
-                            <tns:mdn>7407076488</tns:mdn>
-                            <tns:leaseNumber>NR-L-360164</tns:leaseNumber>
-                            <tns:leaseSequenceNumber>41497945</tns:leaseSequenceNumber>
+                            <tns:subscriberId>54023248121</tns:subscriberId>
+                            <tns:mdn>7407076491</tns:mdn>
+                            <tns:leaseNumber>NR-L-360166</tns:leaseNumber>
+                            <tns:leaseSequenceNumber>41497946</tns:leaseSequenceNumber>
                             <tns:itemId>SPHG92032BKS</tns:itemId>
-                            <tns:esnMeidHex>99000697634993</tns:esnMeidHex>
+                            <tns:esnMeidHex>35670408455170</tns:esnMeidHex>
                             <tns:leaseUnbilledAmount>438.12</tns:leaseUnbilledAmount>
                             <tns:currentLeaseTermStatus>SSG</tns:currentLeaseTermStatus>
                             <tns:upgradeDeviceTurnInCreditAmount>584</tns:upgradeDeviceTurnInCreditAmount>

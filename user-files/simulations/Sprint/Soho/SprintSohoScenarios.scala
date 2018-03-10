@@ -10,22 +10,24 @@ import Jenkins.SimParams
 
 object SprintSohoScenarios{
 
+  val SohoPause=pause(1,2)
+
   val Upgrade = scenario("SoHo UPG").repeat(SimParams.inum){
 
     group("SoHo / UPG"){
       exec(
-        SprintSohoUpgradeGroups.device,
-        SprintSohoUpgradeGroups.accountAccountLookup,
-        SprintSohoUpgradeGroups.deviceTradein,
-        SprintSohoUpgradeGroups.customer,
-        SprintSohoUpgradeGroups.supportAccesscode,
-        SprintSohoUpgradeGroups.customerDevicePaymentPlansRequest,
-        SprintSohoUpgradeGroups.catalogPlansRequest,
-        SprintSohoUpgradeGroups.addonFeaturesRequest,
-        SprintSohoUpgradeGroups.orderPost,
-        SprintSohoUpgradeGroups.orderPut,
-        SprintSohoUpgradeGroups.orderValidation,
-        SprintSohoUpgradeGroups.accountConnection,
+        SprintSohoUpgradeGroups.device, SohoPause,
+        SprintSohoUpgradeGroups.accountAccountLookup, SohoPause,
+        SprintSohoUpgradeGroups.deviceTradein, SohoPause,
+        SprintSohoUpgradeGroups.customer, SohoPause,
+        SprintSohoUpgradeGroups.supportAccesscode, SohoPause,
+        SprintSohoUpgradeGroups.customerDevicePaymentPlansRequest, SohoPause,
+        SprintSohoUpgradeGroups.catalogPlansRequest, SohoPause,
+//        SprintSohoUpgradeGroups.addonFeaturesRequest, SohoPause,
+        SprintSohoUpgradeGroups.orderPost, SohoPause,
+        SprintSohoUpgradeGroups.orderPut, SohoPause,
+        SprintSohoUpgradeGroups.orderValidation, SohoPause,
+        SprintSohoUpgradeGroups.accountConnection, SohoPause,
         SprintSohoUpgradeGroups.orderValidation2
       )
     }

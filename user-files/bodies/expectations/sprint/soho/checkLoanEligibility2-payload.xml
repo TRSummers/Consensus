@@ -28,6 +28,53 @@
                 <tns:accountLoanEligibilityInd>true</tns:accountLoanEligibilityInd>
                 <tns:creditClassEligibilityInd>true</tns:creditClassEligibilityInd>
                 <tns:loanMaxLimit>15</tns:loanMaxLimit>
+                <tns:equipmentEligibilityInfoList>
+                    <tns:equipmentEligibilityInfo>
+                        <tns:equipmentLineId>1</tns:equipmentLineId>
+                        <tns:itemId>IPHX256GSIL1</tns:itemId>
+                        <tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd>
+                        <tns:srp>1149.99</tns:srp>
+                        <tns:installmentAmt>47.92</tns:installmentAmt>
+                        <tns:lastInstallmentAmt>47.83</tns:lastInstallmentAmt>
+                        <tns:loanDownPayment>0</tns:loanDownPayment>
+                        <tns:loanTerm>24</tns:loanTerm>
+                        <tns:loanFirstInstallmentDueDate>2018-01-31-05:00</tns:loanFirstInstallmentDueDate>
+                        <tns:loanLastInstallmentDueDate>2019-12-31-05:00</tns:loanLastInstallmentDueDate>
+                        <tns:itemCategoryDescription>IPH X SILVER 256 SGL</tns:itemCategoryDescription>
+                        <tns:deviceInfo>
+                            <tns:esnMeidHex>356718081115559</tns:esnMeidHex>
+                        </tns:deviceInfo>
+                        <tns:equipmentType>D</tns:equipmentType>
+                        <tns:additionalPartnerLoanInfo>
+                            <tns:loanAmount>1149.99</tns:loanAmount>
+                            <tns:loanMinAmount>24</tns:loanMinAmount>
+                            <tns:loanMaxAmount>1149.99</tns:loanMaxAmount>
+                            <tns:additionalPaymentAmount>0</tns:additionalPaymentAmount>
+                        </tns:additionalPartnerLoanInfo>
+                    </tns:equipmentEligibilityInfo>
+                    <tns:equipmentEligibilityInfo>
+                        <tns:equipmentLineId>1</tns:equipmentLineId>
+                        <tns:itemId>IPHX256GSIL1</tns:itemId>
+                        <tns:itemIdEligibilityInd>true</tns:itemIdEligibilityInd>
+                        <tns:srp>1149.99</tns:srp>
+                        <tns:installmentAmt>50.01</tns:installmentAmt>
+                        <tns:lastInstallmentAmt>49.89</tns:lastInstallmentAmt>
+                        <tns:loanDownPayment>0</tns:loanDownPayment>
+                        <tns:loanTerm>18</tns:loanTerm>
+                        <tns:loanFirstInstallmentDueDate>2018-01-31-05:00</tns:loanFirstInstallmentDueDate>
+                        <tns:loanLastInstallmentDueDate>2019-06-30-04:00</tns:loanLastInstallmentDueDate>
+                        <tns:itemCategoryDescription>IPH X SILVER 256 SGL</tns:itemCategoryDescription>
+                        <tns:deviceInfo>
+                            <tns:esnMeidHex>356718081115559</tns:esnMeidHex>
+                        </tns:deviceInfo>
+                        <tns:estimatedSalesTax>0</tns:estimatedSalesTax>
+                        <tns:equipmentType>D</tns:equipmentType>
+                        <tns:leaseEligibilityInd>true</tns:leaseEligibilityInd>
+                        <tns:adjustedSrpAmt>1149.99</tns:adjustedSrpAmt>
+                        <tns:residualLeaseAmt>249.93</tns:residualLeaseAmt>
+                        <tns:monthToMonthAmount>50.01</tns:monthToMonthAmount>
+                    </tns:equipmentEligibilityInfo>
+                </tns:equipmentEligibilityInfoList>
                 <tns:accountloanInfo>
                     <tns:openLoanCount>0</tns:openLoanCount>
                 </tns:accountloanInfo>

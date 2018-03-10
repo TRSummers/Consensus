@@ -10,8 +10,8 @@ import scala.util.Random
 object SimParams{
 
   //GLOBAL
-  val rampup = if (System.getenv("RAMP") == null) 1 else System.getenv("RAMP").toInt
-  val inum = if (System.getenv("ITERATIONS") == null) 1 else System.getenv("ITERATIONS").toInt
+  val rampup = if (System.getenv("RAMP") == null) 50 else System.getenv("RAMP").toInt
+  val inum = if (System.getenv("ITERATIONS") == null) 10 else System.getenv("ITERATIONS").toInt
 
 
 
@@ -38,7 +38,7 @@ object SimParams{
 
   // SOHO
   val SOHOSNA = if (System.getenv("SOHOSNA") == null) 1 else System.getenv("SOHOSNA").toInt
-  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 1 else System.getenv("SOHOSUG").toInt
+  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 50 else System.getenv("SOHOSUG").toInt
   val SOHOSAL = if (System.getenv("SOHOSAL") == null) 1 else System.getenv("SOHOSAL").toInt
 
   val SohoHttpProtocol = http

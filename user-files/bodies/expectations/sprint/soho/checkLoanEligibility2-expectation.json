@@ -8,7 +8,8 @@
     "path": "/rtb2/services/wireless/account/LoanInfoService/v1",
     "environment": "PERF_SOHO",
     "pname1": "//*[local-name()='checkLoanEligibility']/*[local-name()='accountInfo']/*[local-name()='mdn' and text()='7407076488']"
-  },
+
+},
   "response": {
     "body": "${payload}",
     "statusCode": "200",
