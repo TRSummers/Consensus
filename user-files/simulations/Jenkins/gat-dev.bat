@@ -47,9 +47,9 @@ echo ******************************************
 echo ******************************************
 
 
-set gatling.http.ssl.keyStore.type=PKCS12
-set gatling.http.ssl.keyStore.file=%USERFILESLOCATION%\user-files\simulations\Jenkins\gatling.p12
-set gatling.http.ssl.keyStore.password=changeit
+setx gatling.http.ssl.keyStore.type PKCS12
+setx gatling.http.ssl.keyStore.file %USERFILESLOCATION%\user-files\simulations\Jenkins\gatling.p12
+setx gatling.http.ssl.keyStore.password changeit
 echo %gatling.http.ssl.keyStore.type%
 echo %gatling.http.ssl.keyStore.file%
 echo %gatling.http.ssl.keyStore.password%
