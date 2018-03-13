@@ -10,25 +10,36 @@ import Jenkins.SimParams
 
 object SprintSohoScenarios{
 
-  val SohoPause=pause(1,2)
+  val ValidateDeviceToAccountLookupPause = pause(4, 6)
+  val AccountLookupToDeviceTradeInPause = pause(9, 11)
+  val DeviceTradeInToCreateCustomerPause = pause(4, 6)
+  val CreateCustomerToPaymentPlansPause = pause(4, 6)
+  val PaymentPlansToPlansPause = pause(4, 6)
+  val PlansToOrderPostPause = pause(55, 65)
+  val OrderPostToOrderPutPause = pause(55, 65)
+  val OrderPutToOrderValidationPause = pause(4, 6)
 
   val Upgrade = scenario("SoHo UPG").repeat(SimParams.inum){
 
     group("SoHo / UPG"){
       exec(
-        SprintSohoUpgradeGroups.device, SohoPause,
-        SprintSohoUpgradeGroups.accountAccountLookup, SohoPause,
-        SprintSohoUpgradeGroups.deviceTradein, SohoPause,
-        SprintSohoUpgradeGroups.customer, SohoPause,
-        SprintSohoUpgradeGroups.supportAccesscode, SohoPause,
-        SprintSohoUpgradeGroups.customerDevicePaymentPlansRequest, SohoPause,
-        SprintSohoUpgradeGroups.catalogPlansRequest, SohoPause,
-//        SprintSohoUpgradeGroups.addonFeaturesRequest, SohoPause,
-        SprintSohoUpgradeGroups.orderPost, SohoPause,
-        SprintSohoUpgradeGroups.orderPut, SohoPause,
-        SprintSohoUpgradeGroups.orderValidation, SohoPause,
-        SprintSohoUpgradeGroups.accountConnection, SohoPause,
-        SprintSohoUpgradeGroups.orderValidation2
+        SprintSohoUpgradeGroups.device,
+        ValidateDeviceToAccountLookupPause,
+        SprintSohoUpgradeGroups.accountAccountLookup,
+        AccountLookupToDeviceTradeInPause,
+        SprintSohoUpgradeGroups.deviceTradein,
+        DeviceTradeInToCreateCustomerPause,
+        SprintSohoUpgradeGroups.customer,
+        CreateCustomerToPaymentPlansPause,
+        SprintSohoUpgradeGroups.customerDevicePaymentPlansRequest,
+        PaymentPlansToPlansPause,
+        SprintSohoUpgradeGroups.catalogPlansRequest,
+        PlansToOrderPostPause,
+        SprintSohoUpgradeGroups.orderPost,
+        OrderPostToOrderPutPause,
+        SprintSohoUpgradeGroups.orderPut,
+        OrderPutToOrderValidationPause,
+        SprintSohoUpgradeGroups.orderValidation
       )
     }
   }
