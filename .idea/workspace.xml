@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="855">
-              <caret line="57" column="261" lean-forward="false" selection-start-line="57" selection-start-column="261" selection-end-line="57" selection-end-column="261" />
+              <caret line="57" column="235" lean-forward="false" selection-start-line="57" selection-start-column="235" selection-end-line="57" selection-end-column="254" />
               <folding />
             </state>
           </provider>
@@ -694,7 +694,7 @@
       <workItem from="1521168330364" duration="887000" />
       <workItem from="1521286107548" duration="104000" />
       <workItem from="1521286227730" duration="252000" />
-      <workItem from="1521287754410" duration="404000" />
+      <workItem from="1521287754410" duration="540000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -864,11 +864,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521286471589</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="commit to gat-dev.bat to swap between CR setup and Modular Test">
+      <created>1521288184371</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1521288184371</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213685000" />
+    <option name="totallyTimeSpent" value="213821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1876" height="1178" extended-state="6" />
@@ -954,7 +961,8 @@
     <MESSAGE value="updates to group names for easier to read reports" />
     <MESSAGE value="commit to gat-dev.bat to re-setup CR" />
     <MESSAGE value="commit to gat-dev.bat to re-allow Modular Test execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit to gat-dev.bat to re-allow Modular Test execution" />
+    <MESSAGE value="commit to gat-dev.bat to swap between CR setup and Modular Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit to gat-dev.bat to swap between CR setup and Modular Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1330,7 +1338,7 @@
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
-          <caret line="57" column="261" lean-forward="false" selection-start-line="57" selection-start-column="261" selection-end-line="57" selection-end-column="261" />
+          <caret line="57" column="235" lean-forward="false" selection-start-line="57" selection-start-column="235" selection-end-line="57" selection-end-column="254" />
           <folding />
         </state>
       </provider>
