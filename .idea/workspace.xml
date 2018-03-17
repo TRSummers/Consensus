@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" afterPath="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gat-dev.bat" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gat-dev.bat" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="855">
               <caret line="57" column="261" lean-forward="false" selection-start-line="57" selection-start-column="261" selection-end-line="57" selection-end-column="261" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CRExpectationManager.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -702,7 +710,7 @@
       <workItem from="1521168330364" duration="887000" />
       <workItem from="1521286107548" duration="104000" />
       <workItem from="1521286227730" duration="252000" />
-      <workItem from="1521287754410" duration="1120000" />
+      <workItem from="1521287754410" duration="1387000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -886,15 +894,21 @@
       <option name="project" value="LOCAL" />
       <updated>1521288297814</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="commit to gat-dev.bat to swap between CR setup and Modular Test">
+      <created>1521288878806</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1521288878806</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214401000" />
+    <option name="totallyTimeSpent" value="214668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1876" height="1178" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -903,8 +917,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4925926" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33635396" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06076759" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34228188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -927,6 +941,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1349,18 +1373,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="175" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="57" column="261" lean-forward="false" selection-start-line="57" selection-start-column="261" selection-end-line="57" selection-end-column="261" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding />
         </state>
       </provider>
