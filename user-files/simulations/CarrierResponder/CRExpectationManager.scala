@@ -41,6 +41,6 @@ object CRExpectationManager {
   }
 
   //shell script one liner to DELETE all expectations from DB
-  //for ((i=1;i<=100;i++)); do   curl -v --header "Connection: keep-alive" "https://cdsprf0-cccar-le.consensuscorpdev.com/CarrierResponder/expectation/web/remove/id/$i"; done
+  //for ((i=1;i<=1000;i++)); do   curl -v --header "Connection: keep-alive" "https://cdsprf0-cccar-le.consensuscorpdev.com/CarrierResponder/expectation/web/remove/id/$i"; done
 
 }
