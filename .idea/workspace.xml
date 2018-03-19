@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularSetup.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularSetup.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,21 +25,53 @@
       <file leaf-file-name="ModularTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATTScenarios.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTScenarios.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#17#51#0" expanded="true" />
+                <element signature="e#20#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModularSetup.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModularSetup.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularSetup.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gat-dev.bat" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="63" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ATTCRComponents.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTCRComponents.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+              <folding>
+                <element signature="e#20#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,9 +222,9 @@
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetScenarios.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonCRComponents.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonScenarios.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularSetup.scala" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
       </list>
     </option>
   </component>
@@ -735,7 +766,7 @@
       <workItem from="1521286227730" duration="252000" />
       <workItem from="1521287754410" duration="1511000" />
       <workItem from="1521481857684" duration="952000" />
-      <workItem from="1521485201487" duration="5928000" />
+      <workItem from="1521485201487" duration="6772000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -989,11 +1020,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521490580503</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="changes to gat-dev.bat and modular test to allow for CR setup through the Jenkins job">
+      <created>1521491147683</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1521491147683</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221672000" />
+    <option name="totallyTimeSpent" value="222516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1058" extended-state="0" />
@@ -1007,7 +1045,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4925926" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24010417" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33125" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34228188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1426,14 +1464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTScenarios.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetScenarios.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1466,10 +1496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularSetup.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
-          <caret line="63" column="251" lean-forward="false" selection-start-line="63" selection-start-column="251" selection-end-line="63" selection-end-column="251" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1486,18 +1516,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTScenarios.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#17#51#0" expanded="true" />
+            <element signature="e#20#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularSetup.scala">
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="826">
+          <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="63" selection-end-column="22" />
           <folding />
         </state>
       </provider>
