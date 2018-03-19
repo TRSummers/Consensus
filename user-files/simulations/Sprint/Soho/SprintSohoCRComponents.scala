@@ -57,8 +57,8 @@ object SprintSohoCRComponents {
     Map("expectationPath" -> expectation21, "payload" -> CRExpectationManager.escapePayload(Source.fromFile(gatlingData + "/" + expectation21 + "-payload.xml").mkString))
   )
 
-  val SetUpExpectations = scenario("Sprint CR").repeat(21) {
-    group("Sprint CR") {
+  val SetUpExpectations = scenario("Sprint Soho CR").repeat(21) {
+    group("Sprint Soho CR") {
       exec(feed(expectationPath))
         .exec(CRExpectationManager.createAndLoadExpectation)
     }
