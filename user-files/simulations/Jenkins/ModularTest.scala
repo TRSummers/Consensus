@@ -9,11 +9,6 @@ import Verizon.Target.VerizonScenarios
 import ATT.Target.ATTScenarios
 import Sprint.Target.SprintTargetScenarios
 import Sprint.Soho.SprintSohoScenarios
-import CarrierResponder.CRExpectationManager
-import Verizon.Target.VerizonCRComponents
-import ATT.Target.ATTCRComponents
-import Sprint.Target.SprintTargetCRComponents
-import Sprint.Soho.SprintSohoCRComponents
 
 class ModularTest extends Simulation {
 	setUp(
