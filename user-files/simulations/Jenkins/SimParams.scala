@@ -10,12 +10,14 @@ import scala.util.Random
 object SimParams{
 
   //GLOBAL
-  val rampup = if (System.getenv("RAMP") == null) 50 else System.getenv("RAMP").toInt
-  val inum = if (System.getenv("ITERATIONS") == null) 24 else System.getenv("ITERATIONS").toInt
+  val rampup = if (System.getenv("RAMP") == null) 1 else System.getenv("RAMP").toInt
+  val inum = if (System.getenv("ITERATIONS") == null) 1 else System.getenv("ITERATIONS").toInt
 
 
 
   // TARGET
+  val TGTCR = if (System.getenv("TGTCR") == true) 1 else 0
+
   val TGTVNA = if (System.getenv("TGTVNA") == null) 1 else System.getenv("TGTVNA").toInt
   val TGTSNA = if (System.getenv("TGTSNA") == null) 1 else System.getenv("TGTSNA").toInt
   val TGTTNA = if (System.getenv("TGTTNA") == null) 1 else System.getenv("TGTTNA").toInt
@@ -37,8 +39,10 @@ object SimParams{
 
 
   // SOHO
+  val SOHOCR = if (System.getenv("SOHOCR") == true) 1 else 0
+
   val SOHOSNA = if (System.getenv("SOHOSNA") == null) 1 else System.getenv("SOHOSNA").toInt
-  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 5 else System.getenv("SOHOSUG").toInt
+  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 1 else System.getenv("SOHOSUG").toInt
   val SOHOSAL = if (System.getenv("SOHOSAL") == null) 1 else System.getenv("SOHOSAL").toInt
 
   val SohoHttpProtocol = http

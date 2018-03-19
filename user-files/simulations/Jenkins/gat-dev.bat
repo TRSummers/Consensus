@@ -1,13 +1,17 @@
 @echo off
-set TGTVNA=%1
-set TGTSNA=%2
-set TGTTNA=%3
-set TGTVUG=%4
-set TGTSUG=%5
-set TGTTUG=%6
-set TGTVAL=%7
-set TGTSAL=%8
+set TGTCR=%1
+set TGTVNA=%2
+set TGTSNA=%3
+set TGTTNA=%4
+set TGTVUG=%5
+set TGTSUG=%6
+set TGTTUG=%7
+set TGTVAL=%8
+set TGTSAL=%9
+shift
 set TGTTAL=%9
+shift
+set SOHOCR=%9
 shift
 set SOHOSNA=%9
 shift
@@ -24,34 +28,32 @@ set USERFILESLOCATION=%9
 echo ******************************************
 echo ******************************************
 echo ***
-echo ***   TGT   Verizon  NA   Users:...%TGTVNA%
-echo ***   TGT   Sprint   NA   Users:...%TGTSNA%
-echo ***   TGT   ATT      NA   Users:...%TGTTNA%
+echo ***   TGT   CR Setup...............%TGTCR%
 echo ***
-echo ***   TGT   Verizon  UPG  Users:...%TGTVUG%
-echo ***   TGT   Sprint   UPG  Users:...%TGTSUG%
-echo ***   TGT   ATT      UPG  Users:...%TGTTUG%
+echo ***   TGT   Verizon  NA   Users....%TGTVNA%
+echo ***   TGT   Sprint   NA   Users....%TGTSNA%
+echo ***   TGT   ATT      NA   Users....%TGTTNA%
 echo ***
-echo ***   TGT   Verizon  AAL  Users:...%TGTVAL%
-echo ***   TGT   Sprint   AAL  Users:...%TGTSAL%
-echo ***   TGT   ATT      AAL  Users:...%TGTTAL%
+echo ***   TGT   Verizon  UPG  Users....%TGTVUG%
+echo ***   TGT   Sprint   UPG  Users....%TGTSUG%
+echo ***   TGT   ATT      UPG  Users....%TGTTUG%
 echo ***
-echo ***   SOHO  Verizon  NA   Users:...%SOHOSNA%
-echo ***   SOHO  Sprint   UPG  Users:...%SOHOSUG%
-echo ***   SOHO  ATT      AAL  Users:...%SOHOSAL%
+echo ***   TGT   Verizon  AAL  Users....%TGTVAL%
+echo ***   TGT   Sprint   AAL  Users....%TGTSAL%
+echo ***   TGT   ATT      AAL  Users....%TGTTAL%
 echo ***
-echo ***   Iterations:..................%ITERATIONS%
+echo ***   SOHO  CR Setup...............%SOHOCR%
+echo ***
+echo ***   SOHO  Verizon  NA   Users....%SOHOSNA%
+echo ***   SOHO  Sprint   UPG  Users....%SOHOSUG%
+echo ***   SOHO  ATT      AAL  Users....%SOHOSAL%
+echo ***
 echo ***   Ramp:........................%RAMP%
 echo ***
+echo ***   Iterations:..................%ITERATIONS%
+echo ***
 echo ******************************************
 echo ******************************************
-
-rem set gatling.http.ssl.keyStore.type=PKCS12
-rem set gatling.http.ssl.keyStore.file=%USERFILESLOCATION%\user-files\simulations\Jenkins\gatling.p12
-rem set gatling.http.ssl.keyStore.password=changeit
-rem setx gatling.http.ssl.keyStore.type PKCS12
-rem setx gatling.http.ssl.keyStore.file %USERFILESLOCATION%\user-files\simulations\Jenkins\gatling.p12
-rem setx gatling.http.ssl.keyStore.password changeit
 
 set GATLING_DATA=%USERFILESLOCATION%\user-files\bodies
 
