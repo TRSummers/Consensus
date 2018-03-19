@@ -12,7 +12,7 @@ import CarrierCommon.Target.Common
 
 object SprintTargetScenarios {
 
-  val Upgrade = scenario("Sprint Upgrade").repeat(SimParams.inum) {
+  val Upgrade = scenario("Target Sprint Upgrade").repeat(SimParams.inum) {
     group("SPT UPG") {
       exec(
         feed(Common.CreditCheckData),

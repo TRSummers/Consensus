@@ -78,8 +78,8 @@ object VerizonCRComponents {
 
   //the number of times this scenario is repeated is NOT related to the variable name of the highest numbered expectation
   //it can be different if expectations have been added/removed
-  val SetUpExpectations = scenario("Verizon CR").repeat(29) {
-    group("Verizon CR") {
+  val SetUpExpectations = scenario("CR - Target Verizon Setup").repeat(29) {
+    group("CR - Target Verizon Setup") {
       exec(feed(expectationPath))
         .exec(CRExpectationManager.createAndLoadExpectation)
     }

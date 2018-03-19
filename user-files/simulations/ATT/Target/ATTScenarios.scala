@@ -12,7 +12,7 @@ import CarrierCommon.Target.Common
 
 object ATTScenarios {
 
-  val Upgrade = scenario("ATT Upgrade").repeat(SimParams.inum) {
+  val Upgrade = scenario("Target ATT Upgrade").repeat(SimParams.inum) {
     group("ATT UPG") {
       exec(
         feed(Common.CreditCheckData),

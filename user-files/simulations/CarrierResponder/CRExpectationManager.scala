@@ -31,7 +31,7 @@ object CRExpectationManager {
         .get(non_tunneled_cr + "/CarrierResponder/mockserver/load?expectationId=" + "${expectationId}"))
   }
 
-  val CleanExpectations = scenario("Clean CR").repeat(1){
+  val CleanExpectations = scenario("CR - Remove All").repeat(1){
     group("Removing All") {
       exec(
         http("#1")

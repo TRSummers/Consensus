@@ -19,9 +19,9 @@ object SprintSohoScenarios{
   val OrderPostToOrderPutPause = pause(55, 65)
   val OrderPutToOrderValidationPause = pause(4, 6)
 
-  val Upgrade = scenario("SoHo UPG").repeat(SimParams.inum){
+  val Upgrade = scenario("Soho Sprint Upgrade").repeat(SimParams.inum){
 
-    group("SoHo / UPG"){
+    group("Soho / UPG"){
       exec(
         SprintSohoUpgradeGroups.device,
         ValidateDeviceToAccountLookupPause,

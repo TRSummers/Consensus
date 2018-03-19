@@ -24,6 +24,8 @@ shift
 set ITERATIONS=%9
 shift
 set USERFILESLOCATION=%9
+shift
+set SIMTYPE=%9
 
 echo ******************************************
 echo ******************************************
@@ -52,9 +54,11 @@ echo ***   Ramp:........................%RAMP%
 echo ***
 echo ***   Iterations:..................%ITERATIONS%
 echo ***
+echo ***   Simulation Type:.............%SIMTYPE%
+echo ***
 echo ******************************************
 echo ******************************************
 
 set GATLING_DATA=%USERFILESLOCATION%\user-files\bodies
 
-c:/gatling/gatling-charts-highcharts-bundle-2.2.3/bin/gatling.bat -sf %USERFILESLOCATION%\user-files\simulations -bdf %USERFILESLOCATION%\user-files\bodies -bf %USERFILESLOCATION%\binaries -on VZW_%VNAUSERS%_%ITERATIONS%_Iterations -s Jenkins.ModularTest
+c:/gatling/gatling-charts-highcharts-bundle-2.2.3/bin/gatling.bat -sf %USERFILESLOCATION%\user-files\simulations -bdf %USERFILESLOCATION%\user-files\bodies -bf %USERFILESLOCATION%\binaries -on VZW_%VNAUSERS%_%ITERATIONS%_Iterations -s Jenkins.%SIMTYPE%

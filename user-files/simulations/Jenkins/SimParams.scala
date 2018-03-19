@@ -16,17 +16,17 @@ object SimParams{
 
 
   // TARGET
-  val TGTCR = if (System.getenv("TGTCR") == true) 1 else 0
+  val TGTCR = if (System.getenv("TGTCR") == "true") 1 else 0
 
-  val TGTVNA = if (System.getenv("TGTVNA") == null) 1 else System.getenv("TGTVNA").toInt
-  val TGTSNA = if (System.getenv("TGTSNA") == null) 1 else System.getenv("TGTSNA").toInt
-  val TGTTNA = if (System.getenv("TGTTNA") == null) 1 else System.getenv("TGTTNA").toInt
-  val TGTVUG = if (System.getenv("TGTVUG") == null) 1 else System.getenv("TGTVUG").toInt
-  val TGTSUG = if (System.getenv("TGTSUG") == null) 1 else System.getenv("TGTSUG").toInt
-  val TGTTUG = if (System.getenv("TGTTUG") == null) 1 else System.getenv("TGTTUG").toInt
-  val TGTVAL = if (System.getenv("TGTVAL") == null) 1 else System.getenv("TGTVAL").toInt
-  val TGTSAL = if (System.getenv("TGTSAL") == null) 1 else System.getenv("TGTSAL").toInt
-  val TGTTAL = if (System.getenv("TGTTAL") == null) 1 else System.getenv("TGTTAL").toInt
+  val TGTVNA = if (System.getenv("TGTVNA") == null) 0 else System.getenv("TGTVNA").toInt
+  val TGTSNA = if (System.getenv("TGTSNA") == null) 0 else System.getenv("TGTSNA").toInt
+  val TGTTNA = if (System.getenv("TGTTNA") == null) 0 else System.getenv("TGTTNA").toInt
+  val TGTVUG = if (System.getenv("TGTVUG") == null) 0 else System.getenv("TGTVUG").toInt
+  val TGTSUG = if (System.getenv("TGTSUG") == null) 0 else System.getenv("TGTSUG").toInt
+  val TGTTUG = if (System.getenv("TGTTUG") == null) 0 else System.getenv("TGTTUG").toInt
+  val TGTVAL = if (System.getenv("TGTVAL") == null) 0 else System.getenv("TGTVAL").toInt
+  val TGTSAL = if (System.getenv("TGTSAL") == null) 0 else System.getenv("TGTSAL").toInt
+  val TGTTAL = if (System.getenv("TGTTAL") == null) 0 else System.getenv("TGTTAL").toInt
 
   val httpProtocol = http
     .baseURL("https://poa-perf-scale.consensuscorpdev.com")
@@ -39,11 +39,11 @@ object SimParams{
 
 
   // SOHO
-  val SOHOCR = if (System.getenv("SOHOCR") == true) 1 else 0
+  val SOHOCR = if (System.getenv("SOHOCR") == "true") 1 else 0
 
-  val SOHOSNA = if (System.getenv("SOHOSNA") == null) 1 else System.getenv("SOHOSNA").toInt
-  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 1 else System.getenv("SOHOSUG").toInt
-  val SOHOSAL = if (System.getenv("SOHOSAL") == null) 1 else System.getenv("SOHOSAL").toInt
+  val SOHOSNA = if (System.getenv("SOHOSNA") == null) 0 else System.getenv("SOHOSNA").toInt
+  val SOHOSUG = if (System.getenv("SOHOSUG") == null) 0 else System.getenv("SOHOSUG").toInt
+  val SOHOSAL = if (System.getenv("SOHOSAL") == null) 0 else System.getenv("SOHOSAL").toInt
 
   val SohoHttpProtocol = http
     .baseURL("https://cdsprf0-api.consensuscorpdev.com")

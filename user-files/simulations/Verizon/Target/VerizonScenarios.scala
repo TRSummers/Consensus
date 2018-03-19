@@ -12,7 +12,7 @@ import CarrierCommon.Target.Common
 
 object VerizonScenarios {
 
-  val NewActivation = scenario("Verizon New").repeat(SimParams.inum) {
+  val NewActivation = scenario("Target Verizon New").repeat(SimParams.inum) {
 
     group("VZN NEW") {
       exec(
@@ -48,7 +48,7 @@ object VerizonScenarios {
     }
   }
 
-  val Upgrade = scenario("Verizon Upgrade").repeat(SimParams.inum) {
+  val Upgrade = scenario("Target Verizon Upgrade").repeat(SimParams.inum) {
     group("VZN UPG") {
       exec(
         feed(Common.VZWCarrierTestData),

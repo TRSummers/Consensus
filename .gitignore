@@ -1,6 +1,5 @@
 gatling.log
 gatling.log.*
-results/*
-/.idea/
+/.idea/*
 /results/
-/gatling.log
+.DS_Store

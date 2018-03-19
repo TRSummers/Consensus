@@ -41,8 +41,8 @@ object ATTCRComponents {
 
   //the number of times this scenario is repeated is NOT related to the variable name of the highest numbered expectation
   //it can be different if expectations have been added/removed
-  val SetUpExpectations = scenario("ATT CR").repeat(12) {
-    group("ATT CR") {
+  val SetUpExpectations = scenario("CR - Target ATT Setup").repeat(12) {
+    group("CR Target ATT Setup") {
       exec(feed(expectationPath))
         .exec(CRExpectationManager.createAndLoadExpectation)
     }
