@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="866">
-              <caret line="59" column="263" lean-forward="false" selection-start-line="59" selection-start-column="263" selection-end-line="59" selection-end-column="263" />
+              <caret line="59" column="242" lean-forward="false" selection-start-line="59" selection-start-column="242" selection-end-line="59" selection-end-column="242" />
               <folding />
             </state>
           </provider>
@@ -724,7 +724,7 @@
       <workItem from="1521286227730" duration="252000" />
       <workItem from="1521287754410" duration="1511000" />
       <workItem from="1521481857684" duration="952000" />
-      <workItem from="1521485201487" duration="2656000" />
+      <workItem from="1521485201487" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -936,11 +936,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521487472067</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changes to gat-dev.bat and modular test to allow for CR setup through the Jenkins job">
+      <created>1521487868654</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1521487868654</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218400000" />
+    <option name="totallyTimeSpent" value="218457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1058" extended-state="0" />
@@ -1424,7 +1431,7 @@
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="866">
-          <caret line="59" column="263" lean-forward="false" selection-start-line="59" selection-start-column="263" selection-end-line="59" selection-end-column="263" />
+          <caret line="59" column="242" lean-forward="false" selection-start-line="59" selection-start-column="242" selection-end-line="59" selection-end-column="242" />
           <folding />
         </state>
       </provider>
