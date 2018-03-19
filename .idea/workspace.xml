@@ -4,8 +4,6 @@
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+              <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
               <folding>
                 <element signature="e#17#51#0" expanded="true" />
               </folding>
@@ -736,7 +734,7 @@
       <workItem from="1521286227730" duration="252000" />
       <workItem from="1521287754410" duration="1511000" />
       <workItem from="1521481857684" duration="952000" />
-      <workItem from="1521485201487" duration="3012000" />
+      <workItem from="1521485201487" duration="3220000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -962,15 +960,21 @@
       <option name="project" value="LOCAL" />
       <updated>1521487923784</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="changes to gat-dev.bat and modular test to allow for CR setup through the Jenkins job">
+      <created>1521488225664</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1521488225664</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218756000" />
+    <option name="totallyTimeSpent" value="218964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1058" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -980,7 +984,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4925926" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34228188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1452,7 +1456,7 @@
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <caret line="21" column="94" lean-forward="false" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
           <folding>
             <element signature="e#17#51#0" expanded="true" />
           </folding>
