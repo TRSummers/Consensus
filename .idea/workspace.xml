@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,23 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModularTest.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModularTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="91" lean-forward="true" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
-              <folding>
-                <element signature="e#17#51#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gat-dev.bat" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gat-dev.bat" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="866">
+              <caret line="59" column="263" lean-forward="false" selection-start-line="59" selection-start-column="263" selection-end-line="59" selection-end-column="263" />
               <folding />
             </state>
           </provider>
@@ -220,9 +218,9 @@
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoScenarios.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/SimParams.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat" />
       </list>
     </option>
   </component>
@@ -726,7 +724,7 @@
       <workItem from="1521286227730" duration="252000" />
       <workItem from="1521287754410" duration="1511000" />
       <workItem from="1521481857684" duration="952000" />
-      <workItem from="1521485201487" duration="2262000" />
+      <workItem from="1521485201487" duration="2656000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -931,11 +929,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521487112697</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="changes to gat-dev.bat and modular test to allow for CR setup through the Jenkins job">
+      <created>1521487472067</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1521487472067</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218006000" />
+    <option name="totallyTimeSpent" value="218400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1058" extended-state="0" />
@@ -1384,14 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/SimParams.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1418,11 +1415,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/ModularTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="91" lean-forward="true" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
-          <folding>
-            <element signature="e#17#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/gat-dev.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="59" column="263" lean-forward="false" selection-start-line="59" selection-start-column="263" selection-end-line="59" selection-end-column="263" />
+          <folding />
         </state>
       </provider>
     </entry>
