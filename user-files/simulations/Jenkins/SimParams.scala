@@ -50,5 +50,6 @@ object SimParams{
     .acceptHeader("application/json;q=0.9,*/*;q=0.8")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .acceptEncodingHeader("gzip, deflate")
+    .warmUp("http://www.google.com")
 
 }
