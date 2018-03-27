@@ -10,14 +10,14 @@ import Jenkins.SimParams
 
 object SprintSohoScenarios{
 
-  val ValidateDeviceToAccountLookupPause = pause(4, 6)
-  val AccountLookupToDeviceTradeInPause = pause(9, 11)
-  val DeviceTradeInToCreateCustomerPause = pause(4, 6)
-  val CreateCustomerToPaymentPlansPause = pause(4, 6)
-  val PaymentPlansToPlansPause = pause(4, 6)
-  val PlansToOrderPostPause = pause(55, 65)
-  val OrderPostToOrderPutPause = pause(55, 65)
-  val OrderPutToOrderValidationPause = pause(4, 6)
+  val ValidateDeviceToAccountLookupPause = pause(2, 3)
+  val AccountLookupToDeviceTradeInPause = pause(2, 3)
+  val DeviceTradeInToCreateCustomerPause = pause(2, 3)
+  val CreateCustomerToPaymentPlansPause = pause(2, 3)
+  val PaymentPlansToPlansPause = pause(2, 3)
+  val PlansToOrderPostPause = pause(2, 3)
+  val OrderPostToOrderPutPause = pause(2, 3)
+  val OrderPutToOrderValidationPause = pause(2, 3)
 
   val Upgrade = scenario("Soho Sprint Upgrade").repeat(SimParams.inum){
 
