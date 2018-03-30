@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" afterPath="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" afterPath="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,12 +22,12 @@
     <favorites_list name="Gatling-POA" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CleanLogs.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh">
+    <leaf>
+      <file leaf-file-name="CRExpectationManager.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -166,10 +167,8 @@
         <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/queryAccountLoanInfo-expectation.json" />
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/Sim.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/Upgrade/SprintSohoUpgradeGroups.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTCRComponents.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetCRComponents.scala" />
-        <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/ATT/Target/ATTScenarios.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetScenarios.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Verizon/Target/VerizonCRComponents.scala" />
@@ -182,6 +181,8 @@
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/SimParams.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/DiskClean.sh" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/LogClean.sh" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
+        <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
       </list>
     </option>
   </component>
@@ -195,9 +196,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1147" />
-    <option name="y" value="242" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
+    <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1058" />
   </component>
@@ -220,9 +221,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +240,13 @@
               <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
               <item name="user-files" type="462c0819:PsiDirectoryNode" />
               <item name="simulations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gatling-POA" type="462c0819:PsiDirectoryNode" />
+              <item name="user-files" type="462c0819:PsiDirectoryNode" />
+              <item name="simulations" type="462c0819:PsiDirectoryNode" />
+              <item name="CarrierResponder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gatling-POA" type="b2602c69:ProjectViewProjectNode" />
@@ -277,6 +284,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -715,7 +723,8 @@
       <workItem from="1522119154986" duration="108000" />
       <workItem from="1522119538655" duration="360000" />
       <workItem from="1522183202533" duration="132000" />
-      <workItem from="1522342348628" duration="17244000" />
+      <workItem from="1522342348628" duration="17519000" />
+      <workItem from="1522449901552" duration="784000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -1018,11 +1027,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522183325359</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Clean logs script initial committ">
+      <created>1522366152243</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1522366152243</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247463000" />
+    <option name="totallyTimeSpent" value="248522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1058" extended-state="6" />
@@ -1035,8 +1051,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4925926" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2828125" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2828125" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34228188" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1046,8 +1062,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1122,7 +1138,8 @@
     <MESSAGE value="changes to gat-dev.bat and modular test to allow for CR setup through the Jenkins job" />
     <MESSAGE value="change to API think times for Soho UPG to approximately 2.5 seconds" />
     <MESSAGE value="changing soho warmup URL to www.google.com" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing soho warmup URL to www.google.com" />
+    <MESSAGE value="Clean logs script initial committ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean logs script initial committ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1399,13 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Target/SprintTargetScenarios.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1483,14 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="37" column="167" lean-forward="true" selection-start-line="37" selection-start-column="167" selection-end-line="37" selection-end-column="167" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoScenarios.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1509,8 +1511,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding />
         </state>
       </provider>

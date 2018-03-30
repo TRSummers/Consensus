@@ -58,7 +58,7 @@ object SprintSohoCRComponents {
   )
 
   val SetUpExpectations = scenario("CR - Soho Sprint Setup").repeat(21) {
-    group("CR Soho Sprint Setup") {
+    group("CR Soho Sprint") {
       exec(feed(expectationPath))
         .exec(CRExpectationManager.createAndLoadExpectation)
     }
