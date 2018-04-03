@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da42b642-c3d7-4015-b50e-1811f242ad8a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/CleanDBs.sh" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh" afterPath="$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh" />
     </list>
     <ignored path="Gatling-POA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CleanLogs.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CleanLogs.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="135" />
+            <state relative-caret-position="337">
+              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CleanDBs.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CleanDBs.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanDBs.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="87" lean-forward="true" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -138,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-expectation.json" />
         <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/vdv11p.xml" />
         <option value="$PROJECT_DIR$/user-files/bodies/Sprint/Soho/Upgrade/1device.json" />
         <option value="$PROJECT_DIR$/user-files/bodies/expectations/sprint/soho/validateDevice-payload.xml" />
@@ -189,6 +188,7 @@
         <option value="$PROJECT_DIR$/user-files/simulations/Sprint/Soho/SprintSohoCRComponents.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/CarrierResponder/CRExpectationManager.scala" />
         <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/CleanDBs.sh" />
+        <option value="$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh" />
       </list>
     </option>
   </component>
@@ -227,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
@@ -290,7 +291,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.CleanDBs.sh">
+  <component name="RunManager" selected="Bash.CleanLogs.sh">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -673,8 +673,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Bash.CleanDBs.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Bash.CleanLogs.sh" />
+        <item index="0" class="java.lang.String" itemvalue="Bash.CleanLogs.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.CleanDBs.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -756,7 +756,11 @@
       <workItem from="1522776451640" duration="70000" />
       <workItem from="1522776538279" duration="91000" />
       <workItem from="1522777474332" duration="86000" />
-      <workItem from="1522779271299" duration="7363000" />
+      <workItem from="1522779271299" duration="7389000" />
+      <workItem from="1522790967612" duration="239000" />
+      <workItem from="1522791818080" duration="417000" />
+      <workItem from="1522793795011" duration="9000" />
+      <workItem from="1522797987238" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="adding add a line back to build.scala">
       <created>1507575937996</created>
@@ -1073,11 +1077,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522452195042</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="clean db script for pam db complete">
+      <created>1522790814342</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1522790814343</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256155000" />
+    <option name="totallyTimeSpent" value="257043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1897" y="22" width="1876" height="1058" extended-state="0" />
@@ -1091,7 +1102,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4925926" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50811356" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52636915" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34228188" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1180,7 +1191,8 @@
     <MESSAGE value="changing soho warmup URL to www.google.com" />
     <MESSAGE value="Clean logs script initial committ" />
     <MESSAGE value="edits to CR string call names" />
-    <option name="LAST_COMMIT_MESSAGE" value="edits to CR string call names" />
+    <MESSAGE value="clean db script for pam db complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean db script for pam db complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1552,22 +1564,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanDBs.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanLogs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="135" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-files/simulations/Jenkins/CleanDBs.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="87" lean-forward="true" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+        <state relative-caret-position="337">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding />
         </state>
       </provider>

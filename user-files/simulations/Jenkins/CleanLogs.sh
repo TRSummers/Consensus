@@ -13,8 +13,8 @@ MULELOGS="sudo rm -rf /opt/mule-enterprise-standalone/logs/*"
 APIHISTORY="sudo rm -rf /var/appdata/apihistory/*"
 TOMCATLOGS="sudo rm -rf /var/log/tomcat/*"
 
-echo "Cleaning ESB and APIGW logs and api history..."
-COMPONENT="ccesb ccapi"
+echo "Cleaning ESB logs and api history..."
+COMPONENT="ccesb"
 INSTANCES="i01 i02 i03"
 for ENV in ${ENVIRONMENTS} ; do
     for COMP in ${COMPONENT} ; do
@@ -24,9 +24,31 @@ for ENV in ${ENVIRONMENTS} ; do
     done
 done
 
-echo "Cleaning PAM and CR logs..."
-COMPONENT="ccpam cccar"
+echo "Cleaning API GW logs..."
+COMPONENT="ccapi"
 INSTANCES="i01 i02 i03"
+for ENV in ${ENVIRONMENTS} ; do
+    for COMP in ${COMPONENT} ; do
+        for INST in ${INSTANCES} ; do
+            ssh ${TGTDEVJUMPUSER}@tgt-dev-jump.consensuscorpdev.com "ssh -t -t ${ENV}"-"${COMP}"-"${INST} \"$MULELOGS\""
+        done
+    done
+done
+
+echo "Cleaning PAM logs..."
+COMPONENT="ccpam"
+INSTANCES="i01 i02 i03"
+for ENV in ${ENVIRONMENTS} ; do
+    for COMP in ${COMPONENT} ; do
+        for INST in ${INSTANCES} ; do
+            ssh ${TGTDEVJUMPUSER}@tgt-dev-jump.consensuscorpdev.com "ssh -t -t ${ENV}"-"${COMP}"-"${INST} \"$TOMCATLOGS\""
+        done
+    done
+done
+
+echo "Cleaning CR logs..."
+COMPONENT="cccar"
+INSTANCES="i01"
 for ENV in ${ENVIRONMENTS} ; do
     for COMP in ${COMPONENT} ; do
         for INST in ${INSTANCES} ; do
