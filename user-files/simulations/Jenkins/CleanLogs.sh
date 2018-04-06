@@ -15,7 +15,7 @@ TOMCATLOGS="sudo rm -rf /var/log/tomcat/*"
 
 echo "Cleaning ESB logs and api history..."
 COMPONENT="ccesb"
-INSTANCES="i01 i02 i03"
+INSTANCES="i01 i02 i03 i04 i05 i06 i07 i08 i09 i10 i11 i12"
 for ENV in ${ENVIRONMENTS} ; do
     for COMP in ${COMPONENT} ; do
         for INST in ${INSTANCES} ; do
@@ -37,7 +37,7 @@ done
 
 echo "Cleaning PAM logs..."
 COMPONENT="ccpam"
-INSTANCES="i01 i02 i03"
+INSTANCES="i01 i02 i03 i04 i05 i06 i07 i08 i09 i10 i11 i12"
 for ENV in ${ENVIRONMENTS} ; do
     for COMP in ${COMPONENT} ; do
         for INST in ${INSTANCES} ; do
