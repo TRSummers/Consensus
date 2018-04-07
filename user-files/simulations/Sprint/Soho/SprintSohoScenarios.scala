@@ -10,6 +10,8 @@ import Jenkins.SimParams
 
 object SprintSohoScenarios{
 
+  val BetweenOrdersPause = pause(850, 900)
+
   val ValidateDeviceToAccountLookupPause = pause(2, 3)
   val AccountLookupToDeviceTradeInPause = pause(2, 3)
   val DeviceTradeInToCreateCustomerPause = pause(2, 3)
@@ -39,7 +41,8 @@ object SprintSohoScenarios{
         OrderPostToOrderPutPause,
         SprintSohoUpgradeGroups.orderPut,
         OrderPutToOrderValidationPause,
-        SprintSohoUpgradeGroups.orderValidation
+        SprintSohoUpgradeGroups.orderValidation,
+        BetweenOrdersPause
       )
     }
   }
